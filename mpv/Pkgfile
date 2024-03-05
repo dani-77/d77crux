@@ -1,0 +1,18 @@
+# Description:mpv is a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types. 
+# URL:https://mpv.io/
+# Maintainer: dani77
+# Depends on:
+
+name=mpv
+version=0.37.0
+release=1
+source=(https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz)
+
+build() {
+	cd $name-$version
+	meson setup build
+	DESTDIR=build
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+	rm -rf $PKG/usr/info
+}
