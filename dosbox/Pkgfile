@@ -1,0 +1,17 @@
+# Description:DOS emulator
+# URL:https://www.dosbox.com
+# Maintainer: dani77
+# Depends on:
+
+name=dosbox
+version=0.74-3
+release=1
+source=(https://sourceforge.net/projects/dosbox/files/dosbox/0.74-3/dosbox-0.74-3.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/info
+}
