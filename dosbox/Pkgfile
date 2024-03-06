@@ -1,12 +1,12 @@
-# Description:DOS emulator
-# URL:https://www.dosbox.com
-# Maintainer: dani77
+# Description: DOS emulator
+# URL: https://www.dosbox.com
+# Maintainer: Daniel Azevedo, daniazevdo77 at posteo dot net
 # Depends on:
 
 name=dosbox
 version=0.74-3
 release=1
-source=(https://sourceforge.net/projects/dosbox/files/dosbox/0.74-3/dosbox-0.74-3.tar.gz)
+source=(https://sourceforge.net/projects/dosbox/files/dosbox/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version

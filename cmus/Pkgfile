@@ -1,12 +1,12 @@
-# Description:cmus is a small, fast and powerful console music player for Unix-like operating systems.
-# URL:https://cmus.github.io/
-# Maintainer: dani77
+# Description: cmus is a small, fast and powerful console music player for Unix-like operating systems.
+# URL: https://cmus.github.io/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
 # Depends on:
 
 name=cmus
 version=2.10.0
 release=1
-source=(https://github.com/cmus/cmus/archive/refs/tags/v2.10.0.tar.gz)
+source=(https://github.com/cmus/cmus/archive/refs/tags/v$version.tar.gz)
 
 build() {
 	cd $name-$version
