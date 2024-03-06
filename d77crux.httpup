@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/d77crux
-URL=http://notabug.org/dani-77/d77crux/
+URL=http://raw.githubusercontent.com/dani-77/d77crux/master/
 
 # End of file
