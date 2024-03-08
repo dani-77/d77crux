@@ -9,9 +9,16 @@ sudo mv d77crux.httpup /etc/ports
 ```
 
 Edit /etc/prt-get.conf adding the line prtdir /usr/ports/d77crux to your configuration.
-Update the system with sudo ports -u d77crux and you will be able to use my repo.
+
 ```
 sudo echo prtdir /usr/ports/d77crux >> /etc/prt-get.conf
 ```
+Update the system.
+
+```
+sudo ports -u d77crux
+```
+
+Now you can use any of my ports. 
 
 Hope you enjoy it.
