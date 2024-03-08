@@ -4,10 +4,12 @@ d:rofi
 d:vifm
 d:xscreensaver
 d:dosbox
+d:flashrom
+d:redshift
 f:7feb271615b64c6f1dc006573b75a233:mpv/Pkgfile
 f:c342375ddb075031635cab58ba94c31f:mpv/.md5sum
-f:2c3c81c6924f5e04002fa3d5eb8bce66:cmus/.footprint
-f:c34a5c5bc37980d37fe115bd67b83080:cmus/Pkgfile
+f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
+f:71106418c79b9b1dab52cfd584550b13:cmus/Pkgfile
 f:64f0e6a32cda252c324197e5389b575c:cmus/.md5sum
 f:9ec0970e865996f8bb269604b8ebe8dd:rofi/.footprint
 f:c6ddf818bc5c9cd4b6e9472724d8ae18:rofi/Pkgfile
@@ -19,3 +21,9 @@ f:ba31c1b0a9b547c1658141b704349987:xscreensaver/Pkgfile
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
 f:c4341f1f474f15d4d2e58c2d68674948:dosbox/Pkgfile
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
+f:e7934578a29a12877d58c2154c3380b9:flashrom/.footprint
+f:0cc5c5b05b46cce5947df0c0553de8c8:flashrom/Pkgfile
+f:5d2ae95aa80fd4a3da824a05e81cf753:flashrom/.md5sum
+f:1ada6090e8c22f8e1d1ae7c39db84cff:redshift/.footprint
+f:82460965b1747fd865daa89064e554fc:redshift/Pkgfile
+f:858bfd84eac64e676a1de96a686d9f74:redshift/.md5sum
