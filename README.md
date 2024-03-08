@@ -13,5 +13,5 @@ Update the system with sudo ports -u d77crux and you will be able to use my repo
 ```
 sudo echo prtdir /usr/ports/d77crux >> /etc/prt-get.conf
 ```
-`
+
 Hope you enjoy it.
