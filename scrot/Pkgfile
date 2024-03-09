@@ -1,0 +1,17 @@
+# Description: Command line screen capture utility.
+# URL: https://github.com/ressurecting-open-source-projects/scrot
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: autoconf autoconf-archive pkgconf imlib2 libbsd xorg-libxinerama xorg-libxfixes xorg-libxext xorg-libxcomposite
+
+name=scrot
+version=1.10
+release=1
+source=(https://github.com/resurrecting-open-source-projects/scrot/releases/tag/$name-$version.tar.gz))
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure
+	make
+	make DESTDIR=$PKG install
+}
