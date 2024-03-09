@@ -3,10 +3,22 @@
 My own collection of Crux ports.
 Please check dependencies prior pkgmk any of these; all are working.
 
-Install ncspot (spotify ncurses), rbw (bitwarden cli) and nxcloud (nextcloud cli) from https://crates.io with
+Download the d77crux.httpup and copy it to /etc/ports.
 ```
-cargo install <pkg_name>
+sudo mv d77crux.httpup /etc/ports
 ```
 
-git a version of Xcalc from https://cgit.freedesktop.org/xorg/app/xcalc/
+Edit /etc/prt-get.conf adding the line prtdir /usr/ports/d77crux to your configuration.
 
+```
+sudo echo prtdir /usr/ports/d77crux >> /etc/prt-get.conf
+```
+Update the system.
+
+```
+sudo ports -u d77crux
+```
+
+Now you can use any of my ports. 
+
+Hope you enjoy it.

@@ -1,0 +1,17 @@
+# Description: Redshift adjusts the color temperature of your screen according to your surroundings.
+# URL: https://jonls.dk/redshift
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: xorg
+
+name=redshift
+version=1.12
+release=1
+source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/info
+}
