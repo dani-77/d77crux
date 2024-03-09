@@ -3,6 +3,7 @@ d:cmus
 d:rofi
 d:vifm
 d:xscreensaver
+d:camorama
 d:dosbox
 d:flashrom
 d:redshift
@@ -18,6 +19,9 @@ f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
 f:0da12a9e8e0892b9f8665343c75a8bbc:vifm/Pkgfile
 f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
 f:ba31c1b0a9b547c1658141b704349987:xscreensaver/Pkgfile
+f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
+f:5d171b308e09ca1f8170ee0bced9d55d:camorama/Pkgfile
+f:d6bd8d4673d465dec01d693838ed67ba:camorama/.md5sum
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
 f:c4341f1f474f15d4d2e58c2d68674948:dosbox/Pkgfile
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
