@@ -6,7 +6,7 @@
 name=scrot
 version=1.10
 release=1
-source=(https://github.com/resurrecting-open-source-projects/scrot/releases/download/$version/$name-$version.tar.gz))
+source=(https://github.com/resurrecting-open-source-projects/scrot/releases/download/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
