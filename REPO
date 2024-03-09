@@ -8,9 +8,9 @@ d:vifm
 d:flashrom
 d:dosbox
 d:xscreensaver
-f:2385ed76d3c5151ac047152a893a4ee0:scrot/Pkgfile
+f:356d2268983bf83f0073b549bab41d01:scrot/Pkgfile
 f:d6bd8d4673d465dec01d693838ed67ba:camorama/.md5sum
-f:5d171b308e09ca1f8170ee0bced9d55d:camorama/Pkgfile
+f:d4c0cf9774d3cb4e88858cf750ea8e11:camorama/Pkgfile
 f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
 f:c342375ddb075031635cab58ba94c31f:mpv/.md5sum
 f:7feb271615b64c6f1dc006573b75a233:mpv/Pkgfile
