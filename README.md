@@ -5,6 +5,7 @@ Please check dependencies prior pkgmk any of these; all are working.
 
 Download the d77crux.httpup and copy it to /etc/ports.
 ```
+wget http://raw.githubusercontent.com/dani-77/d77crux/master/d77crux.httpup
 sudo mv d77crux.httpup /etc/ports
 ```
 
