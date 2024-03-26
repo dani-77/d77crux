@@ -1,12 +1,14 @@
 d:scrot
 d:camorama
 d:mpv
+d:lzip
 d:redshift
 d:cmus
 d:rofi
 d:vifm
 d:flashrom
 d:dosbox
+d:icewm
 d:transset-df
 d:xscreensaver
 f:356d2268983bf83f0073b549bab41d01:scrot/Pkgfile
@@ -15,6 +17,9 @@ f:d4c0cf9774d3cb4e88858cf750ea8e11:camorama/Pkgfile
 f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
 f:c342375ddb075031635cab58ba94c31f:mpv/.md5sum
 f:7feb271615b64c6f1dc006573b75a233:mpv/Pkgfile
+f:0150498868daa7fbc066b18c92525218:lzip/.md5sum
+f:1c57bf2d5e9d7809c5f96d15cc418751:lzip/Pkgfile
+f:88c7ea9202afa5e01596f119bed27691:lzip/.footprint
 f:858bfd84eac64e676a1de96a686d9f74:redshift/.md5sum
 f:82460965b1747fd865daa89064e554fc:redshift/Pkgfile
 f:1ada6090e8c22f8e1d1ae7c39db84cff:redshift/.footprint
@@ -33,6 +38,9 @@ f:e7934578a29a12877d58c2154c3380b9:flashrom/.footprint
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
 f:c4341f1f474f15d4d2e58c2d68674948:dosbox/Pkgfile
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
+f:fd7c2b8655c87a615fdaaf97c74a806a:icewm/.md5sum
+f:1b51ff1f85608053890aa5546c5274ba:icewm/Pkgfile
+f:af8995a67bb65e52311690857067b232:icewm/.footprint
 f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:2128b82f647bb838c185999ec7851246:transset-df/Pkgfile
 f:ba31c1b0a9b547c1658141b704349987:xscreensaver/Pkgfile

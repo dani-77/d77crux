@@ -1,0 +1,17 @@
+# Description: IceWM is a window manager for the X Window System. The goal of IceWM is speed, simplicity, and not getting in the user’s way.
+# URL: https://ice-wm.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: lzip xorg-libx11 xorg-libxext xorg-libxcomposite xorg-libxdamage xorg-libxfixes xorg-libxrender xorg-libxrandr xorg-libxinerama xorg-libxft fontconfig xorg-libice libsndfile alsa-lib glib-networking gdk-pixbuf imlib2 librsvg xorg-libxpm libpng libjpeg-turbo
+
+name=icewm
+version=3.4.7
+release=1
+source=(https://github.com/ice-wm/$name/releases/download/$version/$name-$version.tar.lz)
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/bin/
+-rwxr-xr-x	root/root	usr/local/bin/lzip
+drwxr-xr-x	root/root	usr/local/share/
+drwxr-xr-x	root/root	usr/local/share/info/
+-rw-r--r--	root/root	usr/local/share/info/lzip.info
+drwxr-xr-x	root/root	usr/local/share/man/
+drwxr-xr-x	root/root	usr/local/share/man/man1/
+-rw-r--r--	root/root	usr/local/share/man/man1/lzip.1.gz
