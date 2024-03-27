@@ -5,6 +5,7 @@ d:lzip
 d:redshift
 d:cmus
 d:rofi
+d:menumaker
 d:vifm
 d:flashrom
 d:dosbox
@@ -29,6 +30,9 @@ f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
 f:c6ddf818bc5c9cd4b6e9472724d8ae18:rofi/Pkgfile
 f:9ec0970e865996f8bb269604b8ebe8dd:rofi/.footprint
 f:eed5760f49b532bfce74925d322a815b:rofi/.signature
+f:112340846bc21c8467d97b80eb5ebbfd:menumaker/.md5sum
+f:25b930e835a6db4e997c1bc2a6a9fb16:menumaker/Pkgfile
+f:46b2ff9af0bc9b5554bf2b49f4b61381:menumaker/.footprint
 f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
 f:0da12a9e8e0892b9f8665343c75a8bbc:vifm/Pkgfile
 f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
