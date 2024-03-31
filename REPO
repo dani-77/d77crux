@@ -9,7 +9,6 @@ d:rofi
 d:menumaker
 d:vifm
 d:flashrom
-d:fluxbox
 d:dosbox
 d:icewm
 d:transset-df
@@ -43,7 +42,6 @@ f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
 f:5d2ae95aa80fd4a3da824a05e81cf753:flashrom/.md5sum
 f:2085ac6fd9b01762a29357f4c4d31922:flashrom/Pkgfile
 f:e7934578a29a12877d58c2154c3380b9:flashrom/.footprint
-f:89e1a82bd56de83ec49748acee3444fb:fluxbox/Pkgfile
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
 f:e8536c505c68c5e3f6ee8b9956dcd21e:dosbox/Pkgfile
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
