@@ -10,7 +10,7 @@ source=(https://sourceforge.net/projects/dosbox/files/dosbox/$version/$name-$ver
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }

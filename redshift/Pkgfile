@@ -10,7 +10,7 @@ source=(https://github.com/jonls/redshift/releases/download/v$version/$name-$ver
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }

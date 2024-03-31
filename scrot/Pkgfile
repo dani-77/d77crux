@@ -11,7 +11,7 @@ source=(https://github.com/resurrecting-open-source-projects/scrot/releases/down
 build() {
 	cd $name-$version
 	./autogen.sh
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }

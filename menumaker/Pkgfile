@@ -10,7 +10,7 @@ source=(https://unlimited.dl.sourceforge.net/project/$name/$name-$version.tar.gz
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }

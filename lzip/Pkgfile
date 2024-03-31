@@ -10,7 +10,7 @@ source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }

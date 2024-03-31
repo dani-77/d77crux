@@ -11,7 +11,7 @@ source=(https://github.com/vifm/vifm/releases/download/v$version/$name-$version.
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
