@@ -14,5 +14,4 @@ build() {
 	DESTDIR=build
 	meson compile -C build
 	DESTDIR=$PKG meson install -C build
-	rm -rf $PKG/usr/info
 }

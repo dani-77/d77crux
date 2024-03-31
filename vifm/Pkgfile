@@ -14,5 +14,4 @@ build() {
 	./configure
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/info
 }

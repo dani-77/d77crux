@@ -13,5 +13,4 @@ build() {
 	./autogen.sh
 	make
 	make DESTDIR=$PKG install
-	
 }
