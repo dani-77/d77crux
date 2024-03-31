@@ -1,7 +1,7 @@
 # Description: Light weight window manager for the X11 window system.
 # URL: https://joewing.net/projects/jwm
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: xorg-libxext xorg-libxmu xorg-libxinerama xorg-libxpm libjpeg libpng xorg-librsvg pango 
+# Depends on: xorg-libxmu xorg-libxinerama xorg-libxpm librsvg
 
 name=jwm
 version=2.4.3
