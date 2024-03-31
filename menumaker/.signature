@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWSvCWmLcsMJu//QH8eyAlgk9K3Mzr5o0d1l5VZn54TcA+R67SQ/TPfeYYo3a5mQsuEsHbsEhAb9bM/oDuoB8GSDnf4SDdoKYQQ=
+SHA256 (Pkgfile) = 1ee40f3c1c10d06ed680ef60ac8a50216ce9d0169f479890d9880305cc9e14d9
+SHA256 (.footprint) = 96d62b51b8a260fe6e38c4f0e281fb587c43f449c74cb3afd3e8d6c4b609dd39
+SHA256 (menumaker-0.99.14.tar.gz) = 11e95d0e76a3b850f57df81bc5560222bd60141c5751b6e9bd05c3cd5560d65a

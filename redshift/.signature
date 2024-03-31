@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWSvCWmLcsMJu4P+f/s8aEywN0XlphWSepldePkjbYCyOEe2ZE+4PF/vD6YZ3T/um1T7QFBvIE4tDRHfxyAwqh22yEW/d4VijQ8=
+SHA256 (Pkgfile) = e7fd1b346ee0ccb10d15aac2f1cf68a85101f4c190a12c05eeee9dcb96eac4b0
+SHA256 (.footprint) = 951fea2284627288f10f0305b3ceb1338dbfb5f70a60f8a88ef5927efc6c692c
+SHA256 (redshift-1.12.tar.gz) = 5111145773f1ade10c5967c531f8c1938b42171399bf48126db10162a04b4a48
