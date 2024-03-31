@@ -19,3 +19,5 @@ info
 .httpup-repgen-ignore
 httpup
 README.*
+\.pub
+\.sec
