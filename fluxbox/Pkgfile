@@ -1,7 +1,7 @@
 # Description: Window manager very light on resources and easy to handle.
 # URL: https://fluxbox.org
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: xorg-libx11 xorg-libxext xorg-libxcomposite xorg-libxdamage xorg-libxfixes xorg-libxrender xorg-libxrandr xorg-libxinerama xorg-libxft fontconfig xorg-libice libsndfile alsa-lib glib-networking gdk-pixbuf imlib2 librsvg xorg-libxpm libpng libjpeg-turbo
+# Depends on: xorg-libxcomposite xorg-libxdamage xorg-libxrandr xorg-libxinerama libsndfile glib-networking imlib2 librsvg xorg-libxpm
 
 name=fluxbox
 version=1.3.7
