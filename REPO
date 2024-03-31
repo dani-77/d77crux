@@ -3,6 +3,7 @@ d:camorama
 d:mpv
 d:lzip
 d:redshift
+d:calcurse
 d:cmus
 d:rofi
 d:menumaker
@@ -24,6 +25,7 @@ f:88c7ea9202afa5e01596f119bed27691:lzip/.footprint
 f:858bfd84eac64e676a1de96a686d9f74:redshift/.md5sum
 f:82460965b1747fd865daa89064e554fc:redshift/Pkgfile
 f:1ada6090e8c22f8e1d1ae7c39db84cff:redshift/.footprint
+f:c45022767627d303a3a53ca0bf68cb01:calcurse/Pkgfile
 f:64f0e6a32cda252c324197e5389b575c:cmus/.md5sum
 f:71106418c79b9b1dab52cfd584550b13:cmus/Pkgfile
 f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
