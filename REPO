@@ -7,6 +7,7 @@ d:redshift
 d:calcurse
 d:cmus
 d:rofi
+d:ttf-font-awesome
 d:menumaker
 d:vifm
 d:flashrom
@@ -15,6 +16,7 @@ d:dosbox
 d:icewm
 d:transset-df
 d:xscreensaver
+d:ttf-font-awesome-compat
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
 f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
@@ -46,6 +48,9 @@ f:2973afa9c29c13284e3cddf154a8d14a:cmus/.signature
 f:b3435c55ab49fc550874238c7a2e51be:rofi/Pkgfile
 f:9ec0970e865996f8bb269604b8ebe8dd:rofi/.footprint
 f:643c76f68b1738304873ebdf08d361ee:rofi/.signature
+f:6cfae8192ae7437430248e165bb39db7:ttf-font-awesome/.md5sum
+f:257511afc34e20d9729430c1b7aa2f79:ttf-font-awesome/Pkgfile
+f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
 f:112340846bc21c8467d97b80eb5ebbfd:menumaker/.md5sum
 f:2fdf6a81af4e9fd7184cdc687521ddcf:menumaker/Pkgfile
 f:46b2ff9af0bc9b5554bf2b49f4b61381:menumaker/.footprint
@@ -73,3 +78,6 @@ f:af7b0460923edf9c7fdbb3acd19d4c09:transset-df/Pkgfile
 f:138b1a09fd93d33f6f9b48aaeaa8023d:transset-df/.signature
 f:52b666f29e10d6877f73bec3ddd93bfc:xscreensaver/Pkgfile
 f:d3947aab76e6bb4bd5c98c6db989e4f3:xscreensaver/.signature
+f:ee476b904de6c6cbfcf5fae1115ea3dd:ttf-font-awesome-compat/.md5sum
+f:c8ea28ed24a2d613cce81655aacc011a:ttf-font-awesome-compat/Pkgfile
+f:d7be2ad91114ded18f7fb5af059398b5:ttf-font-awesome-compat/.footprint
