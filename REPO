@@ -12,7 +12,6 @@ d:menumaker
 d:vifm
 d:flashrom
 d:fluxbox
-d:khal
 d:dosbox
 d:icewm
 d:transset-df
@@ -67,9 +66,6 @@ f:e7934578a29a12877d58c2154c3380b9:flashrom/.footprint
 f:d8835830d0773190dc9a340cc347d39c:flashrom/.signature
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
 f:1bc680f4b941882375d5080ac947ddc4:fluxbox/.signature
-f:beb181c4d6e42ce3698ad28e0c8eca3a:khal/.md5sum
-f:6498418ae92ed9758c50e6b6b083e410:khal/Pkgfile
-f:9c903958d3810744f7e055d3c485a4b4:khal/.signature
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
 f:ce7775be7588b0367466411b803df0c9:dosbox/Pkgfile
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
