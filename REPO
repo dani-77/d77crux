@@ -1,6 +1,7 @@
 d:jwm
 d:cmatrix
 d:scrot
+d:btop
 d:camorama
 d:mpv
 d:lzip
@@ -29,6 +30,10 @@ f:5da7ba04d6b865161065b43500883c8f:cmatrix/.signature
 f:c361a6f81eecac7f3f249ff8de39a678:scrot/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:scrot/.signature.tmp
 f:375c9b3eebac4b129d4156203743cb52:scrot/.signature
+f:6c991f110ca80767619a87a1b65b6ce9:btop/.md5sum
+f:75e1415e0927cd3a87d0482a038b20db:btop/Pkgfile
+f:cc7709f3d087758b4abe1c5b3f171fbd:btop/.footprint
+f:2ddbe9e95f68997f72aa8935a344831f:btop/.signature
 f:d6bd8d4673d465dec01d693838ed67ba:camorama/.md5sum
 f:a21fd5837d36fd4621e44fd02fa49d5f:camorama/Pkgfile
 f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
