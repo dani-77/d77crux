@@ -24,9 +24,9 @@ f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
 f:b031d2d18314e46db94d1150bee3d8fe:jwm/.signature
 f:99bafde8a4a2857a5095c61735eb0b88:cmatrix/.md5sum
-f:f449339afd714dfc08e37286353571cf:cmatrix/Pkgfile
-f:939525a573941e169eea0028ce4b9dba:cmatrix/.footprint
-f:5da7ba04d6b865161065b43500883c8f:cmatrix/.signature
+f:5fbc828665e960b96d9230001ac2b53f:cmatrix/Pkgfile
+f:aeeadeaabd2037568c63274d58b6f67a:cmatrix/.footprint
+f:3d2b1b6cdde2cf8a2c67de8de7d621f3:cmatrix/.signature
 f:c361a6f81eecac7f3f249ff8de39a678:scrot/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:scrot/.signature.tmp
 f:375c9b3eebac4b129d4156203743cb52:scrot/.signature

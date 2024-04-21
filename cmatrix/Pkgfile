@@ -10,7 +10,7 @@ source=(https://github.com/abishekvashok/$name/archive/refs/tags/$version.tar.gz
 
 build() {
 	cd $name-$version
-	./configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
