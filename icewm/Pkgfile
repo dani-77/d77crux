@@ -1,4 +1,4 @@
-# Description: IceWM is a window manager for the X Window System. The goal of IceWM is speed, simplicity, and not getting in the user’s way.
+# Description: IceWM is a window manager for the X Window System. The goal of IceWM is speed, simplicity, and not getting in the user way.
 # URL: https://ice-wm.org/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
 # Depends on: lzip xorg-libxcomposite xorg-libxdamage xorg-libxrandr xorg-libxinerama libsndfile glib-networking imlib2 librsvg xorg-libxpm
