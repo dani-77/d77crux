@@ -18,6 +18,7 @@ d:dosbox
 d:icewm
 d:transset-df
 d:xscreensaver
+d:netsurf
 d:ttf-font-awesome-compat
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
 f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
@@ -94,6 +95,9 @@ f:138b1a09fd93d33f6f9b48aaeaa8023d:transset-df/.signature
 f:52b666f29e10d6877f73bec3ddd93bfc:xscreensaver/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xscreensaver/.footprint
 f:5bea19ecf2821ecfe2d89e3f1743f9f6:xscreensaver/.signature
+f:d6b12e2908aea9c3db9e50e2c435c155:netsurf/.md5sum
+f:bbc759b360742062c87d7fba650dd4cd:netsurf/Pkgfile
+f:f9b6270fe8e7e8e2ac623af71e8a3edc:netsurf/.signature
 f:ee476b904de6c6cbfcf5fae1115ea3dd:ttf-font-awesome-compat/.md5sum
 f:c8ea28ed24a2d613cce81655aacc011a:ttf-font-awesome-compat/Pkgfile
 f:d7be2ad91114ded18f7fb5af059398b5:ttf-font-awesome-compat/.footprint
