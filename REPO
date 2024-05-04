@@ -3,7 +3,6 @@ d:cmatrix
 d:scrot
 d:btop
 d:camorama
-d:mpv
 d:lzip
 d:redshift
 d:calcurse
@@ -39,10 +38,6 @@ f:d6bd8d4673d465dec01d693838ed67ba:camorama/.md5sum
 f:a21fd5837d36fd4621e44fd02fa49d5f:camorama/Pkgfile
 f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
 f:c42585a3b80b514a5aefdc4d7505a8d4:camorama/.signature
-f:c342375ddb075031635cab58ba94c31f:mpv/.md5sum
-f:cc9647861385335a3f08bb3959d78164:mpv/Pkgfile
-f:e4ae7a15540266e3e3c5e2d367ca0828:mpv/.footprint
-f:f09edae161e109543fc7ecbdbd43a0f3:mpv/.signature
 f:0150498868daa7fbc066b18c92525218:lzip/.md5sum
 f:4fb1a4bf337a645555e525432b563a56:lzip/Pkgfile
 f:88c7ea9202afa5e01596f119bed27691:lzip/.footprint
