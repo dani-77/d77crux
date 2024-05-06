@@ -7,7 +7,6 @@ d:lzip
 d:redshift
 d:calcurse
 d:cmus
-d:rofi
 d:ttf-font-awesome
 d:menumaker
 d:vifm
@@ -53,9 +52,6 @@ f:64f0e6a32cda252c324197e5389b575c:cmus/.md5sum
 f:fb0a8dc5caed45b09e5a2bae869df891:cmus/Pkgfile
 f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
 f:2973afa9c29c13284e3cddf154a8d14a:cmus/.signature
-f:b3435c55ab49fc550874238c7a2e51be:rofi/Pkgfile
-f:9ec0970e865996f8bb269604b8ebe8dd:rofi/.footprint
-f:643c76f68b1738304873ebdf08d361ee:rofi/.signature
 f:6cfae8192ae7437430248e165bb39db7:ttf-font-awesome/.md5sum
 f:257511afc34e20d9729430c1b7aa2f79:ttf-font-awesome/Pkgfile
 f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
