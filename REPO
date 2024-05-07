@@ -1,3 +1,4 @@
+d:figlet
 d:jwm
 d:cmatrix
 d:scrot
@@ -18,6 +19,10 @@ d:transset-df
 d:xscreensaver
 d:netsurf
 d:ttf-font-awesome-compat
+f:a160a89ee68562426899bb01e6369278:figlet/.md5sum
+f:2a44498aac7ad0c114dfee55f6c8eddb:figlet/Pkgfile
+f:95c7d789fabe89fc9a10e0fc42347b6c:figlet/.footprint
+f:aa87a2895d763729dc2e46574fe442fc:figlet/.signature
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
 f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
