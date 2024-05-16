@@ -2,6 +2,7 @@ d:jwm
 d:menumaker
 d:xscreensaver
 d:cmus
+d:obconf
 d:transset-df
 d:camorama
 d:figlet
@@ -35,6 +36,7 @@ f:2973afa9c29c13284e3cddf154a8d14a:cmus/.signature
 f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
 f:64f0e6a32cda252c324197e5389b575c:cmus/.md5sum
 f:fb0a8dc5caed45b09e5a2bae869df891:cmus/Pkgfile
+f:e257cac0cf653993652ff11752341778:obconf/Pkgfile
 f:138b1a09fd93d33f6f9b48aaeaa8023d:transset-df/.signature
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
@@ -81,6 +83,9 @@ f:4c5127667aaad3c1012712554a326196:icewm/.signature
 f:af8995a67bb65e52311690857067b232:icewm/.footprint
 f:fd7c2b8655c87a615fdaaf97c74a806a:icewm/.md5sum
 f:63eb50216058fcff5107e9a82a69a083:icewm/Pkgfile
+f:d67f04c4242dbfecefebabbcd4c99b66:sxhkd/sxhkd#0.6.2-1.pkg.tar.xz
+f:a4aadb7eb0dbad787733a09de262c5a3:sxhkd/.footprint
+f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:c8177a2ab9d3100462e5ff3f4b36b7a2:sxhkd/Pkgfile
 f:6281f65664501527e9c82b417959da72:scrot/.signature
 f:c878cb7f2d30185f5913c1912a07c386:scrot/.footprint
