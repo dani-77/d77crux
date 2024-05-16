@@ -17,6 +17,7 @@ d:calcurse
 d:icewm
 d:sxhkd
 d:scrot
+d:jgmenu
 d:vifm
 d:libglade2-0
 d:fluxbox
@@ -92,6 +93,7 @@ f:c8177a2ab9d3100462e5ff3f4b36b7a2:sxhkd/Pkgfile
 f:6281f65664501527e9c82b417959da72:scrot/.signature
 f:c878cb7f2d30185f5913c1912a07c386:scrot/.footprint
 f:c361a6f81eecac7f3f249ff8de39a678:scrot/Pkgfile
+f:47fe5d57ba5d2e326ede958b1f680632:jgmenu/Pkgfile
 f:ffa52d21374b306f41681a8b8d913bd9:vifm/.signature
 f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
 f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
