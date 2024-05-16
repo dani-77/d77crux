@@ -18,6 +18,7 @@ d:icewm
 d:sxhkd
 d:scrot
 d:vifm
+d:libglade2-0
 d:fluxbox
 d:redshift
 d:lzip
@@ -36,7 +37,9 @@ f:2973afa9c29c13284e3cddf154a8d14a:cmus/.signature
 f:39234793be284f35ebebfc796534a6a6:cmus/.footprint
 f:64f0e6a32cda252c324197e5389b575c:cmus/.md5sum
 f:fb0a8dc5caed45b09e5a2bae869df891:cmus/Pkgfile
-f:e257cac0cf653993652ff11752341778:obconf/Pkgfile
+f:a23ab68fe1842621965088efb2d2b907:obconf/.footprint
+f:ce828621b89253c5d65e72d89671696e:obconf/.md5sum
+f:fe8eeb3ef56105e44d02d6f7620a0489:obconf/Pkgfile
 f:138b1a09fd93d33f6f9b48aaeaa8023d:transset-df/.signature
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
@@ -93,6 +96,7 @@ f:ffa52d21374b306f41681a8b8d913bd9:vifm/.signature
 f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
 f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
 f:3fa8147e5816bd8bb35c74a472baff2a:vifm/Pkgfile
+f:1f1fa7a882342f02150b3349041bf775:libglade2-0/Pkgfile
 f:1bc680f4b941882375d5080ac947ddc4:fluxbox/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
