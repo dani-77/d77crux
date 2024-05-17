@@ -1,0 +1,15 @@
+# Description: Paper is an icon project for the FreeDesktop
+# URL: https://snwh.org/paper
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=paper-icon-theme
+version=v.1.5.0
+release=1
+source=(https://github.com/snwh/paper-icon-theme/archive/refs/tags/v.1.5.0.tar.gz)
+
+build() {
+  cd $name-$version
+  meson setup "build" --prefix=/usr
+  DESTDIR=$PKG ninja -C "build" install
+}

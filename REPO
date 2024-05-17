@@ -10,6 +10,7 @@ d:btop
 d:ttf-font-awesome-compat
 d:dosbox
 d:netsurf
+d:paper-icon-theme
 d:flashrom
 d:cmatrix
 d:ttf-font-awesome
@@ -20,6 +21,7 @@ d:scrot
 d:jgmenu
 d:vifm
 d:libglade2-0
+d:paper-gtk-theme
 d:fluxbox
 d:redshift
 d:lzip
@@ -68,6 +70,9 @@ f:ce7775be7588b0367466411b803df0c9:dosbox/Pkgfile
 f:f9b6270fe8e7e8e2ac623af71e8a3edc:netsurf/.signature
 f:d6b12e2908aea9c3db9e50e2c435c155:netsurf/.md5sum
 f:bbc759b360742062c87d7fba650dd4cd:netsurf/Pkgfile
+f:32ff756685654eea4bf285333918dcbe:paper-icon-theme/.footprint
+f:5cf5c244f2f6af16c82fa95bbcd2f04b:paper-icon-theme/.md5sum
+f:38d1835853145f7206e5e9c845c605d4:paper-icon-theme/Pkgfile
 f:6428e423cdee5456cab0e0a73da1d0a0:flashrom/.signature
 f:e7934578a29a12877d58c2154c3380b9:flashrom/.footprint
 f:5d2ae95aa80fd4a3da824a05e81cf753:flashrom/.md5sum
@@ -99,6 +104,9 @@ f:01fca4c15b78cbb0fd386f41ad84bad3:vifm/.footprint
 f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
 f:3fa8147e5816bd8bb35c74a472baff2a:vifm/Pkgfile
 f:1f1fa7a882342f02150b3349041bf775:libglade2-0/Pkgfile
+f:76056a4e4c085c449eb34d0401050593:paper-gtk-theme/.footprint
+f:7eb21a417ee75c0ecca3468daa4287ef:paper-gtk-theme/.md5sum
+f:0a37e37bd0f775ec228f6706ad44fd6b:paper-gtk-theme/Pkgfile
 f:1bc680f4b941882375d5080ac947ddc4:fluxbox/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
