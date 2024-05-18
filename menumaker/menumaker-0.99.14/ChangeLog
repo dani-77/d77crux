@@ -1,0 +1,16 @@
+David <doark@mail.com>
+    Fixed Bugs I introduced (they were duplicate statements).
+    Worked around unicode decoding error in .desktop files.
+
+David <doark@mail.com>
+    Made MenuMaker/__init__.py line 61 FIXME notice. Code is now faster for
+    large depths and slightly slower for level == 1. Timeit reports 0.48091 for
+    level 1 as opposed to 0.42501 for the previous code and 0.49308 for my code
+    at level 5 as opposed to 0.95356 for the original code.
+    Prophet/Legacy/Shell.py on line 154 FIXME notice. Added an entry for rxvt,
+    it's a totally different beast from xvt.
+    Added a separate shell entry for rxvt in __init__.py since the previously
+    metioned change would not make sense without it.
+    Increased speed again by changing the positions of the import statements in
+    share/menumaker/MenuMaker/CLI.py about line 218. Now anything that is not
+    used is not imported.

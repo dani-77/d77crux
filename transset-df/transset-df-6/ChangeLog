@@ -1,0 +1,58 @@
+2007-09-21 Daniel Forchheimer <n04df@student.lth.se>
+	Release v6
+	* transSet.c
+	Select flag: --actual
+	Set transparency to the actual focused X11 window
+	Thanks to Roman Divacky for the patch
+
+2006-01-10 Daniel Forchheimer <n04df@efd.lth.se>
+	Release v5
+	* transSet.c:
+	Applied patch so that transset-df compiles with gcc 2.95
+	Thanks to Andreas Kohn for the patch
+
+2005-03-13 Daniel Forchheimer <n04df@efd.lth.se>
+	Release v4
+	Bugfix: select by name or id didn't work in many 
+	        windowmanagers like xfce and wmaker.
+	* transSet.c:
+	Function get_top_window() fixes the bug
+	Options verbose, no-regex
+	* dsimple.c:
+	Window_With_Name_Regex() now takes same arguments as Window_With_Name()
+	* Makefile:
+	Added simple install instructions
+
+2005-02-08 Daniel Forchheimer <n04df@efd.lth.se>
+	Select name now takes a regular expression
+	Fixed all warnings
+	* dsimple.c:
+	Window_With_Name_Regex()
+	* transSet.c:
+	use the new regex function
+	print the name (if possible)
+	* dsimple.h:
+	Added the new functions to avoid warnings
+
+2005-01-14  Daniel Forchheimer <n04df@efd.lth.se>
+	Release v3
+	* transSet.c:
+	Select by name (-n, --name)
+	Select by id	(-i, --id)
+
+2005-01-14  Daniel Forchheimer <n04df@efd.lth.se>
+	Release v2
+	* transSet.c:
+	Options increase/decrease
+	Options maximum/minimum
+
+2005-01-13  Daniel Forchheimer  <n04df@efd.lth.se>
+	Release v1
+	* transSet.c: (main):
+	Forked transset-df of transset
+	Added flags
+	Added select without clicking
+	Wrote usage
+
+	* dsimple.c:
+	Added function to select without clicking

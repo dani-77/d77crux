@@ -1,0 +1,23 @@
+AC_INIT(MenuMaker, 0.99.14)
+
+AM_INIT_AUTOMAKE
+
+#AZ_PYTHON_DEFAULT
+
+#AZ_PYTHON_WITH
+
+#if test -z "$PYTHON"; then
+#    AZ_PYTHON_PATH
+#fi
+
+#AZ_PYTHON_VERSION_ENSURE([2.7])
+
+#AZ_PYTHON_RUN
+
+AX_PYTHON
+
+AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([doc/Makefile])
+AC_CONFIG_FILES([Config.py])
+
+AC_OUTPUT

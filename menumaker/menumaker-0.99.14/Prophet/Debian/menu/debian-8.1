@@ -1,0 +1,3689 @@
+?package(virtualbox-qt):needs="X11" section="Applications/Emulators"\
+  title="VirtualBox" longtitle="PC virtualization solution"\
+  description="Run several virtual systems on a single host computer"\
+  command="/usr/bin/virtualbox" icon="/usr/share/pixmaps/virtualbox.xpm"
+?package(aisleriot):needs="X11" section="Games/Card" \
+	title="Gnome Solitaire Games" command="/usr/games/sol" \
+	icon="/usr/share/pixmaps/aisleriot.xpm"
+?package(alsamixergui):needs="X11" section="Apps/Sound"\
+  title="Alsamixergui" command="/usr/bin/alsamixergui" \
+  icon="/usr/share/pixmaps/alsamixergui.xpm"
+?package(aptitude):needs="text" section="Applications/System/Package Management" \
+  title="Aptitude Package Manager (text)" command="/usr/bin/aptitude-curses" \
+  hints="apt"
+?package(audacity):needs="X11" section="Applications/Sound" \
+  title="Audacity" command="/usr/bin/audacity" \
+  icon="/usr/share/pixmaps/audacity32.xpm" \
+  icon32x32="/usr/share/pixmaps/audacity32.xpm" \
+  icon16x16="/usr/share/pixmaps/audacity16.xpm"
+?package(baobab):needs="X11" \
+  section="Applications/File Management" \
+  title="Baobab" command="/usr/bin/baobab" \
+  icon="/usr/share/pixmaps/baobab.xpm" hints="Gnome"
+?package(bash):needs="text" section="Applications/Shells" title="Bash" command="/bin/bash --login"
+?package(bash):needs="text" section="Applications/Shells" title="Sh" command="/bin/sh --login"
+?package(bc):needs="text" section="Applications/Science/Mathematics" title="Bc" hints="Calculators" command="/usr/bin/bc"
+?package(dc):needs="text" title="Dc" section="Applications/Science/Mathematics" hints="Calculators" command="/usr/bin/dc"
+?package(brasero): needs="X11" section="Applications/File Management" title="Brasero" longtitle="Brasero - CD/DVD burning application for GNOME" command="/usr/bin/brasero"
+?package(bsh):needs="text" section="Applications/Programming" \
+  title="BeanShell (text)" command="/usr/bin/bsh"
+?package(bsh):needs="X11" section="Applications/Programming" \
+  title="BeanShell (windowed)" command="/usr/bin/xbsh"
+?package(chromium):needs="x11" section="Applications/Network/Web Browsing" \
+        title="Chromium" \
+        longtitle="Chromium Web Browser" \
+        command="chromium" \
+        icon="/usr/share/pixmaps/chromium.xpm"
+?package(cinnamon-control-center):needs="X11" section="Applications/System/Administration" \
+  hints="Gnome" title="Cinnamon Control Center" \
+  icon="/usr/share/pixmaps/cinnamon-control-center.xpm" \
+  command="/usr/bin/cinnamon-control-center"
+?package(clipit):needs="X11" section="Applications/Text"\
+  title="ClipIt" command="/usr/bin/clipit"
+?package(csh):\
+ needs="text"\
+ section="Applications/Shells"\
+ longtitle="C shell"\
+ title="Csh"\
+ command="/bin/bsd-csh -l"
+?package(dash): \
+  title="Dash"\
+  needs="text"\
+  section="Applications/Shells"\
+  command="/bin/dash -i"
+?package(debian-reference-common):needs="x11" \
+ section="Help" \
+ title="Debian Reference" \
+ command="/usr/bin/debian-reference"
+?package(debian-reference-common):needs="text" \
+ section="Help" \
+ title="Debian Reference" \
+ command="/usr/bin/debian-reference"
+?package(deborphan):\
+	needs="text" \
+	section="Applications/System/Administration" \
+	title="Orphaner (libs)" \
+	hints="apt,Administration" \
+	longtitle="Orphaned library finder (libraries only)" \
+	command="su-to-root -c /usr/sbin/orphaner"
+?package(deborphan):\
+	needs="text" \
+	section="Applications/System/Administration" \
+	title="Orphaner (all)" \
+	hints="apt,Administration" \
+	longtitle="Orphaned library finder (all packages)" \
+	command="su-to-root -c '/usr/sbin/orphaner -a'"
+?package(deborphan):\
+	needs="text" \
+	section="Applications/System/Administration" \
+	title="Orphaner - editkeep" \
+	hints="apt,Administration" \
+	longtitle="Edit list of packages deborphan/orphaner should never list" \
+	command="su-to-root -c '/usr/sbin/editkeep'"
+?package(emacs24):\
+  needs="X11"\
+  section="Applications/Editors"\
+  title="Emacs 24 (X11)"\
+  command="/usr/bin/emacs24"\
+  icon16x16="/usr/share/emacs/24.4/etc/images/icons/hicolor/16x16/apps/emacs.xpm"\
+  icon32x32="/usr/share/emacs/24.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm"\
+  hints="Text"
+?package(emacs24):\
+  needs="text"\
+  section="Applications/Editors"\
+  title="Emacs 24 (text)"\
+  command="/usr/bin/emacs24 -nw"\
+  icon16x16="/usr/share/emacs/24.4/etc/images/icons/hicolor/16x16/apps/emacs.xpm"\
+  icon32x32="/usr/share/emacs/24.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm"\
+  hints="Text"
+?package(eog):needs="X11" section="Applications/Viewers" \
+  title="Eye of GNOME" hints="Images" command="/usr/bin/eog" \
+  longtitle="View many different types of images" \
+  icon="/usr/share/pixmaps/gnome-eog.xpm"
+?package(epiphany-browser):needs="x11" \
+	section="Applications/Network/Web Browsing" \
+	title="Epiphany web browser" \
+	longtitle="Epiphany web browser" \
+	command="/usr/bin/epiphany" \
+	hints="Web browsers"
+?package(evince):needs="X11" section="Applications/Viewers"\
+ title="Evince" command="/usr/bin/evince"\
+ hints="Documents,GNOME" icon="/usr/share/pixmaps/evince.xpm"
+?package(evolution):needs="X11" section="Applications/Network/Communication" \
+  title="Evolution" command="/usr/bin/evolution" \
+  hints="Gnome,Mail,Calendar" icon="/usr/share/pixmaps/evolution.xpm"
+?package(fetchmailconf):needs="x11"\
+	section="Applications/System/Administration"\
+	hints="Mail,Admin"\
+	title="fetchmailconf"\
+	longtitle="Configure fetchmail"\
+	icon="/usr/share/pixmaps/fetchmailconf.xpm"\
+	command="/usr/bin/fetchmailconf"
+?package(file-roller):needs="X11" \
+	section="Applications/File Management" \
+	hints="Gnome, file" \
+	command="/usr/bin/file-roller" \
+	title="File-Roller" \
+	longtitle="File-Roller: GNOME archiver" \
+	icon="/usr/share/pixmaps/file-roller.xpm"
+?package(fortune-mod):\
+  needs="x11" \
+  section="Applications/Text" \
+  title="Fortune" \
+  command="sh -c 'while /usr/games/fortune | col -x | xmessage -center -buttons OK:1,Another:0 -default OK -file - ; do :; done'"
+?package(fortune-mod): \
+  needs="text" \
+  section="Applications/Text" \
+  title="Fortune" \
+  command="sh -c '/usr/games/fortune; echo; echo Press return to continue; read returnkey'"
+?package(galculator): \
+needs="X11" \
+section="Applications/Science/Mathematics" \
+title="galculator" \
+command="/usr/bin/galculator" \
+icon="/usr/share/pixmaps/galculator.xpm"
+?package(gdb):needs="text" title="GDB" section="Applications/Programming"\
+	hints="Debuggers" command="/usr/bin/gdb"
+?package(gedit):\
+    needs="x11"\
+    section="Applications/Editors"\
+    title="Gedit"\
+    longtitle="Light-weight GNOME text editor"\
+    icon="/usr/share/pixmaps/gedit-icon.xpm"\
+    command="/usr/bin/gedit"
+?package(gimp):command="/usr/bin/gimp" icon="/usr/share/pixmaps/gimp.xpm" needs="X11" \
+	section="Applications/Graphics" title="The GIMP" hints="Bitmap" \
+	hotkey="Gimp"
+?package(gksu):\
+needs="x11"\
+section="Applications/Terminal Emulators"\
+title="X-Terminal as root (GKsu)"\
+longtitle="Runs an X terminal application. Uses GKsu to ask the password."\
+icon="/usr/share/pixmaps/gksu-debian.xpm"\
+command="/usr/bin/gksu -u root /usr/bin/x-terminal-emulator"
+?package(gnome-control-center):needs="X11" section="Applications/System/Administration" \
+  hints="Gnome" title="Gnome Control Center" \
+  icon="/usr/share/pixmaps/gnome-control-center.xpm" \
+  command="/usr/bin/gnome-control-center"
+?package(gnome-dictionary):needs="X11" \
+  section="Applications/Text" \
+  title="GNOME Dictionary" command="/usr/bin/gnome-dictionary" \
+  icon="/usr/share/pixmaps/gdict.xpm" hints="Gnome"
+?package(gnome-mplayer):\
+	needs="X11" \
+	section="Applications/Video" \
+	title="GNOME MPlayer" \
+	command="gnome-mplayer" \
+	icon="/usr/share/pixmaps/gnome-mplayer.xpm"
+?package(gnome-nettool):				\
+	needs="X11"					\
+	section="Applications/System/Administration"	\
+	title="GNOME Network Tool"			\
+	command="/usr/bin/gnome-nettool"		\
+	hints="Network"					\
+	icon="/usr/share/pixmaps/gnome-nettool.xpm"	\
+	longtitle="Network Information Tools"		\
+	description="Front-end to various networking command-line tools"
+?package(gnome-system-monitor):needs="X11" section="Applications/System/Monitoring" \
+  title="GNOME system monitor" command="/usr/bin/gnome-system-monitor"
+?package(gnome-system-tools):needs="X11" section="Applications/System/Administration"\
+  hints="Time"\
+  title="Time Admin" command="/usr/bin/time-admin"\
+  icon="/usr/share/gnome-system-tools/pixmaps/time.xpm"
+?package(gnome-system-tools):needs="X11" section="Applications/System/Administration"\
+  hints="Network"\
+  title="Shares Admin" command="/usr/bin/shares-admin"\
+  icon="/usr/share/gnome-system-tools/pixmaps/shares.xpm"
+?package(gnome-system-tools):needs="X11" section="Applications/System/Administration"\
+  hints="Users"\
+  title="User accounts Admin" command="/usr/bin/users-admin"\
+  icon="/usr/share/gnome-system-tools/pixmaps/users.xpm"
+?package(gnome-system-tools):needs="X11" section="Applications/System/Administration"\
+  hints="RunLevel"\
+  title="Services Admin" command="/usr/bin/services-admin"\
+  icon="/usr/share/gnome-system-tools/pixmaps/services.xpm"
+?package(gnome-system-tools):needs="X11" section="Applications/System/Administration"\
+  hints="Network"\
+  title="Network Admin" command="/usr/bin/network-admin"\
+  icon="/usr/share/gnome-system-tools/pixmaps/network.xpm"
+?package(gnome-terminal):needs="X11"\
+  section="Applications/Terminal Emulators"\
+  hints="Gnome"\
+  title="Gnome Terminal"\
+  icon="/usr/share/pixmaps/gnome-terminal.xpm"\
+  command="/usr/bin/gnome-terminal"
+?package(gnucash):needs="x11" section="Applications/Office"      \
+        title="GnuCash"                                          \
+        longtitle="GnuCash personal finance tracking program"    \
+        command="gnucash"                                        \
+        icon="/usr/share/pixmaps/gnucash-icon-32x32.xpm"
+?package(gnuchess):needs="text" section="Games/Board" \
+	hints="Chess" title="GnuChess" command="/usr/games/gnuchess"
+?package(gnuplot-nox):\
+  needs="text"\
+  section="Applications/Science/Mathematics"\
+  title="Gnuplot"\
+  longtitle="Gnuplot - interactive plotting program"\
+  hints="Graphs"\
+  description="A command-line driven interactive plotting program.\
+   Package for making 2D and 3D graphs from data and functions.\
+   Supports lots of output formats, including drivers for many\
+   printers , (La)TeX, (x)fig, X11, PostScript, and so on."\
+  command="/usr/bin/gnuplot4-nox"
+?package(gnuplot-qt):\
+  needs="text"\
+  section="Applications/Science/Mathematics"\
+  title="Gnuplot"\
+  longtitle="Gnuplot - interactive plotting program"\
+  hints="Graphs"\
+  description="A command-line driven interactive plotting program.\
+   Package for making 2D and 3D graphs from data and functions.\
+   Supports lots of output formats, including drivers for many\
+   printers , (La)TeX, (x)fig, X11, PostScript, and so on."\
+  command="/usr/bin/gnuplot4-qt"
+?package(goldendict):needs="X11" section="Applications/Office"\
+  title="GoldenDict" command="/usr/bin/goldendict"\
+  hints="a feature-rich dictionary lookup program" \
+  icon="/usr/share/pixmaps/goldendict.png"
+?package(goobox):needs="X11" section="Applications/Sound"\
+  title="Goobox" longtitle="Goobox CD Player"\
+  command="/usr/bin/goobox" icon="/usr/share/pixmaps/goobox.xpm"
+?package(gparted):\
+	needs="X11"\
+	section="Applications/System/Administration"\
+	title="GNOME partition editor"\
+	command="su-to-root -X -c /usr/sbin/gparted"\
+	icon="/usr/share/pixmaps/gparted.xpm"
+?package(graphviz):needs="X11" section="Applications/Graphics" \
+  title="dotty" command="/usr/bin/dotty"
+?package(graphviz):needs="X11" section="Applications/Graphics" \
+  title="lefty" command="/usr/bin/lefty"
+?package(gucharmap):needs="X11" section="Applications/Text"\
+  title="Character map" command="/usr/bin/gucharmap"
+?package(guile-2.0): \
+  needs="text" \
+  section="Applications/Programming" \
+  title="Guile 2.0"\
+  command="/usr/bin/guile-2.0"
+?package(gv):needs="x11" section="Applications/Viewers" title="GV" \
+	icon="/usr/share/pixmaps/mini-gv.xpm" \
+	command="/usr/bin/gv" hints="PostScript,Documents"
+?package(hitori):needs="X11" section="Games/Puzzles" \
+  title="Hitori" command="/usr/games/hitori" \
+  icon="/usr/share/pixmaps/hitori.xpm"
+?package(hspell-gui):needs="X11" section="Applications/Text" hints="Hebrew"\
+  title="hspell-gui" command="/usr/bin/hspell-gui"
+?package(hspell-gui):needs="X11" section="Applications/Text" hints="Hebrew"\
+  title="hspell-gui (Hebrew UI)" command="/usr/bin/hspell-gui-heb"
+?package(htop):needs="text" section="Applications/System/Monitoring"\
+  title="htop" command="/usr/bin/htop"
+?package(icedove):needs="x11" section="Applications/Network/Communication" \
+	title="Icedove Mail" \
+        icon="/usr/share/pixmaps/icedove.xpm" \
+        command="icedove" hints="Mail"
+?package(iceweasel):needs="x11" section="Applications/Network/Web Browsing" \
+        title="Iceweasel" \
+        longtitle="Iceweasel Web Browser" \
+        icon="/usr/share/pixmaps/iceweasel.xpm" \
+        command="iceweasel"
+?package(imagemagick-6):needs="X11" section="Applications/Graphics" \
+  title="ImageMagick" command="/usr/bin/display-im6 logo:" hints="Images" \
+  icon="/usr/share/pixmaps/display-im6.q16.xpm"
+?package(im-config):needs="text" section="Applications/System/Language Environment"\
+  title="Input Method Configuration" command="/usr/bin/im-config"
+?package(inkscape): needs="X11" section="Applications/Graphics"\
+  hints="Vector"\
+  title="Inkscape" command="/usr/bin/inkscape"\
+  icon="/usr/share/pixmaps/inkscape.xpm"\
+  longtitle="Vector based drawing program"
+?package(iptraf):needs="text" \
+	section="Applications/Network/Monitoring" \
+	title="IPTraf" hints="Monitoring" \
+	command="/usr/bin/su-to-root -c /usr/sbin/iptraf"
+?package(joe):\
+ needs="text"\
+ section="Applications/Editors"\
+ title="Joe"\
+ command="/usr/bin/joe"
+?package(k3b):\
+	needs="X11"\
+	section="Applications/File Management"\
+	title="K3b"\
+	command="/usr/bin/k3b"\
+	icon="/usr/share/pixmaps/k3b.xpm"
+?package(khmerconverter,python-tk,tix):needs="X11" section="Applications/Text" \
+title="Khmer Converter" command="/usr/bin/khmerconverter" \
+longtitle="Convert Khmer between Unicode and legacy Khmer encodings." \
+icon="/usr/share/pixmaps/khmerconverter.xpm"
+?package(libreoffice-base):needs="X11" section="Applications/Data Management" \
+  title="LibreOffice Base" command="/usr/bin/libreoffice --base"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-base.xpm"
+?package(libreoffice-calc):needs="X11" section="Applications/Office"\
+  title="LibreOffice Calc" command="/usr/bin/libreoffice --calc"\
+  hints="Spreadsheets"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm"
+?package(libreoffice-draw):needs="X11" section="Applications/Graphics"\
+  title="LibreOffice Draw" command="/usr/bin/libreoffice --draw"\
+  hints="Drawing"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm"
+?package(libreoffice-impress):needs="X11" section="Applications/Office"\
+  title="LibreOffice Impress" command="/usr/bin/libreoffice --impress"\
+  hints="Presentation"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm"
+?package(libreoffice-math):needs="X11" section="Applications/Science/Mathematics"\
+  title="LibreOffice Math" command="/usr/bin/libreoffice --math"\
+  hints="Equation,Editor,Formula"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-math.xpm"
+?package(libreoffice-writer):needs="X11" section="Applications/Office"\
+  title="LibreOffice Writer" command="/usr/bin/libreoffice --writer"\
+  hints="Word Processors"\
+  kderemove="y"\
+  icon="/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm"
+?package(leafpad):needs="X11" section="Applications/Editors"\
+  title="LeafPad" command="/usr/bin/leafpad"\
+  longtitle="GTK+ based simple text editor"\
+  icon="/usr/share/pixmaps/leafpad.xpm"
+?package(lilo):needs="text" section="Applications/System/Administration" \
+   title="Lilo-config" \
+   longtitle="Configure LInux LOader"\
+   description="Configure the LInux boot LOader that will be activated\
+ next time you boot."\
+   command="su-to-root -p root -c /usr/sbin/liloconfig" \
+   icon="/usr/share/pixmaps/lilo-term.xpm"
+?package(lxappearance):needs="X11" section="Applications/System/Administration"\
+  title="LXAppearance" longtitle="LXDE GTK+ theme switcher"\
+  description="LXAppearance is a GUI application for the Lightweight X11 Desktop Environment (LXDE). It is a new feature-rich GTK+ theme switcher able to change GTK+ themes, icon themes, and fonts used by applications. GNOME/KDE/Xfce user may use build-in theme, this works for GTK+ based lightweight desktop Environment."\
+  command="/usr/bin/lxappearance"
+?package(lxrandr):needs="X11" section="Applications/System/Hardware"\
+  hints="Monitors" title="LXRandR" longtitle="LXDE monitor configuration tool"\
+  description="LXRandR is a GUI application for the Lightweight X11 Desktop Environment (LXDE). It's a very basic monitor config tool utilizing the X extension called RandR to change the screen resolution on the fly."\
+  command="/usr/bin/lxrandr"
+?package(lxtask):needs="X11" section="Applications/System/Monitoring"\
+  title="LXTask" longtitle="LXDE task manager"\
+  description="LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE). It allows monitoring and controlling of running processes."\
+  command="/usr/bin/lxtask"
+?package(lxterminal):needs="X11" section="Applications/Terminal Emulators"\
+  title="LXTerminal" longtitle="LXDE terminal emulator"\
+  description="LXTerminal is a VTE-based terminal emulator for the Lightweight X11 Desktop Environment (LXDE). It supports multiple tabs and has only minimal dependencies thus being completely desktop-independent. In order to reduce memory usage and increase the performance, all instances of the terminal are sharing a single process."\
+  command="/usr/bin/lxterminal" icon="/usr/share/pixmaps/lxterminal.xpm"
+?package(lynx-cur):needs="text" section="Applications/Network/Web Browsing"\
+  title="Lynx-cur" command="lynx"
+?package(mc): \
+   needs="text" \
+   section="Applications/File Management" \
+   title="mc" \
+   longtitle="Midnight Commander" \
+   hints="File managers" \
+   command="/usr/bin/mc" \
+   icon="/usr/share/pixmaps/mc.xpm"
+In this directory, each individual package should install its
+menu files. Although changing them in this directory to change
+the menus on your local system may work, the sysadmin (you?)
+is best advised to put the local menufiles in /etc/menu, as, 
+otherwise your changes are deleted when you upgrade the corresponding
+packages. Users may override the system-wide defaults by putting
+their menuentry files in ~/.menu.
+For the package maintainer that wants to include menu files in his
+package:
+The files should have the name of the package that's installing it,
+and may contain as many lines (menu entries) as is necessary.
+For examples, please look in /usr/share/menu/default
+Also, in your postinst you should check for the availability of
+the update-menus command, and if available, execute it (no
+parameters needed).
+For more info, please read /usr/share/doc/menu/html
+?package(mlterm):needs="X11" section="Applications/Terminal Emulators"\
+  title="Multilingual Terminal (normal)" command="/usr/bin/mlterm"\
+  longtitle="Locale-sensible terminal with various encodings support"\
+  icon="/usr/share/pixmaps/mlterm-icon-24colors-1.xpm"
+?package(mousepad):\
+  needs="X11"\
+  section="Applications/Editors"\
+  title="MousePad"\
+  command="/usr/bin/mousepad"\
+  icon="/usr/share/pixmaps/mousepad.xpm"
+?package(mtr):needs="x11" section="Applications/Network/Monitoring" \
+	title="Mtr" command="mtr"
+?package(mutt): title="Mutt" \
+	section="Applications/Network/Communication" hints="Mail" \
+	needs="text" \
+	icon="/usr/share/pixmaps/mutt.xpm" \
+	command="/usr/bin/mutt"
+?package(nano):needs="text" section="Applications/Editors" hints="Text"	\
+  title="Nano" command="/bin/nano"				\
+  icon="/usr/share/nano/nano-menu.xpm"
+?package(nautilus):needs="X11" section="Applications/File Management" \
+  title="Nautilus" command="/usr/bin/nautilus" icon="/usr/share/pixmaps/nautilus.xpm"
+?package(nemo):needs="X11" section="Applications/File Management" \
+  title="Nemo" command="/usr/bin/nemo" icon="/usr/share/pixmaps/nemo.xpm"
+?package(telnet): \
+	needs="text" \
+	section="Applications/Network/Communication" \
+	title="Telnet" \
+	command="/usr/bin/telnet" \
+	hints="Terminal"
+?package(obconf):needs="x11" section="Applications/System/Administration"\
+  title="Openbox Configuration Manager"\
+  command="/usr/bin/obconf" icon="/usr/share/pixmaps/obconf.xpm"
+?package(openbox):needs="wm" section="Window Managers" \
+  title="Openbox" command="/usr/bin/openbox" \
+  icon="/usr/share/pixmaps/openbox.xpm"
+?package(pcmanfm):needs="X11" section="Applications/File Management"\
+  title="PCManFM" longtitle="Real Tabbed File Manager"\
+  description="PCMan File Manager is an extremely fast and lightweight GTK+ based file manager."\
+  command="/usr/bin/pcmanfm" hints="File manager"
+?package(pdmenu):needs="text" section="Applications/Shells" \
+	title="Pdmenu" command="pdmenu"
+?package(pidgin):needs="X11" section="Applications/Network/Communication" \
+  title="Pidgin" command="/usr/bin/pidgin" \
+  longtitle="Multi-protocol Instant Messaging Client" \
+  icon="/usr/share/pixmaps/pidgin-menu.xpm"
+?package(pppoeconf):needs="text" section="Applications/System/Administration" hints="Network" title="DSL/PPPoE configuration tool" command="/usr/sbin/pppoeconf" icon="/usr/share/pixmaps/pppoeconf.xpm"
+?package(procps):needs="text" section="Applications/System/Monitoring" \
+        title="Top" \
+		description="Display Linux tasks" \
+		command="/usr/bin/top"
+?package(psmisc):needs="text" section="Applications/System/Monitoring" \
+  title="Pstree" \
+  description="Displays a tree of processes" \
+  command="/usr/bin/pstree.x11" \
+  icon="/usr/share/pixmaps/pstree16.xpm" 
+?package(psmisc):needs="vc" section="Applications/System/Monitoring" \
+  title="Pstree" \
+  description="Displays a tree of processes" \
+  command="/usr/bin/pstree"
+?package(python2.7):needs="text" section="Applications/Programming"\
+	title="Python (v2.7)"\
+	icon="/usr/share/pixmaps/python2.7.xpm"\
+	command="/usr/bin/python2.7"
+?package(python3.4):needs="text" section="Applications/Programming"\
+	title="Python (v3.4)"\
+	icon="/usr/share/pixmaps/python3.4.xpm"\
+	command="/usr/bin/python3.4"
+?package(qt4-qtconfig):\
+	needs="x11"\
+	section="Applications/System/Administration"\
+	title="QtConfig"\
+	longtitle="Qt Configuration Utility"\
+	hints="Qt4 config tool"\
+	command="/usr/lib/*/qt4/bin/qtconfig"
+?package(exfalso):needs="X11" \
+ section="Applications/Sound" \
+ title="Ex Falso" \
+ command="/usr/bin/exfalso"
+?package(quodlibet):needs="X11" \
+ section="Applications/Sound" \
+ title="Quod Libet" \
+ command="/usr/bin/quodlibet"
+?package(reportbug):needs="text" section="Applications/System/Administration" \
+  title="Reportbug" command="/usr/bin/reportbug --exit-prompt" \
+  hints="Bug reporting"
+?package(reportbug):needs="x11" section="Applications/System/Administration" \
+  title="Reportbug (GTK+)" command="/usr/bin/reportbug --exit-prompt --ui gtk2" \
+  hints="Bug reporting"
+?package(rhythmbox):needs="X11" \
+ section="Applications/Sound" \
+ title="Rhythmbox" \
+ command="/usr/bin/rhythmbox" \
+ icon="/usr/share/pixmaps/rhythmbox-small.xpm"
+?package(sane):command="/usr/bin/xscanimage" needs="X11" \
+	       section="Applications/Graphics" title="xscanimage" \
+               icon="/usr/share/sane/xscanimage-icon-32x32-2.xpm" \
+		description="xscanimage provides a graphical \
+		user interface to control an image acquisition device \
+		such as a flatbed scanner or a camera."
+?package(sane):command="/usr/bin/xcam" needs="X11" \
+	       section="Applications/Graphics" title="xcam" \
+               icon="/usr/share/sane/xscanimage-icon-32x32-2.xpm" \
+		description="xcam provides a graphical \
+		user interface to control an image acquisition device \
+		such as a flatbed scanner or a camera."
+?package(seahorse):needs="X11" \
+  section="Applications/System/Security" \
+  hints="Gnome" \
+  title="Seahorse" \
+  longtitle="GNOME frontend for managing GnuPG and SSH keys" \
+  command="/usr/bin/seahorse" \
+  icon="/usr/share/pixmaps/seahorse.xpm"
+?package(shotwell):needs="X11" section="Applications/Viewers"\
+  title="Shotwell" command="/usr/bin/shotwell"
+?package(sound-juicer):needs="X11" section="Applications/Sound" \
+  title="Sound Juicer" command="/usr/bin/sound-juicer" \
+  icon="/usr/share/pixmaps/sound-juicer.xpm"
+?package(synaptic):needs="X11" \
+  section="Applications/System/Package Management" \
+  title="Synaptic Package Manager" \
+  icon="/usr/share/synaptic/pixmaps/synaptic_32x32.xpm"\
+  command="x-terminal-emulator -e synaptic-pkexec"
+?package(tasksel):needs="text" section="Applications/System/Administration"\
+  title="Debian Task selector" command="su-to-root -c tasksel"
+?package(tcl8.5):needs="text"\
+	section="Applications/Programming"\
+	title="Tclsh8.5"\
+	command="/usr/bin/tclsh8.5"
+?package(tcl8.6):needs="text"\
+	section="Applications/Programming"\
+	title="Tclsh8.6"\
+	command="/usr/bin/tclsh8.6"
+?package(info): needs="text" title="Info" section="Help" \
+  longtitle="GNU Info browser" command="info"
+?package(texlive-base):\
+  needs="x11"\
+  section="Applications/Viewers"\
+  title="XDvi"\
+  command="/usr/bin/xdvi"\
+  hints="DVI,Documents"
+?package(texlive-base):\
+  needs="text"\
+  section="Applications/System/Administration"\
+  title="TeXconfig"\
+  command="/usr/bin/texconfig"
+?package(texlive-base):\
+  needs="x11"\
+  section="Help" \
+  title="TeXdoctk"\
+  command="/usr/bin/texdoctk"
+?package(thunar):needs="X11" section="Applications/File Management"\
+  title="Thunar" longtitle="Xfce4 File Manager" hints="File manager" command="/usr/bin/thunar"
+?package(tk8.5):needs="x11"\
+	section="Applications/Programming"\
+	title="TkWish8.5"\
+	command="x-terminal-emulator -e /usr/bin/wish8.5"
+?package(tk8.6):needs="x11"\
+	section="Applications/Programming"\
+	title="TkWish8.6"\
+	command="x-terminal-emulator -e /usr/bin/wish8.6"
+?package(tomboy):needs="X11" section="Applications/Data Management" \
+  title="Tomboy" command="/usr/bin/tomboy" \
+  longtitle="Tomboy notetaker" \
+  description="Take notes on the desktop" \
+  icon16x16="/usr/share/pixmaps/tomboy-16.xpm" \
+  icon32x32="/usr/share/pixmaps/tomboy-32.xpm"
+?package(totem):\
+needs="X11"\
+section="Applications/Video"\
+title="Totem"\
+icon="/usr/share/pixmaps/totem.xpm"\
+command="/usr/bin/totem"
+?package(transmission-gtk):needs="X11" section="Applications/Network/File Transfer" \
+  title="Transmission BitTorrent Client (GTK)" command="/usr/bin/transmission-gtk" \
+  icon="/usr/share/pixmaps/transmission.xpm"
+?package(twm):\
+  needs="wm"\
+  section="Window Managers"\
+  longtitle="Twm: Tab Window Manager"\
+  title="Twm"\
+  command="twm"
+?package(uim-gtk2.0):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-im-switcher-gtk" command="/usr/bin/uim-im-switcher-gtk"
+?package(uim-gtk2.0):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-pref-gtk" command="/usr/bin/uim-pref-gtk"
+?package(uim-gtk2.0):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-toolbar-gtk" command="/usr/bin/uim-toolbar-gtk"
+?package(uim-gtk3):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-im-switcher-gtk3" command="/usr/bin/uim-im-switcher-gtk3"
+?package(uim-gtk3):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-pref-gtk3" command="/usr/bin/uim-pref-gtk3"
+?package(uim-gtk3):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-toolbar-gtk3" command="/usr/bin/uim-toolbar-gtk3"
+?package(uim-qt):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-chardict-qt4" command="/usr/bin/uim-chardict-qt4"
+?package(uim-qt):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-pref-qt4" command="/usr/bin/uim-pref-qt4"
+?package(uim-qt):\
+  needs="X11"\
+  section="Applications/Accessibility"\
+  title="uim-toolbar-qt4" command="/usr/bin/uim-toolbar-qt4"
+?package(usermode): \
+   needs="X11" \
+   section="Applications/System/Administration" \
+   title="Password" \
+   icon="/usr/share/pixmaps/password.xpm" \
+   command="/usr/bin/userpasswd"
+?package(usermode): \
+   needs="X11" \
+   section="Applications/System/Administration" \
+   title="About Myself" \
+   icon="/usr/share/pixmaps/user_icon.xpm" \
+   command="/usr/bin/userinfo"
+?package(usermode): \
+   needs="X11" \
+   section="Applications/System/Administration" \
+   title="Disk Management" \
+   icon="/usr/share/pixmaps/disks.xpm" \
+   command="/usr/bin/usermount"
+?package(vinagre): \
+ needs="X11" \
+ section="Applications/Network/Communication" \
+ title="Vinagre" \
+ description="Remote Desktop Viewer" \
+ command="vinagre"
+?package(vlc):command="/usr/bin/qvlc" hotkey="V" needs="X11" \
+              section="Applications/Video" title="VLC media player" \
+              icon="/usr/share/icons/hicolor/32x32/apps/vlc.xpm" hints="Video"
+?package(w3m):needs="text" \
+  section="Applications/Network/Web Browsing" \
+  title="w3m" \
+  command="/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html" \
+  hints="Web browsers"
+?package(wireshark):needs="X11" section="Applications/Network/Monitoring" \
+	title="Wireshark" \
+	command="/usr/bin/wireshark" \
+	icon="/usr/share/pixmaps/wsicon32.xpm"
+?package(x11-apps):\
+ needs="x11"\
+ section="Games/Toys"\
+ hints="Clocks"\
+ longtitle="Oclock: analog clock for X"\
+ title="Oclock"\
+ command="oclock"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Network/Communication"\
+ hints="Mail"\
+ longtitle="Xbiff: mailbox flag for X"\
+ title="Xbiff"\
+ command="xbiff"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Science/Mathematics"\
+ hints="Calculators"\
+ longtitle="Xcalc: scientific calculator for X"\
+ title="Xcalc"\
+ command="xcalc"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/System/Administration"\
+ longtitle="Xclipboard: clipboard for text cut and paste operations in X"\
+ title="Xclipboard"\
+ command="xclipboard"
+?package(x11-apps):\
+ needs="x11"\
+ section="Games/Toys"\
+ hints="Clocks"\
+ longtitle="Xclock (analog): analog clock for X"\
+ title="Xclock (analog)"\
+ command="xclock -analog"
+?package(x11-apps):\
+ needs="x11"\
+ section="Games/Toys"\
+ hints="Clocks"\
+ longtitle="Xclock (digital): digital clock for X"\
+ title="Xclock (digital)"\
+ command="xclock -digital -update 1"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/System/Monitoring"\
+ longtitle="Xconsole: monitor system console messages with X"\
+ title="Xconsole"\
+ command="xconsole -file /dev/xconsole"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Viewers"\
+ hints="Troff"\
+ longtitle="Xditview: a ditroff file viewer for X"\
+ title="Xditview"\
+ command="xditview"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Editors"\
+ longtitle="Xedit: a simple text editor for X"\
+ title="Xedit"\
+ command="xedit"
+?package(x11-apps):\
+ needs="x11"\
+ section="Games/Toys"\
+ longtitle="Xeyes: demo in which a pair of eyes follow the mouse pointer in X"\
+ title="Xeyes"\
+ command="xeyes"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/System/Monitoring"\
+ longtitle="Xload: system load average display for X"\
+ title="Xload"\
+ command="xload"
+?package(x11-apps):\
+ needs="x11"\
+ section="Games/Toys"\
+ longtitle="Xlogo: demo which displays the X logo"\
+ title="Xlogo"\
+ command="xlogo"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Accessibility"\
+ longtitle="Xmag: magnify parts of the X screen"\
+ title="Xmag"\
+ command="xmag"
+?package(x11-apps):\
+ needs="x11"\
+ section="Help"\
+ longtitle="Xman: manual page browser for X"\
+ title="Xman"\
+ command="xman"
+?package(x11-apps):\
+ needs="x11"\
+ section="Applications/Graphics"\
+ hints="Screenshot"\
+ longtitle="X Window Snapshot: take snapshot of any X window (xwd|xwud)"\
+ title="X Window Snapshot"\
+ command="xwd | xwud"
+?package(x11-utils):\
+ needs="x11"\
+ section="Applications/System/Administration"\
+ longtitle="Editres: resource editor for X Toolkit applications"\
+ title="Editres"\
+ command="editres"
+?package(x11-utils):\
+ needs="x11"\
+ section="Applications/System/Monitoring"\
+ longtitle="Xev: display X events"\
+ title="Xev"\
+ command="x-terminal-emulator -e xev"
+?package(x11-utils):\
+ needs="x11"\
+ section="Applications/System/Administration"\
+ hints="Fonts"\
+ longtitle="Xfontsel: font viewer/selector for X"\
+ title="Xfontsel"\
+ command="xfontsel"
+?package(x11-utils):\
+ needs="x11"\
+ section="Applications/System/Administration"\
+ longtitle="Xkill: tool to kill X clients by clicking on their windows"\
+ title="Xkill"\
+ command="xkill"
+?package(x11-xserver-utils):\
+ needs="x11"\
+ section="Applications/System/Administration"\
+ longtitle="Xrefresh: redraw X screen"\
+ title="Xrefresh"\
+ command="xrefresh"
+?package(x11-xserver-utils):\
+ needs="x11"\
+ section="Applications/System/Hardware"\
+ hints="Config"\
+ longtitle="Xvidtune: tool for customizing X server modelines"\
+ title="Xvidtune"\
+ command="xvidtune"
+?package(xarchiver):needs="X11" \
+ section="Applications/File Management" \
+ title="Xarchiver" \
+ longtitle="GTK+ frontend for most used compression formats" \
+ command="/usr/bin/xarchiver" \
+ icon="/usr/share/pixmaps/xarchiver.xpm"
+?package(xboard):needs="x11" \
+    section="Games/Board" \
+    hints="Chess" \
+    title="XBoard" \
+    command="/usr/games/xboard -xncp" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xboard):needs="x11" \
+    section="Games/Board" \
+    hints="Chess" \
+    title="XBoard (passive chessboard)" \
+    command="/usr/games/xboard -ncp" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xboard):needs="text" \
+    section="Games/Board" \
+    title="Default" \
+    hints="Chess" \
+    command="/usr/games/xboard -ics" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xboard):needs="text" \
+    section="Games/Board" \
+    title="Internet Chess Club" \
+    hints="Chess" \
+    command="/usr/games/xboard -ics -icshost chessclub.com" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xboard):needs="text" \
+    section="Games/Board" \
+    title="Chess Net" \
+    hints="Chess" \
+    command="/usr/games/xboard -ics -icshost chess.net" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xboard):needs="text" \
+    section="Games/Board" \
+    title="Free I.C.S." \
+    hints="Chess" \
+    command="/usr/games/xboard -ics -icshost freechess.org" \
+    icon="/usr/share/pixmaps/xboard.xpm"
+?package(xchat):needs="X11" section="Applications/Network/Communication"\
+  title="X Chat" command="/usr/bin/xchat" hints="IRC"\
+  icon="/usr/share/icons/xchat.xpm"
+?package(xfce4-appfinder):\
+ needs="X11"\
+ section="Applications/System/Administration"\
+ command="xfce4-appfinder"\
+ title="Xfce Application Finder"\
+ longtitle="An application finder for the Xfce4 desktop environment"\
+ icon="/usr/share/pixmaps/xfce4-appfinder.xpm"
+?package(xfce4-mixer):\
+ needs="X11"\
+ section="Applications/Sound"\
+ title="Xfce Mixer"\
+ command="/usr/bin/xfce4-mixer"\
+ icon="/usr/share/pixmaps/xfce4-mixer.xpm"
+?package(xfce4-terminal):needs="X11"\
+  section="Applications/Terminal Emulators"\
+  command="/usr/bin/xfce4-terminal"\
+  title="Xfce Terminal"\
+  longtitle="Xfce Terminal Emulator"\
+  icon="/usr/share/pixmaps/xfce4-terminal.xpm"
+?package(xfdesktop4): needs="X11" section="Applications/File Management" \
+    command="xfdesktop" title="Xfdesktop" longtitle="Xfce desktop manager" \
+    hints="Xfce Desktop"
+?package(xfwm4): needs="wm" section="Window Managers" command="xfwm4" \
+  title="XFwm" longtitle="Xfce Window Manager" hints="Window manager"
+?package(xiterm+thai):needs="X11" section="Applications/Terminal Emulators"\
+  title="xiterm+thai" command="/usr/bin/txiterm -ls"
+?package(xsane):command="/usr/bin/xsane" needs="X11" \
+	        section="Applications/Graphics" title="XSane" \
+                icon="/usr/share/pixmaps/xsane.xpm" \
+		description="XSane provides an advanced graphical \
+		user interface to control an image acquisition device \
+		such as a flatbed scanner or a camera."
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Enable XScreenSaver" \
+	command="/usr/bin/xscreensaver"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Disable XScreenSaver" \
+	command="/usr/bin/xscreensaver-command -exit"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Demo Screen Hacks" \
+	command="/usr/bin/xscreensaver-command -demo"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="ScreenSaver Preferences" \
+	command="/usr/bin/xscreensaver-command -prefs"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Reinitialize XScreenSaver" \
+	command="/usr/bin/xscreensaver-command -restart"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Activate ScreenSaver (Random)" \
+	command="/usr/bin/xscreensaver-command -activate"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Activate ScreenSaver (Next)" \
+	command="/usr/bin/xscreensaver-command -next"
+?package(xscreensaver):needs="x11" section="Screen/Saving" \
+	title="Activate ScreenSaver (Previous)" \
+	command="/usr/bin/xscreensaver-command -prev"
+?package(xscreensaver):needs="x11" section="Screen/Locking" \
+	title="Lock Screen (XScreenSaver)" \
+	command="/usr/bin/xscreensaver-command -lock"
+?package(xterm):\
+ needs="x11"\
+ section="Applications/Terminal Emulators"\
+ longtitle="XTerm: terminal emulator for X"\
+ title="XTerm"\
+ icon="/usr/share/pixmaps/xterm-color_32x32.xpm"\
+ command="xterm"
+?package(xterm):\
+ needs="x11"\
+ section="Applications/Terminal Emulators"\
+ longtitle="XTerm: terminal emulator for X with Unicode support"\
+ title="XTerm (Unicode)"\
+ icon="/usr/share/pixmaps/xterm-color_32x32.xpm"\
+ command="uxterm"
+?package(xxkb):needs="x11" section="Applications/System/Administration" \
+  title="xxkb" command="/usr/bin/xxkb"
+?package(yelp):needs="X11"\
+  section="Help"\
+  hints="Gnome"\
+  title="yelp"\
+  command="/usr/bin/yelp"
+?package(zsh):needs="text" section="Applications/Shells"  title="Zsh" command="/bin/zsh5"
+?package(playonlinux):needs="X11" section="Applications/Emulators"\
+  title="PlayOnLinux" command="/usr/bin/playonlinux" \
+  icon="/usr/share/pixmaps/playonlinux.xpm"
+?package(abiword):needs="X11" section="Applications/Office"\
+  title="AbiWord Word Processor" command="/usr/bin/abiword"\
+  hints="Word processor"\
+  icon="/usr/share/pixmaps/abiword.xpm"
+?package(alsaplayer-gtk,alsaplayer-common):needs="X11" section="Applications/Sound" title="AlsaPlayer" \
+ longtitle="AlsaPlayer (GTK interface)" command="/usr/bin/alsaplayer -i gtk2"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="Envy24 control" command="/usr/bin/envy24control"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="HDAJackRetask" command="/usr/bin/hdajackretask"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="HDSPConf" command="/usr/bin/hdspconf"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="HDSPMixer" command="/usr/bin/hdspmixer"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="Rmedigicontrol" command="/usr/bin/rmedigicontrol"
+?package(alsa-tools-gui):needs="X11" section="Applications/Sound" \
+  title="Echomixer" command="/usr/bin/echomixer"
+?package(amarok):\
+	needs="X11"\
+	section="Applications/Sound"\
+	hints="KDE"\
+	title="Amarok"\
+	icon32x32="/usr/share/pixmaps/amarok.xpm"\
+	icon16x16="/usr/share/pixmaps/amarok-16.xpm"\
+	command="/usr/bin/amarok"
+?package(anjuta):needs="X11" section="Applications/Programming"\
+  title="anjuta" icon="/usr/share/pixmaps/anjuta.xpm" command="/usr/bin/anjuta"
+?package(arandr): needs="X11" section="Applications/System/Hardware" title="ARandR" longtitle="ARandR screen settings" command="arandr" hints="Monitors"
+?package(arduino):\
+       needs="X11"\
+       section="Applications/Science/Electronics"\
+       title="Arduino"\
+       command="arduino" \
+       icon="/usr/share/pixmaps/arduino.xpm"
+?package(audacious): needs="X11" \
+                     section="Applications/Sound" \
+                     title="Audacious" \
+                     longtitle="Audacious Media Player" \
+                     icon32x32="/usr/share/pixmaps/audacious-32.xpm" \
+                     icon16x16="/usr/share/pixmaps/audacious-16.xpm" \
+                     command="/usr/bin/audacious"
+?package(aumix):needs="text" section="Applications/Sound" title="aumix"\
+    icon="/usr/share/pixmaps/aumix.xpm"\
+	longtitle="aumix audio mixer" command="/usr/bin/aumix"
+?package(awesome):needs="wm" section="Window Managers" \
+  title="awesome" longtitle="awesome window manager" \
+  command="/usr/bin/awesome" \
+  icon="/usr/share/pixmaps/awesome.xpm"
+?package(banshee):needs="X11" \
+ section="Applications/Sound" \
+ title="Banshee" \
+ command="/usr/bin/banshee" \
+ icon="/usr/share/pixmaps/banshee.xpm"
+?package(bleachbit):needs="X11" section="Applications/System/Administration"\
+  title="bleachbit" command="/usr/bin/bleachbit"\
+  icon="/usr/share/pixmaps/bleachbit.xpm"
+?package(blender):needs="X11" section="Applications/Graphics" hints="Modeler"\
+  longtitle="Blender 3D modeler / renderer"\
+  icon="/usr/share/pixmaps/blender-32x32.xpm"\
+  title="Blender" command="/usr/bin/blender"
+?package(blinken):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Memory,Simon"\
+	title="Blinken"\
+	icon32x32="/usr/share/pixmaps/blinken.xpm"\
+	icon16x16="/usr/share/pixmaps/blinken-16.xpm"\
+	command="/usr/games/blinken"
+?package(bluefish):\
+  needs="X11"\
+  section="Applications/Web Development"\
+  title="Bluefish"\
+  icon="/usr/share/pixmaps/bluefish.xpm"\
+  command="/usr/bin/bluefish"
+?package(bmon): \
+	needs="text" \
+	section="Applications/Network/Monitoring" \
+	title="bmon" \
+	command="/usr/bin/bmon"
+?package(bomber):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="Bomber"\
+	icon32x32="/usr/share/pixmaps/bomber.xpm"\
+	command="/usr/games/bomber"
+?package(bovo):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="Bovo"\
+	icon32x32="/usr/share/pixmaps/bovo.xpm"\
+	icon16x16="/usr/share/pixmaps/bovo-16.xpm"\
+	command="/usr/games/bovo"
+?package(bsdgames):needs="text" section="Applications/Education" \
+	title="Arithmetic Quiz" command="sh -c 'arithmetic;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Strategy" \
+	title="Air Traffic Controller" \
+	command="sh -c 'atc ; echo;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Adventure" \
+	title="Battlestar" command="sh -c 'battlestar;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Adventure" \
+	title="Hack" command="hack"
+?package(bsdgames):needs="text" section="Games/Card" \
+	title="Canfield" command="canfield"
+?package(bsdgames):needs="text" section="Games/Card" \
+	title="Cribbage" command="cribbage"
+?package(bsdgames):needs="text" section="Games/Card" \
+	title="Go Fish" \
+	command="sh -c 'go-fish;echo;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Card" \
+	title="Mille Bornes" command="mille"
+?package(bsdgames):needs="text" section="Games/Board" \
+	title="Monopoly" command="monop"
+?package(bsdgames):needs="text" section="Games/Board" hints="Backgammon" \
+	title="Backgammon" command="backgammon -pb"
+?package(bsdgames):needs="text" section="Games/Toys" \
+	title="Rain" command="rain"
+?package(bsdgames):needs="text" section="Games/Action" \
+	title="Robots" command="robots"
+?package(bsdgames):needs="text" section="Games/Strategy" \
+	title="Sail" command="sail"
+?package(bsdgames):needs="text" section="Games/Action" \
+	title="Snake" command="sh -c 'snake;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Action" \
+	title="Star Trek" command="trek"
+?package(bsdgames):needs="text" section="Games/Action" \
+	title="Worm" command="sh -c 'worm;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Toys" \
+	title="Worms" command="worms"
+?package(bsdgames):needs="text" section="Games/Adventure" \
+	title="Hunt the Wumpus" command="wump"
+?package(bsdgames):needs="text" section="Games/Blocks" \
+	title="Bsd Tetris" \
+	command="sh -c 'tetris-bsd;echo;echo PRESS ENTER;read line'"
+?package(bsdgames):needs="text" section="Games/Board" hints="Go" \
+	title="Gomoku" command="gomoku"
+?package(bsdgames):needs="text" section="Games/Adventure" \
+	title="Phantasia" command="phantasia"
+?package(bsdgames):needs="text" section="Games/Adventure" \
+	title="Adventure" command="adventure"
+?package(bsdgames):needs="text" section="Games/Puzzles" \
+	title="Hangman" command="hangman"
+?package(bsdgames):needs="text" section="Games/Puzzles" \
+        title="Boggle" command="boggle"
+?package(bwm-ng):needs="text" section="Applications/System/Monitoring"\
+  title="bwm-ng" command="/usr/bin/bwm-ng"
+?package(catdoc):needs="x11" section="Applications/Viewers" title="Wordview" command="/usr/bin/wordview"
+?package(clamtk):\
+  needs="x11"\
+  section="Applications/System/Security"\
+  title="ClamTk Antivirus GUI"\
+  command="/usr/bin/clamtk"\
+  hints="Virus,Security"\
+  icon="/usr/share/pixmaps/clamtk.xpm"
+?package(claws-mail):\
+needs="X11"\
+section="Applications/Network/Communication"\
+title="Claws Mail"\
+hints="GTK+2.0-based Mail Client"\
+icon="/usr/share/pixmaps/claws-mail-32x32.xpm"\
+command="/usr/bin/claws-mail"
+?package(clementine):\
+	needs="X11"\
+	section="Applications/Sound"\
+	title="Clementine"\
+	icon32x32="/usr/share/pixmaps/clementine.xpm"\
+	icon16x16="/usr/share/pixmaps/clementine-16.xpm"\
+	command="/usr/bin/clementine"
+?package(cmake-curses-gui):needs="text" \
+  section="Applications/Programming"\
+  title="CMake curses GUI (ccmake)"\
+  command="/usr/bin/ccmake"\
+  icon="/usr/share/pixmaps/cmake.xpm"
+?package(conky-all):needs="text" section="Applications/System/Monitoring"\
+  title="Conky" command="/usr/bin/conky"
+?package(conky-std):needs="text" section="Applications/System/Monitoring"\
+  title="Conky" command="/usr/bin/conky"
+?package(dasher):needs="X11" section="Applications/Accessibility" \
+title="Dasher text entry"\
+command="/usr/bin/dasher"
+?package(ddd):needs="X11" section="Applications/Programming" hints="Debuggers" title="Data Display Debugger" command="/usr/bin/ddd"
+?package(deluge): \
+ needs="X11" \
+ section="Applications/Network/File Transfer" \
+ title="Deluge BitTorrent Client" \
+ command="/usr/bin/deluge" \
+ longtitle="Bittorrent client written in Python/PyGTK" \
+ icon="/usr/share/pixmaps/deluge.xpm"
+?package(devhelp):\
+needs="x11"\
+section="Applications/Programming"\
+title="DevHelp"\
+longtitle="DevHelp: developer's documentation browser and helper"\
+icon="/usr/share/pixmaps/devhelp-debian.xpm"\
+command="/usr/bin/devhelp"
+?package(dia): \
+   needs="X11" \
+   section="Applications/Science/Engineering" \
+   hints="Vector" \
+   command="/usr/bin/dia" \
+   icon="/usr/share/pixmaps/dia_menu.xpm" \
+   title="Dia" \
+   longtitle="Dia diagram drawer" \
+   description="Dia can be used to draw different kind of diagrams. \
+     There is support for UML static structure diagrams \
+     (class diagrams), Entity-Relationship diagrams and \
+     Network diagrams. Diagrams can be exported to postscript \
+     and other formats."
+?package(dia-gnome): \
+   needs="X11" \
+   section="Applications/Graphics" \
+   hints="Vector" \
+   command="/usr/bin/dia" \
+   icon="/usr/share/pixmaps/dia_menu.xpm" \
+   title="Dia (GNOME)" \
+   longtitle="Draw diagrams" \
+   description="Dia can be used to draw different kind of diagrams. \
+     There is support for UML static structure diagrams \
+     (class diagrams), Entity-Relationship diagrams and \
+     Network diagrams. Diagrams can be exported to postscript."
+?package(digikam):\
+	needs="X11"\
+	section="Applications/Viewers"\
+	title="digikam"\
+	icon32x32="/usr/share/pixmaps/digikam.xpm"\
+	icon16x16="/usr/share/pixmaps/digikam-16.xpm"\
+	command="/usr/bin/digikam"
+?package(ding): \
+	needs="X11" \
+	section="Applications/Text" \
+	title="ding" \
+	longtitle="dictionary lookup program" \
+	command="/usr/bin/ding" \
+	icon="/usr/share/pixmaps/dbook.xpm" \
+	icon32x32="/usr/share/pixmaps/dbook.xpm" \
+	icon16x16="/usr/share/pixmaps/mini-dbook.xpm" \
+	hints="Translation,Dictionary,German,English"
+?package(djview4):needs="X11" \
+    section="Applications/Viewers" \
+    title="DjView4" command="/usr/bin/djview4" \
+    icon="/usr/share/icons/hicolor/32x32/apps/djvulibre-djview4.xpm" \
+    icon32x32="/usr/share/icons/hicolor/32x32/apps/djvulibre-djview4.xpm"
+?package(doxygen-gui):\
+  needs="X11"\
+  section="Applications/Programming"\
+  title="Doxywizard"\
+  description="Doxygen Configuration Editor"\
+  command="/usr/bin/doxywizard"
+?package(easytag):needs="X11" \
+	section="Applications/Sound" \
+	title="EasyTAG" \
+	command="/usr/bin/easytag" \
+	icon="/usr/share/pixmaps/easytag.xpm"
+?package(eclipse-platform):needs="X11" title="Eclipse" command="eclipse" section="Applications/Programming"
+?package(ekiga): \
+   needs="X11" \
+   section="Applications/Network/Communication" \
+   title="Ekiga" \
+   longtitle="Ekiga: Free Your Speech" \
+   description="The Ekiga Voice and Video Over IP Suite" \
+   command="/usr/bin/ekiga" \
+   icon="/usr/share/pixmaps/ekiga.xpm"
+?package(elinks): \
+  needs="text" \
+  section="Applications/Network/Web Browsing" \
+  title="ELinks WWW browser" \
+  command="/usr/bin/elinks" \
+  hints="Web browsers" \
+  description="ELinks is a character mode browser with support for \
+  rendering tables and frames, background downloads, color display, \
+  IPV6 among other features."
+?package(erlang-base):\
+	needs="text" \
+	section="Applications/Programming" \
+	title="Erlang Shell" \
+	longtitle="Erlang shell in a terminal session" \
+	hints="Erlang" \
+	command="/usr/bin/erl" \
+	icon="/usr/share/pixmaps/erlang.xpm"
+?package(evince-gtk):needs="X11" section="Applications/Viewers"\
+ title="Evince" command="/usr/bin/evince"\
+ hints="Documents,GNOME" icon="/usr/share/pixmaps/evince.xpm"
+?package(extremetuxracer): \
+  needs="X11" \
+  section="Games/Action" \
+  title="etracer" \
+  longtitle="Extreme Tux Racer" \
+  command="/usr/games/etracer" \
+  icon="/usr/share/pixmaps/etracer.xpm"
+?package(fbreader):needs="x11" section="Applications/Viewers" \
+	title="E-book reader" command="FBReader"
+?package(filezilla): needs="X11" \
+  section="Applications/Network/File Transfer" \
+  title="FileZilla" \
+  command="/usr/bin/filezilla" \
+  icon="/usr/share/pixmaps/filezilla.xpm"
+?package(fluxbox):needs="wm" section="Window Managers" title="FluxBox" command="/usr/bin/startfluxbox"
+?package(fontforge):needs="X11" \
+  section="Applications/Graphics" \
+  title="FontForge" \
+  longtitle="Font Editor for PS, TrueType and OpenType fonts" \
+  command="/usr/bin/fontforge" \
+  hints="Fonts" \
+  icon="/usr/share/pixmaps/fontforge.xpm"
+?package(freemind):needs="X11" section="Applications/Office"\
+  icon="/usr/share/pixmaps/FreeMindWindowIcon.xpm"\
+  title="FreeMind" command="/usr/bin/freemind"
+?package(frozen-bubble): needs="X11" \
+			 section="Games/Blocks" \
+			 title="Frozen-Bubble" \
+			 command="/usr/games/frozen-bubble" \
+			 icon="/usr/share/pixmaps/frozen-bubble.xpm"
+?package(gcompris):needs="X11" section="Applications/Education" \
+  title="gcompris" command="/usr/games/gcompris"
+?package(gcompris):needs="X11" section="Applications/Education" \
+  title="gcompris profile editor" command="/usr/games/gcompris -a"
+?package(geany):needs="X11" section="Applications/Programming" \
+	hints="IDE,Small,Gtk" \
+	icon="/usr/share/pixmaps/geany.xpm" \
+  title="Geany" command="/usr/bin/geany"
+?package(geeqie): \
+    needs="X11" \
+    section="Applications/Graphics" \
+    title="Geeqie" \
+    command="/usr/bin/geeqie" \
+    icon="/usr/share/pixmaps/geeqie.xpm" \
+    longtitle="Geeqie Image Viewer"
+?package(ghex):needs="x11" section="Applications/Editors" \
+  title="GHex" command="/usr/bin/ghex" hints="GNOME"
+?package(gkrellm):needs="x11" section="Applications/System/Monitoring"\
+ title="GKrellM" command="/usr/bin/gkrellm"\
+ icon="/usr/share/pixmaps/gkrellm.xpm" hints="Monitoring"
+?package(glade): \
+   needs="X11" \
+   section="Applications/Programming" \
+   title="Glade 3" \
+   icon="/usr/share/pixmaps/glade.xpm" \
+   command="/usr/bin/glade"
+?package(gnome-search-tool):needs="X11" \
+  section="Applications/File Management" \
+  title="GNOME Search Tool" command="/usr/bin/gnome-search-tool" \
+  icon="/usr/share/pixmaps/gsearchtool.xpm" hints="Gnome"
+?package(gnugo):needs="text" section="Games/Board" \
+	icon="/usr/share/pixmaps/gnugo32.xpm" \
+	hints="Go" title="GNU Go" command="/usr/games/gnugo"
+?package(gnumeric):needs="X11" section="Applications/Office" \
+  hints="Gnome,Spreadsheets" \
+  title="gnumeric" command="/usr/bin/gnumeric" \
+  icon="/usr/share/pixmaps/gnome-gnumeric.xpm"
+?package(gnuplot-x11):\
+  needs="text"\
+  section="Applications/Science/Mathematics"\
+  title="Gnuplot"\
+  longtitle="Gnuplot - interactive plotting program"\
+  hints="Graphs"\
+  description="A command-line driven interactive plotting program.\
+   Package for making 2D and 3D graphs from data and functions.\
+   Supports lots of output formats, including drivers for many\
+   printers , (La)TeX, (x)fig, X11, PostScript, and so on."\
+  command="/usr/bin/gnuplot4-x11"
+?package(grace):\
+   needs="X11"\
+   section="Applications/Science/Mathematics"\
+   title="Grace"\
+   longtitle="An XY plotting tool"\
+   hints="Plotting"\
+   icon="/usr/share/pixmaps/grace-menu.xpm"\
+   command="/usr/bin/xmgrace"
+?package(granatier):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="Granatier"\
+	icon32x32="/usr/share/pixmaps/granatier.xpm"\
+	icon16x16="/usr/share/pixmaps/granatier-16.xpm"\
+	command="/usr/games/granatier"
+?package(graphicsmagick):needs="X11" section="Applications/Viewers"\
+  title="GraphicsMagick" command="/usr/bin/gm display logo:"
+?package(gsmartcontrol):needs="X11" section="Applications/System/Hardware"\
+  title="GSmartControl" command="su-to-root -X -c gsmartcontrol"\
+  longtitle="Hard Disk Health Inspection"\
+  icon="/usr/share/pixmaps/gsmartcontrol.xpm"
+?package(gthumb):needs="X11" section="Applications/Viewers" \
+  title="gThumb Image Viewer" command="/usr/bin/gthumb" hints="Images" \
+  icon="/usr/share/pixmaps/gthumb.xpm"
+?package(gtkam):needs="X11" \
+  section="Applications/Viewers" \
+  title="gtkam" \
+  longtitle="GTK+ application for digital still cameras" \
+  command="/usr/bin/gtkam" \
+  icon="/usr/share/gtkam/pixmaps/camera.xpm"
+?package(gtk-recordmydesktop):needs="X11" section="Applications/Graphics"\
+title="gtk-recordmydesktop" icon="/usr/share/pixmaps/gtk-recordmydesktop.xpm" \
+command="/usr/bin/gtk-recordmydesktop"
+?package(guile-1.8): \
+  needs="text" \
+  section="Applications/Programming" \
+  title="Guile 1.8"\
+  command="/usr/bin/guile-1.8"
+?package(hardinfo): \
+needs="X11" \
+section="Applications/System/Administration" \
+title="System Information" command="/usr/bin/hardinfo" \
+icon="/usr/share/pixmaps/hardinfo.xpm"
+?package(heirloom-mailx):\
+  needs="text"\
+  section="Applications/Network/Communication"\
+  title="heirloom-mailx"\
+  command="/usr/bin/heirloom-mailx"\
+  hints="Mail"
+?package(hexedit):command="/usr/bin/hexedit" \
+	needs="text" \
+	section="Applications/Editors" \
+	title="hexedit"
+?package(hplip-gui):needs="X11" \
+		section="Applications/System/Hardware" \
+		title="HPLIP Toolbox" \
+		command="/usr/bin/hp-toolbox" \
+		hints="Printing,Print,Printer,Setup,Config,CUPS,HPLIP" \
+		icon="/usr/share/pixmaps/HPmenu.xpm"
+?package(hplip-gui):needs="X11" \
+		section="Applications/System/Administration" \
+		title="HPLIP File printing" \
+		command="/usr/bin/hp-print" \
+		hints="Printing,Print,Printer,CUPS,HPLIP" \
+		icon="/usr/share/pixmaps/HPmenu.xpm"
+?package(hplip-gui):needs="X11" \
+		section="Applications/Office" \
+		title="HPLIP Fax address book" \
+		command="/usr/bin/hp-fab" \
+		hints="Printing,Print,Printer,CUPS,Fax,HPLIP" \
+		icon="/usr/share/pixmaps/HPmenu.xpm"
+?package(hplip-gui):needs="X11" \
+		section="Applications/Office" \
+		title="HPLIP Fax utility" \
+		command="/usr/bin/hp-sendfax" \
+		hints="Printing,Print,Printer,CUPS,Fax,HPLIP" \
+		icon="/usr/share/pixmaps/HPmenu.xpm"
+?package(htmldoc):needs="X11" section="Applications/Text" \
+  title="HTMLDoc" command="/usr/bin/htmldoc"
+?package(hugin):\
+	needs="X11"\
+	section="Applications/Graphics"\
+	title="Hugin"\
+	longtitle="Hugin, make panoramas from multiple pictures"\
+	command="/usr/bin/hugin"
+?package(hugin):\
+	needs="X11"\
+	section="Applications/Graphics"\
+	title="PTBatcherGUI"\
+	longtitle="Manage Hugin batch queue"\
+	command="/usr/bin/PTBatcherGUI"
+?package(i3-wm): \
+	needs="wm" \
+	section="Window Managers" \
+	title="i3" \
+	command="/usr/bin/i3"
+?package(irssi):needs="text" section="Applications/Network/Communication" \
+title="Irssi" longtitle="Terminal Based IRC Client" command="/usr/bin/irssi"
+?package(kaffeine):\
+	needs="X11"\
+	section="Applications/Video"\
+	hints="KDE"\
+	title="Kaffeine"\
+	command="/usr/bin/kaffeine"\
+	icon="/usr/share/pixmaps/kaffeine.xpm"
+?package(kajongg):\
+        needs="x11"\
+        section="Games/Board"\
+        hints="KDE"\
+        title="Kajongg"\
+        icon32x32="/usr/share/pixmaps/kajongg.xpm"\
+        icon16x16="/usr/share/pixmaps/kajongg-16.xpm"\
+        command="/usr/games/kajongg"
+?package(kapman):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="Kapman"\
+	icon32x32="/usr/share/pixmaps/kapman.xpm"\
+	icon16x16="/usr/share/pixmaps/kapman-16.xpm"\
+	command="/usr/games/kapman"
+?package(kasumi):needs="X11" section="Applications/Text"\
+  title="kasumi" command="/usr/bin/kasumi"
+?package(katomic):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE"\
+	title="KDE Atomic Entertainment"\
+	icon32x32="/usr/share/pixmaps/katomic.xpm"\
+	icon16x16="/usr/share/pixmaps/katomic-16.xpm"\
+	command="/usr/games/katomic"
+?package(kblackbox):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,BlackBox"\
+	title="KBlackBox"\
+	icon32x32="/usr/share/pixmaps/kblackbox.xpm"\
+	icon16x16="/usr/share/pixmaps/kblackbox-16.xpm"\
+	command="/usr/games/kblackbox"
+?package(kblocks):\
+	needs="x11"\
+	section="Games/Blocks"\
+	hints="KDE,Blocks"\
+	title="KBlocks"\
+	icon32x32="/usr/share/pixmaps/kblocks.xpm"\
+	icon16x16="/usr/share/pixmaps/kblocks-16.xpm"\
+	command="/usr/games/kblocks"
+?package(kbounce):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="KDE Bounce Ball Game"\
+	icon32x32="/usr/share/pixmaps/kbounce.xpm"\
+	icon16x16="/usr/share/pixmaps/kbounce-16.xpm"\
+	command="/usr/games/kbounce"
+?package(kbreakout):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE,Breakout"\
+	title="KBreakout"\
+	icon32x32="/usr/share/pixmaps/kbreakout.xpm"\
+	icon16x16="/usr/share/pixmaps/kbreakout-16.xpm"\
+	command="/usr/games/kbreakout"
+?package(kdenlive):needs="X11" section="Applications/Graphics"\
+ title="Kdenlive"\
+ description="A non-linear video editor for KDE."\
+ command="/usr/bin/kdenlive" icon="/usr/share/pixmaps/kdenlive.xpm"
+?package(kdevelop):\
+        needs="X11"\
+        section="Applications/Programming"\
+        hints="KDE,Development"\
+        title="KDevelop"\
+        longtitle="KDevelop (Development Environment)"\
+        icon="/usr/share/pixmaps/kdevelop.xpm"\
+        command="/usr/bin/kdevelop"
+?package(kdiamond):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Diamond"\
+	title="KDiamond"\
+	icon32x32="/usr/share/pixmaps/kdiamond.xpm"\
+	icon16x16="/usr/share/pixmaps/kdiamond-16.xpm"\
+	command="/usr/games/kdiamond"
+?package(keepass2):needs="X11" section="Applications/System/Security"\
+  title="keepass2" command="/usr/bin/keepass2"
+?package(kfourinline):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="KFourInLine"\
+	icon32x32="/usr/share/pixmaps/kfourinline.xpm"\
+	icon16x16="/usr/share/pixmaps/kfourinline-16.xpm"\
+	command="/usr/games/kfourinline"
+?package(kgoldrunner):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="KGoldrunner"\
+	icon32x32="/usr/share/pixmaps/kgoldrunner.xpm"\
+	icon16x16="/usr/share/pixmaps/kgoldrunner-16.xpm"\
+	command="/usr/games/kgoldrunner"
+?package(kicad):needs="X11" section="Applications/Science/Electronics"\
+ title="KICAD" icon="/usr/share/pixmaps/icon_kicad.xpm" command="/usr/bin/kicad"
+?package(kigo):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="KiGo"\
+	icon32x32="/usr/share/pixmaps/kigo.xpm"\
+	icon16x16="/usr/share/pixmaps/kigo-16.xpm"\
+	command="/usr/games/kigo"
+?package(kile):needs="X11" \
+  section="Applications/Editors" \
+  hints="KDE" \
+  title="Kile" \
+  longtitle="Kile (LaTeX development environment)" \
+  command="/usr/bin/kile" \
+  icon="/usr/share/pixmaps/kile.xpm"
+?package(killbots):\
+	needs="x11"\
+	section="Games/Strategy"\
+	hints="KDE,BlackBox"\
+	title="killbots"\
+	icon32x32="/usr/share/pixmaps/killbots.xpm"\
+	icon16x16="/usr/share/pixmaps/killbots-16.xpm"\
+	command="/usr/games/killbots"
+?package(kino):needs="X11" section="Applications/Graphics"\
+  title="Kino" icon="/usr/share/pixmaps/kino.xpm" command="/usr/bin/kino"
+?package(kiriki):\
+        needs="x11"\
+        section="Games/Board"\
+        hints="KDE"\
+        title="Kiriki"\
+        icon32x32="/usr/share/pixmaps/kiriki.xpm"\
+        icon16x16="/usr/share/pixmaps/kiriki-16.xpm"\
+        command="/usr/games/kiriki"
+?package(kiten):\
+	needs="x11"\
+	section="Applications/Text"\
+	hints="KDE"\
+	title="Kiten"\
+        icon32x32="/usr/share/pixmaps/kiten.xpm" \
+	command="/usr/bin/kiten"
+?package(kjumpingcube):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE"\
+	title="KJumpingCube"\
+	icon32x32="/usr/share/pixmaps/kjumpingcube.xpm"\
+	icon16x16="/usr/share/pixmaps/kjumpingcube-16.xpm"\
+	command="/usr/games/kjumpingcube"
+?package(klickety):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Klickety"\
+	title="KDE Klickety"\
+	icon32x32="/usr/share/pixmaps/klickety.xpm"\
+	icon16x16="/usr/share/pixmaps/klickety-16.xpm"\
+	command="/usr/games/klickety"
+?package(klines):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="KLines"\
+	icon32x32="/usr/share/pixmaps/klines.xpm"\
+	icon16x16="/usr/share/pixmaps/klines-16.xpm"\
+	command="/usr/games/klines"
+?package(kmahjongg):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE,Mahjongg"\
+	title="KMahjongg"\
+	icon32x32="/usr/share/pixmaps/kmahjongg.xpm"\
+	icon16x16="/usr/share/pixmaps/kmahjongg-16.xpm"\
+	command="/usr/games/kmahjongg"
+?package(kmines):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Mines"\
+	title="Kmines"\
+	icon32x32="/usr/share/pixmaps/kmines.xpm"\
+	icon16x16="/usr/share/pixmaps/kmines-16.xpm"\
+	command="/usr/games/kmines"
+?package(knavalbattle):\
+        needs="x11"\
+        section="Games/Board"\
+        hints="KDE"\
+        title="KNavalbattle"\
+	icon32x32="/usr/share/pixmaps/knavalbattle.xpm"\
+	icon16x16="/usr/share/pixmaps/knavalbattle-16.xpm"\
+        command="/usr/games/knavalbattle"
+?package(knetwalk):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Mines"\
+	title="KNetwalk"\
+	icon32x32="/usr/share/pixmaps/knetwalk.xpm"\
+	icon16x16="/usr/share/pixmaps/knetwalk-16.xpm"\
+	command="/usr/games/knetwalk"
+?package(kolf):\
+	needs="x11"\
+	section="Games/Simulation"\
+	hints="KDE"\
+	title="KDE Miniature Golf"\
+	icon32x32="/usr/share/pixmaps/kolf.xpm"\
+	icon16x16="/usr/share/pixmaps/kolf-16.xpm"\
+	command="/usr/games/kolf"
+?package(kollision):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE,Collision"\
+	title="Kollision"\
+	icon32x32="/usr/share/pixmaps/kollision.xpm"\
+	icon16x16="/usr/share/pixmaps/kollision-16.xpm"\
+	command="/usr/games/kollision"
+?package(konquest):\
+	needs="x11"\
+	section="Games/Strategy"\
+	hints="KDE"\
+	title="Konquest"\
+	icon32x32="/usr/share/pixmaps/konquest.xpm"\
+	icon16x16="/usr/share/pixmaps/konquest-16.xpm"\
+	command="/usr/games/konquest"
+?package(kpat):\
+	needs="x11"\
+	section="Games/Card"\
+	hints="KDE"\
+	title="KDE Patience"\
+	icon32x32="/usr/share/pixmaps/kpat.xpm"\
+	icon16x16="/usr/share/pixmaps/kpat-16.xpm"\
+	command="/usr/games/kpat"
+?package(kreversi):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="KDE Reversi"\
+	icon32x32="/usr/share/pixmaps/kreversi.xpm"\
+	icon16x16="/usr/share/pixmaps/kreversi-16.xpm"\
+	command="/usr/games/kreversi"
+?package(kshisen):\
+	needs="x11"\
+	section="Games/Board"\
+	hints="KDE"\
+	title="KDE Shisen-Sho"\
+	icon32x32="/usr/share/pixmaps/kshisen.xpm"\
+	icon16x16="/usr/share/pixmaps/kshisen-16.xpm"\
+	command="/usr/games/kshisen"
+?package(ksh):needs="text" section="Applications/Shells"  title="Ksh" command="/bin/ksh93"
+?package(ksirk):\
+	needs="x11"\
+	section="Games/Strategy"\
+	hints="KDE,Risk"\
+	title="KSirK"\
+	icon32x32="/usr/share/pixmaps/ksirk.xpm"\
+	icon16x16="/usr/share/pixmaps/ksirk-16.xpm"\
+	command="/usr/games/ksirk"
+?package(ktron):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE,Tron"\
+	title="KTron"\
+	icon32x32="/usr/share/pixmaps/ktron.xpm"\
+	icon16x16="/usr/share/pixmaps/ktron-16.xpm"\
+	command="/usr/games/ktron"
+?package(ktron):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE,Snake"\
+	title="KTron"\
+	icon32x32="/usr/share/pixmaps/kdesnake.xpm"\
+	icon16x16="/usr/share/pixmaps/kdesnake-16.xpm"\
+	command="/usr/games/kdesnake"
+?package(kspaceduel):\
+	needs="x11"\
+	section="Games/Action"\
+	hints="KDE"\
+	title="KDE SpaceDuel"\
+	icon32x32="/usr/share/pixmaps/kspaceduel.xpm"\
+	icon16x16="/usr/share/pixmaps/kspaceduel-16.xpm"\
+	command="/usr/games/kspaceduel"
+?package(ksquares):\
+        needs="x11"\
+        section="Games/Board"\
+        hints="KDE"\
+        title="KSquares"\
+	icon32x32="/usr/share/pixmaps/ksquares.xpm"\
+	icon16x16="/usr/share/pixmaps/ksquares-16.xpm"\
+        command="/usr/games/ksquares"
+?package(ksudoku):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE"\
+	title="KDE Sudoku"\
+	icon32x32="/usr/share/pixmaps/ksudoku.xpm"\
+	icon16x16="/usr/share/pixmaps/ksudoku-16.xpm"\
+	command="/usr/games/ksudoku"
+?package(ktorrent):\
+  needs="X11"\
+  section="Applications/Network/File Transfer"\
+  title="KTorrent"\
+  command="ktorrent"\
+  hints="KDE,Network,FileTransfer"\
+  icon="/usr/share/pixmaps/ktorrent.xpm"
+?package(ktuberling):\
+	needs="x11"\
+	section="Games/Toys"\
+	hints="KDE"\
+	title="KDE Potato Guy"\
+	icon32x32="/usr/share/pixmaps/ktuberling.xpm"\
+	icon16x16="/usr/share/pixmaps/ktuberling-16.xpm"\
+	command="/usr/games/ktuberling"
+?package(kubrick):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Rubik"\
+	title="kubrick"\
+	icon32x32="/usr/share/pixmaps/kubrick.xpm"\
+	icon16x16="/usr/share/pixmaps/kubrick-16.xpm"\
+	command="/usr/games/kubrick"
+?package(librecad):\
+  needs="X11"\
+  section="Applications/Science/Engineering"\
+  icon="/usr/share/pixmaps/librecad.xpm"\
+  title="LibreCAD"\
+  command="/usr/bin/librecad"
+?package(liferea):needs="X11"\
+	section="Applications/Network/Web News"\
+	title="Liferea"\
+	command="/usr/bin/liferea"\
+	hints="Experienced,Small"\
+	longtitle="Liferea: Linux Feed Reader"\
+	icon="/usr/share/liferea/pixmaps/liferea.xpm"
+?package(links2):needs="X11" section="Applications/Network/Web Browsing"\
+  title="Links 2" command="/usr/bin/links2 -g"\
+  icon="/usr/share/pixmaps/links2.xpm"
+?package(links2):needs="text" section="Applications/Network/Web Browsing"\
+  title="Links 2 (text)" command="/usr/bin/links2"\
+  icon="/usr/share/pixmaps/links2.xpm"
+?package(linuxlogo):needs="text" section="Games/Toys"\
+  title="Linux Logo" longtitle="Color ANSI System Logo"\
+  description="A Color ANSI Logo with some system information that can be displayed at system boot time or, with some local configuration, at the login prompt."\
+  command="/etc/init.d/linuxlogo display" icon="/usr/share/pixmaps/linuxlogo.xpm"
+?package(lskat):\
+	needs="x11"\
+	section="Games/Card"\
+	hints="KDE"\
+	title="KDE Lieutnant Skat"\
+	icon32x32="/usr/share/pixmaps/lskat.xpm"\
+	icon16x16="/usr/share/pixmaps/lskat-16.xpm"\
+	command="/usr/games/lskat"
+?package(lyx):needs="X11" section="Applications/Office" \
+  title="LyX Document Processor" command="lyx" \
+  icon="/usr/share/pixmaps/lyx-32x32.xpm" hints="Word processors"
+?package(meld):needs="X11" section="Applications/Programming" \
+  title="Meld" command="/usr/bin/meld"
+?package(minicom):needs="text" section="Applications/Network/Communication" \
+  title="Minicom" command="/usr/bin/minicom" \
+  hints="Terminal"
+?package(minicom):needs="x11" section="Applications/Network/Communication" \
+  title="Minicom (X11)" command="/usr/bin/xminicom" \
+  hints="Terminal"
+# mksh16lg.xpm provides an alternative icon based on the mksh logo
+# mksh16.xpm is a bitmap creation especially for this size
+# mksh32.xpm is the mksh logo tweaked and scaled down to be useful
+#
+?package(mksh):needs="text" \
+  section="Applications/Shells" \
+  title="mksh" longtitle="MirBSD Korn Shell" \
+  icon16x16="/usr/share/pixmaps/mksh16.xpm" \
+  icon32x32="/usr/share/pixmaps/mksh32.xpm" \
+  command="/bin/mksh -l"
+?package(mkvtoolnix-gui):needs="X11" section="Applications/Video"\
+  title="MKV Creator" command="/usr/bin/mmg"
+?package(monodoc-browser):needs="X11" section="Applications/Programming"\
+  title="Monodoc" command="/usr/bin/monodoc"\
+  icon="/usr/share/pixmaps/monodoc.png"
+?package(mysql-workbench):needs="X11" \
+ section="Applications/Programming" \
+ title="MySQL Workbench" \
+ command="/usr/bin/mysql-workbench" \
+ icon="/usr/share/pixmaps/mysql-workbench.xpm"
+?package(ncftp):needs="text" section="Applications/Network/File Transfer" \
+title="ncftp" command="/usr/bin/ncftp3"  hints="File transfer"
+?package(nedit): needs="X11" section="Applications/Editors" command="nedit" \
+  title="NEdit" longtitle="Flexible editor for X11" \
+  icon="/usr/share/pixmaps/Nedit.xpm"
+?package(ocaml-interp):needs="text" section="Applications/Programming" \
+	title="Ocaml" longtitle="Ocaml Toplevel" \
+	hints="ocaml" \
+	command="/usr/bin/ocaml" \
+	icon="/usr/share/pixmaps/ocaml.xpm"
+?package(octave):needs="text"				\
+	section="Applications/Science/Mathematics"	\
+	 title="Octave"					\
+	 command="/usr/bin/octave"
+?package(palapeli):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Jiwsaw"\
+	title="Palapeli"\
+	icon32x32="/usr/share/pixmaps/palapeli.xpm"\
+	icon16x16="/usr/share/pixmaps/palapeli-16.xpm"\
+	command="/usr/games/palapeli"
+?package(paman):needs="X11" section="Applications/Sound"\
+  title="paman" command="/usr/bin/paman"
+?package(paprefs):needs="X11" section="Applications/Sound"\
+  title="paprefs" command="/usr/bin/paprefs"
+?package(parley):\
+	needs="x11"\
+	section="Applications/Education"\
+	hints="KDE,Education,Trainer"\
+	title="Parley"\
+	icon32x32="/usr/share/pixmaps/parley.xpm"\
+	command="/usr/bin/parley"
+?package(pavucontrol):needs="X11" section="Applications/Sound"\
+  title="pavucontrol" command="/usr/bin/pavucontrol"
+?package(pavumeter):needs="X11" section="Applications/Sound"\
+  title="pavumeter" command="/usr/bin/pavumeter"
+?package(pgadmin3):needs="x11" section="Applications/Data Management" \
+        title="pgAdmin III" command="/usr/bin/pgadmin3" \
+        icon="/usr/share/pixmaps/pgadmin3.xpm"
+?package(picmi):\
+	needs="x11"\
+	section="Games/Puzzles"\
+	hints="KDE,Logic"\
+	title="picmi"\
+	icon32x32="/usr/share/pixmaps/picmi.xpm"\
+	icon16x16="/usr/share/pixmaps/picmi-16.xpm"\
+	command="/usr/games/picmi"
+?package(planner):needs="X11" section="Applications/Project Management"\
+  title="Planner" command="/usr/bin/planner" \
+  hints="Project Planner" \
+  icon="/usr/share/pixmaps/gnome-planner.xpm"
+?package(prerex):needs="text" section="Applications/Editors"\
+  title="prerex" command="/usr/bin/prerex"
+?package(vprerex):needs="X11" section="Applications/Editors"\
+  title="vprerex" command="/usr/bin/vprerex"
+?package(putty):needs="X11" section="Applications/Network/Communication"\
+ longtitle="PuTTY SSH client" title="PuTTY"\
+ icon="/usr/share/pixmaps/putty.xpm"\
+ command="/usr/bin/putty"
+?package(idle-python2.7):needs="X11" section="Applications/Programming"\
+	title="IDLE (Python v2.7)"\
+	icon="/usr/share/pixmaps/python2.7.xpm"\
+	command="/usr/bin/idle-python2.7" \
+	hints="Environments"
+?package(qbittorrent): \
+ needs="X11" \
+ section="Applications/Network/File Transfer" \
+ title="qBittorrent" \
+ command="/usr/bin/qbittorrent" \
+ icon="/usr/share/pixmaps/qbittorrent.xpm"
+?package(qjackctl):needs="X11" section="Applications/Sound"\
+  title="JACK Control" command="/usr/bin/qjackctl" sort="$" \
+  icon="/usr/share/pixmaps/qjackctl.xpm"\
+  hints="JACK"
+?package(qt4-designer):\
+	needs="x11"\
+	section="Applications/Programming"\
+	hints="KDE"\
+	title="Qt4 Designer"\
+	command="/usr/lib/*/qt4/bin/designer"
+?package(qt4-dev-tools):\
+	needs="x11"\
+	section="Applications/Programming"\
+	hints="KDE"\
+	title="Qt4 Assistant"\
+	command="/usr/lib/*/qt4/bin/assistant"
+?package(qt4-dev-tools):\
+	needs="x11"\
+	section="Applications/Programming"\
+	hints="KDE"\
+	title="Qt4 Linguist"\
+	command="/usr/lib/*/qt4/bin/linguist"
+?package(qtcreator):needs="x11" section="Applications/Programming" \
+	title="Qt Creator" \
+	command="qtcreator" \
+	icon="/usr/share/pixmaps/qtcreator-icon-32x32.xpm"
+?package(r-base-core):	\
+	needs="text"	\
+	section="Applications/Science/Data Analysis"	\
+	title="GNU R"	\
+	command="/usr/bin/R"
+?package(remmina):needs="X11" section="Applications/Network/Communication"\
+  title="Remmina" command="/usr/bin/remmina"
+?package(rxvt-unicode):needs="x11" \
+   section="Applications/Terminal Emulators" \
+   longtitle="Rxvt-Unicode: terminal emulator for X" title="Rxvt-Unicode"\
+   command="urxvt" \
+   icon="/usr/share/pixmaps/urxvt.xpm" \
+   icon16x16="/usr/share/pixmaps/urxvt_16x16.xpm" \
+   icon32x32="/usr/share/pixmaps/urxvt_32x32.xpm"
+?package(rxvt-unicode):needs="x11" \
+   section="Applications/Terminal Emulators" \
+   longtitle="Rxvt-Unicode: terminal emulator for X" \
+   title="Rxvt-Unicode (Black, Xft)" \
+   command="urxvt -fn \"xft:Mono\" -rv" \
+   icon="/usr/share/pixmaps/urxvt.xpm" \
+   icon16x16="/usr/share/pixmaps/urxvt_16x16.xpm" \
+   icon32x32="/usr/share/pixmaps/urxvt_32x32.xpm"
+?package(scribus):needs="X11" \
+  section="Applications/Graphics" \
+  icon="/usr/share/pixmaps/scribus.xpm" \
+  hints="Desktop Publishing Software" \
+  title="Stable version of Scribus" \
+  command="/usr/bin/scribus"
+?package(smplayer): needs="X11" section="Applications/Video" \
+	title="SMPlayer" longtitle="SMPlayer media player" icon="/usr/share/pixmaps/smplayer.xpm" command="smplayer"
+?package(sqlitebrowser):needs="X11" section="Applications/Data Management"       \
+  title="SQLite database browser" command="/usr/bin/sqlitebrowser" \
+  icon="/usr/share/pixmaps/sqlitebrowser.xpm"
+?package(stellarium): \
+    needs="X11" \
+    section="Applications/Science/Astronomy" \
+    title="stellarium" \
+    command="/usr/bin/stellarium" \
+    icon="/usr/share/pixmaps/stellarium.xpm"
+?package(stk):needs="X11" section="Applications/Sound"\
+  title="STKDemo" command="/usr/bin/STKDemo"
+?package(supertuxkart):needs="X11"\
+  section="Games/Action"\
+  title="Supertuxkart"\
+  command="supertuxkart"\
+  icon="/usr/share/icons/hicolor/32x32/apps/supertuxkart.xpm"
+?package(sweethome3d):needs="x11" section="Applications/Graphics" \
+	title="Sweet Home 3D" \
+	longtitle="Interior 2D design application with 3D preview" \
+	icon="/usr/share/pixmaps/sweethome3d.xpm" \
+	command="sweethome3d"
+?package(tcsh):needs="text" section="Applications/Shells"\
+    title="tcsh" command="/bin/tcsh"
+?package(texmaker):needs="X11" section="Applications/Editors"\
+ title="texmaker" command="/usr/bin/texmaker" icon="/usr/share/pixmaps/texmaker.xpm"
+?package(xtightvncviewer):needs="x11" \
+  section="Applications/Network/Communication" \
+  hints="VNC,remote-control"\
+  title="xtightvncviewer" \
+  command="/usr/bin/xtightvncviewer"
+?package(timidity):needs="x11" section="Applications/Sound" \
+	title="TiMidity++" command="timidity -ia" hints="Player" \
+	icon="/usr/share/pixmaps/timidity.xpm"
+?package(python-twisted,python-gtk2):\
+	needs="x11"\
+	section="Applications/Network/Communication"\
+	title="Manhole Twisted Client"\
+	command="/usr/bin/manhole"
+?package(python-twisted,python-tk):\
+	needs="x11"\
+	section="Applications/Network/Communication"\
+	title="Twisted Application Generator"\
+	command="/usr/bin/tkmktap"
+?package(unison-gtk):needs="x11" section="Applications/File Management" \
+ title="Unison 2.40.102 (GTK)" command="/usr/bin/unison-2.40.102-gtk" \
+ longtitle="Unison 2.40.102 file synchronizer (GTK interface)" \
+ icon="/usr/share/pixmaps/unison-gtk.xpm"
+?package(units):needs="text" section="Applications/Science/Mathematics" title="Units" command="units"
+?package(vim-gnome):needs="x11"		\
+	section="Applications/Editors" 			\
+	title="GVIM"					\
+	longtitle="GVIM, graphical Vi IMproved (Gnome GUI)" \
+	command="/usr/bin/vim.gnome -g -f"		\
+	icon="/usr/share/pixmaps/vim-32.xpm"		\
+	icon32x32="/usr/share/pixmaps/vim-32.xpm"	\
+	icon16x16="/usr/share/pixmaps/vim-16.xpm"
+?package(vim-gtk):needs="x11"		\
+	section="Applications/Editors" 			\
+	title="GVIM"					\
+	longtitle="GVIM, graphical Vi IMproved (GTK GUI)" \
+	command="/usr/bin/vim.gtk -g -f"		\
+	icon="/usr/share/pixmaps/vim-32.xpm"		\
+	icon32x32="/usr/share/pixmaps/vim-32.xpm"	\
+	icon16x16="/usr/share/pixmaps/vim-16.xpm"
+?package(xvnc4viewer):needs="X11" \
+	section="Apps/Net" \
+	title="VNC Viewer" \
+        command="xvnc4viewer" \
+        hints="VNC viewer"
+?package(wicd-gtk):\
+ needs="X11" \
+ section="Applications/Network/Monitoring" \
+ title="WICD" command="/usr/bin/wicd-gtk" \
+ icon="/usr/share/pixmaps/wicd-gtk.xpm"
+?package(winff):needs="X11" section="Applications/Video"\
+  title="WinFF" command="/usr/bin/winff"\
+  icon="/usr/share/pixmaps/winff.xpm"
+?package(wxmaxima):\
+    needs="X11"\
+    section="Applications/Science/Mathematics"\
+    title="wxMaxima"\
+    longtitle="GUI for the computer algebra system Maxima"\
+    icon16x16="/usr/share/pixmaps/wxmaxima-16.xpm"\
+    icon32x32="/usr/share/pixmaps/wxmaxima-32.xpm"\
+    command="/usr/bin/wxmaxima"
+?package(xbmc):needs="X11" section="Applications/Video" \
+  title="xbmc" command="/usr/bin/xbmc"
+?package(xfig): \
+	command="/usr/bin/xfig" \
+	needs="X11" \
+	icon32x32="/usr/share/pixmaps/xfig32x32.xpm" \
+	icon16x16="/usr/share/pixmaps/xfig16x16.xpm" \
+	icon="/usr/share/pixmaps/xfig32x32cmap.xpm" \
+	section="Applications/Graphics" \
+	hints="Drawing,Draw,Vector" \
+	title="xfig" \
+	longtitle="Facility for Interactive Generation of figures" \
+	description="XFig is a menu-driven tool that allows the user \
+ 	  	     to draw and manipulate objects interactively in \
+ 	  	     an X window. The resulting pictures can be saved, \
+		     printed on postscript printers, or converted to a \
+		     variety of other formats (e.g. to allow inclusion \
+		     in LaTeX documents or web pages) using the \
+		     transfig program."
+?package(xine-ui):needs="X11" section="Applications/Video"\
+  title="xine Media Player" command="/usr/bin/xine" \
+  hints="Video" icon="/usr/share/pixmaps/xine.xpm"
+?package(xournal):needs="X11" section="Applications/Editors"\
+  title="xournal" command="/usr/bin/xournal"
+?package(xpdf):\
+	needs="x11" \
+	section="Applications/Viewers" \
+	command="/usr/bin/xpdf" \
+	title="Xpdf" \
+	hints="Documents" \
+	icon="/usr/share/pixmaps/xpdf.xpm" \
+	longtitle="Xpdf: Portable Document Format (PDF) file viewer for X"
+?package(yakuake):\
+	needs="X11"\
+	section="Applications/Terminal Emulators"\
+	title="YaKuake"\
+	icon32x32="/usr/share/pixmaps/yakuake.xpm"\
+	icon16x16="/usr/share/pixmaps/yakuake-16.xpm"\
+	command="/usr/bin/yakuake"
+?package(zathura):needs="X11" section="Applications/Office"\
+  title="zathura" command="/usr/bin/zathura"
+?package(dosemu):needs="x11" \
+     section="Applications/Emulators" \
+     title="Dos Emulator" \
+     icon="dosemu32x24.xpm" \
+     longtitle="The Linux DOS Emulator"\
+     command="/usr/bin/xdosemu"
+?package(sabnzbdplus):needs="X11" \
+  section="Applications/Network/File Transfer" \
+  title="SABnzbd+" \
+  command="/usr/bin/sabnzbdplus --browser 1" \
+  icon="/usr/share/pixmaps/sabnzbdplus.xpm"
+?package(0ad):\
+  needs="X11"\
+  section="Games/Strategy"\
+  title="0 A.D."\
+  command="/usr/games/0ad"\
+  icon="/usr/share/pixmaps/0ad.xpm"
+?package(anki):needs="X11" section="Applications/Education"\
+  title="Anki" command="/usr/bin/anki"\
+  icon="/usr/share/pixmaps/anki.xpm"
+?package(apcalc-common,apcalc):needs="text" section="Applications/Science/Mathematics" title="Calc" command="/usr/bin/calc"
+?package(aqemu):needs="X11" section="Applications/Emulators"\
+  title="aqemu" command="/usr/bin/aqemu" \
+  longtitle="Front-end for QEMU" \
+  icon16x16="/usr/share/pixmaps/aqemu-16x16.xpm" \
+  icon32x32="/usr/share/pixmaps/aqemu-32x32.xpm" \
+  icon="/usr/share/pixmaps/aqemu-32x32.xpm"
+?package(ardour):needs="X11" section="Applications/Sound" \
+  hints="Professional,Featureful,WAV,GTK,MIDI,Music Editor,DAW,Multitrack,JACK,LADSPA" \
+  title="Ardour Digital Audio Workstation" command="/usr/bin/ardour2"
+?package(arista):needs="X11" \
+ section="Applications/Video" \
+ title="arista-gtk" \
+ command="/usr/bin/arista-gtk" \
+ icon="/usr/share/pixmaps/arista.xpm"
+?package(arista):needs="text" \
+ section="Applications/Video" \
+ title="arista-transcode" \
+ command="/usr/bin/arista-transcode"
+?package(armagetronad):\
+        needs="X11"\
+        section="Games/Action"\
+        title="Armagetron Advanced"\
+        longtitle="Armagetron Advanced - a 3D light cycle game"\
+        command="/usr/games/armagetronad"\
+        icon="/usr/share/pixmaps/armagetronad.xpm"\
+        hints="3D,Racing,Multiplayer,Tron"
+?package(asunder):needs="X11" section="Applications/Sound"\
+  title="Asunder" longtitle="audio CD ripper and encoder"\
+  description="Asunder is a graphical Audio CD ripper and encoder. It can be used to save tracks from an Audio CDs."\
+  command="/usr/bin/asunder" icon="/usr/share/pixmaps/asunder.xpm"
+?package(aterm):needs="X11" section="Applications/Terminal Emulators"\
+  title="Aterm" command="/usr/bin/aterm-xterm"
+?package(aumix-gtk):needs="x11" section="Applications/Sound" title="aumix (GTK)"\
+    icon="/usr/share/pixmaps/aumix.xpm"\
+	longtitle="GTK aumix audio mixer" command="/usr/bin/aumix"
+?package(aumix-gtk):needs="text" section="Applications/Sound" title="aumix"\
+	longtitle="aumix audio mixer" command="/usr/bin/aumix"
+?package(avogadro):\
+  needs="X11"\
+  section="Applications/Science/Chemistry"\
+  title="Avogadro"\
+  longtitle="3D Molecular Editor and Visualizer"\
+  icon="/usr/share/pixmaps/avogadro.xpm"\
+  command="/usr/bin/avogadro"
+?package(backintime-common):needs="X11" section="Applications/File Management"\
+  title="Back In Time" command="/usr/bin/backintime"
+?package(backintime-common):needs="X11" section="Applications/File Management"\
+  title="Back In Time (root)" command="/usr/bin/su-to-root -X -c /usr/bin/backintime"
+?package(backuppc):needs="X11" section="Applications/File Management"\
+ title="View backuppc status" \
+ command="www-browser http://localhost/backuppc/"
+?package(bacula-console):needs="text" section="Applications/System/Administration" \
+  title="Bacula console" command="/usr/sbin/bconsole"
+?package(basket):needs="X11" section="Applications/Data Management" \
+  title="basket" command="/usr/bin/basket"
+#!/bin/bash
+# Script to handle menu profiles for Debian Pure Blends subsystem, installed
+# by your system administrator via blends-common package.
+#
+# It prints on STDOUT Debian menu entries for user
+CONFBASE=${CONFBASE:-/etc/blends}
+# read generic Blends conf ... in case it exists
+# Since menu 2.1.39 triggers are used to run update-menus for every change
+# in /usr/{lib,share}/menu - which fails finding ${CONFBASE}/blends.conf in
+# case you are installing blends-common the first time.  I do not regard this
+# as a reasonable behaviour because it is a real performance loss and
+# obviousely error prone (for instance in case of blends-common (see #484167)
+# but we have to deal with this somehow
+if [ -s "${CONFBASE}/blends.conf" ] ; then
+    . ${CONFBASE}/blends.conf
+else
+    exit 0
+fi
+BLENDUSER=`whoami`
+tasksdir=/usr/share/blends/tasks
+# it has to be run only by unprivileged users via update-menus
+test "${BLENDUSER}" == "root" && exit 0
+# Upper case the first letter of a string to have a nicer menu
+NameToUpper() {
+	if [ $# -ne 1 ] ; then
+		RET=64 # EX_USAGE
+		return ${RET}
+	fi
+	echo $1 | perl -ne 'print "\u\L$_";'
+	return 0
+}
+# Obtain title from HTML page for menu hints
+GetHTMLTitle () {
+        if [ $# -ne 1 ] ; then
+                RET=64 # EX_USAGE
+                return ${RET}
+        fi
+        perl -ne 'while (<>) {chomp; $all.="$_ ";}
+                    ($title) = ($all =~ /.*\<title\>(.*)\<\/title\>.*/i);
+                    $title =~ s/\s+/ /g ;
+                    print $title ; exit 0;' $1
+	return 0
+}
+# Obtain title (= first line) from text file for menu hints
+GetTxtTitle () {
+        if [ $# -ne 1 ] ; then
+                RET=64 # EX_USAGE
+                return ${RET}
+        fi
+	head -1 $1 | sed -e "s/[[:space:]]\+/ /g" -e "s/^[[:space:]]*\(.*\)[[:space:]]*$/\1/"
+	return 0
+}
+# Strip Blend name from metapackage name
+# FIXME: the Blend name does not necessarily match the metapackage
+#        prefix. Example: education-* packages of Debian Edu
+#        Proposed fix: Read Blend name from config file
+GetTaskNameFromPackage () {
+        if [ $# -ne 2 ] ; then
+                RET=64 # EX_USAGE
+                return ${RET}
+        fi
+	BLEND=$1 # Blend name
+	PKG=$2   # metapackage name
+	echo $PKG | sed "s/^${BLEND}-//"
+	return 0
+}
+# Obtain task title which has to be defined in the metapackage control templates
+GetTaskTitle () {
+        if [ $# -ne 1 ] ; then
+                RET=64 # EX_USAGE
+                return ${RET}
+        fi
+	PKG=$1  # metapackage name
+	cat "$tasksdir"/"$BLEND"/`GetTaskNameFromPackage "$BLEND" "$PKG"`
+	return 0
+}
+getMenuEntriesFromDependencies() {
+	RET=""
+	if [ $# -ne 1 ] ; then
+		RET=64 # EX_USAGE
+		return ${RET}
+	fi
+	PKG="$BLEND"-$1
+	TASK=`GetTaskTitle $PKG`
+	SECTION=`NameToUpper "$BLEND"`/`NameToUpper "$TASK"`
+	# find the list of Depends / Recommends / Suggests
+	DepPkgs=`dpkg --status "$PKG" | \
+		sed -e '/^Description/,$d' -e '/^Conffiles/,$d' | \
+		grep -v ^[A-CE-QT-Z] | \
+		grep -v ^S[eot] | \
+		sed -e "s/([^)]*)//" \
+		    -e "s/,* *${BLEND}-config//" \
+		    -e "s/^[^:]*: *//" \
+		    -e "s/, */\\n/g" | \
+		sort | uniq`
+	# check whether Blend maintainer provided menu override different from
+	# package maintainers menu file
+	# FIXME: This is outdated!  The concept of menu files named like the
+        #        metapackage is stopped in favour of single menu files named like
+        #        the dependant package.  The rationale is that you can get more
+        #        fine grained replacements.
+	blendmenufile=""
+	if   [ -s "$HOME"/.menu/"$PKG" ] ; then
+		blendmenufile="$HOME"/.menu/"$PKG"
+	elif [ -s /etc/blends/"$BLEND"/menu/"$PKG" ] ; then
+		blendmenufile=/etc/blends/"$BLEND"/menu/"$PKG"
+	elif [ -s /usr/lib/blends/"$BLEND"/menu/"$PKG" ] ; then
+		blendmenufile=/usr/lib/blends/"$BLEND"/menu/"$PKG"
+	elif [ -s /usr/share/blends/"$BLEND"/menu/"$PKG" ] ; then
+		blendmenufile=/usr/share/blends/"$BLEND"/menu/"$PKG"
+	fi
+	for pkg in $DepPkgs ; do
+	    # if Blend maintainer provided override just continue
+	    [ ! -z "$blendmenufile" ] && grep -q -i "?package($pkg)" "$blendmenufile" && continue
+	    # check for documentation text of Blend maintainer which should
+	    # be prefered over package maintainers menu
+	    docfile=""
+	    if   [ -s /usr/share/doc/"$PKG"/"$pkg".html ] ; then
+		docfile=/usr/share/doc/"$PKG"/"$pkg".html
+	    elif [ -s /usr/share/doc/"$PKG"/"$pkg".txt ] ; then
+		docfile=/usr/share/doc/"$PKG"/"$pkg".txt
+	    elif [ -s /usr/share/doc/"$PKG"/"$pkg" ] ; then
+		docfile=/usr/share/doc/"$PKG"/"$pkg"
+	    fi
+	    # if Blend maintainer provides documentation view this as menu entry ...
+	    if [ ! -z "$docfile" -a -s "$docfile" ] ; then
+		hint=""
+		if file "$docfile" | grep -q HTML ; then
+		    senspager=sensible-browser
+		    hint=`GetHTMLTitle "$docfile"`
+		else
+		    senspager=sensible-pager
+		    hint=`GetTxtTitle "$docfile"`
+		fi
+		if [ ! -z "$hint" ] ; then
+		    hint="hints=\""$hint"\""
+		fi
+		# Force menu-1 entry in case before this was menu-2 used
+		cat <<EOT
+!C menu-1
+?package($pkg): needs="text" \\
+        section="$SECTION" \\
+	title="`NameToUpper "$pkg"`" $hint \\
+	command="$senspager $docfile"
+EOT
+	    fi
+	    # search for a menu file with the following priority
+	    # ${HOME}/.menu, /etc/menu, /usr/share/blends/${BLEND}/menu, /usr/share/menu, /usr/lib/menu
+	    pkgmenufile=""
+	    donotchange=1
+	    if   [ -s "$HOME"/.menu/"$pkg" ] ; then
+		pkgmenufile="$HOME"/.menu/"$pkg"
+	    elif [ -s /etc/menu/"$pkg" ] ; then
+		pkgmenufile=/etc/menu/"$pkg"
+	    elif [ -s /usr/share/blends/"$BLEND"/menu/"$pkg" ] ; then
+		pkgmenufile=/usr/share/blends/"$BLEND"/menu/"$pkg"
+		donotchange=0
+	    elif [ -s /usr/share/menu/"$pkg" ] ; then
+		pkgmenufile=/usr/share/menu/"$pkg"
+	    elif [ -s /usr/lib/menu/"$pkg" ] ; then
+		pkgmenufile=/usr/lib/menu/"$pkg"
+	    fi
+            if [ ! -z "$pkgmenufile" ] ; then
+		# Force menu-1 entry in case before this was menu-2 used
+		## if ! grep -q -c '^!C' $pkgmenufile ; then
+		echo '!C menu-1'
+		## fi
+		if [ $donotchange -eq 1 ] ; then
+		    # the 2. and 3. -e - expression tries to fix missing '"' around the entries
+		    sed -e "/^[[:space:]]*$/d" \
+			-e 's?\([ :][^=^ ]*=\) *\([^"^=]*\)\( [^=]\+=\)?\1"\2"\3?g' \
+			-e 's?\([ :][^=^ ]*=\) *\([^"^=]*\)\( [^=]\+=\)?\1"\2"\3?g' \
+			-e 's?\( [^=]\+=\) *\([^"^=]\+[^"^\]\)$?\1"\2"?' \
+			-e "s?\(section\)[[:space:]]*=[[:space:]]*\"*[^\"\\]*\"*?\1=\"$SECTION\"?" $pkgmenufile
+		else
+		    # strip possible comments
+		    grep -v "^[[:space:]]*#" $pkgmenufile
+		fi
+	    fi
+	    # HACK: Add blank line which helps in case of missing newlines
+	    echo
+	done
+	[ -s "$blendmenufile" ] && cat "$blendmenufile"
+}
+ALLBLENDS=`getBlendList`
+for BLEND in ${ALLBLENDS}; do
+	# read per Blend conf
+	test -f  ${CONFBASE}/${BLEND}/${BLEND}.conf && \
+		. ${CONFBASE}/${BLEND}/${BLEND}.conf
+	if [ -d "$tasksdir"/"$BLEND" ] ; then
+		for PKG in `ls "$tasksdir"/"$BLEND"` ; do
+			getMenuEntriesFromDependencies "$PKG"
+		done
+	fi
+#	# print on STDOUT menu generic entries if user belongs to Blend
+#	checkUserInBlend ${BLEND} ${BLENDUSER} && \
+#		test -d ${CONFBASE}/${BLEND}/menu/ && \
+#			find ${CONFBASE}/${BLEND}/menu/ -maxdepth 1 -mindepth 1 -type f \
+#				-exec cat {} \;
+#
+#	# and role specific menu entries
+#	for ROLE in `getUserRoles ${BLEND} ${BLENDUSER}`; do
+#		test -d ${CONFBASE}/${BLEND}/menu/${ROLE} &&
+#			find ${CONFBASE}/${BLEND}/menu/${ROLE} -maxdepth 1 -mindepth 1 \
+#				-type f -exec cat {} \;
+#	done
+done
+?package(boinc-manager):\
+    needs="X11"\
+    section="Applications/System/Monitoring"\
+    hints="BOINC,Science"\
+    title="BOINC Manager"\
+    longtitle="monitoring utility for the BOINC core client"\
+    icon="/usr/share/pixmaps/boincmgr.xpm"\
+    command="boincmgr"
+?package(cadaver):needs="text" section="Applications/Network/File Transfer"\
+  title="cadaver" command="/usr/bin/cadaver"
+?package(camorama):needs="X11" section="Applications/Viewers" \
+  title="Camorama" command="/usr/bin/camorama" \
+  icon="/usr/share/pixmaps/camorama.xpm"
+?package(catfish):needs="X11" section="Applications/File Management"\
+  title="catfish" command="catfish"
+?package(celestia-gnome):\
+  needs="X11"\
+  section="Applications/Science/Astronomy"\
+  hints="OpenGL,Gnome"\
+  title="Celestia (Gnome)"\
+  command="/usr/bin/celestia-gnome"
+?package(cgoban):needs="x11" section="Games/Board" hints="Go" \
+  title="Go (CGoban)" command="/usr/games/cgoban"
+?package(chemtool):needs="X11" section="Applications/Science/Chemistry" \
+  title="chemtool" icon="/usr/share/pixmaps/chemtool_icon.xpm" \
+  hints="Chemical Structure Editor" command="/usr/bin/chemtool"
+?package(childsplay):needs="X11" section="Applications/Education"\
+  icon="/usr/share/pixmaps/logo_cp_32x32.xpm"\
+  title="Childsplay" command="/usr/games/childsplay"
+?package(chromium-bsu): \
+ needs="x11" \
+ section="Games/Action" \
+ title="Chromium B.S.U." \
+ longtitle="Scrolling space shooter" \
+ command="/usr/games/chromium-bsu" \
+ icon="/usr/share/pixmaps/chromium-bsu.xpm"
+?package(chrony):needs="text" section="Applications/System/Administration"\
+  title="chronyc"\
+  command="/usr/bin/chronyc"
+?package(clustalw):needs="text"\
+  section="Applications/Science/Biology"\
+  title="ClustalW"\
+  command="/usr/bin/clustalw"\
+  hints="Global multiple nucleotide or peptide sequence alignment"
+?package(clusterssh):				\
+	needs="x11"						\
+	section="Applications/Terminal Emulators"				\
+	title="clusterssh"				\
+	command="/usr/bin/cssh"			\
+	icon="/usr/share/pixmaps/clusterssh-32x32.xpm"	\
+	longtitle="cssh: control multiple ssh/rsh clients under X"
+?package(cmake-qt-gui):needs="X11" \
+  section="Applications/Programming"\
+  title="CMake Qt4 GUI (cmake-gui)"\
+  command="/usr/bin/cmake-gui"\
+  icon="/usr/share/pixmaps/cmake.xpm"
+?package(cmatrix):\
+  needs="x11"\
+  section="Screen/Saving"\
+  title="Console Matrix (X11)"\
+  command="/usr/bin/cmatrix -x"
+?package(cmatrix):\
+  needs="text"\
+  section="Screen/Saving"\
+  title="Console Matrix (Virtual Console)"\
+  command="/usr/bin/cmatrix -l"
+?package(cmatrix):\
+  needs="text"\
+  section="Screen/Saving"\
+  title="Console Matrix (Text)"\
+  command="/usr/bin/cmatrix"
+?package(comix):needs="X11" section="Applications/Viewers"\
+  title="comix" command="/usr/bin/comix"
+?package(conkeror):needs="X11" section="Applications/Network/Web Browsing"\
+  longtitle="Conkeror, a keyboard-focused web browser modelled after Emacs and Lynx"\
+  title="Conkeror" command="/usr/bin/conkeror"
+?package(coq):command="/usr/bin/coqtop" \
+  icon="/usr/share/pixmaps/coq.xpm" \
+  needs="text" \
+  section="Applications/Science/Mathematics" title="Coq"
+?package(coqide):command="/usr/bin/coqide" \
+  icon="/usr/share/pixmaps/coqide.xpm" \
+  needs="X11" \
+  section="Applications/Science/Mathematics" title="CoqIDE"
+?package(cryptkeeper):needs="X11" section="Applications/System/Security"\
+  title="Cryptkeeper" longtitle="Cryptkeeper encFS system tray applet"\
+  icon="cryptkeeper.xpm" command="/usr/bin/cryptkeeper"
+?package(cutecom):needs="X11" section="Applications/System/Hardware"\
+  title="Cutecom" command="/usr/bin/cutecom"
+?package(ddccontrol):needs="text" section="Applications/System/Hardware"\
+  title="DDCcontrol" command="/usr/bin/ddccontrol"
+?package(desktop-profiles,kommander):\
+         needs="X11" \
+         section="Applications/System/Administration"\
+         title="Profile-manager"\
+	 command="/usr/bin/profile-manager"
+?package(devede): needs="X11"\
+ section="Applications/Video"\
+ title="DeVeDe"\
+ icon="/usr/share/pixmaps/devede.xpm"\
+ command="/usr/bin/devede"
+?package(dillo):needs="X11" section="Applications/Network/Web Browsing"\
+ title="Dillo" command="/usr/bin/dillo"\
+ icon="/usr/share/pixmaps/dillo.xpm"
+?package(disk-manager): \
+  needs="X11" \
+  section="Applications/System/Administration" \
+  title="Disk Manager" \
+  command="/usr/sbin/disk-manager" \
+  icon="/usr/share/pixmaps/disk-manager.xpm"
+?package(docker):needs="x11" section="Applications/Viewers"\
+  title="docker" command="/usr/bin/wmdocker"
+?package(driconf):needs="X11" \
+	section="Applications/System/Hardware" \
+	title="Driconf" \
+	longtitle="DRI configuration GUI" \
+	command="/usr/bin/driconf"
+?package(dwm):needs="wm" section="Window Managers"\
+  title="Dwm" longtitle="Dynamic window manager" \
+  description="Dwm is a minimalistic window manager."\
+  command="/usr/bin/dwm"
+?package(dwww):needs="x11" \
+ section="Help" \
+ title="Dwww" \
+ command="/usr/bin/dwww"
+?package(dwww):needs="text" \
+ section="Help" \
+ title="Dwww" \
+ command="/usr/bin/dwww"
+?package(dx):needs="x11" section="Applications/Science/Data Analysis" \
+  title="Open Data Explorer" command="/usr/bin/dx" \
+  icon="/usr/share/dx/dxicon.xpm"
+?package(emacs24-nox):\
+  needs="X11"\
+  section="Applications/Editors"\
+  title="Emacs 24 (X11)"\
+  command="/usr/bin/emacs24"\
+  icon16x16="/usr/share/emacs/24.4/etc/images/icons/hicolor/16x16/apps/emacs.xpm"\
+  icon32x32="/usr/share/emacs/24.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm"\
+  hints="Text"
+?package(emacs24-nox):\
+  needs="text"\
+  section="Applications/Editors"\
+  title="Emacs 24 (text)"\
+  command="/usr/bin/emacs24 -nw"\
+  icon16x16="/usr/share/emacs/24.4/etc/images/icons/hicolor/16x16/apps/emacs.xpm"\
+  icon32x32="/usr/share/emacs/24.4/etc/images/icons/hicolor/32x32/apps/emacs.xpm"\
+  hints="Text"
+?package(epiphany):needs="X11" section="Games/Action"\
+  icon="/usr/share/pixmaps/epiphany-game.xpm" \
+  title="Epiphany" command="/usr/games/epiphany-game"
+?package(eric):\
+    needs="X11" \
+    section="Applications/Programming"\
+    title="eric" \
+    longtitle="eric Python IDE" \
+    command="/usr/bin/eric" \
+    icon="/usr/share/pixmaps/eric.xpm"
+?package(eterm):needs="X11" section="Applications/Terminal Emulators"\
+  title="Eterm" command="/usr/bin/Eterm"
+?package(etherape):needs="X11" section="Applications/Network/Monitoring"\
+  title="EtherApe" \
+  longtitle="EtherApe: graphical network monitor" \
+  command="/usr/bin/etherape" \
+  icon="/usr/share/pixmaps/etherape.xpm"
+?package(exaile):needs="X11" section="Applications/Sound" \
+  title="Exaile" command="/usr/bin/exaile"
+?package(fluid): \
+  needs="x11" \
+  section="Applications/Programming" \
+  title="Fluid" \
+  command="/usr/bin/fluid" \
+  icon="/usr/share/pixmaps/fluid-32.xpm"
+?package(font-manager):needs="X11"\
+ section="Applications/Graphics"\
+ title="Font Manager"\
+ command="/usr/bin/font-manager"
+?package(fotoxx):needs="X11" section="Applications/Graphics"\
+  title="fotoxx" command="/usr/bin/fotoxx"
+?package(freeciv-client-gtk):needs="x11" \
+ section="Games/Strategy" \
+ title="Freeciv client (GTK version)" \
+ command="/usr/games/freeciv-gtk2" \
+ icon="/usr/share/pixmaps/freeciv.xpm"
+?package(freeciv-server):needs="text" \
+ section="Games/Strategy" \
+ title="Freeciv server" \
+ command="/usr/games/freeciv-server" \
+ icon="/usr/share/pixmaps/freeciv-server.xpm"
+?package(fritzing):needs="X11" section="Applications/Science/Electronics"\
+  title="Fritzing" icon="/usr/share/pixmaps/fritzing_icon.xpm" command="/usr/bin/Fritzing"
+?package(fvwm):\
+  needs="wm"\
+  section="Window Managers"\
+  title="FVWM"\
+  longtitle="FVWM Windows Manager"\
+  command="/usr/bin/fvwm2"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmAnimate"\
+  longtitle="FvwmAnimate: animate iconification and deiconification"\
+  command="FvwmAnimate"
+?package(fvwm):\
+  needs="fvwmother"\
+  section="FVWM Modules"\
+  title="FvwmAnimate menu"\
+  longtitle="Configuration menu for FvwmAnimate (after FvwmAnimate started)"\
+  command="Popup MenuFvwmAnimate"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmAuto"\
+  longtitle="FvwmAuto: autoraise windows with keyboard input focus"\
+  command="FvwmAuto 300 raise lower"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmBacker"\
+  longtitle="FvwmBacker: change the background when changing desktops"\
+  command="FvwmBacker"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmBanner"\
+  longtitle="FvwmBanner: display the FVWM logo for 3 seconds"\
+  command="FvwmBanner"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmButtons"\
+  longtitle="FvwmButtons: display a command button panel"\
+  command="FvwmButtons"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmButtons (Debian)"\
+  longtitle="FvwmButtons (Debian version): display a command button panel"\
+  command="FvwmButtons DebianFvwmButtons"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmCommandS"\
+  longtitle="FvwmCommandS: initialise FvwmCommand handling"\
+  command="FvwmCommandS"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmConsole"\
+  longtitle="FvwmConsole: a way to type commands for FVWM to execute"\
+  command="FvwmConsole"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmCpp"\
+  longtitle="FvwmCpp: cpp"\
+  command="FvwmCpp"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmDebug"\
+  longtitle="FvwmDebug: debug"\
+  command="FvwmDebug"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmDragWell"\
+  longtitle="FvwmDragWell: drag"\
+  command="FvwmDragWell"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmEvent"\
+  longtitle="FvwmEvent: binds actions to events, such as audio actions"\
+  command="FvwmEvent"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmForm"\
+  longtitle="FvwmForm: Form"\
+  command="FvwmForm"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmGtk"\
+  longtitle="FvwmGtk: create menus and dialogs using GTK+ toolkit"\
+  command="FvwmGtk"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmIconBox"\
+  longtitle="FvwmIconBox: an icon manager"\
+  command="FvwmIconBox"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmIconMan"\
+  longtitle="FvwmIconMan: another icon manager"\
+  command="FvwmIconMan"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmIdent"\
+  longtitle="FvwmIdent: show info about a selected window"\
+  command="FvwmIdent"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmM4"\
+  longtitle="FvwmM4: m4"\
+  command="FvwmM4"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmPager"\
+  longtitle="FvwmPager: virtual desktop manager"\
+  command="FvwmPager 0 0"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmProxy"\
+  longtitle="FvwmProxy: manage obscured windows using proxy windows"\
+  command="FvwmProxy"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmRearrange (vert)"\
+  longtitle="FvwmRearrange: rearrange windows on screen in a vertical fashion"\
+  command="FvwmRearrange -tile"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmRearrange (horiz)"\
+  longtitle="FvwmRearrange: rearrange windows on screen in a horizontal fashion"\
+  command="FvwmRearrange -tile -h"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmRearrange (cascade)"\
+  longtitle="FvwmRearrange: rearrange windows on screen in a cascading fashion"\
+  command="FvwmRearrange -cascade"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmSave"\
+  longtitle="FvwmSave: save desktop layout to new.xinitrc (pseudo-.xinitrc)"\
+  command="FvwmSave"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmSaveDesk"\
+  longtitle="FvwmSaveDesk: save desktop layout to .fvwm2desk file"\
+  command="FvwmSaveDesk"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmScript"\
+  longtitle="FvwmScript: script"\
+  command="FvwmScript"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmScroll"\
+  longtitle="FvwmScroll: add scroll bars to selected window"\
+  command="FvwmScroll"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmTalk"\
+  longtitle="FvwmTalk: type commands into a window for FVWM to execute"\
+  command="FvwmTalk"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmTaskBar"\
+  longtitle="FvwmTaskBar: show a Windows 95/98 type task bar"\
+  command="FvwmTaskBar"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmTheme"\
+  longtitle="FvwmTheme: theme"\
+  command="FvwmTheme"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmTile"\
+  longtitle="FvwmTile: tile"\
+  command="FvwmTile"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmWharf"\
+  longtitle="FvwmWharf: free-floating application loader and executer"\
+  command="FvwmWharf"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmWinList"\
+  longtitle="FvwmWinList: show a window list for quick navigation"\
+  command="FvwmWinList"
+?package(fvwm):\
+  needs="fvwmmodule"\
+  section="FVWM Modules"\
+  title="FvwmWindowMenu"\
+  longtitle="FvwmWindowMenu: show a menu listing current windows"\
+  command="FvwmWindowMenu"
+?package(fwbuilder):needs="X11" section="Applications/System/Security/" \
+  title="Firewall Builder" command="/usr/bin/fwbuilder"
+?package(gadmin-samba):needs="X11" section="Applications/System/Administration"\
+  title="gadmin-samba" longtitle="GTK+ configuration tool for samba"\
+  description="gadmin-samba is an easy to use GTK+ frontend for the samba server."\
+  command="/usr/sbin/gadmin-samba" icon="/usr/share/pixmaps/gadmin-samba.xpm"
+?package(gajim): \
+   needs="X11" \
+   section="Applications/Network/Communication" \
+   command="/usr/bin/gajim" \
+   icon="/usr/share/pixmaps/gajim.xpm" \
+   title="Gajim" \
+   longtitle="Gajim: GTK Jabber Client" \
+   description="GTK Jabber Client."
+?package(galternatives):\
+needs="x11"\
+section="Applications/System/Administration"\
+title="Alternatives Configurator"\
+longtitle="Allows you to choose the default applications to provide some features."\
+icon="/usr/share/pixmaps/galternatives.xpm"\
+command="/usr/sbin/galternatives"
+?package(gaupol):needs="X11" \
+	section="Applications/Editors" \
+	title="Gaupol" \
+	hints="Gnome" \
+	command="/usr/bin/gaupol" \
+	longtitle="Gaupol - subtitle editor" \
+	icon="/usr/share/pixmaps/gaupol.xpm"
+?package(gcolor2):needs="X11" section="Apps/Tools"\
+  title="gcolor2" command="/usr/bin/gcolor2"\
+  icon="/usr/share/pixmaps/gcolor2/gcolor2.xpm"
+?package(geda-gschem):needs="x11" \
+  section="Applications/Science/Electronics" \
+  title="gschem" \
+  longtitle="gEDA Schematic Capture" \
+  command="/usr/bin/gschem"
+?package(gem):needs="x11" section="Applications/Graphics" \
+  title="GEM" \
+  command="/usr/bin/pd-gem" \
+  icon="/usr/share/pixmaps/gem.xpm" \
+  longtitle="Graphics Environment for Multimedia (Pd extension)"
+?package(geomview):\
+ needs="X11"\
+ section="Applications/Science/Mathematics"\
+ title="Geomview"\
+ longtitle="Interactive geometry viewing program"\
+ command="/usr/bin/geomview"\
+ icon="/usr/share/pixmaps/geomview.xpm"
+?package(gerbv):\
+	needs="x11" \
+	section="Applications/Viewers" \
+	command="/usr/bin/gerbv" \
+	title="gerbv" \
+	longtitle="gerbv: PCB Gerber file viewer for X"
+?package(giggle):\
+	needs="X11"\
+	section="Applications/Programming"\
+	title="Giggle"\
+	command="/usr/bin/giggle"
+?package(git-annex):needs="X11" section="Applications/Network/File Transfer" \
+	title="git-annex assistant" command="git-annex webapp"
+?package(git-cola):needs="X11" section="Applications/Programming"\
+  title="Cola" command="/usr/bin/git-cola"
+?package(glabels):				\
+	needs="X11"				\
+	section="Applications/Graphics"		\
+	title="gLabels" 			\
+	command="/usr/bin/glabels-3"		\
+	hints="Desktop Publishing"		\
+	icon="/usr/share/pixmaps/glabels.xpm"	\
+	longtitle="gLabels Label Designer"	\
+	description="Create labels, business cards and media covers."
+?package(gmpc): needs="X11" section="Applications/Sound" title="gmpc" \
+  icon="/usr/share/pixmaps/gmpc.xpm" \
+  longtitle="GNOME Music Player Client" command="/usr/bin/gmpc" hints="Player"
+?package(gmrun):needs="X11" section="Applications/File Management"\
+  title="gmrun" command="/usr/bin/gmrun"
+?package(gnat-gps):needs="X11" section="Applications/Programming"\
+  title="GNAT Programming Studio" command="/usr/bin/gnat-gps"
+?package(gnome-btdownload):needs="X11" section="Applications/Network/File Transfer"\
+title="BitTorrent Download Client"\
+description="GNOME interface for 'executing' BitTorrent files"\
+command="/usr/bin/gnome-btdownload"\
+icon="/usr/share/pixmaps/download.xpm"
+?package(gnome-rdp):\
+  needs="X11" \
+  section="Applications/Network/Communication" \
+  title="GNOME Remote Desktop Client" \
+  command="/usr/bin/gnome-rdp" \
+  icon="/usr/share/pixmaps/gnome-rdp.xpm"
+?package(gnu-smalltalk):needs="text" section="Applications/Programming" \
+  title="GNU Smalltalk" command="/usr/bin/gst"
+?package(gpac):needs="text" section="Applications/Viewers"\
+  title="gpac" command="/usr/bin/MP4Client"
+?package(gpaint):\
+needs="X11"\
+section="Applications/Graphics"\
+title="GNU Paint"\
+command="/usr/bin/gpaint"\
+icon="/usr/share/pixmaps/gpaint.xpm"
+?package(gperiodic):\
+  needs="X11"\
+  section="Applications/Science/Chemistry"\
+  title="GPeriodic"\
+  icon="/usr/share/pixmaps/gperiodic.xpm"\
+  command="/usr/bin/gperiodic"
+?package(gpodder):\
+  needs="X11"\
+  section="Applications/Network/Web News"\
+  title="gPodder Podcast Client"\
+  command="gpodder"
+?package(gpredict):needs="X11" section="Applications/Amateur Radio" \
+	title="gpredict" longtitle="gpredict" \
+	description="Satellite tracker" \
+	command="/usr/bin/gpredict"
+?package(gpsd-clients):needs="x11" section="Applications/Science/Geoscience"\
+  title="xgps" command="/usr/bin/xgps"
+?package(grass-core):needs="text"\
+  section="Applications/Science/Geoscience"\
+  title="GRASS GIS"\
+  command="/usr/bin/grass"\
+  icon="/usr/share/icons/hicolor/32x32/apps/grass64.xpm"
+?package(grdesktop):\
+	needs="X11"\
+	section="Applications/Network/Communication"\
+	title="grdesktop"\
+	command="/usr/bin/grdesktop"
+?package(grsync):needs="X11" section="Applications/Network/File Transfer"\
+  title="Grsync" longtitle="GTK+ frontend for rsync"\
+  description="Grsync is a simple graphical interface using GTK2 for the rsync command line program. It currently supports only a limited set of the most important rsync features, but can be used effectively for local directory synchronization."\
+  command="/usr/bin/grsync" icon="/usr/share/pixmaps/grsync.xpm"
+?package(gtk-chtheme):needs="X11"\
+	hints="GTK2,GTK+2.0,Themes,Skins,Appearance,Gnome"\
+	section="Applications/System/Administration"\
+	title="GTK+ 2.0 theme manager"\
+	command="/usr/bin/gtk-chtheme"\
+	icon="/usr/share/pixmaps/gtk-chtheme.xpm"
+?package(gtkhash):needs="X11" section="Applications/File Management"\
+  title="gtkhash" command="/usr/bin/gtkhash" icon="/usr/share/pixmaps/gtkhash.xpm"
+?package(gtkpod):needs="X11" section="Applications/Sound" \
+  title="gtkpod" command="/usr/bin/gtkpod" \
+  icon="/usr/share/pixmaps/gtkpod-icon-32x32.xpm"
+?package(gtk-theme-switch):needs="X11" section="Applications/System/Administration" \
+  title="GTK+ 2.0 Theme Switch" command="/usr/bin/gtk-theme-switch2"
+?package(guvcview):\
+	needs="X11"\
+	section="Applications/Video"\
+	title="guvcview"\
+	longtitle="GTK UVC Viewer - uvc video viewer and capturer"\
+	command="/usr/bin/guvcview"
+?package(gxine):needs="X11" section="Applications/Video"\
+  icon="/usr/share/gxine/pixmaps/gxine-icon.xpm"\
+  title="gxine video player" command="/usr/bin/gxine" \
+  hints="Video"
+?package(hedgewars):needs="x11" section="Games/Action"\
+  title="Hedgewars" \
+  command="/usr/games/hedgewars" \
+  icon="/usr/share/pixmaps/hedgewars.xpm"
+?package(hexcurse):needs="text" section="Applications/Editors" title="hexcurse" command="/usr/bin/hexcurse"
+?package(hugs):needs="text" section="Apps/Programming"\
+  title="Hugs" command="/usr/bin/hugs"
+?package(hydrogen):command="/usr/bin/hydrogen" \
+section="Applications/Sound" \
+needs="X11" \
+title="Hydrogen" \
+icon="/usr/share/pixmaps/h2-icon.xpm"
+?package(icewm):command="/usr/bin/icewm" needs="wm" \
+               section="Window Managers" title="IceWM" \
+               icon="/usr/share/icewm/icons/icewm_16x16.xpm" \
+               icon16x16="/usr/share/icewm/icons/icewm_16x16.xpm" \
+               icon32x32="/usr/share/icewm/icons/icewm_32x32.xpm"
+?package(iptstate):needs="text" section="Applications/System/Monitoring" \
+  title="iptstate" command="/usr/bin/su-to-root -c /usr/sbin/iptstate"
+?package(isomaster):needs="X11" section="Applications/File Management"\
+  title="isomaster" command="/usr/bin/isomaster"
+?package(istanbul):needs="X11"\
+	section="Applications/Video"\
+  	title="Istanbul"\
+	command="/usr/bin/istanbul"\
+	longtitle="Desktop session recorder"\
+	icon="/usr/share/pixmaps/istanbul.xpm"
+?package(jabref):needs="x11"  \
+section="Applications/Data Management" \
+title="JabRef" \
+command="jabref" \
+icon="/usr/share/pixmaps/jabref32.xpm" \
+icon32x32="/usr/share/pixmaps/jabref32.xpm" \
+icon16x16="/usr/share/pixmaps/jabref16.xpm"
+?package(jack):needs="text" section="Applications/Sound" \
+  title="jack" command="/usr/bin/jack -Q -D --wait"
+?package(jack-tools):needs="text" section="Applications/Sound"\
+  title="jack-plumbing" command="/usr/bin/jack-plumbing"
+?package(jack-tools):needs="text" section="Applications/Sound"\
+  title="jack-scope" command="/usr/bin/jack-scope"
+?package(jack-tools):needs="text" section="Applications/Sound"\
+  title="jack-transport" command="/usr/bin/jack-transport"
+?package(jedit):needs="X11" section="Applications/Programming" \
+  title="jEdit" command="/usr/bin/jedit" icon="/usr/share/pixmaps/jedit.xpm"
+?package(jed):  needs="text"			\
+		section="Applications/Editors"	\
+		title="Jed"			\
+		command="/usr/bin/jed"		\
+		hints="Text"
+?package(jnettop):needs="text" section="Applications/Network/Monitoring" \
+	title="jnettop" \
+	hints="Monitoring" \
+	longtitle="View hosts/ports taking up the most network traffic" \
+	command="/usr/bin/su-to-root -c /usr/sbin/jnettop"
+?package(josm): needs="X11" section="Applications/Science/Geoscience" title="Josm" command="/usr/bin/josm"\
+icon16x16="/usr/share/pixmaps/josm-16.xpm" icon32x32="/usr/share/pixmaps/josm-32.xpm"
+?package(jove):\
+  needs="text"\
+  hints="small, useful, featureful"\
+  section="Applications/Editors"\
+  title="jove"\
+  longtitle="Jove, Jonathan's Own Version of EMACS"\
+  command="/usr/bin/jove"
+?package(jython):needs="text" section="Applications/Programming"\
+  title="Jython" command="/usr/bin/jython"
+?package(kbibtex):needs="X11" section="Applications/Editors"\
+  title="KBiBTeX" command="/usr/bin/kbibtex"
+?package(kchmviewer): \
+    needs="X11" \
+    section="Applications/Viewers" \
+    title="kchmviewer" \
+    icon="/usr/share/pixmaps/kchmviewer.xpm" \
+    command="/usr/bin/kchmviewer"
+?package(kismet):needs="text" \
+        section="Applications/Network/Monitoring" \
+        title="Kismet" hints="Monitoring" \
+        command="/usr/bin/kismet"
+?package(klavaro):needs="X11" section="Applications/Education"\
+  icon="/usr/share/pixmaps/klavaro-logo.xpm"\
+  longtitle="touch typing tutor"\
+  title="Klavaro" command="/usr/bin/klavaro"
+?package(kmplayer):\
+	needs="X11"\
+	section="Applications/Video"\
+	hints="KDE"\
+	title="Kmplayer"\
+	command="/usr/bin/kmplayer"
+?package(kmymoney):\
+  needs="x11"\
+  section="Applications/Office"\
+  hints="KDE"\
+  title="KMyMoney"\
+  icon="/usr/share/pixmaps/kmymoney.xpm"\
+  command="/usr/bin/kmymoney"
+?package(konversation):\
+	needs="X11"\
+	section="Applications/Network/Communication"\
+	title="Konversation IRC Client"\
+	hints="KDE,IRC Clients"\
+        icon="/usr/share/pixmaps/konversation32x32.xpm"\
+        icon16x16="/usr/share/pixmaps/konversation16x16.xpm"\
+        icon32x32="/usr/share/pixmaps/konversation32x32.xpm"\
+	command="/usr/bin/konversation"
+?package(lbreakout2):needs="X11" section="Games/Blocks"\
+  title="lbreakout2" command="/usr/games/lbreakout2" icon="/usr/share/pixmaps/lbreakout2.xpm"
+?package(lincity-ng):needs="X11" \
+  section="Games/Strategy" \
+  icon="/usr/share/pixmaps/lincity-ng.xpm" \
+  title="LinCity NG" \
+  longtitle="LinCity NG - city simulator game with polished graphics" \
+  command="/usr/games/lincity-ng"
+?package(linphone):needs="X11" section="Applications/Network/Communication" \
+  title="Linphone" command="/usr/bin/linphone" hints="Telephony"\
+  icon="/usr/share/pixmaps/linphone/linphone2.xpm"
+?package(lives):needs="X11"\
+ section="Applications/Video"\
+ title="LiVES"\
+ command="lives"\
+ icon="/usr/share/pixmaps/lives.xpm"
+?package(lmms):needs="X11" section="Applications/Sound" \
+  title="LMMS" hints="Audio" command="/usr/bin/lmms" \
+  longtitle="LMMS" \
+  icon32x32="/usr/share/pixmaps/lmms.xpm"
+?package(lshw-gtk):needs="x11" section="Applications/System/Monitoring" title="lshw-gtk" command="lshw-gtk" icon="/usr/share/pixmaps/lshw-gtk.xpm"
+?package(man2html):needs="x11" \
+ section="Help" \
+ title="Man2html" \
+ command="/usr/bin/hman -P sensible-browser"
+?package(man2html):needs="text" \
+ section="Help" \
+ title="Man2html" \
+ command="/usr/bin/hman -P sensible-browser"
+# According to /usr/share/menu/ policy 1.4, not /usr/share/doc/debian-policy/
+?package(mariadb-client-10.0):needs="text" section="Applications/Data Management"\
+  title="Innotop" command="/usr/bin/innotop"
+?package(xmaxima):needs="X11" section="Applications/Education"\
+  title="xmaxima" command="/usr/bin/xmaxima"
+?package(mayavi2): \
+        needs="X11" \
+        section="Applications/Science/Engineering" \
+        title="MayaVi2" \
+        command="/usr/bin/mayavi2"
+?package(meshlab):needs="X11" section="Applications/Graphics"\
+  title="meshlab" command="/usr/bin/meshlab"
+?package(meterbridge):needs="X11" section="Applications/Sound"\
+  title="JACK meterbridge" \
+  hints="JACK" \
+  command="/usr/bin/meterbridge -t vu alsa_pcm:playback_1 alsa_pcm:playback_2"\
+  icon="/usr/share/pixmaps/meterbridge32x32.xpm"
+?package(minetest):\
+        needs="x11" \
+        section="Games/Adventure" \
+        command="/usr/games/minetest" \
+        title="Minetest" \
+        icon="/usr/share/icons/hicolor/24x24/apps/minetest.xpm" \
+        longtitle="Multiplayer infinite-world block sandbox"
+?package(minitube):needs="X11" section="Applications/Video"\
+  title="minitube" command="/usr/bin/minitube"
+?package(mirage):\
+  needs="X11"\
+  section="Applications/Viewers"\
+  title="Mirage"\
+  longtitle="Mirage image viewer"\
+  command="mirage"
+?package(mixxx):\
+ needs="X11"\
+ section="Applications/Sound"\
+ title="Mixxx"\
+ command="/usr/bin/mixxx"\
+ icon="/usr/share/pixmaps/mixxx.xpm"
+?package(moc):needs="text" section="Applications/Sound"\
+  title="moc" command="/usr/bin/mocp"
+?package(monodevelop):needs="X11" section="Applications/Programming"\
+  title="MonoDevelop" command="/usr/bin/monodevelop"\
+  icon="/usr/share/icons/hicolor/scalable/apps/monodevelop.svg"
+?package(mp3info-gtk):needs="X11" section="Applications/Sound" \
+  title="MP3 info" command="/usr/bin/gmp3info"
+?package(mumble):needs="X11" section="Applications/Network/Communication"\
+ title="Mumble"\
+ description="Mumble voice chat client."\
+ command="/usr/bin/mumble" icon="/usr/share/pixmaps/mumble.xpm"
+?package(musescore):needs="X11" section="Applications/Sound"\
+  title="MuseScore" command="mscore" \
+  longtitle="Full featured WYSIWYG score editor" \
+  icon="/usr/share/pixmaps/mscore.xpm"
+?package(mypaint):needs="X11" section="Applications/Graphics"\
+  title="MyPaint" command="/usr/bin/mypaint"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/bl2seq" needs="X11" \
+	section="Applications/Science/Biology" title="bl2seq" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blast2" needs="X11" \
+	section="Applications/Science/Biology" title="blast2" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blastall" needs="X11" \
+	section="Applications/Science/Biology" title="blastall" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blastall_old" needs="X11" \
+	section="Applications/Science/Biology" title="blastall_old" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blastcl3" needs="X11" \
+	section="Applications/Science/Biology" title="blastcl3" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blastclust" needs="X11" \
+	section="Applications/Science/Biology" title="blastclust" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/blastpgp" needs="X11" \
+	section="Applications/Science/Biology" title="blastpgp" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/copymat" needs="X11" \
+	section="Applications/Science/Biology" title="copymat" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/fastacmd" needs="X11" \
+	section="Applications/Science/Biology" title="fastacmd" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/formatdb" needs="X11" \
+	section="Applications/Science/Biology" title="formatdb" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/formatrpsdb" needs="X11" \
+	section="Applications/Science/Biology" title="formatrpsdb" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/impala" needs="X11" \
+	section="Applications/Science/Biology" title="impala" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/makemat" needs="X11" \
+	section="Applications/Science/Biology" title="makemat" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/megablast" needs="X11" \
+	section="Applications/Science/Biology" title="megablast" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/rpsblast" needs="X11" \
+	section="Applications/Science/Biology" title="rpsblast" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/seedtop" needs="X11" \
+	section="Applications/Science/Biology" title="seedtop" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6b,blast2):command="/usr/bin/vibrate /usr/bin/taxblast" needs="X11" \
+	section="Applications/Science/Biology" title="taxblast" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncmpcpp):needs="text" section="Applications/Sound" \
+  title="ncmpcpp" longtitle="NCurses Music Player Client" \
+  command="/usr/bin/ncmpcpp" hints="Player"
+?package(netdiag):needs="text" section="Applications/Network/Monitoring" title="statnet" \
+  command="/usr/bin/statnet"
+?package(netdiag):needs="text" section="Applications/Network/Monitoring" title="netwatch" \
+  command="/usr/sbin/netwatch"
+?package(netdiag):needs="text" section="Applications/Network/Monitoring" title="trafshow" \
+  command="/usr/sbin/trafshow"
+?package(nethack-console):needs="text" \
+        command="/usr/games/nethack-console" \
+	hints="Roguelike,Maze,Dungeon" \
+        section="Games/Adventure" \
+	title="NetHack (No GUI)" \
+	icon="/usr/share/pixmaps/nethack.xpm"
+?package(telnet-ssl): \
+	needs="text" section="Applications/Network/Communication" \
+	title="Telnet-SSL" command="/usr/bin/telnet-ssl" hints="Terminal"
+?package(neverball): needs="X11" \
+  section="Games/Action" \
+  title="Neverball" \
+  longtitle="Neverball - 3D floor-tilting game" \
+  command="/usr/games/neverball" \
+  icon="/usr/share/pixmaps/neverball.xpm"
+?package(nitrogen):needs="X11" section="Applications/System/Administration" \
+title="nitrogen" command="/usr/bin/nitrogen"
+?package(obmenu):needs="X11"\
+	section="Applications/System/Administration"\
+    title="Openbox Menu Editor"\
+    command="/usr/bin/obmenu"
+?package(octave-htmldoc):needs="X11" \
+	section="Help" \
+        title="Octave" \
+        longtitle="The GNU Octave language for numerical computations"\
+        description="Octave is a (mostly Matlab (R) compatible) high-level \
+                language, primarily intended for numerical computations. \
+                It provides a convenient command-line interface for solving \
+                linear and nonlinear problems numerically." \
+        command="/usr/share/doc/octave-htmldoc/interpreter/index.html"
+?package(octave-htmldoc):needs="X11" \
+	section="Help" \
+        title="Octave Library" \
+        longtitle="The GNU Octave Library"\
+        description="This document describes the Octave libraries. Octave \
+                is a (mostly Matlab (R) compatible) high-level \
+                language, primarily intended for numerical computations. \
+                It provides a convenient command-line interface for solving \
+                linear and nonlinear problems numerically." \
+        command="/usr/share/doc/octave-htmldoc/liboctave/index.html"
+?package(openarena): \
+	needs="X11" \
+	section="Games/Action" \
+	title="OpenArena" \
+	longtitle="A fast-paced 3D first-person shooter, inspired by id Software Inc.'s Quake III Arena" \
+	icon="/usr/share/pixmaps/openarena32.xpm" \
+	command="/usr/games/openarena"
+?package(openttd):needs="X11" section="Games/Simulation" title="OpenTTD"\
+command="/usr/games/openttd" icon="/usr/share/pixmaps/openttd.32.xpm"
+?package(oregano):\
+	needs="X11"\
+	section="Applications/Science/Electronics"\
+	hints="CAD,Simulation,Electric,Schematics"\
+	title="Oregano"\
+	command="/usr/bin/oregano"
+?package(pan):needs="X11" section="Applications/Network/Communication"\
+  title="Pan" command="/usr/bin/pan" hints="News Reader"\
+  icon="/usr/share/pixmaps/pan.xpm"
+?package(pcb-gtk):needs="x11" section="Applications/Science/Electronics" \
+	title="PCB (GTK+ interface)"                                           \
+	longtitle="Printed Circuit Board Design Program"      \
+	hotkey="P" icon="/usr/share/pixmaps/pcb.xpm"          \
+	command="/usr/bin/pcb-gtk"
+?package(pdfchain):needs="X11" section="Applications/Graphics"\
+  title="pdfchain" command="/usr/bin/pdfchain"
+?package(pdfshuffler):needs="X11" section="Applications/Office/"\
+  title="pdfshuffler" command="/usr/bin/pdfshuffler"
+?package(pdl):\
+ needs="text"\
+ section="Applications/Science/Mathematics"\
+ title="PerlDl"\
+ command="/usr/bin/perldl"
+?package(picard): needs="X11" section="Applications/Sound" title="Picard" \
+  longtitle="Picard - Next-Generation MusicBrainz audio files tagger" \
+  command="/usr/bin/picard" icon="/usr/share/pixmaps/picard.xpm"
+?package(pinfo):needs="text" section="Help" title="Info Browser" command="pinfo"
+?package(pingus):needs="X11" \
+  section="Games/Strategy" \
+  title="Pingus - Enhanced Lemmings clone" \
+  command="/usr/games/pingus" \
+  icon="/usr/share/pixmaps/pingus.xpm"
+?package(poedit):needs="X11" section="Applications/Text"\
+  title="Poedit" longtitle="gettext catalog editor"\
+  description="Poedit is an editor for gettext catalogs (.po files). It aims to provide a convenient approach to editing catalogs."\
+  command="/usr/bin/poeditor" icon="/usr/share/pixmaps/poedit.xpm"\
+  hints="gettext,l10n"
+?package(pppconfig):needs="text" section="Applications/System/Administration"\
+  title="pppconfig"\
+    command="su-to-root -p root -c /usr/sbin/pppconfig"
+?package(psi):needs="X11" section="Applications/Network/Communication"\
+  title="Psi" command="/usr/bin/psi"\
+  icon="/usr/share/pixmaps/psi.xpm"
+?package(puredata-core,puredata-gui):needs="x11" section="Applications/Sound"\
+  title="PureData" \
+  command="/usr/bin/puredata" \
+  icon="/usr/share/pixmaps/puredata.xpm"
+?package(pymol):\
+	needs="x11" \
+	section="Applications/Science/Chemistry" \
+	command="/usr/bin/pymol" \
+	icon="/usr/share/pixmaps/pymol.xpm" \
+	title="PyMOL" \
+	longtitle="PyMOL Molecular Graphics System"
+?package(pyrenamer): needs="X11" \
+  section="Applications/File Management" \
+  hints="Gnome" \
+  title="pyRenamer" \
+  icon="/usr/share/pixmaps/pyrenamer.xpm" \
+  command="/usr/bin/pyrenamer"
+?package(idle):needs="X11" section="Applications/Programming"\
+	title="IDLE (Python IDE)"\
+	icon="/usr/share/pixmaps/idle.xpm"\
+	command="/usr/bin/idle" \
+	hints="Environments"
+?package(qalculate-gtk):\
+  needs="X11"\
+  section="Applications/Science/Mathematics" \
+  title="Qalculate"\
+  command="/usr/bin/qalculate-gtk"
+?package(qgis):needs="X11" section="Applications/Science/Geoscience"\
+  icon="/usr/share/pixmaps/qgis.xpm" title="QGIS"\
+  command="/usr/bin/qgis"
+?package(qgit):needs="X11" section="Applications/Programming"\
+  title="qgit" command="/usr/bin/qgit"
+?package(qlandkartegt):\
+    needs="X11"\
+    section="Applications/Science/Geoscience"\
+    title="QLandkarteGT"\
+    icon="/usr/share/pixmaps/qlandkartegt.xpm"\
+    command="/usr/bin/qlandkartegt"
+?package(qmmp):needs="X11" section="Applications/Sound"\
+  title="qmmp" command="/usr/bin/qmmp"
+?package(qpdfview): \
+        needs="X11" \
+        section="Applications/Viewers" \
+        title="qPDFview" \
+        hints="Qt" \
+        command="qpdfview" \
+        icon="/usr/share/qpdfview/qpdfview.xpm"
+?package(qsynth):needs="X11" section="Applications/Sound"\
+  title="qsynth" command="/usr/bin/qsynth" hints="MIDI Synth"\
+  icon="/usr/share/pixmaps/qsynth.xpm"
+?package(qtiplot): \
+	needs="X11" \
+	section="Applications/Science/Data Analysis" \
+	title="QtiPlot" \
+	command="/usr/bin/qtiplot" \
+	icon="/usr/share/pixmaps/qtiplot.xpm"
+?package(qtoctave):needs="X11" section="Applications/Science/Mathematics"\
+  title="QtOctave" command="/usr/bin/qtoctave"
+?package(quicksynergy):needs="X11" section="Applications/System/Administration" \
+  title="QuickSynergy" command="/usr/bin/quicksynergy" \
+  longtitle="A graphical interface to easily configure Synergy" \
+  icon="/usr/share/pixmaps/quicksynergy.xpm"
+?package(rapidsvn):\
+	needs="X11"\
+	section="Applications/Programming"\
+	title="RapidSVN"\
+	icon="/usr/share/pixmaps/rapidsvn.xpm"\
+	command="/usr/bin/rapidsvn"
+?package(rawtherapee):needs="x11"  \
+section="Applications/Graphics" \
+title="RawTherapee" \
+command="rawtherapee" \
+icon="/usr/share/pixmaps/rawtherapee.xpm"
+?package(rc):needs="text" section="Applications/Shells" \
+    title="rc" command="/usr/bin/rc"
+?package(gtk-redshift): \
+	needs="X11" \
+	section="Games/Toys" \
+	title="Redshift" \
+	command="redshift-gtk"
+?package(ripperx):\
+	needs="X11"\
+	section="Applications/Sound"\
+	title="ripperX"\
+	icon="/usr/share/pixmaps/ripperx.xpm"\
+	command="/usr/bin/ripperX"
+?package(rosegarden):\
+        needs="X11"\
+        section="Applications/Sound"\
+        title="Rosegarden"\
+        command="/usr/bin/rosegarden"\
+        longtitle="Rosegarden Music Editor"\
+        hotkey="rg"\
+        hints="MIDI,Music Editor"\
+        icon="/usr/share/pixmaps/rosegarden.xpm"\
+        description="Rosegarden is a musical notation editor and \
+a MIDI and Audio sequencer, with both score and piano-roll notations."
+?package(roxterm-gtk3):needs="X11" section="Applications/Terminal Emulators"\
+  title="ROXTerm"\
+  icon="/usr/share/pixmaps/roxterm.xpm"\
+  command="/usr/bin/roxterm"
+?package(rxvt):needs="x11" section="Games/Tools"    \
+   hints="Clocks"    \
+   longtitle="Rclock: another clock for X"               title="Rclock"\
+   command="/usr/bin/rclock"
+?package(rxvt):needs="x11" section="Applications/Terminal Emulators"      \
+   longtitle="Rxvt: terminal emulator for X"            title="Rxvt"\
+   command="/usr/bin/rxvt-xterm"
+?package(rxvt-unicode-256color):needs="x11" \
+   section="Applications/Terminal Emulators" \
+   longtitle="Rxvt-Unicode: terminal emulator for X" \
+   title="Rxvt-Unicode" \
+   command="rxvt-unicode" \
+   icon="/usr/share/pixmaps/urxvt.xpm" \
+   icon16x16="/usr/share/pixmaps/urxvt_16x16.xpm" \
+   icon32x32="/usr/share/pixmaps/urxvt_32x32.xpm"
+?package(sash):needs="text" section="Applications/Shells" title="Sash" command="/bin/sash"
+?package(scite):needs="x11" section="Applications/Editors"\
+  title="scite" command="/usr/bin/scite" \
+  icon="/usr/share/scite/Sci32M.xpm"
+?package(scratch):needs="X11" section="Applications/Education" \
+  title="Scratch" command="/usr/bin/scratch" \
+  icon="/usr/share/pixmaps/scratch.xpm"
+?package(scummvm):needs="x11" section="Games/Adventure" \
+  title="ScummVM" command="/usr/games/scummvm" \
+  icon="/usr/share/icons/scummvm.xpm"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Black Box" command="/usr/games/sgt-blackbox"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Bridges" command="/usr/games/sgt-bridges"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Cube" command="/usr/games/sgt-cube"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Dominosa" command="/usr/games/sgt-dominosa"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Fifteen" command="/usr/games/sgt-fifteen"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Filling" command="/usr/games/sgt-filling"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Flip" command="/usr/games/sgt-flip"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Galaxies" command="/usr/games/sgt-galaxies"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Guess" command="/usr/games/sgt-guess"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Inertia" command="/usr/games/sgt-inertia"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Keen" command="/usr/games/sgt-keen"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Light Up" command="/usr/games/sgt-lightup"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Loopy" command="/usr/games/sgt-loopy"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Magnets" command="/usr/games/sgt-magnets"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Map" command="/usr/games/sgt-map"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Mines" command="/usr/games/sgt-mines"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Net" command="/usr/games/sgt-net"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Netslide" command="/usr/games/sgt-netslide"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Pattern" command="/usr/games/sgt-pattern"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Pearl" command="/usr/games/sgt-pearl"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Pegs" command="/usr/games/sgt-pegs"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Range" command="/usr/games/sgt-range"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Rectangles" command="/usr/games/sgt-rect"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Same Game" command="/usr/games/sgt-samegame"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Signpost" command="/usr/games/sgt-signpost"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Singles" command="/usr/games/sgt-singles"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Sixteen" command="/usr/games/sgt-sixteen"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Slant" command="/usr/games/sgt-slant"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Solo" command="/usr/games/sgt-solo"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Tents" command="/usr/games/sgt-tents"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Towers" command="/usr/games/sgt-towers"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Twiddle" command="/usr/games/sgt-twiddle"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Unequal" command="/usr/games/sgt-unequal"
+?package(sgt-puzzles):needs="x11" section="Games/Puzzles" title="Untangle" command="/usr/games/sgt-untangle"
+?package(slrn):needs="text" section="Applications/Network/Communication" \
+        title="Slrn" longtitle="Slrn News Reader" command="/usr/bin/slrn" \
+	hints="News Reader"\
+	icon="/usr/share/pixmaps/slrn-icon.xpm"
+?package(smb4k):\
+    needs="X11"\
+    section="Applications/Network/Communication"\
+    hints="KDE"\
+    title="SAMBA for KDE"\
+    longtitle="SAMBA Advanced Browser"\
+    command="/usr/bin/smb4k"
+?package(speedcrunch):needs="X11" section="Applications/Science/Mathematics"\
+  longtitle="High precision desktop calculator"\
+  icon="speedcrunch.xpm"\
+  title="SpeedCrunch" command="/usr/bin/speedcrunch"
+?package(spyder):needs="X11" section="Applications/Programming"\
+  title="spyder" command="/usr/bin/spyder"
+?package(stardict-common): \
+        needs="X11" \
+        section="Applications/Text" \
+        title="stardict" \
+        longtitle="dictionary lookup program" \
+        command="/usr/bin/stardict" \
+        icon="/usr/share/pixmaps/stardict_32x32.xpm" \
+        icon16x16="/usr/share/pixmaps/stardict_16x16.xpm" \
+        hints="Translation,Dictionary"
+?package(startupmanager):needs="X11" \
+  section="Applications/System/Administration" \
+  title="Startup-Manager" \
+  command="su-to-root -X -c /usr/sbin/startupmanager"
+?package(subtitleeditor):needs="X11" \
+        section="Applications/Editors" \
+        title="SubtitleEditor" \
+        hints="Gnome" \
+        command="/usr/bin/subtitleeditor" \
+        longtitle="SubtitleEditor - subtitle editor" \
+        icon="/usr/share/pixmaps/subtitleeditor.xpm"
+?package(supertux):needs="X11" section="Games/Action"\
+  title="SuperTux" command="/usr/games/supertux"\
+  icon="/usr/share/games/supertux/images/icon.xpm"
+?package(swi-prolog-nox):needs="text" section="Applications/Programming"\
+  title="SWI-Prolog" command="/usr/bin/swipl"
+?package(swi-prolog-x):needs="text" section="Applications/Programming"\
+  title="SWI-Prolog (with XPCE)" command="/usr/bin/xpce"
+?package(sylpheed):\
+needs="X11"\
+section="Applications/Network/Communication"\
+title="Sylpheed"\
+longtitle="Sylpheed Lightweight GTK+ Email Client"\
+hints="GTK+-based Mail and News Client"\
+icon="/usr/share/pixmaps/sylpheed-debian.xpm"\
+command="/usr/bin/sylpheed"
+?package(python-sympy):needs="text" section="Applications/Science/Mathematics"\
+	title="sympy"\
+	icon="/usr/share/pixmaps/isympy.xpm"\
+	command="/usr/bin/isympy"
+?package(sysinfo):needs="X11" \
+  section="Applications/System/Monitoring" \
+  title="sysinfo" \
+  command="/usr/bin/sysinfo"
+?package(isag):needs="x11" \
+	section="Applications/System/Monitoring" \
+        title="Isag" \
+	hints="Monitoring" \
+        command="/usr/bin/isag"
+?package(terminal.app):needs="X11"\
+  section="Applications/Terminal Emulators"\
+  title="Terminal"\
+  hints="GNUstep"\
+  longtitle="Terminal, a Terminal Emulator for GNUstep"\
+  icon="/usr/share/pixmaps/Terminal.xpm"\
+  description="Terminal.app provides terminal emulation in a GNUstep\
+		environment. It gives colorized terminals with configurable\
+		fonts, and also allows users to configure shell utilities\
+		as GNUstep services."\
+  command="/usr/bin/Terminal"
+?package(textedit.app):needs="X11" section="Applications/Editors"\
+  title="TextEdit" command="/usr/bin/TextEdit"
+?package(tiger):needs="text" section="Applications/System/Security" \
+  title="Tiger UNIX security tool" \
+  longtitle="Tiger UNIX security tool (root)" \
+  command="su-to-root -c '/usr/sbin/tiger'"
+?package(tinyca):\
+  needs="X11"\
+  section="Applications/System/Security"\
+  title="TinyCA"\
+  command="/usr/bin/tinyca2"
+?package(torcs):needs="X11" section="Games/Simulation"\
+  title="TORCS" command="/usr/games/torcs" \
+  hints="A racing cars simulator game" \
+  icon="/usr/share/pixmaps/torcs.xpm"
+?package(tuxguitar):needs="X11" section="Applications/Sound"\
+  title="tuxguitar" command="/usr/bin/tuxguitar"
+?package(tuxmath):needs="X11" section="Applications/Education"\
+  icon="/usr/share/tuxmath/images/icons/icon.xpm" \
+  title="Tuxmath" command="/usr/games/tuxmath"
+?package(tuxpaint-config):needs="X11" section="Applications/Graphics"\
+  title="tuxpaint-config" command="/usr/bin/tuxpaint-config" icon="/usr/share/pixmaps/tuxpaint-config.xpm"
+?package(tuxpaint):needs="X11" section="Applications/Graphics"\
+  title="tuxpaint" command="/usr/bin/tuxpaint" icon="/usr/share/pixmaps/tuxpaint.xpm"
+?package(tuxtype):needs="X11" section="Applications/Education"\
+  icon="/usr/share/pixmaps/tuxtype.xpm" \
+  title="Tux Typing" command="/usr/games/tuxtype"
+?package(umlet):needs="X11" section="Applications/Programming"\
+  title="UMLet" command="/usr/bin/umlet"
+?package(unixodbc-bin):\
+	needs="x11"\
+	section="Applications/System/Administration"\
+	title="ODBCCreateDataSourceQ4"\
+	command="ODBCCreateDataSourceQ4"
+?package(unixodbc-bin):\
+	needs="x11"\
+	section="Applications/System/Administration"\
+	title="ODBCManageDataSourcesQ4"\
+	command="ODBCManageDataSourcesQ4"
+?package(usbview):needs="X11" section="Applications/System/Hardware" \
+  title="USB View" command="/usr/bin/usbview"
+?package(v4l2ucp): needs="x11"\
+ section="Applications/System/Hardware"\
+ title="v4l2ucp"\
+ command="/usr/bin/v4l2ucp"
+?package(viking):\
+needs="X11"\
+section="Applications/Science/Geoscience"\
+title="Viking"\
+command="/usr/bin/viking"\
+icon="/usr/share/pixmaps/viking.xpm"
+?package(vym):needs="X11" \
+  section="Applications/Office" \
+  hints="KDE" \
+  title="Vym" \
+  longtitle="View your mind" \
+  command="/usr/bin/vym" \
+  icon="/usr/share/vym/icons/vym.xpm"
+?package(wammu): \
+        needs="x11" \
+		section="Applications/Mobile Devices" \
+        title="Wammu" \
+        longtitle="Wammu Mobile Phone Manager" \
+        icon="/usr/share/pixmaps/wammu.xpm" \
+        command="/usr/bin/wammu"
+?package(wavemon):needs="text" section="Applications/Network/Monitoring" \
+	title="wavemon" \
+	command="/usr/bin/wavemon"
+?package(weechat-curses):needs="text" section="Applications/Network/Communication" \
+		title="weechat" \
+		icon="/usr/share/pixmaps/weechat.xpm" \
+		command="/usr/bin/weechat"
+?package(wesnoth-1.10-core): \
+ needs="X11" \
+ section="Games/Strategy" \
+ title="Battle for Wesnoth (1.10)" \
+ longtitle="Battle for Wesnoth (1.10) is a fantasy turn-based strategy game" \
+ command="/usr/games/wesnoth-1.10-nolog" \
+ icon="/usr/share/pixmaps/wesnoth-1.10-icon.xpm"
+?package(wesnoth-1.10-core): \
+ needs="X11" \
+ section="Games/Tools" \
+ title="Battle for Wesnoth Editor (1.10)" \
+ longtitle="Map editor for Battle for Wesnoth (1.10), a fantasy turn-based strategy game" \
+ command="/usr/games/wesnoth-1.10-nolog -e" \
+ icon="/usr/share/pixmaps/wesnoth-1.10_editor-icon.xpm"
+?package(wifi-radar):\
+ title="WiFi Radar"\
+ needs="X11"\
+ section="Applications/Network/Monitoring"\
+ command="su-to-root -X -c /usr/sbin/wifi-radar"\
+ icon="/usr/share/pixmaps/wifi-radar.xpm"
+?package(wmaker):needs="wm" \
+	section="Window Managers" title="Window Maker" \
+	command="/usr/bin/wmaker"
+?package(wmaker):needs="wmaker" \
+	section="/" title="Run..." \
+	command="SHEXEC \"%A(Run,Type Command:)\""
+?package(wmaker):needs="wmaker" \
+	section="/" title="Exit" sort="ZZ" \
+        command="EXIT"
+?package(wmaker):needs="wmaker" \
+	section="/" title="Exit session" sort="ZZ" \
+        command="SHUTDOWN"
+?package(wmaker):needs="wmaker" \
+	section="Window Maker" title="Restart" \
+        command="RESTART"
+?package(wmaker):needs="wmaker" \
+        section="Window Maker" title="Info Panel ..." \
+        command="INFO_PANEL"
+?package(wmaker):needs="wmaker" \
+        section="Window Maker" title="Legal Panel ..." \
+        command="LEGAL_PANEL"
+?package(wmaker):needs="wmaker" \
+        section="Window Maker" title="Preferences" \
+        command="EXEC" arg="WPrefs"
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Workspaces" \
+        command="WORKSPACE_MENU"
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Hide Others" \
+        command="HIDE_OTHERS"  
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Show All" \
+        command="SHOW_ALL"
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Arrange Icons" \
+        command="ARRANGE_ICONS"
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Save Session" \
+        command="SAVE_SESSION"
+?package(wmaker):needs="wmaker" \
+	section="WorkSpace" title="Clear Session" \
+        command="CLEAR_SESSION"
+?package(wmaker):needs="wmaker" \
+	section="Window Maker" title="Refresh screen" \
+        command="REFRESH"
+?package(wmaker):needs="wmaker" \
+        section="WorkSpace" title="Appearance" \
+        command="OPEN_MENU" arg="appearance.menu"
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Background"\
+        sort="$" \
+        command="OPEN_MENU background.menu"
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Styles"\
+        sort="$" \
+        command="OPEN_MENU -noext LOCAL_STYLES_DIR STYLES_DIR USER_STYLES_DIR WITH setstyle"
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Themes"\
+        sort="$" \
+        command="OPEN_MENU -noext LOCAL_THEMES_DIR THEMES_DIR USER_THEMES_DIR WITH setstyle"
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Icon Sets"\
+        sort="ss" \
+        command="OPEN_MENU -noext LOCAL_ICON_SETS_DIR ICON_SETS_DIR USER_ICON_SETS_DIR WITH seticons"
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Save IconSet"\
+        sort="zz" \
+        command="EXEC geticonset USER_ICON_SETS_DIR/\"%a(IconSet name)\""
+?package(wmaker):needs="wmappearance" \
+	section="Appearance" title="Save Theme"\
+        sort="zz" \
+        command="EXEC getstyle -t USER_THEMES_DIR/\"%a(Theme name)\""
+?package(wmbiff):needs="X11" section="Apps/Net" \
+  title="WMbiff" command="/usr/bin/wmbiff"
+?package(workrave):needs="X11" section="Screen/Locking"\
+  title="Workrave"\
+  longtitle="Workrave: RSI prevention tool"\
+  command="/usr/bin/workrave"\
+  icon="/usr/share/pixmaps/workrave/workrave.xpm"
+?package(wpagui): \
+	needs="X11" \
+	section="Applications/Network/Monitoring" \
+	title="wpa_supplicant user interface" \
+	icon32x32="/usr/share/pixmaps/wpa_gui.xpm" \
+	icon16x16="/usr/share/pixmaps/wpa_gui-16.xpm" \
+	command="/usr/sbin/wpa_gui"
+?package(python-wxtools):needs="X11" section="Applications/Programming"\
+  title="pycrust" command="/usr/bin/pycrust"\
+  icon="/usr/share/pixmaps/pycrust.xpm"
+?package(python-wxtools):needs="X11" section="Applications/Programming"\
+  title="xrced" command="/usr/bin/xrced"\
+  icon="/usr/share/pixmaps/xrced.xpm"
+?package(xawtv):needs="x11" section="Applications/TV and Radio" \
+	title="xawtv" command="/usr/bin/xawtv" \
+	icon16x16="/usr/share/pixmaps/xawtv16x16.xpm" \
+	icon32x32="/usr/share/pixmaps/xawtv32x32.xpm"
+?package(xbindkeys):needs="X11" \
+		    section="Applications/Accessibility" \
+		    title="xbindkeys" \
+		    command="/usr/bin/xbindkeys" \
+		    hints="Keys,Bind" \
+		    longtitle="XBindKeys - associate keys or mouse buttons with shell commands." 
+?package(xchm):needs="X11" section="Applications/Viewers" \
+  title="xCHM" command="/usr/bin/xchm" \
+  icon="/usr/share/pixmaps/xchm.xpm"
+?package(xcircuit):needs="X11" \
+	section="Applications/Graphics" \
+	title="Xcircuit" \
+	command="/usr/bin/xcircuit" \
+	hints="Vector" \
+	icon="/usr/share/pixmaps/xcircuit/xcircuit-icon.xpm"
+?package(xcircuit):needs="X11" \
+	section="Applications/Science/Electronics" \
+	title="Xcircuit" \
+	command="/usr/bin/xcircuit" \
+	hints="CAD,Electric" \
+	icon="/usr/share/pixmaps/xcircuit/xcircuit-icon.xpm"
+?package(xemacs21-mule):\
+  needs="X11"\
+  section="Applications/Editors"\
+  title="XEmacs21-mule"\
+  command="/usr/bin/xemacs21-mule"\
+  hints="Text"
+?package(xemacs21-mule):\
+  needs="text"\
+  section="Applications/Editors"\
+  title="XEmacs21-mule"\
+  command="/usr/bin/xemacs21-mule -nw"\
+  hints="Text"
+?package(xfe):needs="X11" section="Applications/File Management"\
+  title="X File Manager" command="/usr/bin/xfe" \
+  longtitle="Lightweight File Manager" \
+  icon="/usr/share/pixmaps/xfe.xpm"
+?package(xfe):needs="X11" section="Applications/System/Package Management"\
+  title="X File Package Manager" command="/usr/bin/xfpack" \
+  longtitle="Simple RPM/DEB Package Manager" \
+  icon="/usr/share/pixmaps/xfp.xpm"
+?package(xfe):needs="X11" section="Applications/Viewers"\
+  title="X File Viewer" command="/usr/bin/xfview" \
+  longtitle="Simple Text File Viewer" \
+  icon="/usr/share/pixmaps/xfv.xpm"
+?package(xfe):needs="X11" section="Applications/Viewers"\
+  title="X File Image Viewer" command="/usr/bin/xfimage" \
+  longtitle="Simple Image File Viewer" \
+  icon="/usr/share/pixmaps/xfi.xpm"
+?package(xfe):needs="X11" section="Applications/Editors"\
+  title="X File Writer" command="/usr/bin/xfwrite" \
+  longtitle="Simple Text File Writer" \
+  icon="/usr/share/pixmaps/xfw.xpm"
+?package(xkeycaps):needs="x11" section="Applications/System/Administration" title="xkeycaps" command="/usr/bin/xkeycaps"
+?package(xmonad):needs="wm" \
+	section="Window Managers" \
+	title="Xmonad" \
+	command="/usr/bin/xmonad"
+?package(xosview):needs="X11" section="Applications/System/Monitoring" \
+  title="Xosview" command="/usr/bin/xosview" hints="Monitoring" \
+  icon="/usr/share/pixmaps/xosview.xpm"
+?package(xpaint):needs="X11" section="Applications/Graphics" \
+          title="Xpaint" hints="Bitmap" \
+          longtitle="Xpaint: simple paint program for X" \
+          command="/usr/bin/xpaint"
+?package(xplanet):needs="X11" section="Applications/Science/Astronomy"\
+  title="xplanet" command="/usr/bin/xplanet"
+?package(xpp):needs="X11" section="Applications/System/Hardware"\
+  title="X Printing Panel" command="/usr/bin/xpp"\
+  icon="/usr/share/pixmaps/xpp.xpm" \
+  hints="Printing,Printer,Print,CUPS"
+?package(xsensors):needs="X11" section="Applications/System/Monitoring"\
+  title="XSensors" command="/usr/bin/xsensors"
+?package(xzgv):needs="X11" section="Applications/Viewers"\
+  title="xzgv Image Viewer" command="/usr/bin/xzgv" hints="Images"\
+  icon="/usr/share/pixmaps/xzgv.xpm"
+?package(zim):needs="x11" \
+	section="Applications/Data Management" \
+	title="zim" \
+	icon="/usr/share/pixmaps/zim.xpm" \
+	command="/usr/bin/zim"
+?package(zipper.app):needs="X11" section="Applications/File Management"\
+  title="Zipper" command="/usr/bin/Zipper"\
+  icon="/usr/share/pixmaps/zipper.xpm"\
+  longtitle="Archive manager for GNUstep"
