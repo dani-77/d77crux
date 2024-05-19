@@ -1,0 +1,851 @@
+# traditional Chinese translation of camorama.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Chao-Hsiung Liao <pesder.liao@msa.hinet.net>, 2005.
+# Mauro Carvalho Chehab <mchehab@infradead.org>, 2018. #zanata
+# Enfong Cao <nelson22768384@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: camorama 0.20.6\n"
+"Report-Msgid-Bugs-To: https://github.com/alessio/camorama\n"
+"POT-Creation-Date: 2022-03-24 15:31+0100\n"
+"PO-Revision-Date: 2021-03-27 05:01+0000\n"
+"Last-Translator: Enfong Cao <nelson22768384@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
+"projects/camorama/master/zh_TW/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5.1\n"
+
+#: camorama.appdata.xml.in:6
+msgid "Camorama"
+msgstr "Camorama"
+
+#: camorama.appdata.xml.in:7 camorama.desktop.in:4
+msgid "Camorama Webcam Viewer"
+msgstr "Camorama 網路攝影機檢視器"
+
+#: camorama.appdata.xml.in:9
+msgid ""
+"Camorama is a simple webcam viewer, with the ability to apply some video "
+"effects."
+msgstr ""
+
+#: camorama.desktop.in:5 src/callbacks.c:530
+msgid "View, alter and save images from a webcam"
+msgstr "檢視、交換與儲存網路攝影機的影像"
+
+#: camorama.desktop.in:10
+msgid "camorama;webcam;viewer;video-effects;"
+msgstr ""
+
+#: data/camorama-gtk3.ui:57 data/camorama-gtk4.ui:49
+msgid "Camorama-libglade"
+msgstr "Camorama-libglade"
+
+#: data/camorama-gtk3.ui:83 data/camorama-gtk4.ui:75
+#, fuzzy
+msgid "_Take Picture"
+msgstr "拍照"
+
+#: data/camorama-gtk3.ui:94 data/camorama-gtk4.ui:86
+#, fuzzy
+#| msgid "Toggles local capture"
+msgid "Toggle _Full Screen"
+msgstr "切換本地端擷取"
+
+#: data/camorama-gtk3.ui:149 data/camorama-gtk4.ui:141
+msgid "_View"
+msgstr "檢視(_V)"
+
+#: data/camorama-gtk3.ui:158 data/camorama-gtk3.ui:337
+#: data/camorama-gtk4.ui:150 data/camorama-gtk4.ui:329
+msgid "Show Adjustments"
+msgstr "顯示調整鈕"
+
+#: data/camorama-gtk3.ui:168 data/camorama-gtk4.ui:160
+msgid "Show Effects"
+msgstr "顯示效果"
+
+#: data/camorama-gtk3.ui:177 data/camorama-gtk4.ui:169
+msgid "_Change Camera"
+msgstr "切換鏡頭(_C)"
+
+# calendar/gui/calendar-model.c:499
+# calendar/gui/calendar-model.c:1068
+# calendar/gui/calendar-model.c:1574
+# calendar/gui/dialogs/task-editor-dialog.glade.h:13
+# calendar/gui/e-calendar-table.c:346
+# mail/message-list.c:688
+#: data/camorama-gtk3.ui:192 data/camorama-gtk4.ui:184
+msgid "Small"
+msgstr "小"
+
+#: data/camorama-gtk3.ui:357
+msgid "Show Controls"
+msgstr ""
+
+#: data/camorama-gtk3.ui:396 data/camorama-gtk4.ui:381
+msgid "Full Screen"
+msgstr ""
+
+#: data/camorama-gtk3.ui:441 data/camorama-gtk4.ui:428
+msgid "Take Picture"
+msgstr "拍照"
+
+#: data/camorama-gtk3.ui:536 data/camorama-gtk4.ui:523
+msgid "Contrast:"
+msgstr "對比:"
+
+#: data/camorama-gtk3.ui:548 data/camorama-gtk4.ui:535
+msgid "Brightness:"
+msgstr "亮度:"
+
+#: data/camorama-gtk3.ui:560 data/camorama-gtk4.ui:547
+msgid "Color:"
+msgstr "色彩:"
+
+#: data/camorama-gtk3.ui:572 data/camorama-gtk4.ui:559
+msgid "Hue:"
+msgstr "色調:"
+
+#: data/camorama-gtk3.ui:584 data/camorama-gtk4.ui:571
+msgid "White Balance:"
+msgstr "白平衡:"
+
+#: data/camorama-gtk3.ui:666 data/camorama-gtk4.ui:653
+msgid "Zoom:"
+msgstr "縮放:"
+
+#: data/camorama-gtk3.ui:714
+#, fuzzy
+msgid "Threshold:"
+msgstr "臨界值:"
+
+#: data/camorama-gtk3.ui:748
+msgid "Channel Threshold:"
+msgstr ""
+
+#: data/camorama-gtk3.ui:865 data/camorama-gtk4.ui:784
+msgid "<span weight=\"bold\">General</span>"
+msgstr "<span weight=\"bold\">一般</span>"
+
+#: data/camorama-gtk3.ui:899 data/camorama-gtk4.ui:818
+msgid "Automatic Capture"
+msgstr "自動擷取"
+
+#: data/camorama-gtk3.ui:921 data/camorama-gtk3.ui:1059
+#: data/camorama-gtk3.ui:1098 data/camorama-gtk3.ui:1291
+#: data/camorama-gtk3.ui:1410 data/camorama-gtk3.ui:1448
+#: data/camorama-gtk3.ui:1686 data/camorama-gtk3.ui:1805
+#: data/camorama-gtk3.ui:1843 data/camorama-gtk4.ui:840
+#: data/camorama-gtk4.ui:978 data/camorama-gtk4.ui:1017
+#: data/camorama-gtk4.ui:1210 data/camorama-gtk4.ui:1329
+#: data/camorama-gtk4.ui:1367 data/camorama-gtk4.ui:1605
+#: data/camorama-gtk4.ui:1724 data/camorama-gtk4.ui:1762
+msgid "     "
+msgstr "     "
+
+#: data/camorama-gtk3.ui:944 data/camorama-gtk4.ui:863
+msgid "Capture Interval (in minutes):"
+msgstr "擷取間隔(以分鐘計):"
+
+#: data/camorama-gtk3.ui:1016 data/camorama-gtk4.ui:935
+msgid "General"
+msgstr "一般"
+
+#: data/camorama-gtk3.ui:1041 data/camorama-gtk4.ui:960
+msgid "<span weight=\"bold\">Local Capture</span>"
+msgstr "<span weight=\"bold\">本地端擷取</span>"
+
+#: data/camorama-gtk3.ui:1075 data/camorama-gtk4.ui:994
+msgid "_Enable local capture"
+msgstr "啟用本地端擷取(_E)"
+
+#: data/camorama-gtk3.ui:1123 data/camorama-gtk4.ui:1042
+msgid "_Directory for captured pics:"
+msgstr "存放擷取照片的目錄(_D):"
+
+#: data/camorama-gtk3.ui:1136 data/camorama-gtk4.ui:1055
+msgid "_Filename for pictures:"
+msgstr "相片的檔案名稱(_F):"
+
+#: data/camorama-gtk3.ui:1152 data/camorama-gtk4.ui:1071
+#, fuzzy
+msgid "Select a Directory"
+msgstr "儲存目錄:"
+
+#: data/camorama-gtk3.ui:1197 data/camorama-gtk3.ui:1593
+#: data/camorama-gtk4.ui:1116 data/camorama-gtk4.ui:1512
+msgid "Append time to filename"
+msgstr "在檔案名稱中附加時間"
+
+#: data/camorama-gtk3.ui:1214 data/camorama-gtk3.ui:1609
+#: data/camorama-gtk4.ui:1133 data/camorama-gtk4.ui:1528
+msgid "Add a timestamp to captured images"
+msgstr "在擷取的影像中加入時間戳記"
+
+#: data/camorama-gtk3.ui:1273 data/camorama-gtk3.ui:1668
+#: data/camorama-gtk4.ui:1192 data/camorama-gtk4.ui:1587
+msgid "<span weight=\"bold\">Image Type</span>"
+msgstr "<span weight=\"bold\">影像類型</span>"
+
+#: data/camorama-gtk3.ui:1306 data/camorama-gtk3.ui:1701
+#: data/camorama-gtk4.ui:1225 data/camorama-gtk4.ui:1620
+msgid "Save files in jpeg format"
+msgstr "儲存檔案為 jpeg 格式"
+
+#: data/camorama-gtk3.ui:1323 data/camorama-gtk3.ui:1718
+#: data/camorama-gtk4.ui:1242 data/camorama-gtk4.ui:1637
+msgid "Save files in png format"
+msgstr "儲存檔案為 png 格式"
+
+#: data/camorama-gtk3.ui:1368 data/camorama-gtk4.ui:1287
+msgid "Local Capture"
+msgstr "本地端擷取"
+
+#: data/camorama-gtk3.ui:1392 data/camorama-gtk4.ui:1311
+msgid "<span weight=\"bold\">Remote Capture</span>"
+msgstr "<span weight=\"bold\">遠端擷取</span>"
+
+#: data/camorama-gtk3.ui:1426 data/camorama-gtk4.ui:1345
+msgid "_Enable remote capture"
+msgstr "啟用遠端擷取(_E)"
+
+#: data/camorama-gtk3.ui:1475 data/camorama-gtk4.ui:1394
+#, fuzzy
+msgid "Server:"
+msgstr "FTP 伺服器:"
+
+#: data/camorama-gtk3.ui:1487 data/camorama-gtk4.ui:1406
+msgid "Type:"
+msgstr "類型:"
+
+#: data/camorama-gtk3.ui:1499 data/camorama-gtk4.ui:1418
+msgid "Save directory:"
+msgstr "儲存目錄:"
+
+#: data/camorama-gtk3.ui:1511 data/camorama-gtk4.ui:1430
+#, fuzzy
+msgid "Filename:"
+msgstr "檔案名稱"
+
+#: data/camorama-gtk3.ui:1524 data/camorama-gtk4.ui:1443
+msgid "ftp.yourdomain.org"
+msgstr "ftp.yourdomain.org"
+
+#: data/camorama-gtk3.ui:1563 data/camorama-gtk4.ui:1482
+msgid "webcamshot"
+msgstr "網路攝影機拍照"
+
+#: data/camorama-gtk3.ui:1763 data/camorama-gtk4.ui:1682
+msgid "Remote Capture"
+msgstr "遠端擷取"
+
+#: data/camorama-gtk3.ui:1787 data/camorama-gtk4.ui:1706
+msgid "<span weight=\"bold\">Timestamp</span>"
+msgstr "<span weight=\"bold\">時間戳記</span>"
+
+#: data/camorama-gtk3.ui:1821 data/camorama-gtk4.ui:1740
+msgid "Use custom string"
+msgstr "使用自訂字串"
+
+#: data/camorama-gtk3.ui:1866 data/camorama-gtk4.ui:1785
+msgid "String:"
+msgstr "字串:"
+
+#: data/camorama-gtk3.ui:1911 data/camorama-gtk4.ui:1830
+msgid "Draw date and time"
+msgstr "繪出時間與日期"
+
+#: data/camorama-gtk3.ui:1955 data/camorama-gtk4.ui:1874
+msgid "Timestamp"
+msgstr "時間戳記"
+
+#: data/camorama-gtk3.ui:2022 data/camorama-gtk4.ui:1941
+#, fuzzy
+msgid "Select a video device to be used"
+msgstr "要使用的 v4l 裝置"
+
+#: data/org.gnome.camorama.gschema.xml.in:6
+msgid "Append timestamp to filename"
+msgstr "在檔案名稱中加入時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:7
+msgid "Appends a timestamp, in UNIX time, to the ends of filenames"
+msgstr "在檔案名稱結尾加入 UNIX 式時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:11
+msgid "Toggles auto-capture"
+msgstr "切換自動擷取"
+
+#: data/org.gnome.camorama.gschema.xml.in:12
+msgid "Toggles automatic capturing of pictures."
+msgstr "切換自動擷取相片"
+
+#: data/org.gnome.camorama.gschema.xml.in:16
+msgid "Interval for auto-capture"
+msgstr "自動擷取的間隔"
+
+#: data/org.gnome.camorama.gschema.xml.in:17
+msgid "Specifies the interval for automatic capture of pictures."
+msgstr "指定自動擷取相片的間隔"
+
+#: data/org.gnome.camorama.gschema.xml.in:21
+msgid "Video device"
+msgstr "視訊裝置"
+
+#: data/org.gnome.camorama.gschema.xml.in:22
+#, fuzzy
+msgid "The unix file system path to the device that's assigned to your camera."
+msgstr "該裝置的 unix 檔案系統路徑並未指派給您的攝影機。"
+
+#: data/org.gnome.camorama.gschema.xml.in:26
+msgid "Toggles the datestamp in captures"
+msgstr "切換擷取中的日期戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:27
+msgid "Toggles the drawing of a datestamp within the captured pictures"
+msgstr "切換擷取的相片中繪出的日期戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:31
+msgid "Local capture image format"
+msgstr "本地端擷取影像格式"
+
+#: data/org.gnome.camorama.gschema.xml.in:32
+msgid "Specifies the image format to be used for locally saved pictures"
+msgstr "指定在本地端儲存相片時使用的影像格式"
+
+#: data/org.gnome.camorama.gschema.xml.in:36
+#, fuzzy
+msgid "Image height"
+msgstr "擷取高度"
+
+#: data/org.gnome.camorama.gschema.xml.in:37
+msgid "Image height used by the camera. Zero means autoselect"
+msgstr ""
+
+#: data/org.gnome.camorama.gschema.xml.in:41
+#, fuzzy
+msgid "Hostname for the server"
+msgstr "FTP 伺服器的主機名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:42
+#, fuzzy
+msgid "Hostname for the server used for remote captures."
+msgstr "遠端擷取所用的 FTP 伺服器主機名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:46
+msgid "Toggles local capture"
+msgstr "切換本地端擷取"
+
+#: data/org.gnome.camorama.gschema.xml.in:47
+msgid ""
+"When capturing pictures via the \"Take Picture\" button, or with auto "
+"capture, this key toggles the saving of pictures locally."
+msgstr ""
+"當透過“照相”按鈕或自動擷取來擷取相片時，此選項會切換使用本地端儲存相片。"
+
+#: data/org.gnome.camorama.gschema.xml.in:51
+#, fuzzy
+msgid "Protocol to use for remote access"
+msgstr "遠端擷取的資料夾"
+
+#: data/org.gnome.camorama.gschema.xml.in:52
+msgid ""
+"The URI name of the protocol that will be used to connect to a remote "
+"server. Can be ftp, sftp or smb"
+msgstr ""
+
+#: data/org.gnome.camorama.gschema.xml.in:56
+msgid "Complete URI used to store image snapshots remotely"
+msgstr ""
+
+#: data/org.gnome.camorama.gschema.xml.in:57
+msgid ""
+"The complete URI of the last successful access to a remote server, including "
+"protocol, host and remote directory"
+msgstr ""
+
+#: data/org.gnome.camorama.gschema.xml.in:61
+msgid "Append timestamp to remote filename"
+msgstr "在遠端檔案名稱中加入時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:62
+msgid "Appends a timestamp, in UNIX time, to the ends of remote filenames"
+msgstr "在遠端檔案名稱結尾加入 UNIX 式時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:66
+msgid "Toggles remote capture"
+msgstr "切換遠端擷取"
+
+#: data/org.gnome.camorama.gschema.xml.in:67
+msgid ""
+"When capturing pictures via the \"Take Picture\" button, or with auto "
+"capture, this key toggles the saving of pictures to a remote server."
+msgstr ""
+"當透過“照相”按鈕或自動擷取來擷取相片時，此選項會切換使用遠端伺服器儲存相片。"
+
+#: data/org.gnome.camorama.gschema.xml.in:71
+msgid "Remote capture image format"
+msgstr "遠端擷取影像格式"
+
+#: data/org.gnome.camorama.gschema.xml.in:72
+msgid "Specifies the image format to be used for remotely saved pictures"
+msgstr "指定在遠端儲存相片時使用的影像格式"
+
+#: data/org.gnome.camorama.gschema.xml.in:76
+msgid "Folder for remote captures"
+msgstr "遠端擷取的資料夾"
+
+#: data/org.gnome.camorama.gschema.xml.in:77
+msgid "Folder for saving captured pictures remotely"
+msgstr "將擷取的照片儲存在遠端時所用的資料夾"
+
+#: data/org.gnome.camorama.gschema.xml.in:81
+msgid "Remote save filename"
+msgstr "遠端儲存檔案名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:82
+msgid "Name for the filename of uploaded images."
+msgstr "已上傳影像的檔案名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:86
+msgid "Toggles timestamp for remote captures"
+msgstr "切換遠端擷取時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:87
+msgid "Toggles the insertion of a timestamp into the images for FTP upload."
+msgstr "切換插入時間戳記至 FTP 上傳的影像"
+
+#: data/org.gnome.camorama.gschema.xml.in:91
+msgid "Folder for local captures"
+msgstr "本地端擷取的資料夾"
+
+#: data/org.gnome.camorama.gschema.xml.in:92
+msgid "Folder for saving captured pictures to locally"
+msgstr "將擷取的照片儲存在本地端時所用的資料夾"
+
+#: data/org.gnome.camorama.gschema.xml.in:96
+msgid "Filename for local captures"
+msgstr "本地端擷取的檔案名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:97
+msgid "Filename for saving captured pictures to locally"
+msgstr "將擷取的照片儲存在本地端時所用的檔案名稱"
+
+#: data/org.gnome.camorama.gschema.xml.in:101
+msgid "Toggles timestamp for local captures"
+msgstr "切換本地端擷取時間戳記"
+
+#: data/org.gnome.camorama.gschema.xml.in:102
+msgid "Toggles the insertion of a timestamp into local images"
+msgstr "切換插入時間戳記至本地端影像"
+
+#: data/org.gnome.camorama.gschema.xml.in:106
+msgid "Custom text for the timestamp"
+msgstr "自訂時間戳記文字"
+
+#: data/org.gnome.camorama.gschema.xml.in:107
+msgid "Defines a string of custom text to be inserted into the image."
+msgstr "定義要插入影像中的自訂文字字串。"
+
+#: data/org.gnome.camorama.gschema.xml.in:111
+msgid "Toggles the custom string"
+msgstr "切換自訂字串"
+
+#: data/org.gnome.camorama.gschema.xml.in:112
+msgid "Toggles the use of the custom string for the timestamp in images."
+msgstr "切換使用影像中時間戳記的自訂字串。"
+
+#: data/org.gnome.camorama.gschema.xml.in:116
+msgid "Toggles the video adjustment sliders"
+msgstr "切換視訊調整滑動鈕"
+
+#: data/org.gnome.camorama.gschema.xml.in:117
+msgid "Toggles the use of the sliders to adjust the video properties"
+msgstr "切換使用視訊屬性調整滑動鈕"
+
+#: data/org.gnome.camorama.gschema.xml.in:121
+msgid "Toggles the video effects buttons"
+msgstr "切換視訊效果按鈕"
+
+#: data/org.gnome.camorama.gschema.xml.in:122
+msgid "Toggles the use of the buttons to adjust the video filters"
+msgstr "切換使用影像過濾器調整鈕"
+
+#: data/org.gnome.camorama.gschema.xml.in:126
+#, fuzzy
+msgid "Image width"
+msgstr "擷取寬度"
+
+#: data/org.gnome.camorama.gschema.xml.in:127
+msgid "Image width used by the camera. Zero means autoselect"
+msgstr ""
+
+#: src/callbacks.c:531
+msgid "translator_credits"
+msgstr ""
+"如對翻譯有任何意見，請送一封電子郵件給\n"
+"以下地址，GNOME 翻譯團隊會盡快回覆您：\n"
+"community@linuxhall.org\n"
+"\n"
+"Chao-Hsiung Liao <pesder.liao@msa.hinet.net>, 2005"
+
+#: src/callbacks.c:644
+#, c-format
+msgid "%.2f fps - current     %.2f fps - average"
+msgstr ""
+
+#: src/callbacks.c:1241
+msgid "Can't allocate memory to store devices"
+msgstr ""
+
+#: src/callbacks.c:1353
+msgid "Didn't find any camera"
+msgstr "找不到任何鏡頭"
+
+#: src/callbacks.c:1449
+#, c-format
+msgid "%dx%d (max %.1f fps)"
+msgstr ""
+
+#: src/callbacks.c:1453
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+#: src/camorama-filter-laplace.c:134
+msgid "Laplace (4 Neighbours)"
+msgstr ""
+
+#. TRANSLATORS: This is a noun
+#: src/camorama-filter-mirror.c:75
+#, fuzzy
+msgid "Mirror"
+msgstr "鏡射影像"
+
+#. TRANSLATORS: This is a noun
+#: src/camorama-filter-reichardt.c:274
+msgid "Reichardt"
+msgstr ""
+
+#: src/camorama-window.c:116
+msgid "_Add Filter"
+msgstr ""
+
+#: src/camorama-window.c:203
+#, fuzzy
+msgid "Effects"
+msgstr "顯示效果"
+
+#: src/fileio.c:115 src/fileio.c:282
+msgid "Could save temporary image file in /tmp."
+msgstr "無法在 /tmp 中儲存暫存影像檔案。"
+
+#: src/fileio.c:132
+#, c-format
+msgid "Unable to create image '%s'."
+msgstr "無法建立影像‘%s’。"
+
+#: src/fileio.c:143 src/fileio.c:440
+#, c-format
+msgid "Could not save image '%s/%s'."
+msgstr "無法儲存影像‘%s/%s’。"
+
+#: src/fileio.c:154
+#, fuzzy, c-format
+msgid "Could not create a thread to save image '%s/%s'."
+msgstr "無法儲存影像‘%s/%s’。"
+
+#: src/fileio.c:195
+#, fuzzy, c-format
+msgid "An error occurred mounting %s:%s."
+msgstr "開啟 %s 時發生錯誤。"
+
+#: src/fileio.c:235
+#, fuzzy, c-format
+msgid "An error occurred accessing %s."
+msgstr "開啟 %s 時發生錯誤。"
+
+#: src/fileio.c:288
+#, c-format
+msgid ""
+"Unable to open temporary image file '%s'.\n"
+"Cannot upload image."
+msgstr ""
+"無法開啟暫存影像檔案‘%s’。\n"
+"不能上傳影像。"
+
+#: src/fileio.c:320
+#, c-format
+msgid "An error occurred opening %s."
+msgstr "開啟 %s 時發生錯誤。"
+
+#: src/fileio.c:331
+#, fuzzy, c-format
+msgid "An error occurred opening %s for write: %s."
+msgstr "開啟 %s 時發生錯誤。"
+
+#: src/fileio.c:342
+#, fuzzy, c-format
+msgid "An error occurred writing to %s: %s."
+msgstr "寫入至 %s 時發生錯誤。"
+
+#: src/fileio.c:348
+#, fuzzy, c-format
+msgid "An error occurred closing %s: %s."
+msgstr "開啟 %s 時發生錯誤。"
+
+#: src/fileio.c:411
+#, c-format
+msgid "Could not create directory '%s'."
+msgstr "無法建立目錄‘%s’。"
+
+#: src/fileio.c:420
+#, c-format
+msgid "Could not change to directory '%s'."
+msgstr "無法變更至目錄‘%s’。"
+
+#: src/filter.c:96
+msgid "Invert"
+msgstr "負片"
+
+#: src/filter.c:184
+#, fuzzy
+msgid "Threshold (Overall)"
+msgstr "臨界值:"
+
+#: src/filter.c:277
+msgid "Threshold (Per Channel)"
+msgstr ""
+
+#: src/filter.c:355
+msgid "Wacky"
+msgstr "Wacky"
+
+#: src/filter.c:461
+#, fuzzy
+msgid "Smooth"
+msgstr "平滑化"
+
+#: src/filter.c:497
+msgid "Monochrome"
+msgstr "黑白"
+
+#: src/filter.c:535
+msgid "Monochrome (Weight)"
+msgstr ""
+
+#. TRANSLATORS: http://en.wikipedia.org/wiki/Sobel
+#: src/filter.c:592
+msgid "Sobel"
+msgstr "Sobel"
+
+#: src/main.c:31
+msgid "show version and exit"
+msgstr "顯示版本並離開"
+
+#: src/main.c:33
+msgid "v4l device to use"
+msgstr "要使用的 v4l 裝置"
+
+#: src/main.c:35
+msgid "enable debugging code"
+msgstr "啟用除錯碼"
+
+#: src/main.c:37
+msgid "capture width"
+msgstr "擷取寬度"
+
+#: src/main.c:39
+msgid "capture height"
+msgstr "擷取高度"
+
+#: src/main.c:41
+msgid "maximum capture size"
+msgstr "最大擷取尺寸"
+
+#: src/main.c:43
+msgid "minimum capture size"
+msgstr "最小擷取尺寸"
+
+#: src/main.c:45
+msgid "middle capture size"
+msgstr "中等擷取尺寸"
+
+#: src/main.c:47
+msgid "use read() rather than mmap()"
+msgstr "使用 read() 而非 mmap()"
+
+#: src/main.c:49
+msgid "disable video scaler"
+msgstr ""
+
+#: src/main.c:51 src/main.c:53
+#, fuzzy
+#| msgid "use read() rather than mmap()"
+msgid "use userptr pointer rather than mmap()"
+msgstr "使用 read() 而非 mmap()"
+
+#: src/main.c:55
+#, fuzzy
+#| msgid "v4l device to use"
+msgid "v4l device input to use"
+msgstr "要使用的 v4l 裝置"
+
+#: src/main.c:117
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Camorama version %s\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Camorama 版本 %s\n"
+"\n"
+
+#: src/main.c:151
+#, fuzzy
+msgid "Couldn't load builder file"
+msgstr "找不到點陣檔：%s"
+
+#: src/main.c:180
+#, c-format
+msgid "%s not found. Falling back to %s"
+msgstr ""
+
+#: src/main.c:183
+#, c-format
+msgid "%s not found."
+msgstr "找不到 %s。"
+
+#: src/v4l.c:1087
+#, fuzzy, c-format
+msgid ""
+"Could not connect to video device (%s).\n"
+"Please check connection. Error: %d"
+msgstr ""
+"無法連線至視訊裝置 (%s)。\n"
+"請檢查連線。"
+
+#: src/v4l.c:1096
+#, c-format
+msgid "Device %s is not a video capture device."
+msgstr ""
+
+#: src/v4l.c:1270 src/v4l.c:1340
+#, c-format
+msgid ""
+"Could not connect to video device (%s).\n"
+"Please check connection."
+msgstr ""
+"無法連線至視訊裝置 (%s)。\n"
+"請檢查連線。"
+
+#: src/v4l.c:1348
+msgid "Device video formats are incompatible with camorama."
+msgstr ""
+
+#: src/v4l.c:1364
+#, fuzzy, c-format
+#| msgid ""
+#| "Could not connect to video device (%s).\n"
+#| "Please check connection."
+msgid ""
+"Could not set window info on video device (%s).\n"
+"Please check connection."
+msgstr ""
+"無法連線至視訊裝置 (%s)。\n"
+"請檢查連線。"
+
+#: src/v4l.c:1385
+#, c-format
+msgid "Could not set format to %c%c%c%c on video device (%s)."
+msgstr ""
+
+#: src/v4l.c:1404
+#, c-format
+msgid "Returned width is zero on video device (%s)!"
+msgstr ""
+
+#: src/v4l.c:1428 src/v4l.c:1511
+#, c-format
+msgid "VIDIOC_REQBUFS  --  could not request buffers (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1437 src/v4l.c:1520 src/v4l.c:1535
+msgid "could not allocate memory for video buffers, exiting...."
+msgstr ""
+
+#: src/v4l.c:1453
+#, c-format
+msgid "VIDIOC_QUERYBUF  --  could not query buffers (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1468
+#, c-format
+msgid "failed to memory map buffers (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1482
+#, c-format
+msgid "VIDIOC_QBUF  --  could not enqueue buffers (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1492 src/v4l.c:1559
+#, c-format
+msgid "failed to start streaming (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1548
+#, c-format
+msgid "VIDIOC_QBUF  --  could not query buffers (%s), exiting...."
+msgstr ""
+
+#: src/v4l.c:1589 src/v4l.c:1640
+#, c-format
+msgid "Timeout while waiting for frames (%s)"
+msgstr ""
+
+#: src/v4l.c:1703 src/v4l.c:1762
+#, c-format
+msgid "failed to stop streaming (%s), exiting...."
+msgstr ""
+
+#, fuzzy
+#~ msgid "_File"
+#~ msgstr "檔案名稱"
+
+#~ msgid "_Quit"
+#~ msgstr "退出(_Q)"
+
+#~ msgid "_Edit"
+#~ msgstr "編輯(_E)"
+
+#, fuzzy
+#~ msgid "_Preferences"
+#~ msgstr "偏好設定"
+
+#~ msgid "_Help"
+#~ msgstr "幫助(_H)"
+
+#~ msgid "_About"
+#~ msgstr "關於(_A)"
+
+#~ msgid "Preferences"
+#~ msgstr "偏好設定"
+
+#~ msgid "camorama"
+#~ msgstr "camorama"
+
+#~ msgid "webcam-capture"
+#~ msgstr "網路攝影機-擷取"
+
+#, fuzzy
+#~ msgid "Color Correction"
+#~ msgstr "色彩校正"

@@ -1,0 +1,852 @@
+# Ukrainian translation of camorama module.
+# This file is distributed under the same license as the Camorama package.
+# Yuriy Syrota <rasta renome.rovno.ua>, 2003.
+# Mauro Carvalho Chehab <mchehab@infradead.org>, 2018. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: camorama 0.20.6\n"
+"Report-Msgid-Bugs-To: https://github.com/alessio/camorama\n"
+"POT-Creation-Date: 2022-03-24 15:31+0100\n"
+"PO-Revision-Date: 2022-03-10 06:51+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"camorama/master/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.11.2\n"
+
+#: camorama.appdata.xml.in:6
+msgid "Camorama"
+msgstr "Camorama"
+
+#: camorama.appdata.xml.in:7 camorama.desktop.in:4
+msgid "Camorama Webcam Viewer"
+msgstr "Робота з веб-камерою"
+
+#: camorama.appdata.xml.in:9
+msgid ""
+"Camorama is a simple webcam viewer, with the ability to apply some video "
+"effects."
+msgstr ""
+"Camorama — проста програма для перегляду зображення з вебкамери із "
+"можливостями застосування деяких відеоефектів."
+
+#: camorama.desktop.in:5 src/callbacks.c:530
+msgid "View, alter and save images from a webcam"
+msgstr "Показ, зміна і збереження зображень з веб-камери"
+
+#: camorama.desktop.in:10
+msgid "camorama;webcam;viewer;video-effects;"
+msgstr ""
+"camorama;webcam;viewer;video-effects;каморама;вебкамера;камера;переглядач;"
+"відеоефекти;"
+
+#: data/camorama-gtk3.ui:57 data/camorama-gtk4.ui:49
+msgid "Camorama-libglade"
+msgstr "Camorama-libglade"
+
+#: data/camorama-gtk3.ui:83 data/camorama-gtk4.ui:75
+msgid "_Take Picture"
+msgstr "З_робити знімок"
+
+#: data/camorama-gtk3.ui:94 data/camorama-gtk4.ui:86
+msgid "Toggle _Full Screen"
+msgstr "Перемкнути _повноекранний режим"
+
+#: data/camorama-gtk3.ui:149 data/camorama-gtk4.ui:141
+msgid "_View"
+msgstr "_Перегляд"
+
+#: data/camorama-gtk3.ui:158 data/camorama-gtk3.ui:337
+#: data/camorama-gtk4.ui:150 data/camorama-gtk4.ui:329
+msgid "Show Adjustments"
+msgstr "Показати регулятори"
+
+#: data/camorama-gtk3.ui:168 data/camorama-gtk4.ui:160
+msgid "Show Effects"
+msgstr "Показати ефекти"
+
+#: data/camorama-gtk3.ui:177 data/camorama-gtk4.ui:169
+msgid "_Change Camera"
+msgstr "З_мінити камеру"
+
+#: data/camorama-gtk3.ui:192 data/camorama-gtk4.ui:184
+msgid "Small"
+msgstr "Малий"
+
+#: data/camorama-gtk3.ui:357
+msgid "Show Controls"
+msgstr ""
+
+#: data/camorama-gtk3.ui:396 data/camorama-gtk4.ui:381
+msgid "Full Screen"
+msgstr "На увесь екран"
+
+#: data/camorama-gtk3.ui:441 data/camorama-gtk4.ui:428
+msgid "Take Picture"
+msgstr "Зробити знімок"
+
+#: data/camorama-gtk3.ui:536 data/camorama-gtk4.ui:523
+msgid "Contrast:"
+msgstr "Контрастність:"
+
+#: data/camorama-gtk3.ui:548 data/camorama-gtk4.ui:535
+msgid "Brightness:"
+msgstr "Яскравість:"
+
+#: data/camorama-gtk3.ui:560 data/camorama-gtk4.ui:547
+msgid "Color:"
+msgstr "Колір:"
+
+#: data/camorama-gtk3.ui:572 data/camorama-gtk4.ui:559
+msgid "Hue:"
+msgstr "Відтінок:"
+
+#: data/camorama-gtk3.ui:584 data/camorama-gtk4.ui:571
+msgid "White Balance:"
+msgstr "Баланс білого:"
+
+#: data/camorama-gtk3.ui:666 data/camorama-gtk4.ui:653
+msgid "Zoom:"
+msgstr "Масштаб:"
+
+#: data/camorama-gtk3.ui:714
+#, fuzzy
+#| msgid "Threshold (Overall)"
+msgid "Threshold:"
+msgstr "Поріг (загальний)"
+
+#: data/camorama-gtk3.ui:748
+msgid "Channel Threshold:"
+msgstr ""
+
+#: data/camorama-gtk3.ui:865 data/camorama-gtk4.ui:784
+msgid "<span weight=\"bold\">General</span>"
+msgstr "<span weight=\"bold\">Загальне</span>"
+
+#: data/camorama-gtk3.ui:899 data/camorama-gtk4.ui:818
+msgid "Automatic Capture"
+msgstr "Автоматична зйомка"
+
+#: data/camorama-gtk3.ui:921 data/camorama-gtk3.ui:1059
+#: data/camorama-gtk3.ui:1098 data/camorama-gtk3.ui:1291
+#: data/camorama-gtk3.ui:1410 data/camorama-gtk3.ui:1448
+#: data/camorama-gtk3.ui:1686 data/camorama-gtk3.ui:1805
+#: data/camorama-gtk3.ui:1843 data/camorama-gtk4.ui:840
+#: data/camorama-gtk4.ui:978 data/camorama-gtk4.ui:1017
+#: data/camorama-gtk4.ui:1210 data/camorama-gtk4.ui:1329
+#: data/camorama-gtk4.ui:1367 data/camorama-gtk4.ui:1605
+#: data/camorama-gtk4.ui:1724 data/camorama-gtk4.ui:1762
+msgid "     "
+msgstr "     "
+
+#: data/camorama-gtk3.ui:944 data/camorama-gtk4.ui:863
+msgid "Capture Interval (in minutes):"
+msgstr "Інтервал зйомки (в хвилинах):"
+
+#: data/camorama-gtk3.ui:1016 data/camorama-gtk4.ui:935
+msgid "General"
+msgstr "Загальне"
+
+#: data/camorama-gtk3.ui:1041 data/camorama-gtk4.ui:960
+msgid "<span weight=\"bold\">Local Capture</span>"
+msgstr "<span weight=\"bold\">Локальна зйомка</span>"
+
+#: data/camorama-gtk3.ui:1075 data/camorama-gtk4.ui:994
+msgid "_Enable local capture"
+msgstr "_Увімкнути локальну зйомку"
+
+#: data/camorama-gtk3.ui:1123 data/camorama-gtk4.ui:1042
+msgid "_Directory for captured pics:"
+msgstr "_Каталог для знятих зображень:"
+
+#: data/camorama-gtk3.ui:1136 data/camorama-gtk4.ui:1055
+msgid "_Filename for pictures:"
+msgstr "_Назва зображень:"
+
+#: data/camorama-gtk3.ui:1152 data/camorama-gtk4.ui:1071
+msgid "Select a Directory"
+msgstr "Виберіть каталог"
+
+#: data/camorama-gtk3.ui:1197 data/camorama-gtk3.ui:1593
+#: data/camorama-gtk4.ui:1116 data/camorama-gtk4.ui:1512
+msgid "Append time to filename"
+msgstr "Додавати час до назви файла"
+
+#: data/camorama-gtk3.ui:1214 data/camorama-gtk3.ui:1609
+#: data/camorama-gtk4.ui:1133 data/camorama-gtk4.ui:1528
+msgid "Add a timestamp to captured images"
+msgstr "Додавати позначку часу до знятих зображень"
+
+#: data/camorama-gtk3.ui:1273 data/camorama-gtk3.ui:1668
+#: data/camorama-gtk4.ui:1192 data/camorama-gtk4.ui:1587
+msgid "<span weight=\"bold\">Image Type</span>"
+msgstr "<span weight=\"bold\">Тип зображення</span>"
+
+#: data/camorama-gtk3.ui:1306 data/camorama-gtk3.ui:1701
+#: data/camorama-gtk4.ui:1225 data/camorama-gtk4.ui:1620
+msgid "Save files in jpeg format"
+msgstr "Зберігати файли у форматі JPEG"
+
+#: data/camorama-gtk3.ui:1323 data/camorama-gtk3.ui:1718
+#: data/camorama-gtk4.ui:1242 data/camorama-gtk4.ui:1637
+msgid "Save files in png format"
+msgstr "Зберігати файли у форматі PNG"
+
+#: data/camorama-gtk3.ui:1368 data/camorama-gtk4.ui:1287
+msgid "Local Capture"
+msgstr "Локальна зйомка"
+
+#: data/camorama-gtk3.ui:1392 data/camorama-gtk4.ui:1311
+msgid "<span weight=\"bold\">Remote Capture</span>"
+msgstr "<span weight=\"bold\">Віддалена зйомка</span>"
+
+#: data/camorama-gtk3.ui:1426 data/camorama-gtk4.ui:1345
+msgid "_Enable remote capture"
+msgstr "_Увімкнути віддалену зйомку"
+
+#: data/camorama-gtk3.ui:1475 data/camorama-gtk4.ui:1394
+msgid "Server:"
+msgstr "Сервер:"
+
+#: data/camorama-gtk3.ui:1487 data/camorama-gtk4.ui:1406
+msgid "Type:"
+msgstr "Тип:"
+
+#: data/camorama-gtk3.ui:1499 data/camorama-gtk4.ui:1418
+msgid "Save directory:"
+msgstr "Каталог збереження:"
+
+#: data/camorama-gtk3.ui:1511 data/camorama-gtk4.ui:1430
+msgid "Filename:"
+msgstr "Назва файла:"
+
+#: data/camorama-gtk3.ui:1524 data/camorama-gtk4.ui:1443
+msgid "ftp.yourdomain.org"
+msgstr "ftp.ваш_домен.org"
+
+#: data/camorama-gtk3.ui:1563 data/camorama-gtk4.ui:1482
+msgid "webcamshot"
+msgstr "webcamshot"
+
+#: data/camorama-gtk3.ui:1763 data/camorama-gtk4.ui:1682
+msgid "Remote Capture"
+msgstr "Віддалена зйомка"
+
+#: data/camorama-gtk3.ui:1787 data/camorama-gtk4.ui:1706
+msgid "<span weight=\"bold\">Timestamp</span>"
+msgstr "<span weight=\"bold\">Позначка часу</span>"
+
+#: data/camorama-gtk3.ui:1821 data/camorama-gtk4.ui:1740
+msgid "Use custom string"
+msgstr "Нетиповий рядок"
+
+#: data/camorama-gtk3.ui:1866 data/camorama-gtk4.ui:1785
+msgid "String:"
+msgstr "Рядок:"
+
+#: data/camorama-gtk3.ui:1911 data/camorama-gtk4.ui:1830
+msgid "Draw date and time"
+msgstr "Малювати дату й час"
+
+#: data/camorama-gtk3.ui:1955 data/camorama-gtk4.ui:1874
+msgid "Timestamp"
+msgstr "Позначка часу"
+
+#: data/camorama-gtk3.ui:2022 data/camorama-gtk4.ui:1941
+msgid "Select a video device to be used"
+msgstr "Виберіть відеопристрій, який буде використано"
+
+#: data/org.gnome.camorama.gschema.xml.in:6
+msgid "Append timestamp to filename"
+msgstr "Додати позначку часу до назви файла"
+
+#: data/org.gnome.camorama.gschema.xml.in:7
+msgid "Appends a timestamp, in UNIX time, to the ends of filenames"
+msgstr "Додавати позначку часу в форматі часу UNIX в кінець назв файлів"
+
+#: data/org.gnome.camorama.gschema.xml.in:11
+msgid "Toggles auto-capture"
+msgstr "Перемикнути автозйомку"
+
+#: data/org.gnome.camorama.gschema.xml.in:12
+msgid "Toggles automatic capturing of pictures."
+msgstr "Перемикнути автоматичне знімання зображень."
+
+#: data/org.gnome.camorama.gschema.xml.in:16
+msgid "Interval for auto-capture"
+msgstr "Інтервал автозйомки"
+
+#: data/org.gnome.camorama.gschema.xml.in:17
+msgid "Specifies the interval for automatic capture of pictures."
+msgstr "Визначає інтервал для автоматичного знімання."
+
+#: data/org.gnome.camorama.gschema.xml.in:21
+msgid "Video device"
+msgstr "Відеопристрій"
+
+#: data/org.gnome.camorama.gschema.xml.in:22
+msgid "The unix file system path to the device that's assigned to your camera."
+msgstr ""
+"Шлях у файловій системі UNIX до файла пристрою, який пов'язано із камерою."
+
+#: data/org.gnome.camorama.gschema.xml.in:26
+msgid "Toggles the datestamp in captures"
+msgstr "Перемикнути позначку дати у зйомках"
+
+#: data/org.gnome.camorama.gschema.xml.in:27
+msgid "Toggles the drawing of a datestamp within the captured pictures"
+msgstr "Перемикнути малювання позначки дати у знятих зображеннях"
+
+#: data/org.gnome.camorama.gschema.xml.in:31
+msgid "Local capture image format"
+msgstr "Формат зображень локальних зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:32
+msgid "Specifies the image format to be used for locally saved pictures"
+msgstr "Визначає формат зображення для зображень, що зберігаються локально"
+
+#: data/org.gnome.camorama.gschema.xml.in:36
+msgid "Image height"
+msgstr "Висота зображення"
+
+#: data/org.gnome.camorama.gschema.xml.in:37
+msgid "Image height used by the camera. Zero means autoselect"
+msgstr ""
+"Висота зображення, яке надається камерою. Нульове значення — автоматичний "
+"вибір"
+
+#: data/org.gnome.camorama.gschema.xml.in:41
+msgid "Hostname for the server"
+msgstr "Назва вузла сервера"
+
+#: data/org.gnome.camorama.gschema.xml.in:42
+msgid "Hostname for the server used for remote captures."
+msgstr "Назва вузла сервера для віддалених зйомок."
+
+#: data/org.gnome.camorama.gschema.xml.in:46
+msgid "Toggles local capture"
+msgstr "Перемикнути локальну зйомку"
+
+#: data/org.gnome.camorama.gschema.xml.in:47
+msgid ""
+"When capturing pictures via the \"Take Picture\" button, or with auto "
+"capture, this key toggles the saving of pictures locally."
+msgstr ""
+"Ця клавіша встановлює локальне збереження зображень, що робляться "
+"натисненням кнопки \"Зробити знімок\" чи автоматично."
+
+#: data/org.gnome.camorama.gschema.xml.in:51
+msgid "Protocol to use for remote access"
+msgstr "Протокол для віддаленого доступу"
+
+#: data/org.gnome.camorama.gschema.xml.in:52
+msgid ""
+"The URI name of the protocol that will be used to connect to a remote "
+"server. Can be ftp, sftp or smb"
+msgstr ""
+"Назва протоколу, який буде використано для встановлення з'єднання із "
+"віддаленим сервером. Можливі значення: ftp, sftp або smb"
+
+#: data/org.gnome.camorama.gschema.xml.in:56
+msgid "Complete URI used to store image snapshots remotely"
+msgstr ""
+"Повна адреса, яку буде використано для збереження знімків на віддаленому "
+"вузлі"
+
+#: data/org.gnome.camorama.gschema.xml.in:57
+msgid ""
+"The complete URI of the last successful access to a remote server, including "
+"protocol, host and remote directory"
+msgstr ""
+"Повна адреса на віддаленому сервері, із якою було востаннє здійснено успішне "
+"з'єднання. У адресі має міститися назва протоколу, назва вузла та назва "
+"віддаленого каталогу"
+
+#: data/org.gnome.camorama.gschema.xml.in:61
+msgid "Append timestamp to remote filename"
+msgstr "Додати позначку часу до назви віддаленого файла"
+
+#: data/org.gnome.camorama.gschema.xml.in:62
+msgid "Appends a timestamp, in UNIX time, to the ends of remote filenames"
+msgstr ""
+"Додавати позначку часу в форматі часу UNIX в кінець назв віддалений файлів"
+
+#: data/org.gnome.camorama.gschema.xml.in:66
+msgid "Toggles remote capture"
+msgstr "Перемикнути віддалену зйомку"
+
+#: data/org.gnome.camorama.gschema.xml.in:67
+msgid ""
+"When capturing pictures via the \"Take Picture\" button, or with auto "
+"capture, this key toggles the saving of pictures to a remote server."
+msgstr ""
+"Ця клавіша встановлює віддалене збереження зображень, що робляться "
+"натисненням кнопки \"Зробити знімок\" чи автоматично."
+
+#: data/org.gnome.camorama.gschema.xml.in:71
+msgid "Remote capture image format"
+msgstr "Формат зображень віддалених зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:72
+msgid "Specifies the image format to be used for remotely saved pictures"
+msgstr "Визначає формат зображення для зображень, що зберігаються віддалено"
+
+#: data/org.gnome.camorama.gschema.xml.in:76
+msgid "Folder for remote captures"
+msgstr "Тека для віддалених зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:77
+msgid "Folder for saving captured pictures remotely"
+msgstr "Тека для збереження знятих зображень віддалено"
+
+#: data/org.gnome.camorama.gschema.xml.in:81
+msgid "Remote save filename"
+msgstr "Назва файла для віддаленого збереження"
+
+#: data/org.gnome.camorama.gschema.xml.in:82
+msgid "Name for the filename of uploaded images."
+msgstr "Назви файлів для відвантажених зображень."
+
+#: data/org.gnome.camorama.gschema.xml.in:86
+msgid "Toggles timestamp for remote captures"
+msgstr "Перемикнути позначку часу для віддалених зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:87
+msgid "Toggles the insertion of a timestamp into the images for FTP upload."
+msgstr ""
+"Перемикнути вставляння позначки часу в зображення для відвантаження на FTP."
+
+#: data/org.gnome.camorama.gschema.xml.in:91
+msgid "Folder for local captures"
+msgstr "Тека для локальних зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:92
+msgid "Folder for saving captured pictures to locally"
+msgstr "Тека для збереження знятих зображень локально"
+
+#: data/org.gnome.camorama.gschema.xml.in:96
+msgid "Filename for local captures"
+msgstr "Назва файла для локальних зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:97
+msgid "Filename for saving captured pictures to locally"
+msgstr "Назва файла для збереження знятих зображень локально"
+
+#: data/org.gnome.camorama.gschema.xml.in:101
+msgid "Toggles timestamp for local captures"
+msgstr "Перемикнути позначку часу для локальних зйомок"
+
+#: data/org.gnome.camorama.gschema.xml.in:102
+msgid "Toggles the insertion of a timestamp into local images"
+msgstr "Перемикнути вставляння позначки часу в локальні зображення"
+
+#: data/org.gnome.camorama.gschema.xml.in:106
+msgid "Custom text for the timestamp"
+msgstr "Нетиповий текст для позначки часу"
+
+#: data/org.gnome.camorama.gschema.xml.in:107
+msgid "Defines a string of custom text to be inserted into the image."
+msgstr "Визначає рядок нетипового тексту, що його буде вставлено у зображення."
+
+#: data/org.gnome.camorama.gschema.xml.in:111
+msgid "Toggles the custom string"
+msgstr "Перемикнути нетиповий рядок"
+
+#: data/org.gnome.camorama.gschema.xml.in:112
+msgid "Toggles the use of the custom string for the timestamp in images."
+msgstr ""
+"Перемикнути використання нетипового рядка для позначки часу в зображеннях."
+
+#: data/org.gnome.camorama.gschema.xml.in:116
+msgid "Toggles the video adjustment sliders"
+msgstr "Перемикнути повзунки регулювання відео"
+
+#: data/org.gnome.camorama.gschema.xml.in:117
+msgid "Toggles the use of the sliders to adjust the video properties"
+msgstr "Перемикнути використання повзунків для регулювання властивостей відео"
+
+#: data/org.gnome.camorama.gschema.xml.in:121
+msgid "Toggles the video effects buttons"
+msgstr "Перемикнути кнопки відеоефектів"
+
+#: data/org.gnome.camorama.gschema.xml.in:122
+msgid "Toggles the use of the buttons to adjust the video filters"
+msgstr "Перемкнути використання кнопок для коригування відеоефектів"
+
+#: data/org.gnome.camorama.gschema.xml.in:126
+msgid "Image width"
+msgstr "Ширина зображення"
+
+#: data/org.gnome.camorama.gschema.xml.in:127
+msgid "Image width used by the camera. Zero means autoselect"
+msgstr ""
+"Ширина зображення, яка використовується камерою. Нульове значення — "
+"автоматичний вибір"
+
+#: src/callbacks.c:531
+msgid "translator_credits"
+msgstr ""
+"Юрій Сирота <yuriy@beer.com>\n"
+"Юрій Чорноіван <yurchor@ukr.net>"
+
+#: src/callbacks.c:644
+#, c-format
+msgid "%.2f fps - current     %.2f fps - average"
+msgstr "%.2f кд/с - зараз     %.2f кд/с - у середньому"
+
+#: src/callbacks.c:1241
+msgid "Can't allocate memory to store devices"
+msgstr "Не вдалося розмістити у пам'яті записи пристроїв зберігання даних"
+
+#: src/callbacks.c:1353
+msgid "Didn't find any camera"
+msgstr "Не знайдено жодної камери"
+
+#: src/callbacks.c:1449
+#, c-format
+msgid "%dx%d (max %.1f fps)"
+msgstr "%dx%d (макс. %.1f кд/с)"
+
+#: src/callbacks.c:1453
+#, c-format
+msgid "%dx%d"
+msgstr "%dx%d"
+
+#: src/camorama-filter-laplace.c:134
+msgid "Laplace (4 Neighbours)"
+msgstr "Лаплас (4 сусідніх)"
+
+#. TRANSLATORS: This is a noun
+#: src/camorama-filter-mirror.c:75
+msgid "Mirror"
+msgstr "Віддзеркалення"
+
+#. TRANSLATORS: This is a noun
+#: src/camorama-filter-reichardt.c:274
+msgid "Reichardt"
+msgstr "Райхардт"
+
+#: src/camorama-window.c:116
+msgid "_Add Filter"
+msgstr "_Додати фільтр"
+
+#: src/camorama-window.c:203
+msgid "Effects"
+msgstr "Ефекти"
+
+#: src/fileio.c:115 src/fileio.c:282
+msgid "Could save temporary image file in /tmp."
+msgstr "Не вдалось зберегти тимчасовий файл зображення в /tmp."
+
+#: src/fileio.c:132
+#, c-format
+msgid "Unable to create image '%s'."
+msgstr "Не вдалось створити зображення \"%s\"."
+
+#: src/fileio.c:143 src/fileio.c:440
+#, c-format
+msgid "Could not save image '%s/%s'."
+msgstr "Не вдалось зберегти зображення \"%s/%s\"."
+
+#: src/fileio.c:154
+#, c-format
+msgid "Could not create a thread to save image '%s/%s'."
+msgstr "Не вдалося створити потік обробки для збереження зображення «%s/%s»."
+
+#: src/fileio.c:195
+#, c-format
+msgid "An error occurred mounting %s:%s."
+msgstr "Під час спроби змонтувати %s:%s сталася помилка."
+
+#: src/fileio.c:235
+#, c-format
+msgid "An error occurred accessing %s."
+msgstr "Під час спроби отримати доступ до %s сталася помилка."
+
+#: src/fileio.c:288
+#, c-format
+msgid ""
+"Unable to open temporary image file '%s'.\n"
+"Cannot upload image."
+msgstr ""
+"Не вдалося відкрити тимчасовий файл зображення «%s».\n"
+"Не вдалося вивантажити зображення."
+
+#: src/fileio.c:320
+#, c-format
+msgid "An error occurred opening %s."
+msgstr "Під час спроби відкрити %s сталася помилка."
+
+#: src/fileio.c:331
+#, c-format
+msgid "An error occurred opening %s for write: %s."
+msgstr "Під час спроби відкрити %s для запису сталася помилка: %s."
+
+#: src/fileio.c:342
+#, c-format
+msgid "An error occurred writing to %s: %s."
+msgstr "Під час спроби записати дані до %s сталася помилка: %s."
+
+#: src/fileio.c:348
+#, c-format
+msgid "An error occurred closing %s: %s."
+msgstr "Під час спроби закрити %s сталася помилка: %s."
+
+#: src/fileio.c:411
+#, c-format
+msgid "Could not create directory '%s'."
+msgstr "Не вдалось створити каталог \"%s\"."
+
+#: src/fileio.c:420
+#, c-format
+msgid "Could not change to directory '%s'."
+msgstr "Не вдалось відкрити каталог \"%s\"."
+
+#: src/filter.c:96
+msgid "Invert"
+msgstr "Інвертувати"
+
+#: src/filter.c:184
+msgid "Threshold (Overall)"
+msgstr "Поріг (загальний)"
+
+#: src/filter.c:277
+msgid "Threshold (Per Channel)"
+msgstr "Поріг (за каналами)"
+
+#: src/filter.c:355
+msgid "Wacky"
+msgstr "Дивне перетворення"
+
+#: src/filter.c:461
+msgid "Smooth"
+msgstr "Згладити"
+
+#: src/filter.c:497
+msgid "Monochrome"
+msgstr "Чорно-біле"
+
+#: src/filter.c:535
+msgid "Monochrome (Weight)"
+msgstr "Чорно-біле (за вагою)"
+
+#. TRANSLATORS: http://en.wikipedia.org/wiki/Sobel
+#: src/filter.c:592
+msgid "Sobel"
+msgstr "Перетворення Собеля"
+
+#: src/main.c:31
+msgid "show version and exit"
+msgstr "показати версію і вийти"
+
+#: src/main.c:33
+msgid "v4l device to use"
+msgstr "пристрій Video4Linux"
+
+#: src/main.c:35
+msgid "enable debugging code"
+msgstr "увімкнути діагностичний код"
+
+#: src/main.c:37
+msgid "capture width"
+msgstr "ширина зображення"
+
+#: src/main.c:39
+msgid "capture height"
+msgstr "висота зображення"
+
+#: src/main.c:41
+msgid "maximum capture size"
+msgstr "максимальний розмір знімка"
+
+#: src/main.c:43
+msgid "minimum capture size"
+msgstr "мінімальний розмір знімка"
+
+#: src/main.c:45
+msgid "middle capture size"
+msgstr "середній розмір знімка"
+
+#: src/main.c:47
+msgid "use read() rather than mmap()"
+msgstr "використовувати read() замість mmap()"
+
+#: src/main.c:49
+msgid "disable video scaler"
+msgstr "вимкнути засіб масштабування відео"
+
+#: src/main.c:51 src/main.c:53
+msgid "use userptr pointer rather than mmap()"
+msgstr "використовувати вказівник userptr замість mmap()"
+
+#: src/main.c:55
+msgid "v4l device input to use"
+msgstr "пристрій вхідних даних Video4Linux"
+
+#: src/main.c:117
+#, c-format
+msgid ""
+"\n"
+"\n"
+"Camorama version %s\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Camorama версії %s\n"
+"\n"
+
+#: src/main.c:151
+msgid "Couldn't load builder file"
+msgstr "Не вдалось завантажити файл збирача"
+
+#: src/main.c:180
+#, c-format
+msgid "%s not found. Falling back to %s"
+msgstr "%s не знайдено. Використовуємо резервний варіант — %s"
+
+#: src/main.c:183
+#, c-format
+msgid "%s not found."
+msgstr "%s не знайдено."
+
+#: src/v4l.c:1087
+#, c-format
+msgid ""
+"Could not connect to video device (%s).\n"
+"Please check connection. Error: %d"
+msgstr ""
+"Не вдалося встановити з'єднання з відеопристроєм (%s).\n"
+"Будь ласка, перевірте з'єднання. Номер помилки: %d"
+
+#: src/v4l.c:1096
+#, c-format
+msgid "Device %s is not a video capture device."
+msgstr "Пристрій %s не є пристроєм для захоплення відео."
+
+#: src/v4l.c:1270 src/v4l.c:1340
+#, c-format
+msgid ""
+"Could not connect to video device (%s).\n"
+"Please check connection."
+msgstr ""
+"Не вдалося встановити з'єднання з відеопристроєм (%s).\n"
+"Будь ласка, перевірте з'єднання."
+
+#: src/v4l.c:1348
+msgid "Device video formats are incompatible with camorama."
+msgstr "Формати відео пристрою є несумісними з camorama."
+
+#: src/v4l.c:1364
+#, c-format
+msgid ""
+"Could not set window info on video device (%s).\n"
+"Please check connection."
+msgstr ""
+"Не вдалося встановити дані вікна на відеопристрої (%s).\n"
+"Будь ласка, перевірте з'єднання."
+
+#: src/v4l.c:1385
+#, c-format
+msgid "Could not set format to %c%c%c%c on video device (%s)."
+msgstr "Не вдалося встановити формат %c%c%c%c на відеопристрої (%s)."
+
+#: src/v4l.c:1404
+#, c-format
+msgid "Returned width is zero on video device (%s)!"
+msgstr "Відеопристроєм повернуто нульову ширину (%s)!"
+
+#: src/v4l.c:1428 src/v4l.c:1511
+#, c-format
+msgid "VIDIOC_REQBUFS  --  could not request buffers (%s), exiting...."
+msgstr ""
+"VIDIOC_REQBUFS  --  не вдалося виконати запит щодо буферів (%s), завершуємо "
+"роботу...."
+
+#: src/v4l.c:1437 src/v4l.c:1520 src/v4l.c:1535
+msgid "could not allocate memory for video buffers, exiting...."
+msgstr "не вдалося отримати пам'ять під відеобуфери, завершуємо роботу...."
+
+#: src/v4l.c:1453
+#, c-format
+msgid "VIDIOC_QUERYBUF  --  could not query buffers (%s), exiting...."
+msgstr ""
+"VIDIOC_QUERYBUF  --  не вдалося опитати буфери (%s), завершуємо роботу...."
+
+#: src/v4l.c:1468
+#, c-format
+msgid "failed to memory map buffers (%s), exiting...."
+msgstr ""
+"не вдалося пов'язати буфери із областями пам'яті (%s), завершуємо роботу...."
+
+#: src/v4l.c:1482
+#, c-format
+msgid "VIDIOC_QBUF  --  could not enqueue buffers (%s), exiting...."
+msgstr ""
+"VIDIOC_QBUF  --  не вдалося додати буфери до черги обробки (%s), завершуємо "
+"роботу...."
+
+#: src/v4l.c:1492 src/v4l.c:1559
+#, c-format
+msgid "failed to start streaming (%s), exiting...."
+msgstr ""
+"не вдалося запустити потік передавання даних (%s), завершуємо роботу...."
+
+#: src/v4l.c:1548
+#, c-format
+msgid "VIDIOC_QBUF  --  could not query buffers (%s), exiting...."
+msgstr "VIDIOC_QBUF  --  не вдалося опитати буфери (%s), завершуємо роботу...."
+
+#: src/v4l.c:1589 src/v4l.c:1640
+#, c-format
+msgid "Timeout while waiting for frames (%s)"
+msgstr "Перевищено час очікування на дані кадрів (%s)"
+
+#: src/v4l.c:1703 src/v4l.c:1762
+#, c-format
+msgid "failed to stop streaming (%s), exiting...."
+msgstr "не вдалося припинити передавання даних (%s), завершуємо роботу...."
+
+#~ msgid "_File"
+#~ msgstr "_Файл"
+
+#~ msgid "_Quit"
+#~ msgstr "Ви_йти"
+
+#~ msgid "_Edit"
+#~ msgstr "З_міни"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Налаштування"
+
+#~ msgid "_Help"
+#~ msgstr "_Довідка"
+
+#~ msgid "_About"
+#~ msgstr "_Про програму"
+
+#~ msgid "Preferences"
+#~ msgstr "Вподобання"
+
+#~ msgid "camorama"
+#~ msgstr "camorama"
+
+#, c-format
+#~ msgid ""
+#~ "Invalid argument\n"
+#~ "Run '%s --help'\n"
+#~ msgstr ""
+#~ "Некоректний аргумент\n"
+#~ "Скористайтеся командою «%s --help»\n"
+
+#~ msgid "webcam-capture"
+#~ msgstr "webcam-capture"
+
+#~ msgid "Color Correction"
+#~ msgstr "Виправлення кольорів"
