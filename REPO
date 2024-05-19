@@ -6,6 +6,7 @@ d:ttf-font-awesome
 d:jwm
 d:vifm
 d:cmatrix
+d:libglade
 d:transset-df
 d:menumaker
 d:ttf-font-awesome-compat
@@ -22,7 +23,6 @@ d:xscreensaver
 d:jgmenu
 d:obconf
 d:camorama
-d:libglade2-0
 d:sxhkd
 d:scrot
 d:netsurf
@@ -56,6 +56,7 @@ f:99bafde8a4a2857a5095c61735eb0b88:cmatrix/.md5sum
 f:aeeadeaabd2037568c63274d58b6f67a:cmatrix/.footprint
 f:3d2b1b6cdde2cf8a2c67de8de7d621f3:cmatrix/.signature
 f:5fbc828665e960b96d9230001ac2b53f:cmatrix/Pkgfile
+f:051933f2df9457fb4d85c11b8d04f334:libglade/Pkgfile
 f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:138b1a09fd93d33f6f9b48aaeaa8023d:transset-df/.signature
@@ -112,7 +113,6 @@ f:d6bd8d4673d465dec01d693838ed67ba:camorama/.md5sum
 f:a58b5b8e664b960beb7e4be32dd6269c:camorama/.footprint
 f:c42585a3b80b514a5aefdc4d7505a8d4:camorama/.signature
 f:525d5afc4e34a7478be2f4a76a4bc1f0:camorama/Pkgfile
-f:051933f2df9457fb4d85c11b8d04f334:libglade2-0/Pkgfile
 f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:a4aadb7eb0dbad787733a09de262c5a3:sxhkd/.footprint
 f:c8177a2ab9d3100462e5ff3f4b36b7a2:sxhkd/Pkgfile
