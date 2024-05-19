@@ -1,4 +1,5 @@
 d:paper-gtk-theme
+d:xcalc
 d:fluxbox
 d:cmus
 d:btop
@@ -29,6 +30,9 @@ d:netsurf
 f:7eb21a417ee75c0ecca3468daa4287ef:paper-gtk-theme/.md5sum
 f:76056a4e4c085c449eb34d0401050593:paper-gtk-theme/.footprint
 f:0a37e37bd0f775ec228f6706ad44fd6b:paper-gtk-theme/Pkgfile
+f:0e448744c19f536f39e7f55fd21967b8:xcalc/.md5sum
+f:263c6fd1382b915c1cba68792589ce01:xcalc/.footprint
+f:40d62badc416b0b1a2df025e47284b83:xcalc/Pkgfile
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:1bc680f4b941882375d5080ac947ddc4:fluxbox/.signature
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
