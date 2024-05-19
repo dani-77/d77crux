@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkMLtHV260x55WwX8FjZUJt1ndH3LQXEZRVdEdwAbLTTsXoT6E3kyz6blahb7X9YCJknOyU1FKMzXi4ljGF6ksgk=
+SHA256 (Pkgfile) = 003b1f2b0434bcc0ba431fa670d3245f0fc3b575dcd1f89324509d31cd8b6a82
+SHA256 (.footprint) = af50b13a5ccb02f6408aeac1e3587a8fe1867c9938100b907ab05562daac9bc1
+SHA256 (obconf-2.0.4.tar.gz) = 71a3e5f4ee246a27421ba85044f09d449f8de22680944ece9c471cd46a9356b9

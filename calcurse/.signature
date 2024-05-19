@@ -1,4 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWSvCWmLcsMJu1YIdB1buTVd3SxZOgoV83G+ihmTRRNn5cv9P8rYlTbmgNqcHIZCDPf2aK7OYlCE2Zp4vEAZ43pMMN52fV+n6gY=
+RWT0dvMs3lAWkEpCTQeyEs8Fbe2v261sowzyLSwGrr1eQQHGr/XJkr2xmObMcCa1olVDvsPG/oKgWnFdeqF/gJunYvkr5KmAXgo=
 SHA256 (Pkgfile) = 4f1785fbb9f2ee12994dfa5023ce98b88c8ee2a019291508fc8b59af8637b932
+SHA256 (.footprint) = 672a44f536537f1e7321bae8b7f48c21d2ba8f39c23178ee2ee3e01043af375b
 SHA256 (calcurse-4.8.1.tar.gz) = d86bb37014fd69b8d83ccb904ac979c6b8ddf59ee3dbc80f5a274525e4d5830a
