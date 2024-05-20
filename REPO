@@ -88,12 +88,12 @@ f:266b05f5325a027dba4ba714741c0464:lzip/.signature
 f:4fb1a4bf337a645555e525432b563a56:lzip/Pkgfile
 f:96951efc35e7f0bbf5324ba71a300672:moka-icon-theme/.md5sum
 f:31af1c2783310c9dc4b82bb62352d980:moka-icon-theme/.footprint
-f:0e96342882f8374ff70db8d547bdbaf7:moka-icon-theme/.signature
-f:8b04aa725fd87905fb46a0b86e41f7a6:moka-icon-theme/Pkgfile
+f:6382a0ea8ed77c1e9126c3df8d430603:moka-icon-theme/.signature
+f:0b314e2c0344660a2d5fe21349374da4:moka-icon-theme/Pkgfile
 f:5cf5c244f2f6af16c82fa95bbcd2f04b:paper-icon-theme/.md5sum
 f:32ff756685654eea4bf285333918dcbe:paper-icon-theme/.footprint
-f:55815296ba4f0dc508b27f277f65f536:paper-icon-theme/.signature
-f:fa019bdb333bd5f38dca79d4d7a3ad27:paper-icon-theme/Pkgfile
+f:d75f577a51f4337320748133f920cbaf:paper-icon-theme/.signature
+f:918589f222702e1f6032819bea7347b0:paper-icon-theme/Pkgfile
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
 f:cff8487d26b9044cf54cfd8e12fe03ee:calcurse/Pkgfile
@@ -119,8 +119,8 @@ f:ad1aea0bfeeaaa9714e0f516db4065b2:hack-ttf/.signature
 f:034e6a4c0dd08f0f2da85fb8c5bbfda1:hack-ttf/Pkgfile
 f:451a806271ad5280983421155b5771b9:faba-icon-theme/.md5sum
 f:91c9223c91d86188775cb8a8f13eec96:faba-icon-theme/.footprint
-f:1d2f10ad0843977010929dddc36aacfc:faba-icon-theme/.signature
-f:8ab5fa62c100146b29c442fb08862edf:faba-icon-theme/Pkgfile
+f:214a21ae9900b5e125bbb995dd3262e7:faba-icon-theme/.signature
+f:51eceb944e56304a5ec86dd22dcba0d8:faba-icon-theme/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xscreensaver/.footprint
 f:be17a8391c3c4a9b1663cbe26a72a16a:xscreensaver/.signature
 f:52b666f29e10d6877f73bec3ddd93bfc:xscreensaver/Pkgfile

@@ -1,7 +1,7 @@
 # Description: Faba is a sexy and modern icon theme for the FreeDesktop
 # URL: https://github.com/snwh/faba-icon-theme
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: 
+# Depends on: adwaita-icon-theme libadwaita
 
 name=faba-icon-theme
 version=v4.3

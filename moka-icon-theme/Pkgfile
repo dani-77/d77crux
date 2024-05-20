@@ -1,7 +1,7 @@
 # Description: Moka is an icon project for the FreeDesktop
 # URL: https://snwh.org/moka
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: 
+# Depends on: adwaita-icon-theme libadwaita
 
 name=moka-icon-theme
 version=v5.4.0
