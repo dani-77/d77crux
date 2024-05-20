@@ -6,7 +6,7 @@
 name=paper-gtk-theme
 version=2.1.0
 release=1
-source=(https://github.com/snwh/paper-gtk-theme/archive/refs/tags/v2.1.0.tar.gz)
+source=(https://github.com/snwh/$name/archive/refs/tags/$version.tar.gz)
 
 build() {
   cd $name-$version
