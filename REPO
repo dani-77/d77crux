@@ -21,6 +21,7 @@ d:dosbox
 d:icewm
 d:figlet
 d:hack-ttf
+d:liberation-mono
 d:faba-icon-theme
 d:xscreensaver
 d:jgmenu
@@ -117,6 +118,10 @@ f:676dabcd0fb74262340ef90f98b0e055:hack-ttf/.md5sum
 f:427e8f85692b3a815b0f9dc6a93fb02a:hack-ttf/.footprint
 f:ad1aea0bfeeaaa9714e0f516db4065b2:hack-ttf/.signature
 f:034e6a4c0dd08f0f2da85fb8c5bbfda1:hack-ttf/Pkgfile
+f:d84e8968533b8f91e346a7ea918659e1:liberation-mono/.md5sum
+f:e5d9619829e78b67e0c66dda26419423:liberation-mono/.footprint
+f:e86479b8a9f7cdda058b3d7062e274fa:liberation-mono/.signature
+f:adda789c1ed1a9f5e1bf87b662385002:liberation-mono/Pkgfile
 f:451a806271ad5280983421155b5771b9:faba-icon-theme/.md5sum
 f:91c9223c91d86188775cb8a8f13eec96:faba-icon-theme/.footprint
 f:214a21ae9900b5e125bbb995dd3262e7:faba-icon-theme/.signature
