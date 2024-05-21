@@ -13,5 +13,5 @@ build() {
         autoreconf -vfi
 	./autogen.sh
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }

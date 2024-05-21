@@ -11,5 +11,5 @@ source=(https://download.netsurf-browser.org/netsurf/releases/source-full/netsur
 build() {
   cd $name-all-$version
   make
-  make DESTDIR=$PKG install
+  make DESTDIR=$PKG PREFIX=/usr install
 }

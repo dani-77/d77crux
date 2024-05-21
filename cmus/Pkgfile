@@ -11,5 +11,5 @@ source=(https://github.com/cmus/cmus/archive/refs/tags/v$version.tar.gz)
 build() {
 	cd $name-$version
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }

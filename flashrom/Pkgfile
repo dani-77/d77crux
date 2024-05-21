@@ -11,5 +11,5 @@ source=(https://github.com/flashrom/flashrom/archive/refs/tags/v$version.zip)
 build() {
 	cd $name-$version
 	make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }

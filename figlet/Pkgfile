@@ -11,5 +11,5 @@ source=(ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz)
 build() {
   cd $name-$version
   make
-  make DESTDIR=$PKG install
+  make DESTDIR=$PKG PREFIX=/usr install
 }
