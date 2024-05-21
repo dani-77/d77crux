@@ -18,6 +18,7 @@ d:paper-icon-theme
 d:calcurse
 d:flashrom
 d:dosbox
+d:ranger
 d:icewm
 d:figlet
 d:hack-ttf
@@ -107,6 +108,10 @@ f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
 f:29093a3f38f3115fa763555df1fd2b88:dosbox/.footprint
 f:f7963ff5f4d4589fad5a235692042fd8:dosbox/.signature
 f:ce7775be7588b0367466411b803df0c9:dosbox/Pkgfile
+f:a71d5cf7bf2560b906eb504a1872d493:ranger/.md5sum
+f:47e50b5595e9bfff02dd3e37d8646d01:ranger/.footprint
+f:a3b80ed83af88b029e4dfa3e2545954f:ranger/.signature
+f:e27626fcf81c9d4334b1f247481ec083:ranger/Pkgfile
 f:fd7c2b8655c87a615fdaaf97c74a806a:icewm/.md5sum
 f:af8995a67bb65e52311690857067b232:icewm/.footprint
 f:0b30ce9669d71000f43e8d9a72310b32:icewm/.signature
