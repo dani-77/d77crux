@@ -1,6 +1,7 @@
 # Description: Font Awesome
 # URL: https://fontawesome.com/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# originally found at Tim Bierman's Github repo crux-ports
 
 name=ttf-font-awesome
 version=6.5.1
