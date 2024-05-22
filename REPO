@@ -1,6 +1,7 @@
 d:paper-gtk-theme
 d:xcalc
 d:fluxbox
+d:tint2
 d:cmus
 d:btop
 d:ttf-font-awesome
@@ -42,9 +43,14 @@ f:0e448744c19f536f39e7f55fd21967b8:xcalc/.md5sum
 f:263c6fd1382b915c1cba68792589ce01:xcalc/.footprint
 f:cd34bc1867cf2691e90ac25f3fd5e85a:xcalc/.signature
 f:40d62badc416b0b1a2df025e47284b83:xcalc/Pkgfile
+f:5be68ec050b4e42a4f5254294cd93c63:fluxbox/.md5sum
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:073df93c79118490122036f3b5a57e78:fluxbox/.signature
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
+f:ab20d15fe49d2c74ec30f62c8aee7124:tint2/.md5sum
+f:1a0b78173064e14bbefec26668fdb0b3:tint2/.footprint
+f:ced256f90b07b3aed18382904672a839:tint2/.signature
+f:0040666198066a8c74c34ed9269f30ea:tint2/Pkgfile
 f:190e6037d4c82d1447ed3635ec7c49af:cmus/.md5sum
 f:dfa38913f2273ecbafdb590982fcd983:cmus/.footprint
 f:2a28a3e8f0d8f023b752aad387553c26:cmus/.signature
@@ -55,8 +61,8 @@ f:d7e05ee3aa65c1f16899048de9d15e3e:btop/.signature
 f:fef3c3a1bdd9b7f44c1cfcaa5166b3db:btop/Pkgfile
 f:6cfae8192ae7437430248e165bb39db7:ttf-font-awesome/.md5sum
 f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
-f:6019738df43c8b0171b764e565fba845:ttf-font-awesome/.signature
-f:257511afc34e20d9729430c1b7aa2f79:ttf-font-awesome/Pkgfile
+f:9672e98ab8c709bc111a362ff1477c58:ttf-font-awesome/.signature
+f:27833fe042579750f165c525320994a2:ttf-font-awesome/Pkgfile
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
 f:cb1da6bfcff0174d595109f240620749:jwm/.signature
@@ -69,6 +75,8 @@ f:99bafde8a4a2857a5095c61735eb0b88:cmatrix/.md5sum
 f:aeeadeaabd2037568c63274d58b6f67a:cmatrix/.footprint
 f:ca3f0a1d631e635aed38a1c43d4e6fd4:cmatrix/.signature
 f:5fbc828665e960b96d9230001ac2b53f:cmatrix/Pkgfile
+f:9c439d3757e520be772e6301b8de9134:libglade/.md5sum
+f:0a4e775b7c50cc9de2e5d65e9087cd1d:libglade/.footprint
 f:3269676c8668a1dd0128b2dce882f951:libglade/.signature
 f:051933f2df9457fb4d85c11b8d04f334:libglade/Pkgfile
 f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
@@ -103,6 +111,7 @@ f:627d758327af44f72a9fa50f2bd22392:ncspot/.md5sum
 f:a517c502dd71a8c6da21f1b7984059eb:ncspot/.footprint
 f:628b1dffa68ea5ef5d57de34b1cb2b50:ncspot/.signature
 f:b132761341a63823b0f3288fc7514812:ncspot/Pkgfile
+f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
 f:cff8487d26b9044cf54cfd8e12fe03ee:calcurse/Pkgfile
@@ -123,9 +132,9 @@ f:af8995a67bb65e52311690857067b232:icewm/.footprint
 f:0b30ce9669d71000f43e8d9a72310b32:icewm/.signature
 f:63eb50216058fcff5107e9a82a69a083:icewm/Pkgfile
 f:a160a89ee68562426899bb01e6369278:figlet/.md5sum
-f:95c7d789fabe89fc9a10e0fc42347b6c:figlet/.footprint
-f:f7a6f608986ea835c87b22cbe7f41ba2:figlet/.signature
-f:14d877d62bd8395a7cd987f9a3156069:figlet/Pkgfile
+f:398dbd697e3fe6a0d09902e740de1272:figlet/.footprint
+f:19080ef32a9c97d774587f80e6ed5a0c:figlet/.signature
+f:68ed27f123a4fd071c6449023e857d9b:figlet/Pkgfile
 f:676dabcd0fb74262340ef90f98b0e055:hack-ttf/.md5sum
 f:427e8f85692b3a815b0f9dc6a93fb02a:hack-ttf/.footprint
 f:ad1aea0bfeeaaa9714e0f516db4065b2:hack-ttf/.signature
@@ -142,6 +151,7 @@ f:ef40edfc6724a1ee93b5c92017a37a60:xscreensaver/.md5sum
 f:d41d8cd98f00b204e9800998ecf8427e:xscreensaver/.footprint
 f:be17a8391c3c4a9b1663cbe26a72a16a:xscreensaver/.signature
 f:52b666f29e10d6877f73bec3ddd93bfc:xscreensaver/Pkgfile
+f:9fcc9ec66e6eeca2ed98f68ab7b50b12:jgmenu/.md5sum
 f:4b5201c6df6ad3c69544da2a5b09d841:jgmenu/.footprint
 f:cc46796e6eb6480a6f51343a6ab52778:jgmenu/.signature
 f:47fe5d57ba5d2e326ede958b1f680632:jgmenu/Pkgfile
@@ -161,6 +171,7 @@ f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:e6048680a65abd0d05d5556598346079:sxhkd/.footprint
 f:0ccde1cafc5da8ff0c5f66d95e4a0d63:sxhkd/.signature
 f:83253c57b52a4bd1302589655a8b7927:sxhkd/Pkgfile
+f:c1b1dd3e9c21be797734aadb03751804:scrot/.md5sum
 f:c878cb7f2d30185f5913c1912a07c386:scrot/.footprint
 f:51256d8599f334b136bbacaf995193de:scrot/.signature
 f:c361a6f81eecac7f3f249ff8de39a678:scrot/Pkgfile

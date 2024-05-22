@@ -10,6 +10,7 @@ source=(ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz)
 
 build() {
   cd $name-$version
+  sed -i 's/\/usr\/\local/\/usr/g' Makefile
   make
-  make DESTDIR=$PKG PREFIX=/usr install
+  make DESTDIR=$PKG install
 }
