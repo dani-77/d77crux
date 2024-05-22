@@ -15,6 +15,7 @@ d:redshift
 d:lzip
 d:moka-icon-theme
 d:paper-icon-theme
+d:ncspot
 d:calcurse
 d:flashrom
 d:dosbox
@@ -98,6 +99,10 @@ f:5cf5c244f2f6af16c82fa95bbcd2f04b:paper-icon-theme/.md5sum
 f:32ff756685654eea4bf285333918dcbe:paper-icon-theme/.footprint
 f:d75f577a51f4337320748133f920cbaf:paper-icon-theme/.signature
 f:918589f222702e1f6032819bea7347b0:paper-icon-theme/Pkgfile
+f:627d758327af44f72a9fa50f2bd22392:ncspot/.md5sum
+f:a517c502dd71a8c6da21f1b7984059eb:ncspot/.footprint
+f:628b1dffa68ea5ef5d57de34b1cb2b50:ncspot/.signature
+f:b132761341a63823b0f3288fc7514812:ncspot/Pkgfile
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
 f:cff8487d26b9044cf54cfd8e12fe03ee:calcurse/Pkgfile

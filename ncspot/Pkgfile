@@ -1,0 +1,15 @@
+# Description: Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes. 
+# URL: https://github.com/hrkfdn/ncspot
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=ncspot
+version=1.1.1
+release=1
+source=(https://github.com/hrkfdn/ncspot/releases/download/v1.1.1/ncspot-v1.1.1-linux-x86_64.tar.gz)
+
+build() {
+
+ install -m644 ./ncspot $PKG/bin
+
+}
