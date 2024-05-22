@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mailsync
+-rwxr-xr-x	root/root	usr/bin/mw
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/mutt-wizard/
+-rwxr-xr-x	root/root	usr/lib/mutt-wizard/openfile
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/mailsync.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/mw.1.gz
+drwxr-xr-x	root/root	usr/share/mutt-wizard/
+-rw-r--r--	root/root	usr/share/mutt-wizard/domains.csv
+-rw-r--r--	root/root	usr/share/mutt-wizard/mailcap
+-rw-r--r--	root/root	usr/share/mutt-wizard/mutt-wizard.muttrc
+-rw-r--r--	root/root	usr/share/mutt-wizard/switch.muttrc

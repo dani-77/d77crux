@@ -26,6 +26,7 @@ d:liberation-mono
 d:faba-icon-theme
 d:xscreensaver
 d:jgmenu
+d:mutt-wizard
 d:obconf
 d:camorama
 d:sxhkd
@@ -139,6 +140,10 @@ f:52b666f29e10d6877f73bec3ddd93bfc:xscreensaver/Pkgfile
 f:4b5201c6df6ad3c69544da2a5b09d841:jgmenu/.footprint
 f:cc46796e6eb6480a6f51343a6ab52778:jgmenu/.signature
 f:47fe5d57ba5d2e326ede958b1f680632:jgmenu/Pkgfile
+f:7e48935a7598cfd66f50161fa99c6995:mutt-wizard/.md5sum
+f:1b5415555f8f5fb5cf2ed4956feb3207:mutt-wizard/.footprint
+f:cd374db079df47dca75ea59fa8db2920:mutt-wizard/.signature
+f:b740679e255cb5127a4ebc35aa27ee81:mutt-wizard/Pkgfile
 f:ce828621b89253c5d65e72d89671696e:obconf/.md5sum
 f:a23ab68fe1842621965088efb2d2b907:obconf/.footprint
 f:1b53dbc0926cba0692765819e063392f:obconf/.signature
