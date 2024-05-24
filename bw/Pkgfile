@@ -1,0 +1,15 @@
+# Description: Bitwarden command-line interface (CLI); write and execute scripts on your vault.
+# URL: https://bitwarden.com
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=bw
+version=2024.4.1
+release=1
+source=(https://github.com/bitwarden/clients/releases/download/cli-v$version/$name-linux-$version.zip)
+
+build() {
+
+ install -m644 ./bw $PKG/bin
+
+}
