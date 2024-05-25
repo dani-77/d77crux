@@ -19,6 +19,7 @@ d:moka-icon-theme
 d:paper-icon-theme
 d:ncspot
 d:bw
+d:nerd-fonts
 d:calcurse
 d:flashrom
 d:dosbox
@@ -121,6 +122,10 @@ f:a14360115db5d0df36dcd2b58c8b9fa0:bw/.md5sum
 f:ebaf74cc483388556bc63c32c2a9328c:bw/.footprint
 f:21d81b21ce2623c71a33c55b5f5fed00:bw/.signature
 f:bf8cf8f0444e39803a43bff4268e2dcd:bw/Pkgfile
+f:928e7c5129f1924a902bcd54f004b20a:nerd-fonts/.md5sum
+f:bf27192c5fa0e13cfad87d03fcc0922d:nerd-fonts/.footprint
+f:134328474137434f64ca28c48fda6980:nerd-fonts/.signature
+f:4be63a21f8fef57bdb0355e4884b0ef5:nerd-fonts/Pkgfile
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
