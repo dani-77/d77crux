@@ -1,3 +1,4 @@
+d:gh
 d:paper-gtk-theme
 d:xcalc
 d:fluxbox
@@ -36,6 +37,10 @@ d:sxhkd
 d:scrot
 d:netsurf
 d:slock
+f:b9b8c4fdf9cfa67f14cc7bc082b7ca03:gh/.md5sum
+f:ebaf74cc483388556bc63c32c2a9328c:gh/.footprint
+f:3503f18bc6ffc94c075dc2eacca189dd:gh/.signature
+f:fc1914b79e06e77b5779c729b8da4acb:gh/Pkgfile
 f:7eb21a417ee75c0ecca3468daa4287ef:paper-gtk-theme/.md5sum
 f:76056a4e4c085c449eb34d0401050593:paper-gtk-theme/.footprint
 f:b1df33a61deada70436985409533a545:paper-gtk-theme/.signature
@@ -109,13 +114,13 @@ f:32ff756685654eea4bf285333918dcbe:paper-icon-theme/.footprint
 f:d75f577a51f4337320748133f920cbaf:paper-icon-theme/.signature
 f:918589f222702e1f6032819bea7347b0:paper-icon-theme/Pkgfile
 f:627d758327af44f72a9fa50f2bd22392:ncspot/.md5sum
-f:a517c502dd71a8c6da21f1b7984059eb:ncspot/.footprint
-f:628b1dffa68ea5ef5d57de34b1cb2b50:ncspot/.signature
-f:b132761341a63823b0f3288fc7514812:ncspot/Pkgfile
+f:ebaf74cc483388556bc63c32c2a9328c:ncspot/.footprint
+f:d5f609ec491fae1fb902faf4cd9d7f38:ncspot/.signature
+f:1eb27282758185158ddfb4d309b9af4c:ncspot/Pkgfile
 f:a14360115db5d0df36dcd2b58c8b9fa0:bw/.md5sum
-f:a517c502dd71a8c6da21f1b7984059eb:bw/.footprint
-f:072aa611f0f93c6043bd5c56a312ac4c:bw/.signature
-f:2d4e19a74a30237c5e23fbb785c0c4d2:bw/Pkgfile
+f:ebaf74cc483388556bc63c32c2a9328c:bw/.footprint
+f:21d81b21ce2623c71a33c55b5f5fed00:bw/.signature
+f:bf8cf8f0444e39803a43bff4268e2dcd:bw/Pkgfile
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
