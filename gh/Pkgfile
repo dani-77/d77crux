@@ -1,0 +1,16 @@
+# Description:  GitHub's official command line tool 
+# URL: https://cli.github.com/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=gh
+version=2.49.2
+release=1
+source=(https://github.com/cli/cli/releases/download/v$version/gh_2.49.2_linux_amd64.tar.gz)
+
+build() {
+  cd gh_2.49.2_linux_amd64
+
+  install -m777 bin/gh $PKG/bin
+
+}

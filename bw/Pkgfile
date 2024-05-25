@@ -10,6 +10,6 @@ source=(https://github.com/bitwarden/clients/releases/download/cli-v$version/$na
 
 build() {
 
- install -m644 ./bw $PKG/bin
+ install -m777 ./bw $PKG/bin
 
 }

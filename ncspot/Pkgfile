@@ -10,6 +10,6 @@ source=(https://github.com/hrkfdn/ncspot/releases/download/v1.1.1/ncspot-v1.1.1-
 
 build() {
 
- install -m644 ./ncspot $PKG/bin
+ install -m777 ./ncspot $PKG/bin
 
 }

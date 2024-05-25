@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkCvzba2ycXckoA+/Zd7FQhBq7tSKzMBaQ1uVyxRWcnaoUysTFxfPuybA2U25Q9Nr6YehL5WIaARo/r3E02wf/gw=
-SHA256 (Pkgfile) = c499683db70c5c1ca609973d8de2e9b5f41bfd1838c1f55ff14da4bddf087045
+RWT0dvMs3lAWkA67lz816TFMkTf1pOBXdN1U6dXIU8EXN7AB5HaSznAk7+DJT/38cQliHEaSKPhLWuqdO8u7QY2s9IqUzUXecwU=
+SHA256 (Pkgfile) = 5e75ea05f2b8e2e95fe4f9c286e358d6918093152b8a34eeb8a015c262d43ca7
 SHA256 (.footprint) = 701c822f206669ea0fb344cea8c0a43e47f8b1eb463c654f900bab6f92d1999f
 SHA256 (ncspot-v1.1.1-linux-x86_64.tar.gz) = a31dfa16819d8a9163610367deac50a2eb424b8b995327bb73f8106b08a3ad47
