@@ -7,6 +7,7 @@ d:cmus
 d:btop
 d:ttf-font-awesome
 d:jwm
+d:jwm/jetbrains
 d:vifm
 d:cmatrix
 d:libglade
@@ -20,7 +21,6 @@ d:paper-icon-theme
 d:ncspot
 d:bw
 d:nerd-fonts
-d:jetbrains
 d:calcurse
 d:flashrom
 d:dosbox
@@ -72,6 +72,10 @@ f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
 f:9672e98ab8c709bc111a362ff1477c58:ttf-font-awesome/.signature
 f:27833fe042579750f165c525320994a2:ttf-font-awesome/Pkgfile
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
+f:792af3086f2569913f3bec6cef5a3af1:jwm/jetbrains/.md5sum
+f:60548db3dd785f8157843d690219010d:jwm/jetbrains/.footprint
+f:ea1d28a83fc287be5e43272bc857f116:jwm/jetbrains/.signature
+f:a4a65e7bb8e6047100b3b3f6868101a8:jwm/jetbrains/Pkgfile
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
 f:cb1da6bfcff0174d595109f240620749:jwm/.signature
 f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
@@ -127,10 +131,6 @@ f:928e7c5129f1924a902bcd54f004b20a:nerd-fonts/.md5sum
 f:bf27192c5fa0e13cfad87d03fcc0922d:nerd-fonts/.footprint
 f:134328474137434f64ca28c48fda6980:nerd-fonts/.signature
 f:4be63a21f8fef57bdb0355e4884b0ef5:nerd-fonts/Pkgfile
-f:792af3086f2569913f3bec6cef5a3af1:jetbrains/.md5sum
-f:60548db3dd785f8157843d690219010d:jetbrains/.footprint
-f:ea1d28a83fc287be5e43272bc857f116:jetbrains/.signature
-f:a4a65e7bb8e6047100b3b3f6868101a8:jetbrains/Pkgfile
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
@@ -147,9 +147,9 @@ f:a71d5cf7bf2560b906eb504a1872d493:ranger/.md5sum
 f:47e50b5595e9bfff02dd3e37d8646d01:ranger/.footprint
 f:a3b80ed83af88b029e4dfa3e2545954f:ranger/.signature
 f:e27626fcf81c9d4334b1f247481ec083:ranger/Pkgfile
-f:fd7c2b8655c87a615fdaaf97c74a806a:icewm/.md5sum
+f:980db1c32e55acce387cba8d6c3837b5:icewm/.md5sum
 f:af8995a67bb65e52311690857067b232:icewm/.footprint
-f:0b30ce9669d71000f43e8d9a72310b32:icewm/.signature
+f:05741a7967d39a7689c319ce9a813085:icewm/.signature
 f:3775e64e132e884756267120ce3fd92f:icewm/Pkgfile
 f:a160a89ee68562426899bb01e6369278:figlet/.md5sum
 f:398dbd697e3fe6a0d09902e740de1272:figlet/.footprint
