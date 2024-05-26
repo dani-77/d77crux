@@ -7,7 +7,6 @@ d:cmus
 d:btop
 d:ttf-font-awesome
 d:jwm
-d:jwm/jetbrains
 d:vifm
 d:cmatrix
 d:libglade
@@ -21,6 +20,7 @@ d:paper-icon-theme
 d:ncspot
 d:bw
 d:nerd-fonts
+d:jetbrains
 d:calcurse
 d:flashrom
 d:dosbox
@@ -72,10 +72,6 @@ f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
 f:9672e98ab8c709bc111a362ff1477c58:ttf-font-awesome/.signature
 f:27833fe042579750f165c525320994a2:ttf-font-awesome/Pkgfile
 f:bd478f02c2435f3593c03a8e25f0972d:jwm/.md5sum
-f:792af3086f2569913f3bec6cef5a3af1:jwm/jetbrains/.md5sum
-f:60548db3dd785f8157843d690219010d:jwm/jetbrains/.footprint
-f:ea1d28a83fc287be5e43272bc857f116:jwm/jetbrains/.signature
-f:a4a65e7bb8e6047100b3b3f6868101a8:jwm/jetbrains/Pkgfile
 f:3c994ac87da04cdca6040c9ef8435431:jwm/.footprint
 f:cb1da6bfcff0174d595109f240620749:jwm/.signature
 f:844022e335a5fe00ecc229e3e7a2fd0e:jwm/Pkgfile
@@ -131,6 +127,10 @@ f:928e7c5129f1924a902bcd54f004b20a:nerd-fonts/.md5sum
 f:bf27192c5fa0e13cfad87d03fcc0922d:nerd-fonts/.footprint
 f:134328474137434f64ca28c48fda6980:nerd-fonts/.signature
 f:4be63a21f8fef57bdb0355e4884b0ef5:nerd-fonts/Pkgfile
+f:792af3086f2569913f3bec6cef5a3af1:jetbrains/.md5sum
+f:60548db3dd785f8157843d690219010d:jetbrains/.footprint
+f:ea1d28a83fc287be5e43272bc857f116:jetbrains/.signature
+f:a4a65e7bb8e6047100b3b3f6868101a8:jetbrains/Pkgfile
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:5df5de9761eabc0dc2e1804e868ffc6f:calcurse/.footprint
 f:854722ff2da3a1043ea097376b7a3310:calcurse/.signature
