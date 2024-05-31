@@ -3,6 +3,7 @@ d:paper-gtk-theme
 d:xcalc
 d:fluxbox
 d:tint2
+d:epson-inkjet-printer-escpr
 d:cmus
 d:btop
 d:ttf-font-awesome
@@ -11,6 +12,7 @@ d:vifm
 d:cmatrix
 d:libglade
 d:transset-df
+d:rpm2targz
 d:menumaker
 d:ttf-font-awesome-compat
 d:redshift
@@ -59,6 +61,10 @@ f:ab20d15fe49d2c74ec30f62c8aee7124:tint2/.md5sum
 f:1a0b78173064e14bbefec26668fdb0b3:tint2/.footprint
 f:ced256f90b07b3aed18382904672a839:tint2/.signature
 f:0040666198066a8c74c34ed9269f30ea:tint2/Pkgfile
+f:e5f41333247d614306055b7313691e6c:epson-inkjet-printer-escpr/.md5sum
+f:79be78e2224a2d46a2f0003eb53acfb4:epson-inkjet-printer-escpr/.footprint
+f:272721bb795cbf93cf560382d1852aa8:epson-inkjet-printer-escpr/.signature
+f:a3e9700236dc55ccb968ae0d31880b84:epson-inkjet-printer-escpr/Pkgfile
 f:190e6037d4c82d1447ed3635ec7c49af:cmus/.md5sum
 f:dfa38913f2273ecbafdb590982fcd983:cmus/.footprint
 f:2a28a3e8f0d8f023b752aad387553c26:cmus/.signature
@@ -91,6 +97,10 @@ f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:21683f518a865a68ef4f10605e6c81a7:transset-df/.signature
 f:af7b0460923edf9c7fdbb3acd19d4c09:transset-df/Pkgfile
+f:15a5d8833c4e74e39900c67cfcf294ba:rpm2targz/.md5sum
+f:fbb96db98a5dbb05abe309c3bb9c4e52:rpm2targz/.footprint
+f:6c37eb62a14cad28b3baa3324bd89045:rpm2targz/.signature
+f:5cb45388dff78d9c59610346d5b41a65:rpm2targz/Pkgfile
 f:112340846bc21c8467d97b80eb5ebbfd:menumaker/.md5sum
 f:46b2ff9af0bc9b5554bf2b49f4b61381:menumaker/.footprint
 f:a8ae32760471f9b908b38b68869a08a8:menumaker/.signature
