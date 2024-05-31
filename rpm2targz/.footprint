@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/rpm2tar -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tarbz2 -> rpm2targz
+-rwxr-xr-x	root/root	usr/bin/rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tarlzma -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tarxz -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tarzst -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tbz2 -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2tgz -> rpm2targz
+lrwxrwxrwx	root/root	usr/bin/rpm2txz -> rpm2targz
+-rwxr-xr-x	root/root	usr/bin/rpmoffset
+lrwxrwxrwx	root/root	usr/bin/rpmunpack -> rpm2targz
