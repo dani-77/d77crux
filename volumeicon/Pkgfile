@@ -1,0 +1,17 @@
+# Description: Volume Icon aims to be a lightweight volume control that sits in your systray. 
+# URL: http://nullwise.com/volumeicon.html
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: perl glib gtk3 intltool
+
+name=volumeicon
+version=0.5.1
+release=1
+source=(https://github.com/Maato/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
