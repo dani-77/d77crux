@@ -26,6 +26,7 @@ d:libglade
 d:nerd-fonts
 d:hack-ttf
 d:icewm
+d:abook
 d:obconf
 d:figlet
 d:bw
@@ -154,6 +155,10 @@ f:af8995a67bb65e52311690857067b232:icewm/.footprint
 f:980db1c32e55acce387cba8d6c3837b5:icewm/.md5sum
 f:3775e64e132e884756267120ce3fd92f:icewm/Pkgfile
 f:05741a7967d39a7689c319ce9a813085:icewm/.signature
+f:280c42ebd9261a583031f3506cd12df4:abook/.footprint
+f:53cd1c59e2545dbe12fbb127763d7193:abook/.md5sum
+f:0e72f13f1f18b4307ec0fb0b62d41741:abook/Pkgfile
+f:4cc864a12f40fd8ff856992923d10d31:abook/.signature
 f:a23ab68fe1842621965088efb2d2b907:obconf/.footprint
 f:ce828621b89253c5d65e72d89671696e:obconf/.md5sum
 f:fe8eeb3ef56105e44d02d6f7620a0489:obconf/Pkgfile
