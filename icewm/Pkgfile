@@ -4,9 +4,9 @@
 # Depends on: lzip xorg-libxcomposite xorg-libxdamage xorg-libxrandr xorg-libxinerama libsndfile glib-networking imlib2 librsvg xorg-libxpm
 
 name=icewm
-version=3.5.0
+version=3.5.1
 release=1
-source=(https://github.com/ice-wm/$name/releases/download/$version/$name-$version.tar.lz)
+source=(https://github.com/ice-wm/$name/releases/download/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
