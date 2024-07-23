@@ -13,6 +13,7 @@ d:vifm
 d:cmatrix
 d:libglade
 d:transset-df
+d:bitwarden-rofi
 d:rpm2targz
 d:menumaker
 d:ttf-font-awesome-compat
@@ -40,6 +41,7 @@ d:mutt-wizard
 d:obconf
 d:camorama
 d:abook
+d:gmrun
 d:sxhkd
 d:scrot
 d:netsurf
@@ -71,7 +73,7 @@ f:659e1aaf8080e92c3718c4870d04b07d:epson-inkjet-printer-escpr/Pkgfile
 f:190e6037d4c82d1447ed3635ec7c49af:cmus/.md5sum
 f:dfa38913f2273ecbafdb590982fcd983:cmus/.footprint
 f:2a28a3e8f0d8f023b752aad387553c26:cmus/.signature
-f:9da0d6302e1fb89befabf38ef565426f:cmus/Pkgfile
+f:6e63f7ac97f17e8ff5b1dfa81b50730c:cmus/Pkgfile
 f:48a265dfd70252fd2cbff6ba34f1eb81:bitwarden-bin/.md5sum
 f:3989b1b522787944a30c6d09a1b05261:bitwarden-bin/.footprint
 f:d3d18b3742d9000edb4d914be8f08063:bitwarden-bin/.signature
@@ -104,6 +106,7 @@ f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:21683f518a865a68ef4f10605e6c81a7:transset-df/.signature
 f:af7b0460923edf9c7fdbb3acd19d4c09:transset-df/Pkgfile
+f:b2a1bb8bbcf08dc017698e01b602f058:bitwarden-rofi/Pkgfile
 f:15a5d8833c4e74e39900c67cfcf294ba:rpm2targz/.md5sum
 f:fbb96db98a5dbb05abe309c3bb9c4e52:rpm2targz/.footprint
 f:6c37eb62a14cad28b3baa3324bd89045:rpm2targz/.signature
@@ -212,6 +215,7 @@ f:53cd1c59e2545dbe12fbb127763d7193:abook/.md5sum
 f:280c42ebd9261a583031f3506cd12df4:abook/.footprint
 f:4cc864a12f40fd8ff856992923d10d31:abook/.signature
 f:0e72f13f1f18b4307ec0fb0b62d41741:abook/Pkgfile
+f:12fba7dde2ace29af97d749312fb6d2c:gmrun/Pkgfile
 f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:e6048680a65abd0d05d5556598346079:sxhkd/.footprint
 f:0ccde1cafc5da8ff0c5f66d95e4a0d63:sxhkd/.signature
