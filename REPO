@@ -218,6 +218,9 @@ f:53cd1c59e2545dbe12fbb127763d7193:abook/.md5sum
 f:280c42ebd9261a583031f3506cd12df4:abook/.footprint
 f:4cc864a12f40fd8ff856992923d10d31:abook/.signature
 f:0e72f13f1f18b4307ec0fb0b62d41741:abook/Pkgfile
+f:ea30bc372c3fb247c3d0ae38fef4b561:gmrun/.md5sum
+f:4584f76942128e97ebb6d8c309f91641:gmrun/.footprint
+f:45c971f5b2d141d440ffa7da440eaa99:gmrun/.signature
 f:12fba7dde2ace29af97d749312fb6d2c:gmrun/Pkgfile
 f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:e6048680a65abd0d05d5556598346079:sxhkd/.footprint
