@@ -106,7 +106,10 @@ f:892dd2de12bb1ca95d27258e2ddb0565:transset-df/.md5sum
 f:d41d8cd98f00b204e9800998ecf8427e:transset-df/.footprint
 f:21683f518a865a68ef4f10605e6c81a7:transset-df/.signature
 f:af7b0460923edf9c7fdbb3acd19d4c09:transset-df/Pkgfile
-f:b2a1bb8bbcf08dc017698e01b602f058:bitwarden-rofi/Pkgfile
+f:711dd83d1938acceb27bcbd18220b907:bitwarden-rofi/.md5sum
+f:ebaf74cc483388556bc63c32c2a9328c:bitwarden-rofi/.footprint
+f:fe7888c42ae88aa89cee53b2e9f79ccf:bitwarden-rofi/.signature
+f:6d332b5dceec6794a66ee4375c08b683:bitwarden-rofi/Pkgfile
 f:15a5d8833c4e74e39900c67cfcf294ba:rpm2targz/.md5sum
 f:fbb96db98a5dbb05abe309c3bb9c4e52:rpm2targz/.footprint
 f:6c37eb62a14cad28b3baa3324bd89045:rpm2targz/.signature
