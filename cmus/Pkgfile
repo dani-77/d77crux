@@ -10,7 +10,7 @@ source=(https://github.com/cmus/cmus/archive/refs/tags/v$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure prefix=/usr
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
