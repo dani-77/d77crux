@@ -11,6 +11,6 @@ source=(https://github.com/cli/cli/releases/download/v$version/gh_2.50.0_linux_a
 build() {
   cd gh_2.50.0_linux_amd64
 
-  install -m777 bin/gh $PKG/bin
+  install -m 644 bin/gh $PKG/bin
 
 }

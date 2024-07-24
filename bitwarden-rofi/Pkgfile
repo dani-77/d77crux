@@ -11,7 +11,7 @@ source=(https://github.com/mattydebie/$name/archive/refs/tags/$version.tar.gz)
 build() {
  cd $name-$version
 
- install -m777 ./bwmenu $PKG/bin
- install -m777 ./lib-bwmenu $PKG/bin
+ install -m 644 ./bwmenu $PKG/bin
+ install -m 644 ./lib-bwmenu $PKG/bin
 
 }
