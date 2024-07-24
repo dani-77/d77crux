@@ -1,7 +1,7 @@
 # Description: A secure and free password manager for all of your devices. 
 # URL: https://bitwarden.com
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: alsa-lib libnotify libsecret libxtst nspr nss
+# Depends on: alsa-lib cups libnotify libsecret libxtst nspr nss
 
 name=bitwarden-bin
 version=2024.6.4
