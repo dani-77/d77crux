@@ -11,6 +11,7 @@ d:ttf-font-awesome
 d:jwm
 d:vifm
 d:cmatrix
+d:ccid
 d:libglade
 d:transset-df
 d:bitwarden-rofi
@@ -72,7 +73,7 @@ f:7caf3754f86c5203d7f4f66e0906c23d:epson-inkjet-printer-escpr/.signature
 f:659e1aaf8080e92c3718c4870d04b07d:epson-inkjet-printer-escpr/Pkgfile
 f:190e6037d4c82d1447ed3635ec7c49af:cmus/.md5sum
 f:dfa38913f2273ecbafdb590982fcd983:cmus/.footprint
-f:2a28a3e8f0d8f023b752aad387553c26:cmus/.signature
+f:8cd580f40c3430317f9355d28a358002:cmus/.signature
 f:6e63f7ac97f17e8ff5b1dfa81b50730c:cmus/Pkgfile
 f:48a265dfd70252fd2cbff6ba34f1eb81:bitwarden-bin/.md5sum
 f:3989b1b522787944a30c6d09a1b05261:bitwarden-bin/.footprint
@@ -98,6 +99,10 @@ f:99bafde8a4a2857a5095c61735eb0b88:cmatrix/.md5sum
 f:aeeadeaabd2037568c63274d58b6f67a:cmatrix/.footprint
 f:ca3f0a1d631e635aed38a1c43d4e6fd4:cmatrix/.signature
 f:5fbc828665e960b96d9230001ac2b53f:cmatrix/Pkgfile
+f:8682d5a4ec871c9afead8eeb48af3554:ccid/.md5sum
+f:40bbb2716e2eea07f7cd0b70724b4022:ccid/.footprint
+f:ddf90d30f00429e0568932e1e6726b29:ccid/.signature
+f:6109e2ba9da44d1b477fe563a39b1257:ccid/Pkgfile
 f:9c439d3757e520be772e6301b8de9134:libglade/.md5sum
 f:0a4e775b7c50cc9de2e5d65e9087cd1d:libglade/.footprint
 f:3269676c8668a1dd0128b2dce882f951:libglade/.signature
@@ -139,9 +144,9 @@ f:32ff756685654eea4bf285333918dcbe:paper-icon-theme/.footprint
 f:d75f577a51f4337320748133f920cbaf:paper-icon-theme/.signature
 f:918589f222702e1f6032819bea7347b0:paper-icon-theme/Pkgfile
 f:627d758327af44f72a9fa50f2bd22392:ncspot/.md5sum
-f:ebaf74cc483388556bc63c32c2a9328c:ncspot/.footprint
-f:d5f609ec491fae1fb902faf4cd9d7f38:ncspot/.signature
-f:1eb27282758185158ddfb4d309b9af4c:ncspot/Pkgfile
+f:a517c502dd71a8c6da21f1b7984059eb:ncspot/.footprint
+f:0f5e2f259e95402de5588dbf1be9d128:ncspot/.signature
+f:546d1313022198f6cd6a651b17007ce0:ncspot/Pkgfile
 f:a14360115db5d0df36dcd2b58c8b9fa0:bw/.md5sum
 f:a517c502dd71a8c6da21f1b7984059eb:bw/.footprint
 f:5393056cce6b6d342ba0ab1d7e70fdf7:bw/.signature
