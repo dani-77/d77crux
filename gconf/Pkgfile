@@ -1,0 +1,27 @@
+# Description: An obsolete configuration database system
+# URL: https://download.gnome.org/sources/GConf/3.2/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: dbus-glib intltool libxml2
+# originally found at Petar Petrov's Github repo crux-ports
+
+name=gconf
+version=3.2.6
+release=1
+source=(https://download.gnome.org/sources/GConf/${version%.*}/GConf-$version.tar.xz)
+
+build() {
+	cd GConf-$version
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/$name \
+		--disable-orbit \
+		--disable-nls \
+		--enable-gsettings-backend=no
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/gtk-doc
+	rm -r $PKG/usr/share/locale
+}
