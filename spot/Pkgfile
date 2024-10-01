@@ -1,0 +1,18 @@
+# Description: Gtk/Rust native Spotify client for the GNOME desktop. Only works with premium accounts!
+# URL: https://github.com/xou816/spot
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: gtkmm4 libadwaita
+
+name=spot
+version=0.4.1
+release=2
+source=(https://github.com/xou816/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+  meson target -Dbuildtype=release -Doffline=false --prefix=/usr
+  DESTDIR=$PKG ninja install -C target
+
+  rm -rf $PKG/usr/share/locale/
+}
+
