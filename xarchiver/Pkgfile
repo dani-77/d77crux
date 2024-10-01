@@ -1,0 +1,18 @@
+# Description: Lightweight desktop independent archive manager.
+# URL: https://xarchiver.sourceforge.net/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: pango atkmm
+
+name=xarchiver
+version=0.5.4.23
+release=2
+source=(https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/{usr/libexec/,usr/share/doc/xarchiver/,usr/share/locale/}
+}
