@@ -1,0 +1,16 @@
+# Description: This library allows one to load externally stored user interfaces into programs. This allows alteration of the interface without recompilation of the program. 
+# URL: https://packages.debian.org/buster/libglade2-0
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: glade
+
+name=libglade
+version=2.6.4
+release=1
+source=(http://deb.debian.org/debian/pool/main/libg/libglade2/libglade2_2.6.4.orig.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
