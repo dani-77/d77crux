@@ -1,0 +1,17 @@
+# Description: Locker for Xorg.
+# URL: https://ibiblio.org/pub/Linux/X11/screensavers/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: xorg-imake
+
+name=xautolock
+version=2.2
+release=1
+source=(https://ibiblio.org/pub/Linux/X11/screensavers/$name-$version.tgz union-wait.patch)
+
+build() {
+  cd $name-$version
+  patch -p1 -i $SRC/union-wait.patch
+  xmkmf
+  make
+  make DESTDIR=$PKG install
+}

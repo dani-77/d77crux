@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkFmPW62xCvwL8YcU7SquJlk9euF8x9HzWfsdrJJEfMqsOU9pl24nfc6TSPcSJnIKhaTmcLSsyRu7L7ikT2x1YQY=
+SHA256 (Pkgfile) = 0b953276a4838711c297ce41e040d9a5df1e70f9f154b08628563b3d1c037bcc
+SHA256 (.footprint) = b0fb0857591a76b23fef9ef72d7d4d077697de31419570ffc0337d5118f25758
+SHA256 (xautolock-2.2.tgz) = 11f0275175634e6db756e96f5713ec91b8b1c41f8663df54e8a5d27dc71c4da2
+SHA256 (union-wait.patch) = 3fb37a10157a751728ed07f74aa42832d8fad92166c19eafbeb2edc1d4fc08e2
