@@ -1,0 +1,16 @@
+# Description: Iconic font aggregator, collection, and patcher
+# URL: https://www.nerdfonts.com/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=jetbrains
+version=3.2.1
+release=1
+source=(https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/JetBrainsMono.tar.xz)
+
+build() {
+
+  install -d $PKG/usr/share/fonts/TTF/jetbrains/
+  install -m644 ./*.ttf $PKG/usr/share/fonts/TTF/jetbrains/
+
+}
