@@ -1,0 +1,22 @@
+# Description: The Markdown-based note-taking app that doesn't suck.
+# URL: https://notable.app/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=notable
+version=1.8.4
+release=2
+source=(https://github.com/notable/$name/releases/download/v$version/notable_1.8.4_amd64.deb)
+
+build() {
+        bsdtar -xf notable_1.8.4_amd64.deb
+        bsdtar -xf data.tar.xz
+        find -type d -exec chmod 755 {} +
+        mkdir -p $PKG/opt
+        cp -r ./opt/Notable $PKG/opt
+        install -Dm644 usr/share/applications/notable.desktop $PKG/usr/share/applications/notable.desktop
+        chmod 755 $PKG/usr/share/applications/notable.desktop
+        cp -r ./usr/share/icons/hicolor $PKG/usr/share/icons
+        mkdir -p $PKG/usr/bin
+        ln -s /opt/Notable/notable $PKG/usr/bin/notable
+}
