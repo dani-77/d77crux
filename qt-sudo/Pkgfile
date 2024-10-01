@@ -1,0 +1,18 @@
+# Description: QT sudo tool
+# URL: https://github.com/aarnt/qt-sudo
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: qt6-tools sudo
+
+name=qt-sudo
+version=2.0.1
+release=1
+source=(https://github.com/aarnt/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+  qmake6 \
+  PREFIX=$PKG/usr
+  make
+  make DESTDIR=$PKG install
+}
+
