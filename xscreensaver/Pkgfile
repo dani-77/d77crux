@@ -1,0 +1,16 @@
+# Description: A collection of free screen savers by Jamie Zawinski.
+# URL: https://www.jwz.org
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=xscreensaver
+version=6.08
+release=1
+source=(https://www.jwz.org/xscreensaver/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
