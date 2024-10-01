@@ -1,0 +1,19 @@
+# Description: Lzip is a lossless data compressor with a user interface similar to the one of gzip or bzip2.
+# URL: https://lzip.nongnu.org/lzip.html
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: tar
+
+name=lzip
+version=1.24
+release=2
+source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/local/
+	rm -rf $PKG/usr/share/info/
+}
