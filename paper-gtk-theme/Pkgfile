@@ -1,0 +1,18 @@
+# Description: Paper is a modern desktop theme suite. Its design is mostly flat with a minimal use of shadows for depth.
+# URL: https://github.com/snwh/paper-gtk-theme
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=paper-gtk-theme
+version=v2.1.0
+release=2
+source=(https://github.com/snwh/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-2.1.0
+  ./autogen.sh
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/themes/Paper/README.md
+}
