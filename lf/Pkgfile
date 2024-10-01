@@ -1,0 +1,47 @@
+# Description: lf (as in "list files") is a terminal file manager written in Go with a heavy inspiration from ranger file manager. 
+# URL: https://github.com/gokcehan/lf
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: git go
+
+name=lf
+version=r32
+release=2
+source=(https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+	export GOPATH="$SRC"
+  	go mod download
+	
+	export CGO_CPPFLAGS="${CPPFLAGS}"
+	export CGO_CFLAGS="${CFLAGS}"
+  	export CGO_CXXFLAGS="${CXXFLAGS}"
+  	export GOPATH="$SRC"
+
+	go build -v \
+	-buildmode=pie \
+    	-mod=readonly \
+    	-modcacherw \
+    	-ldflags "-compressdwarf=false \
+    	-linkmode external \
+    	-extldflags '${LDFLAGS}' \
+    	-X main.gVersion=$version" \
+    	-o build \
+    	.
+
+  	install -vDm755 -t $PKG/usr/bin build/lf
+  	install -vDm644 -t $PKG/usr/share/man/man1 lf.1
+  	install -vDm644 -t $PKG/usr/share/doc/$pkgname README.md etc/lfrc.example
+  	install -vDm644 -t $PKG/usr/share/applications lf.desktop
+  	install -vDm644 -t $PKG/usr/share/vim/vimfiles/syntax etc/lf.vim
+  	install -vDm644 -t $PKG/usr/share/vim/vimfiles/ftdetect etc/lf.vim
+  	install -vDm644 -t $PKG/etc/profile.d etc/*.{sh,csh}
+  	install -vDm644 -t $PKG/usr/share/fish/vendor_functions.d etc/lfcd.fish
+  	install -vDm644 etc/lf.bash $PKG/usr/share/bash-completion/completions/lf
+  	install -vDm644 etc/lf.fish $PKG/usr/share/fish/vendor_completions.d/lf.fish
+  	install -vDm644 etc/lf.zsh $PKG/usr/share/zsh/site-functions/_lf
+  	install -vDm644 -t $PKG/usr/share/licenses/$name LICENSE
+
+	rm -rf $PKG/usr/share/doc/README.md
+}
