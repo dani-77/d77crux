@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkO8NT9C/YyLv2CB7sJTmziPenV6ylzKzP20AOP4OGEq05PihlNB631BmtgjRmS5vOwlR4i5WWGjpXTgEilWmJQk=
+SHA256 (Pkgfile) = 9c277cb3497d99332f54117f16126a2bd750a482fe6b349fd10e2f9573cb8993
+SHA256 (.footprint) = f96e012decc76ccb1c98c38d518045c6b89855be17595d6ce097d0dd0d3f1953
+SHA256 (netsurf-all-3.11.tar.gz) = 4dea880ff3c2f698bfd62c982b259340f9abcd7f67e6c8eb2b32c61f71644b7b
+SHA256 (netsurf.desktop) = 64310933d89149293deb55552c920350897c0fefb3c3210eb5fb8b0a0975774d
