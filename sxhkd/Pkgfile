@@ -1,0 +1,16 @@
+# Description: sxhkd is an X daemon that reacts to input events by executing commands.
+# URL: https://github.com/baskerville/sxhkd
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=sxhkd
+version=0.6.2
+release=1
+source=(https://github.com/baskerville/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+
+  cd $name-$version
+  make
+  make DESTDIR=$PKG PREFIX=/usr install
+}
