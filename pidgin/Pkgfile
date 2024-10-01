@@ -1,0 +1,26 @@
+# Description: Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.
+# URL: https://pidgin.im/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: libpurple gtk xorg-libxscrnsaver startup-notification nss libidn xorg-libxdamage gtkspell
+
+name=pidgin
+version=2.14.13
+release=2
+source=(https://master.dl.sourceforge.net/project/pidgin/Pidgin/2.14.13/pidgin-2.14.13.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+  --disable-gtkspell \
+  --disable-gevolution \
+  --disable-vv \
+  --disable-idn \
+  --disable-meanwhile \
+  --disable-avahi \
+  --disable-nm \
+  --disable-tcl
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/locale/
+}
