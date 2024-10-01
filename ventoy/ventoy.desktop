@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=ventoy
+Name=Ventoy
+Exec=qt-sudo /opt/Ventoy/VentoyGUI.x86_64
+Terminal=false
+Hidden=false
+Categories=Utility
+Comment=Ventoy2Disk GUI
