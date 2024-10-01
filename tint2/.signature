@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkDXR2w71zFPpaNLfO4Oex5xVZeF9peXJwoVYDh4dX5AeaBIKIKJyYnwyzXxBjRC3yQ5UHGX1HJ71BGvWAmxpmw0=
+SHA256 (Pkgfile) = 738d00e5ee92dc05e1e311f44bf4f61184d1d0ae71f1e56d76290e18e3e0e713
+SHA256 (.footprint) = 95cb705d8b2f190b4cf57c48e4b4c2e83b16411785cd1a0e4af340e530ef30ac
+SHA256 (tint2-17.1.3.tar.bz2) = d49103d60a8753fa5e808e57f4cc028f677009a3594eb0f64dcfdc6d2b96e33c
