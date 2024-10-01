@@ -1,0 +1,20 @@
+# Description: Generic USB CCID and ICCD driver for Unix systems.
+# URL: https://ccid.apdu.fr/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: pcsclite
+
+name=ccid
+version=1.6.1
+release=2
+source=(https://ccid.apdu.fr/files/$name-$version.tar.xz pcscd.rc)
+
+build() {
+  cd $name-$version
+  meson setup builddir
+  cd builddir
+  meson compile
+  sudo DESTDIR=$PKG meson install  
+
+ # Install startup script
+  install -Dm 755 $SRC/pcscd.rc $PKG/etc/rc.d/pcscd
+}

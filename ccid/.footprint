@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/pcscd
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pcsc/
+drwxr-xr-x	root/root	usr/lib/pcsc/drivers/
+drwxr-xr-x	root/root	usr/lib/pcsc/drivers/ifd-ccid.bundle/
+drwxr-xr-x	root/root	usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/
+-rw-r--r--	root/root	usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/Info.plist
+drwxr-xr-x	root/root	usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/Linux/
+-rwxr-xr-x	root/root	usr/lib/pcsc/drivers/ifd-ccid.bundle/Contents/Linux/libccid.so
