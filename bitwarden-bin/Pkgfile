@@ -1,0 +1,21 @@
+# Description: A secure and free password manager for all of your devices. 
+# URL: https://bitwarden.com
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: alsa-lib cups libnotify libsecret libxtst nss
+
+name=bitwarden-bin
+version=2024.9.0
+release=1
+source=(https://github.com/bitwarden/clients/releases/download/desktop-v2024.9.0/Bitwarden-2024.9.0-amd64.deb)
+
+build() {
+	sudo bsdtar -xf Bitwarden-$version-amd64.deb
+	sudo bsdtar -xf data.tar.xz -C $PKG/
+
+	# Symlink
+	install -d "${PKG}/usr/bin"
+	ln -s "/opt/Bitwarden/bitwarden" "${PKG}/usr/bin/bitwarden"
+
+	chown root:root $PKG/opt/Bitwarden/chrome-sandbox
+	chmod 4755 $PKG/opt/Bitwarden/chrome-sandbox
+}
