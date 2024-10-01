@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkDGuqN1CJBcF9IrIqyfxnPSD6h6UxXcCWzbSdBC6u5h1Zf9xlCev9QrBAM8vnXbDQR2vwhy1x4IJEWXwgqaU3gM=
+SHA256 (Pkgfile) = 7987dd954e267383a0376f5b67670ebb9806521ae20dea02a444e8452d7349ce
+SHA256 (.footprint) = 3e7fb44d578ca9db8dfcf99fefb86ad5a1a07d59750b8ceec917fdee220f984c
+SHA256 (notable_1.8.4_amd64.deb) = 211dfa89f71af4cd59a50fa9a1e3f1846b254194b661b8aa4a4504702d250579
