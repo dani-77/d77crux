@@ -1,0 +1,18 @@
+# Description: Openbox configuration tool
+# URL: http://openbox.org/wiki/ObConf:About#Installing_ObConf
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: glade libglade2-0 gtk-engines 
+
+name=obconf
+version=2.0.4
+release=2
+source=(http://openbox.org/dist/obconf/obconf-2.0.4.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/locale/
+}
