@@ -1,0 +1,18 @@
+# Description: Official desktop version of Telegram messaging app - Static binaries
+# URL: https://web.telegram.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: glib hicolor-icon-theme dbus xorg-libx11 chrpath
+
+
+name=telegram-desktop-bin
+version=5.5.5
+release=1
+source=(https://td.telegram.org/tlinux/tsetup.$version.tar.xz telegram.desktop)
+
+build() {
+  cd Telegram
+
+  install -Dm755 "$SRC/Telegram/Telegram" "$PKG/usr/bin/telegram-desktop"
+  install -Dm755 "$SRC/telegram.desktop" "$PKG/usr/share/applications/telegram.desktop"
+}
+
