@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkIqgH79M3ctEvWk8tn6vevOXzfqv7uFxHDEF3+Ol3cpDchY71wG82gPv86ktoj2q90OzRgK+j4EFpQZQ+nnGGQs=
+SHA256 (Pkgfile) = 03c914fa584f9b57a5a46fba4fb7eacb3f3f33fb340fb8b178461d9e5fc424c5
+SHA256 (.footprint) = 71c26294f371c02494fc65b749abcc1df24bed099a66715039f7f7414f3dfde7
+SHA256 (bw-linux-2024.9.0.zip) = c8a1c702304b57ccf99d775cb250533bff530389f5aef31e4754614ee1ad4ab9
