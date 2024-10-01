@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/TTF/
+drwxr-xr-x	root/root	usr/share/fonts/TTF/liberation-mono/
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationMono-Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationMono-BoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationMono-Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationMono-Regular.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSans-Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSans-BoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSans-Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSans-Regular.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSerif-Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSerif-BoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSerif-Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/liberation-mono/LiberationSerif-Regular.ttf
