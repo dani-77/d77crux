@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkNtKJqfGQJRTt9fTehO96yaIPBBZEv51CBPE0TGJeQzz7iXO1Ki3pxesxXFZz7jbpHVu0ZC0k+uPmL/TbkGMDwQ=
+SHA256 (Pkgfile) = b90b1cc8f600413725dcc1109e9adaf0291e5d96d823a42031d3f1937106c442
+SHA256 (.footprint) = 492ac8d06f36235be7c577a760aef14d46ef0c980c6dafd61ce41f75b8b3015c
+SHA256 (aria2-1.37.0.tar.xz) = 60a420ad7085eb616cb6e2bdf0a7206d68ff3d37fb5a956dc44242eb2f79b66b
