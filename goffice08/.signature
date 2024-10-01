@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkKq7bm3CSilvyRNJpPQ+7MRjhyDN70rb2AnpL+lMEmq74CBrm21nTUpDjuze6ep9/4IwP/NVYqDJJ5bw1qN/MgA=
+SHA256 (Pkgfile) = 4f8886c376c4290c7f61da198b5f7bffc64aaa8642065b6eff6f772a101033fe
+SHA256 (.footprint) = 14c6858dd582745e47bd156b3ee76897ef143cbc48cd3dccc737c68e1634d115
+SHA256 (goffice-0.8.17.tar.xz) = 165070beb67b84580afe80a8a100b674a81d553ab791acd72ac0c655f4fadb15
+SHA256 (disable-linking-pcre.patch) = 8ece0839168c8e83a94a9ce38a06aee7f8a201b42c033f5b502a5f53de496a0e
+SHA256 (go-conf-gsettings.c) = 09f883d905a3846b60f4b7689b5d28b63da5e049520c93c865cd4a7ce8434572
