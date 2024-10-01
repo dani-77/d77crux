@@ -1,0 +1,17 @@
+# Description: Window manager very light on resources and easy to handle.
+# URL: https://fluxbox.org
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: xorg-libxcomposite xorg-libxdamage xorg-libxrandr xorg-libxinerama libsndfile glib-networking imlib2 librsvg xorg-libxpm
+
+name=fluxbox
+version=1.3.7
+release=1
+source=(https://deac-fra.dl.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i '/text_prop.value > 0/s/>/!=/' util/fluxbox-remote.cc
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
