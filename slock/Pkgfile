@@ -1,0 +1,20 @@
+# Description: Simple X display locker.
+# URL: http://tools.suckless.org/slock/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=slock
+version=1.5
+release=1
+source=(http://dl.suckless.org/tools/slock-1.5.tar.gz http://tools.suckless.org/slock/patches/user/slock-user-1.5.diff https://tools.suckless.org/slock/patches/blur-pixelated-screen/slock-blur_pixelated_screen-1.4.diff)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i ../slock-user-1.5.diff
+  patch -p1 -i ../slock-blur_pixelated_screen-1.4.diff
+
+  sed "/^CFLAGS/s/-Os/$CFLAGS/" -i config.mk
+  make DESTDIR=$PKG PREFIX=/usr install
+
+}

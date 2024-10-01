@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkBQupDLZCwNhRP7KxjIpmqPBi4WxQQIe29M/OMnUOiQjLR6GgsU5/xlG5sAiaxkFjiC5XoxTIDOpnb3hLUMRFgg=
+SHA256 (Pkgfile) = 80bf84bd1c93698499a766b2e269a9ad258f030f8f7debc32b6ef8e940ad57ef
+SHA256 (.footprint) = 5f7d8bfedcbf7f060a1997b9b8798c28e8fc6cc2ed9457566989e12a15d831ad
+SHA256 (slock-1.5.tar.gz) = aee1e3fbf6a277fb625a3838073b979b6483e7baca4ce82f56de1ff192db0e4d
+SHA256 (slock-user-1.5.diff) = 0074b770f00e683aa048dc807068ae21cb7b4d1bc5a71ad911e96e80b87c2465
+SHA256 (slock-blur_pixelated_screen-1.4.diff) = 07254d038a731ee16781f13ba5ba77da9200a4e8e026a30a5f3674f632b9e42e
