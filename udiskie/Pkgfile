@@ -1,0 +1,22 @@
+# Description: Automounter for removable media.
+# URL: https://github.com/coldfix/udiskie
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: udisks2 python3-gobject python3-docopt gtk libnotify
+
+name=udiskie
+version=2.5.3
+release=3
+source=(https://github.com/coldfix/$name/archive/refs/tags/v$version.tar.gz 50-udiskie.rules README)
+
+build() {
+	cd $name-$version
+	python3 setup.py build
+	python3 setup.py install --root=$PKG --optimize=1 --skip-build
+	install -Dm644 COPYING "$PKG/usr/share/licenses/$name/LICENSE"
+	install -dm755 "$PKG/usr/share/zsh/site-functions"
+	install -m644 completions/zsh/* "$PKG/usr/share/zsh/site-functions"
+
+	install -Dm755 $SRC/50-udiskie.rules $PKG/etc/polkit-1/rules.d/50-udiskie.rules
+
+	rm -rf $PKG/usr/share/locale/
+}
