@@ -1,0 +1,22 @@
+# Description: A new USB solution.
+# URL: https://ventoy.net
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=ventoy
+version=1.0.99
+release=3
+source=(https://deac-fra.dl.sourceforge.net/project/ventoy/v1.0.99/ventoy-1.0.99-linux.tar.gz ventoy.png ventoy.desktop)
+
+build() {
+	mkdir -p $PKG/opt
+	cp -r $name-$version $PKG/opt/
+	mv $PKG/opt/$name-$version $PKG/opt/Ventoy
+	cp ventoy.png $PKG/opt/Ventoy
+	cp ventoy.desktop $PKG/opt/Ventoy
+	
+  	install -Dm644 $PKG/opt/Ventoy/ventoy.png $PKG/usr/share/pixmaps/ventoy.png
+	install -Dm644 $PKG/opt/Ventoy/ventoy.desktop $PKG/usr/share/applications/ventoy.desktop
+
+	rm -rf $PKG/opt/Ventoy/README
+}
