@@ -1,0 +1,7 @@
+#!/usr/bash
+
+cpan install Chipcard::PCSC::Card module
+cpan install Glib module
+cpan install Gtk3 module
+cpan install Locale::TextDomain module
+sed -i 's|Exec=gscriptor|Exec=qt-sudo gscriptor|' /usr/share/applications/gscriptor.desktop

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkD3DlQ7V6LwanRe3Uf/wtwOs4d7QcgNMZ8M4WErpPq8Qt12QcRjg5I/vRwcXc0X6bnSHMNcMRXwqGxnWC5A3IAw=
+SHA256 (Pkgfile) = e209192d51f2e4134de6dbbec6d1be45e8ddef1f7326808c8c303cc9b79b3ae3
+SHA256 (.footprint) = b4c82edadf93f10718e1cd8f7944a8386cbf760664381bb5dd4162ec68fa9b5d
+SHA256 (pcsc-tools-1.7.2.tar.bz2) = fd6fcc25e8140f613b3bf44b02eda4a8a429ee4939fb777f474e2c829f7b472c
