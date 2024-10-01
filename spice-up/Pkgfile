@@ -1,0 +1,18 @@
+# Description: Create simple and beautiful presentations
+# URL: https://github.com/Philip-Scott/Spice-up
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: granite xorg-libevdev libgudev libsoup
+
+name=spice-up
+version=1.9.1
+release=2
+source=(https://github.com/Philip-Scott/Spice-up/archive/$version/Spice-up-$version.tar.gz)
+
+build() {
+  cd Spice-up-$version
+  meson build --prefix=/usr
+  ninja -C build
+  DESTDIR=$PKG ninja -C build install
+
+  rm -rf $PKG/usr/share/locale/
+}
