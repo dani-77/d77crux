@@ -1,0 +1,15 @@
+# Description: A command line system information tool.
+# URL: https://smxi.org/docs/inxi.htm
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=inxi
+version=3.3.31-2
+release=1
+source=(https://github.com/smxi/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+  mkdir -p $PKG/usr/bin
+  install -Dm755 inxi $PKG/usr/bin
+}
