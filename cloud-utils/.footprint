@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cloud-localds
+-rwxr-xr-x	root/root	usr/bin/ec2metadata
+-rwxr-xr-x	root/root	usr/bin/growpart
+-rwxr-xr-x	root/root	usr/bin/mount-image-callback
+-rwxr-xr-x	root/root	usr/bin/resize-part-image
+-rwxr-xr-x	root/root	usr/bin/ubuntu-cloudimg-query
+-rwxr-xr-x	root/root	usr/bin/vcs-run
+-rwxr-xr-x	root/root	usr/bin/write-mime-multipart
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
