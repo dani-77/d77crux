@@ -1,0 +1,19 @@
+# Description: camorama is software that lets you view, alter and save images from a webcam.
+# URL: https://github.com/alessio/camorama
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: v4l-utils glib gnome-common
+
+name=camorama
+version=0.21.2
+release=2
+source=(https://github.com/alessio/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale/
+}
