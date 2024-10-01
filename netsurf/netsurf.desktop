@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Netsurf
+Name[en_US]=Netsurf
+GenericName=Web Browser
+GenericName[en_US]=Web Browser
+Comment=Free web browser from Mozilla
+Exec=netsurf-gtk2 %U
+Terminal=false
+Type=Application
+Icon=web-browser
+Categories=Network;

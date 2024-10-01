@@ -1,0 +1,17 @@
+# Description: NetSurf is a multi-platform web browser for RISC-OS, UNIX-like platforms (including Linux), Mac OS X, and more.
+# URL: https://www.netsurf-browser.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=netsurf
+version=3.11
+release=2
+source=(https://download.netsurf-browser.org/netsurf/releases/source-full/netsurf-all-3.11.tar.gz netsurf.desktop)
+
+build() {
+  cd $name-all-$version
+  make
+  make DESTDIR=$PKG PREFIX=/usr install
+
+  install -Dm755 $SRC/netsurf.desktop $PKG/usr/share/applications/netsurf.desktop
+}
