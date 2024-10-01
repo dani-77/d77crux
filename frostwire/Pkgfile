@@ -1,0 +1,23 @@
+# Description: Video Downloader, BitTorrent Client and Media Player
+# URL: https://www.frostwire.com/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+# Optional: mplayer
+
+name=frostwire
+version=6.13.3
+release=2
+source=(https://master.dl.sourceforge.net/project/frostwire/frostwire-desktop-6.13.3-build-322/frostwire-6.13.3.amd64.deb)
+
+build() {
+  bsdtar -xf frostwire-6.13.3.amd64.deb
+  bsdtar -xf data.tar.zst
+  find -type d -exec chmod 755 {} +
+  sed -i 's|Exec=/usr/bin/frostwire %U|Exec=/opt/Frostwire/usr/bin/frostwire %U|' ./usr/share/applications/frostwire.desktop
+  sed -i 's|Icon=/frostwire %U|Icon=/usr/share/pixmaps//frostwire.png|' ./usr/share/applications/frostwire.desktop
+  sed -i 's|/usr/lib/frostwire/frostwire.sh $1|/opt/Frostwire/usr/lib/frostwire/frostwire.sh $1|' ./usr/bin/frostwire
+  mkdir -p $PKG/opt/Frostwire
+  cp -r ./usr/ $PKG/opt/Frostwire/
+  install -Dm644 $PKG/opt/Frostwire/usr/share/applications/frostwire.desktop /usr/share/applications/frostwire.desktop
+  install -Dm644 $PKG/opt/Frostwire/usr/share/icons/hicolor/48x48/apps/frostwire.png /usr/share/pixmaps/frostwire.png
+}
