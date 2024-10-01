@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkA4PdYxNYWMXSCafQaLsWC8W10i16hvQ1HaPZ532oAQFODFfvAQlz9hDAkfrgtiW+8WjRBAFL6vvYE2aR5nr1wk=
+SHA256 (Pkgfile) = 36e692e586dc876b54834de17ae01a8410dc7b61cb8dbacdb1cba2c3bbf31fbd
+SHA256 (.footprint) = 2a40e524b8583eb635d1a223a6b2f6ba2500a756a8f15db754edb20800f7c6c0
+SHA256 (sndio-1.10.0.tar.gz) = bebd3bfd01c50c9376cf3e7814b9379bed9e17d0393b5113b7eb7a3d0d038c54
