@@ -1,0 +1,17 @@
+# Description: ranger is a console file manager with VI key bindings.
+# URL: https://ranger.fm/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: python less
+
+name=ranger
+version=1.9.3
+release=2
+source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+  make DESTDIR=$PKG PREFIX=/usr install
+
+  rm -rf $PKG/usr/share/doc/ranger/README.md
+  rm -rf $PKG/usr/share/doc/ranger/examples/README
+}
