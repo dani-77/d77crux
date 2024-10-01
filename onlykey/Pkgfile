@@ -1,0 +1,24 @@
+# Description: OnlyKey Chrome Desktop App
+# URL: https://onlykey.io/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:  
+
+name=onlykey
+version=5.5.0
+release=5
+source=(https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.5.0/OnlyKey_5.5.0_amd64.deb)
+
+build() {
+	bsdtar -xf OnlyKey_5.5.0_amd64.deb
+	bsdtar -xf data.tar.xz
+	find -type d -exec chmod 755 {} +
+	mkdir -p $PKG/opt
+	cp -r ./opt/OnlyKey $PKG/opt
+	install -Dm644 usr/share/applications/OnlyKey.desktop $PKG/usr/share/applications/OnlyKey.desktop
+	chmod 755 $PKG/usr/share/applications/OnlyKey.desktop
+	install -Dm 644 etc/udev/rules.d/49-onlykey.rules $PKG/etc/udev/rules.d/49-onlykey.rules
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/OnlyKey/nw $PKG/usr/bin/onlykey
+
+	rm -rf $PKG/{opt/OnlyKey/node_modules/*/README.*,opt/OnlyKey/node_modules/*/*/README.*,opt/OnlyKey/node_modules/*/*/*/README.*,opt/OnlyKey/node_modules/*/*/*/*/README.*,opt/OnlyKey/node_modules/*/AUTHORS,opt/OnlyKey/node_modules/*/*/AUTHORS,opt/OnlyKey/node_modules/*/AUTHORS.md}
+}
