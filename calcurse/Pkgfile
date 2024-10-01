@@ -1,0 +1,18 @@
+# Description:  Calendar and scheduling application for the command line.
+# URL: https://www.calcurse.org
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: ncurses
+
+name=calcurse
+version=4.8.1
+release=2
+source=(https://www.calcurse.org/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale/
+}
