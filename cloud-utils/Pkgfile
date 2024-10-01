@@ -1,0 +1,18 @@
+# Description: A useful set of utilities for interacting with a cloud.
+# URL: https://github.com/canonical/cloud-utils
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=cloud-utils
+version=0.33
+release=1
+source=(https://github.com/canonical/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/man/man1
+  rm -rf $PKG/usr/share/doc/$(NAME)
+}
