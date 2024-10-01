@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkGrtg27WSdN/3vc5PgI/v8z6r2PQDn5tYT4ZUNbxUJ1VYNM4dlGTuxuoRDWMguRXxNosCYb4nrzsgKq+vM7e/As=
+SHA256 (Pkgfile) = 90b117fa3f91b4022af52b308e6f5233880023376ebe5a7f75924e7426a4d856
+SHA256 (.footprint) = a4f5b53e49adbcdd3343d0ed41f2e36e2eff757c9a51dfd174c709bdd61ac0fc
+SHA256 (rpm2targz-2021.03.16.tar.gz) = df356f2770dda15dbf54828f7d3878b08c55c57995fd3bd147cffa5b96d1b3c4

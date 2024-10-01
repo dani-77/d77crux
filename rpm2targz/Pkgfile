@@ -1,0 +1,16 @@
+# Description: RPM to Tarball conversion tool
+# URL: https://gitweb.gentoo.org/proj/rpm2targz.git/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=rpm2targz
+version=2021.03.16
+release=1
+source=(https://gitweb.gentoo.org/proj/rpm2targz.git/snapshot/rpm2targz-2021.03.16.tar.gz)
+
+build() {
+  cd $name-$version
+  make
+  make DESTDIR=$PKG install
+}
+
