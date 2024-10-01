@@ -1,0 +1,16 @@
+# Description: jgmenu is simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
+# URL: https://github.com/jgmenu/jgmenu
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: pango
+
+name=jgmenu
+version=4.4.1
+release=2
+source=(https://github.com/jgmenu/jgmenu/archive/refs/tags/v4.4.1.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
