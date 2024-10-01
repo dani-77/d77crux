@@ -1,0 +1,16 @@
+# Description: CMatrix is based on the screensaver from The Matrix website.
+# URL: https://github.com/abishekvashok/cmatrix
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: ncurses
+
+name=cmatrix
+version=1.2
+release=1
+source=(https://github.com/abishekvashok/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
