@@ -1,0 +1,21 @@
+# Description: Light GTK file manager.
+# URL: https://github.com/lxde/pcmanfm
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: libfm
+
+name=pcmanfm
+version=1.3.2
+release=2
+source=(https://github.com/lxde/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./autogen.sh
+  ./configure \
+  --prefix=/usr \
+  --sysconfdir=/etc
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/locale/
+}
