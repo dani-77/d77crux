@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo prt-get update -fr glib -is -if -im
