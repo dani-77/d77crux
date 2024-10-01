@@ -1,0 +1,16 @@
+# Description: ``keybinder`` is a library for registering global key bindings, for gtk-based applications in X11. With gir bindings. 
+# URL: https://github.com/kupferlauncher/keybinder
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=keybinder
+version=0.3.2
+release=1
+source=(https://github.com/kupferlauncher/keybinder/releases/download/keybinder-3.0-v0.3.2/keybinder-3.0-0.3.2.tar.gz)
+
+build() {
+  cd $name-3.0-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
