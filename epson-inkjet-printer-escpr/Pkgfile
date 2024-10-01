@@ -1,0 +1,16 @@
+# Description: Epson ESCPR linux driver
+# URL: https://download.ebz.epson.net/dsc/search/01/search/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=epson-inkjet-printer-escpr
+version=1.8.5
+release=1
+source=(https://github.com/dani-77/d77crux/raw/master/epson-inkjet-printer-escpr/epson-inkjet-printer-escpr-1.8.5-1.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
