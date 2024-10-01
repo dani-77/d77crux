@@ -1,0 +1,37 @@
+# Description: A lightweight and featureful Word Processor
+# URL: http://www.abisource.com
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: boost dbus-glib libgcrypt librsvg libxslt wv
+# originally found at Petar Petrov's Github repo crux-ports
+
+name=abiword
+version=3.0.5
+release=3
+source=(https://gitlab.gnome.org/World/AbiWord/-/archive/release-3.0.5/AbiWord-release-3.0.5.tar.gz enchant-2.1.patch)
+
+build() {
+	cd AbiWord-release-$version
+	export PKG_CONFIG_PATH="/usr/lib/libxml210/pkgconfig:$PKG_CONFIG_PATH"
+	patch -p1 < $SRC/enchant-2.1.patch
+
+	# 20200622 bkw: don't let abiword create /root/.config/abiword/profile
+	# during the build process. Don't break ccache in the process.
+	mkdir -p tmphome
+	export CCACHE_DIR=${CCACHE_DIR:-$HOME/.ccache}
+	export HOME=$( pwd )/tmphome
+
+	./autogen.sh
+	
+	CPPFLAGS="-I$SRC/$name-$version" \
+	CFLAGS="$CFLAGS -fcommon" \
+	CXXFLAGS="$CXXCFLAGS -fcommon" \
+	./configure --prefix=/usr \
+	--disable-static \
+	--with-gtk2
+	
+	make
+	make install DESTDIR=$PKG
+	
+	rm -f $PKG/{,usr/}lib/*.la
+	rm -rf $PKG/usr/share/$name-${version%.*}/{strings,templates/normal.awt-*,system.profile-*}
+}
