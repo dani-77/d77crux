@@ -1,0 +1,16 @@
+# Description: Lightweight audio & MIDI server.
+# URL: https://sndio.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: alsa-lib
+
+name=sndio
+version=1.10.0
+release=1
+source=(https://sndio.org/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
