@@ -1,0 +1,17 @@
+# Description: Hack font
+# URL: https://sourcefoundry.org/hack/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=hack-ttf
+version=v3.003
+release=1
+source=(https://github.com/source-foundry/Hack/releases/download/$version/Hack-$version-ttf.tar.gz)
+
+build() {
+  cd ttf
+
+ install -d $PKG/usr/share/fonts/TTF/hack-ttf/
+ install -m644 ./*.ttf $PKG/usr/share/fonts/TTF/hack-ttf/
+
+}
