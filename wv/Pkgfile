@@ -1,0 +1,22 @@
+# Description: MS Word document import library
+# URL: http://abisource.com/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: libgsf
+# originally found at Petar Petrov's Github repo crux-ports
+
+name=wv
+version=1.2.9
+release=3
+source=(https://slackware.uk/sbosrcarch/by-name/libraries/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	
+	export PKG_CONFIG_PATH="/usr/lib/libxml210/pkgconfig:$PKG_CONFIG_PATH"
+	./configure --prefix=/usr \
+	--enable-static=no
+
+	make
+	make install DESTDIR=$PKG
+	rm -f $PKG/{,usr/}lib/*.la
+}
