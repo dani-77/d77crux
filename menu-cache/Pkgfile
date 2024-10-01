@@ -1,0 +1,21 @@
+# Description: Libmenu-cache is a library creating and utilizing caches to speed up the manipulation for freedesktop.org defined application menus.
+# URL: https://github.com/lxde/menu-cache
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: libfm-cache
+
+name=menu-cache
+version=1.1.0
+release=2
+source=(https://github.com/lxde/$name/archive/refs/tags/$version.tar.gz menu-cache-1.1.0-consolidated_fixes-1.patch)
+
+build() {
+  cd $name-$version
+  ./autogen.sh
+  patch -Np1 -i $SRC/menu-cache-1.1.0-consolidated_fixes-1.patch
+  ./configure --prefix=/usr \
+  --disable-static
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/libexec/
+}

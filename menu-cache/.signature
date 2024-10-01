@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkCkQfsClBAYdvrMAaou99mhQGRbgV/gbbSc3oDzXtQBt0Tuy6P18z1o6rpRAvivBZDZfyLaaTfKYx0glkCslMgQ=
+SHA256 (Pkgfile) = bf586d48b952a77cca67cad196f1c9aa657915217c54dac9d61697d37ecf348b
+SHA256 (.footprint) = 9a7289dd1f24a63ddc16db334a6bb6bd8eb62acd28aeed989337487deb1cbfa7
+SHA256 (1.1.0.tar.gz) = 990857aa61a2894730e3749b6bc0f905967eed0c21aa2b62a7694007bdccbe8d
+SHA256 (menu-cache-1.1.0-consolidated_fixes-1.patch) = 47d75835fc1928083a7b3e75f00141da92ff6ec3b4e4333d65d7165d76e48527
