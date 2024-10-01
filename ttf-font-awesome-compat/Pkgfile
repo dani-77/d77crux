@@ -1,0 +1,15 @@
+# Description: Font Awesome version 4
+# URL: http://fontawesome.io/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# originally found at Tim Bierman's Github repo crux-ports
+
+name=ttf-font-awesome-compat
+version=4.7.0
+release=1
+source=(https://github.com/FortAwesome/Font-Awesome/archive/v$version/Font-Awesome-$version.tar.gz)
+
+build() {
+  cd Font-Awesome-$version/fonts
+  install -d $PKG/usr/share/fonts/TTF/font-awesome-compat/
+  install -m644 *.ttf $PKG/usr/share/fonts/TTF/font-awesome-compat/
+}
