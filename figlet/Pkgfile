@@ -1,0 +1,18 @@
+# Description: FiGlet is a program for making large letters out of ordinary text.
+# URL: http://www.figlet.org
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=figlet
+version=2.2.5
+release=2
+source=(ftp://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz)
+
+build() {
+  cd $name-$version
+  sed -i 's/\/usr\/\local/\/usr/g' Makefile
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/man/
+}
