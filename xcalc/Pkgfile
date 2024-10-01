@@ -1,0 +1,20 @@
+# Description: xcalc is a scientific calculator X11 client.
+# URL: https://gitlab.freedesktop.org/xorg/app/xcalc
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: x11
+
+name=xcalc
+version=1.1.2
+release=2
+source=(https://gitlab.freedesktop.org/xorg/app/$name/-/archive/$name-$version/$name-$name-$version.tar.gz calculator.svg xcalc.desktop)
+
+build() {
+  install -Dm644 ./calculator.svg $PKG/usr/share/pixmaps/calculator.svg
+  install -Dm644 ./xcalc.desktop $PKG/usr/share/applications/xcalc.desktop
+
+  cd $name-$name-$version
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}

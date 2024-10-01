@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/xcalc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/X11/
+drwxr-xr-x	root/root	usr/share/X11/app-defaults/
+-rw-r--r--	root/root	usr/share/X11/app-defaults/XCalc
+-rw-r--r--	root/root	usr/share/X11/app-defaults/XCalc-color
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/xcalc.desktop
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/xcalc.1.gz
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/calculator.svg
