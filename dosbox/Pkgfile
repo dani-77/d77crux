@@ -1,0 +1,18 @@
+# Description: DOS emulator
+# URL: https://www.dosbox.com
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=dosbox
+version=0.74-3
+release=2
+source=(https://sourceforge.net/projects/dosbox/files/dosbox/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/local/
+}
