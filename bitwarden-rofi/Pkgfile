@@ -1,0 +1,17 @@
+# Description: Bitwarden command-line interface (CLI) rofi menu.
+# URL: https://github.com/mattydebie/bitwarden-rofi
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: bw rofi
+
+name=bitwarden-rofi
+version=0.5
+release=1
+source=(https://github.com/mattydebie/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+ cd $name-$version
+ mkdir -p $PKG/usr/bin
+ install -Dm755 ./bwmenu $PKG/usr/bin
+ install -Dm755 ./lib-bwmenu $PKG/usr/bin
+
+}
