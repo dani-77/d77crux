@@ -1,0 +1,24 @@
+# Description: Tools and libraries for smart cards
+# URL: https://github.com/OpenSC/OpenSC/wiki
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: pcsclite
+
+name=opensc
+version=0.25.1
+release=1
+source=(https://github.com/OpenSC/OpenSC/releases/download/$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./bootstrap
+  ./configure --prefix=/usr \
+  --sysconfdir=/etc/opensc
+  make
+  make DESTDIR=$PKG install
+
+  install -D -m644 etc/opensc.conf $PKG/etc/opensc.conf
+
+  rm -rf $PKG/usr/share/doc/opensc/NEWS
+
+}
