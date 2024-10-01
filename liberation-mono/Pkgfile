@@ -1,0 +1,17 @@
+# Description: Liberation mono font
+# URL: https://www.fontsquirrel.com/fonts/liberation-mono
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=liberation-mono
+version=2.1.5
+release=1
+source=(https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz)
+
+build() {
+ cd liberation-fonts-ttf-2.1.5
+
+ install -d $PKG/usr/share/fonts/TTF/liberation-mono/
+ install -m644 ./*.ttf $PKG/usr/share/fonts/TTF/liberation-mono/
+
+}
