@@ -1,0 +1,8 @@
+#
+# /etc/ports/d77crux.httpup: Daniel Azevedo's port collection
+#
+
+ROOT_DIR=/usr/ports/d77crux
+URL=http://raw.githubusercontent.com/dani-77/d77crux/master/
+
+# End of file
