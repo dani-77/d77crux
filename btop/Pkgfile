@@ -4,8 +4,8 @@
 # Depends on: 
 
 name=btop
-version=1.3.2
-release=2
+version=1.4.0
+release=1
 source=(https://github.com/aristocratos/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
