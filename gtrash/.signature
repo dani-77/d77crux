@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkPBA+LBrXidq5q9cwgHSwNeEzIcpNyyX6OmgNQdWvNZSzXc0hcGd/wrFxkBTQBUlOh7jrDmwLJNaSoZN1QBW+gA=
+SHA256 (Pkgfile) = 6e71528c4caebac865ee329b8bd472f32eb1aef551eeb9baab58ddc565c8689d
+SHA256 (.footprint) = 74c56dbe12581b422797ff943784dd430340bccc7fe060ac172271cd04428044
+SHA256 (v0.0.6.tar.gz) = 66003276073d9da03cbb4347a4b161f89c81f3706012b77c3e91a154c91f3586
