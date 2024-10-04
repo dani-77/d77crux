@@ -5,7 +5,7 @@
 
 name=st
 version=0.9.2
-release=1
+release=2
 source=(https://dl.suckless.org/st/$name-$version.tar.gz https://st.suckless.org/patches/alpha/$name-alpha-20220206-0.8.5.diff)
 
 build() {
@@ -14,6 +14,6 @@ build() {
   sed -i 's|PREFIX = /usr/local|PREFIX = /usr|' config.mk
   sed -i 's|# CC = c99|CC = gcc|' config.mk
   make
-  sed -i 's|Liberation Mono:pixelsize=12|Hack:pixelsize=10|' config.h
+  sed -i 's|Liberation Mono:pixelsize=12|Hack:pixelsize=12|' config.h
   make DESTDIR=$PKG install
 }
