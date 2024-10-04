@@ -70,6 +70,7 @@ d:btop
 d:ventoy
 d:vifm
 d:pcsc-tools
+d:dmenu
 d:bw
 d:yubico-authenticator-bin
 d:gconf
@@ -389,6 +390,10 @@ f:87e79f8d21b62d9fb89b055ef4297570:pcsc-tools/.signature
 f:c0a54c13babbd6949eace9c46b8bf998:pcsc-tools/.md5sum
 f:697dc66e59f4febd9b0e4abc3ae059c1:pcsc-tools/.footprint
 f:4f59d237750b9e794c41081b248d1ef9:pcsc-tools/Pkgfile
+f:f75d5de0b8630f7a3d415e847b7739a3:dmenu/.signature
+f:bd7b39ca5240525c7bd090c30b4157b2:dmenu/.md5sum
+f:aa4856022bf28ed9a0f18ac907aaabdd:dmenu/.footprint
+f:80dfd6e9f00376a5b6e5f1166ef5fc93:dmenu/Pkgfile
 f:cfd74d01867817982409167dc2aa4fcb:bw/.signature
 f:e70b332a0f1a70ffc3716d11c25af7f4:bw/.md5sum
 f:b8e989956ecb98ad4767c0a59722a733:bw/.footprint
