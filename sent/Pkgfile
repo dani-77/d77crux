@@ -1,0 +1,15 @@
+# Description: Simple plaintext presentation tool.
+# URL: https://tools.suckless.org/sent/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: farbfeld
+
+name=sent
+version=1
+release=1
+source=(https://dl.suckless.org/tools/$name-$version.tar.gz)
+
+build() {
+  sed -i 's|PREFIX = /usr/local|PREFIX = /usr|' config.mk
+  make
+  make DESTDIR=$PKG install
+}
