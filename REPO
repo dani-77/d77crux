@@ -30,6 +30,7 @@ d:camorama
 d:qt-sudo
 d:epson-inkjet-printer-escpr
 d:ttf-font-awesome
+d:dwm
 d:tint2
 d:lf
 d:fluxbox
@@ -218,6 +219,10 @@ f:9672e98ab8c709bc111a362ff1477c58:ttf-font-awesome/.signature
 f:6cfae8192ae7437430248e165bb39db7:ttf-font-awesome/.md5sum
 f:5a7423bda03806dd20c0daaefedb0825:ttf-font-awesome/.footprint
 f:f35d85b741a00180e04ab42635f20a1a:ttf-font-awesome/Pkgfile
+f:865ee027fb7654dee9da6726920fb3c5:dwm/.signature
+f:8eb284693150b9fd1b109a0597f248fe:dwm/.md5sum
+f:741c1a116e5019e71222386c940489a8:dwm/.footprint
+f:3f9f8a3a4010b5a4ab486b66fc29b331:dwm/Pkgfile
 f:0d9860a908f5f551f9985e0cfeec665c:tint2/.signature
 f:ab20d15fe49d2c74ec30f62c8aee7124:tint2/.md5sum
 f:8512ace1aa0d3b72c158f9c1aa8f1a76:tint2/.footprint

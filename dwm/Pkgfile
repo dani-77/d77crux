@@ -1,0 +1,16 @@
+# Description: dynamic window manager from suckless
+# URL: https://dwm.suckless.org
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on:
+
+name=dwm
+version=6.5
+release=1
+source=(https://dl.suckless.org/dwm/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  sed -i 's|PREFIX = /usr/local|PREFIX = /usr|' config.mk
+  make
+  make DESTDIR=$PKG install
+}
