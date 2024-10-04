@@ -1,0 +1,16 @@
+# Description: farbfeld is a lossless image format which is easy to parse, pipe and compress.
+# URL: https://tools.suckless.org/farbfeld/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: libpng libjpeg-turbo
+
+name=farbfeld
+version=4
+release=1
+source=(https://dl.suckless.org/farbfeld/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  sed -i 's|PREFIX = /usr/local|PREFIX = /usr|' config.mk
+  make
+  make DESTDIR=$PKG install
+}
