@@ -1,0 +1,22 @@
+# Description: Powerful modern download accelerator and organizer.
+# URL: https://www.freedownloadmanager.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: 
+
+name=freedownloadmanager
+version=6.24.2.5857
+release=1
+source=(https://files2.freedownloadmanager.org/6/latest/$name.deb)
+
+build() {
+	bsdtar -xf freedownloadmanager.deb
+	bsdtar -xf data.tar.zst
+	find -type d -exec chmod 755 {} +
+	mkdir -p $PKG/opt
+        cp -r ./opt/freedownloadmanager $PKG/opt
+        install -Dm644 usr/share/applications/freedownloadmanager.desktop $PKG/usr/share/applications/freedownloadmanager.desktop
+        chmod 755 $PKG/usr/share/applications/freedownloadmanager.desktop
+        mkdir -p $PKG/usr/bin
+        ln -s /opt/freedownloadmanager/fdm $PKG/usr/bin/fdm
+
+}
