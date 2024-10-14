@@ -289,9 +289,9 @@ f:0ccde1cafc5da8ff0c5f66d95e4a0d63:sxhkd/.signature
 f:c44e38a5d81efc46b6f6512ebb199e5c:sxhkd/.md5sum
 f:83253c57b52a4bd1302589655a8b7927:sxhkd/Pkgfile
 f:f9b1b73ad360893be6c3253ab14574f0:freedownloadmanager/.footprint
-f:a30cca04ecea630ab290c6dd7bb6c51a:freedownloadmanager/.signature
+f:9c3546424f786a88a8b12319e13d65ad:freedownloadmanager/.signature
 f:bb89bd65bf869e7961f3bcd9b9bed97a:freedownloadmanager/.md5sum
-f:ebb549936e857d85bcb3214b13e8b725:freedownloadmanager/Pkgfile
+f:2dc593212e3d54ca951facdcf944d473:freedownloadmanager/Pkgfile
 f:52274d587a0d99791da74308a5590689:bitwarden-rofi/.footprint
 f:caad5151f12aefe6e0399dc3b94dd8ca:bitwarden-rofi/.signature
 f:711dd83d1938acceb27bcbd18220b907:bitwarden-rofi/.md5sum
@@ -357,9 +357,9 @@ f:4bf8613defbd85157997bbbe74c997fc:libfm-cache/.signature
 f:caa6d9c4af20cc78a278ec583565c8a2:libfm-cache/.md5sum
 f:49c8f70e107ec100e460c01deb1d7b02:libfm-cache/Pkgfile
 f:87f60006be01ef14775a0c4276604cfe:discord/.footprint
-f:11582b1480a3cbee52cd692f647eab0d:discord/.signature
-f:69789f46260c134a4666e721888e38a6:discord/.md5sum
-f:0a123500ad9fce8064ded95335afd62a:discord/Pkgfile
+f:3a464e3d1a3825429e22166c3f6f2fe6:discord/.signature
+f:6f73778578f6559236d661d98c6a6993:discord/.md5sum
+f:2f45c04382bf39000592abf25fbbca45:discord/Pkgfile
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
 f:001035a72ca3f8f611091c2fdaddf795:ventoy/.footprint
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png
