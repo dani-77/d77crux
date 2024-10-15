@@ -79,6 +79,7 @@ d:lzip
 d:paper-gtk-theme
 d:ncspot
 d:libfm
+d:librespot
 d:scrot
 d:jetbrains
 d:epson-inkjet-printer-escpr
@@ -426,6 +427,10 @@ f:1192e2209cb51d617e33ec91ae0cb6c5:libfm/.footprint
 f:71602d2cab029c67580588040c9cc305:libfm/.signature
 f:caa6d9c4af20cc78a278ec583565c8a2:libfm/.md5sum
 f:b5b65176240a675e6c3595c197e0d492:libfm/Pkgfile
+f:dd3ed42e3209fd855c7f738c4cb8eada:librespot/.footprint
+f:9bb1eb93cc1e65906650ac0fcaf0c4f7:librespot/.signature
+f:25780de74ebda87ab993313f9260a32d:librespot/.md5sum
+f:2a72a614e531b2d705a1591e53a40cec:librespot/Pkgfile
 f:937cf19b3766d2454a8631265add3e6d:scrot/.footprint
 f:27c1819954163276be72f65950a300cc:scrot/.signature
 f:6b9b833d7ff417476cd386bdaa6ed4b7:scrot/.md5sum
