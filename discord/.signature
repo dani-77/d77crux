@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkG2aQ9yP4SQDeCw/w9wrzercBy3Lh8frZvld3PwwyUeoRgtYhk2DhzNUen/9VInqviFOJlce7NYofHHh0qSMKAU=
-SHA256 (Pkgfile) = 345cc92afa6c52a17739043fd911d8e54b3d7927b3e4eebf012c865473619d38
+RWT0dvMs3lAWkLXGvpUD4I0Gk0tyCCRZ8r2QXrwXt2QNFe9cSyZv3jp+q/bZErHi0gqvq2AgXUdrSieQpgQDVqKgKro2bNP7BQw=
+SHA256 (Pkgfile) = 13ef73de45228b9c3019bfb80b019912357a066305ccda479426da898eb93d5f
 SHA256 (.footprint) = 701a7b0833f22882bd983023a31dd22daa4896c65a67c9485ef05391796b173d
-SHA256 (discord-0.0.70.tar.gz) = 52395ec2b85ba9a97dee1086ebe22ef8eaa7b56649fe863a64778bf879a8537f
+SHA256 (discord-0.0.71.tar.gz) = 3cc71abe05212fc735605696b28a1939b0daec03cca820f521acac103e5f59a7
