@@ -4,7 +4,7 @@
 # Depends on: cups
 
 name=discord
-version=0.0.71
+version=0.0.70
 release=1
 source=(https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz)
 
