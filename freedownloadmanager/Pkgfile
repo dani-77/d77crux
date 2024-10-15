@@ -1,11 +1,11 @@
 # Description: Powerful modern download accelerator and organizer.
 # URL: https://www.freedownloadmanager.org/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: pulseaudio krb5
+# Depends on: 
 
 name=freedownloadmanager
 version=6.24.2.5857
-release=2
+release=1
 source=(https://files2.freedownloadmanager.org/6/latest/$name.deb)
 
 build() {
