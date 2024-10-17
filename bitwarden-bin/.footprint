@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	opt/Bitwarden/
 -rw-r--r--	root/root	opt/Bitwarden/chrome_100_percent.pak
 -rw-r--r--	root/root	opt/Bitwarden/chrome_200_percent.pak
 -rwxr-xr-x	root/root	opt/Bitwarden/chrome_crashpad_handler
+-rwxr-xr-x	root/root	opt/Bitwarden/desktop_proxy
 -rw-r--r--	root/root	opt/Bitwarden/icudtl.dat
 -rwxr-xr-x	root/root	opt/Bitwarden/libEGL.so
 -rwxr-xr-x	root/root	opt/Bitwarden/libGLESv2.so
