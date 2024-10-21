@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWT0dvMs3lAWkF8NAdkXJAiB6TZlHNppImrneW3QbkJW0OMzv9zE6bfqe7A9HNODuy/N1EwqfaNFisBWaHb681bvspyAlkh/7wY=
+SHA256 (Pkgfile) = dec82a4419a9e20454ff59b451ace19b89ffce07211c0f144aa83f00ed33ffc6
+SHA256 (.footprint) = 63af41fd052d30f321d208652a834d8ffafdd16c6a6eb34f0d5ae031500acfca
+SHA256 (usbimager_1.0.10_wo_uf-x86_64-linux-x11.zip) = 084a02c68e1d584951f23144488ada94608932289ba1c93787ff10b9d33014c1
