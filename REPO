@@ -265,10 +265,10 @@ f:31af1c2783310c9dc4b82bb62352d980:moka-icon-theme/.footprint
 f:96951efc35e7f0bbf5324ba71a300672:moka-icon-theme/.md5sum
 f:3dbaf4f75fe32502f94cfecedbde56ac:moka-icon-theme/Pkgfile
 f:829a81b4723f09b9e7d2b21ceae74283:moka-icon-theme/.signature
-f:ab3697f79db2fdb4cca8c32443a51a36:cmus/.footprint
-f:190e6037d4c82d1447ed3635ec7c49af:cmus/.md5sum
-f:9da0d6302e1fb89befabf38ef565426f:cmus/Pkgfile
-f:4d73c8448f5770e6ea602897e77b6494:cmus/.signature
+f:b2b0c3ed3265060cf78582321cc44021:cmus/.footprint
+f:c275722249ef9749244c9635d19c1d31:cmus/.md5sum
+f:ad48dcb0ca008f408f1c6b0aba8a88e2:cmus/Pkgfile
+f:76d39f8ff76f2b617aab192a849e9edc:cmus/.signature
 f:15058bc423e3231d851c95fdce0c2cc4:gconf/.footprint
 f:98676031710e36237ceb15715b9e520e:gconf/Pkgfile
 f:68d8081e1c944ea7a080287e643262a3:gconf/.signature
