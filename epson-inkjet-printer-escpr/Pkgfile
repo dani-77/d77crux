@@ -5,8 +5,10 @@
 
 name=epson-inkjet-printer-escpr
 version=1.8.5
-release=1
-source=(https://github.com/dani-77/d77crux/raw/master/epson-inkjet-printer-escpr/epson-inkjet-printer-escpr-1.8.5-1.tar.gz)
+release=2
+#source=(https://github.com/dani-77/d77crux/raw/master/epson-inkjet-printer-escpr/epson-inkjet-printer-escpr-1.8.5-1.tar.gz)
+source=(https://download3.ebz.epson.net/dsc/f/03/00/15/68/89/fbff579f15226ffcc4a16895bd6bce6842277802/epson-inkjet-printer-escpr-$version-1.tar.gz)
+
 
 build() {
   cd $name-$version
