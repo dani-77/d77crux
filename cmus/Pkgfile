@@ -4,7 +4,7 @@
 # Depends on: alsa-oss flac opus libvorbis wavpack libmad faad2 libcdio
 
 name=cmus
-version=2.11.0
+version=2.12.0
 release=1
 source=(https://github.com/cmus/cmus/archive/refs/tags/v$version.tar.gz)
 
