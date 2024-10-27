@@ -1,7 +1,7 @@
 # Description: Simple GUI application that writes compressed disk images to USB drives and creates backups
 # URL: https://bztsrc.gitlab.io/usbimager/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on:  
+# Depends on:  qt-sudo
 
 name=usbimager
 version=1.0.10
