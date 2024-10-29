@@ -310,9 +310,9 @@ f:b6ab6d69b9148475c7c85f2f904d44bf:lf/.md5sum
 f:ed5fd0520ef7feda41f7489e8717a646:lf/Pkgfile
 f:2125970c4a678ae69c0f7785c04c5436:lf/.signature
 f:87f60006be01ef14775a0c4276604cfe:discord/.footprint
-f:6f73778578f6559236d661d98c6a6993:discord/.md5sum
-f:2f45c04382bf39000592abf25fbbca45:discord/Pkgfile
-f:3a464e3d1a3825429e22166c3f6f2fe6:discord/.signature
+f:4cfed55e8e37434f289fd646492a0f2b:discord/.md5sum
+f:8f822c67af38029dec75c91a24e7dba5:discord/Pkgfile
+f:adf4a63bd3ff73da012eead639d7d753:discord/.signature
 f:bf27192c5fa0e13cfad87d03fcc0922d:nerd-fonts/.footprint
 f:928e7c5129f1924a902bcd54f004b20a:nerd-fonts/.md5sum
 f:4be63a21f8fef57bdb0355e4884b0ef5:nerd-fonts/Pkgfile
