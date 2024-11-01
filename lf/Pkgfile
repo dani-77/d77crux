@@ -4,9 +4,9 @@
 # Depends on: git go
 
 name=lf
-version=r32
-release=2
-source=(https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz)
+version=r33
+release=1
+source=(https://github.com/gokcehan/$name/archive/refs/tags/$version.tar.gz)
 
 build() {
 	cd $name-$version

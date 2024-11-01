@@ -306,9 +306,9 @@ f:c4e7613d220a595ac671dcb473084054:inxi/.md5sum
 f:d0e57f9d8f201972b4156d56782e8828:inxi/Pkgfile
 f:fe37b89e9e1bfc990b6fb0fe36a7f907:inxi/.signature
 f:2357a52629cd526da3e4943539e882b2:lf/.footprint
-f:b6ab6d69b9148475c7c85f2f904d44bf:lf/.md5sum
-f:ed5fd0520ef7feda41f7489e8717a646:lf/Pkgfile
-f:2125970c4a678ae69c0f7785c04c5436:lf/.signature
+f:051067bb8c9b4ffd5a222b9b9eebfe96:lf/.md5sum
+f:08ab2918c729df6e9d0986998b365b8b:lf/Pkgfile
+f:3a9367a71a7a25e170174bf3d6242a9e:lf/.signature
 f:87f60006be01ef14775a0c4276604cfe:discord/.footprint
 f:4cfed55e8e37434f289fd646492a0f2b:discord/.md5sum
 f:8f822c67af38029dec75c91a24e7dba5:discord/Pkgfile
@@ -482,4 +482,4 @@ f:5faff3496820f68993d7a17dbef8c815:sent/.signature
 f:b473a0f18a0149ebbe0d934727a10c7d:spot/.footprint
 f:3a187034765f11d2ecd4b1e99dbe4ccd:spot/.md5sum
 f:da405ba45f24a2ae062b20783ce2288d:spot/Pkgfile
-f:9f32ce895f76b9fa4224a74463e94ea2:spot/.signature
+f:350e84aaac2fd0f6139ee1c0b525e575:spot/.signature
