@@ -91,7 +91,6 @@ d:ttf-font-awesome
 d:gtrash
 d:rpm2targz
 d:sent
-d:spot
 f:c26976f32d4614a56b84248d8e9b2f1a:calcurse/.footprint
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:e3d7381e97ee2e8ed521ec21e77f63e0:calcurse/Pkgfile
@@ -479,7 +478,3 @@ f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
 f:10be703098bf1f8903f0839990f55c41:sent/.md5sum
 f:2cbd839038dd55b0291edd3cd10531b4:sent/Pkgfile
 f:5faff3496820f68993d7a17dbef8c815:sent/.signature
-f:b473a0f18a0149ebbe0d934727a10c7d:spot/.footprint
-f:3a187034765f11d2ecd4b1e99dbe4ccd:spot/.md5sum
-f:da405ba45f24a2ae062b20783ce2288d:spot/Pkgfile
-f:350e84aaac2fd0f6139ee1c0b525e575:spot/.signature
