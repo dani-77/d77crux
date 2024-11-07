@@ -4,7 +4,7 @@
 # Depends on: go
 
 name=gh
-version=2.60.1
+version=2.61.0
 release=1
 source=(https://github.com/cli/cli/archive/v$version/$name-$version.tar.gz)
 
@@ -22,6 +22,6 @@ build() {
 	bin/gh completion -s zsh | install -Dm644 /dev/stdin share/zsh/site-functions/_gh
 	bin/gh completion -s fish | install -Dm644 /dev/stdin share/fish/vendor_completions.d/gh.fish
 
-	make DESTDIR="${PKG}" prefix="/usr" install
+	make DESTDIR="${PKG}" prefix="/" install
 
 }
