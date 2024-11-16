@@ -4,7 +4,7 @@
 # Depends on: go
 
 name=gh
-version=2.61.0
+version=2.62.0
 release=1
 source=(https://github.com/cli/cli/archive/v$version/$name-$version.tar.gz)
 
