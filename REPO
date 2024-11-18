@@ -313,9 +313,9 @@ f:d40f8b42f53d7c06a2d6a57bcbc2c2f5:discord/.md5sum
 f:949b6979dc7deeb9838c442c3fd91414:discord/Pkgfile
 f:703dbac7ad3a47a6b6da75abe1c2fa11:discord/.signature
 f:bf27192c5fa0e13cfad87d03fcc0922d:nerd-fonts/.footprint
-f:928e7c5129f1924a902bcd54f004b20a:nerd-fonts/.md5sum
-f:4be63a21f8fef57bdb0355e4884b0ef5:nerd-fonts/Pkgfile
-f:134328474137434f64ca28c48fda6980:nerd-fonts/.signature
+f:7e8b8f91362e715071a69bdadff8f036:nerd-fonts/.md5sum
+f:7aadcfcabf8a0671fab86b2d99c99983:nerd-fonts/Pkgfile
+f:709395d371b3416b394d8000fb902c55:nerd-fonts/.signature
 f:f77867e9db3f66c26559c28804a444bf:abiword/.footprint
 f:b9e7d242e7a7cd73e313e172eceeb503:abiword/enchant-2.1.patch
 f:90a32ac639e4420b56356431dec93102:abiword/Pkgfile
