@@ -171,9 +171,9 @@ f:ea30bc372c3fb247c3d0ae38fef4b561:gmrun/.md5sum
 f:b7b83e52cf6964dd0d6c62390bb8c26d:gmrun/Pkgfile
 f:c92b788c2202c98614881f6063e52fe6:gmrun/.signature
 f:678f25b64f2d74f94bcb9f3fb180b753:bitwarden-bin/.footprint
-f:59b5de428c022a05dcf94546ca2189fd:bitwarden-bin/.md5sum
-f:655ba35e7917786e88823466679b94b2:bitwarden-bin/Pkgfile
-f:20648a935461cdf1aefe2b4b832763a7:bitwarden-bin/.signature
+f:e1d2570aada2feaff727a74d607c26ae:bitwarden-bin/.md5sum
+f:5467d84c220f60a1966449001d227137:bitwarden-bin/Pkgfile
+f:ba0615c63ad14714d95e41449b6a4767:bitwarden-bin/.signature
 f:5781a25fd92c85e92e7eb5e967e3f45e:libgsf/.footprint
 f:bf135a1dff19d408921c7176268d5c2f:libgsf/Pkgfile
 f:a236385b3e90cb270f2a0a76764dfcae:libgsf/.signature
