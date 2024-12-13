@@ -4,9 +4,9 @@
 # Depends on: pango
 
 name=jgmenu
-version=4.4.1
-release=2
-source=(https://github.com/jgmenu/jgmenu/archive/refs/tags/v4.4.1.tar.gz)
+version=4.5.0
+release=1
+source=(https://github.com/jgmenu/jgmenu/archive/refs/tags/v4.5.0.tar.gz)
 
 build() {
   cd $name-$version
