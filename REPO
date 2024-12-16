@@ -442,9 +442,9 @@ f:3e1cea53d5ab27ef9af70a43d1d1a9ae:cbatticon/.md5sum
 f:6069ae9a462780b6d6f929e8ae903f48:cbatticon/Pkgfile
 f:9e98940730d7bf85b860d29377c98cad:cbatticon/.signature
 f:2aa9cdc7496c3942e9c0c7b51172ebf2:flashrom/.footprint
-f:aefe42b7eadd90c4c790143b954b0ce2:flashrom/.md5sum
-f:cd5dcbda73697676e93d9e907163d531:flashrom/Pkgfile
-f:f7e495452b9ab4ef1ba4a8b68d7899de:flashrom/.signature
+f:1da57c71282197e3a7e784c97d69a265:flashrom/.md5sum
+f:9e5e95433c14f93e4a1a18f67f8352f5:flashrom/Pkgfile
+f:2dd98a66fbc1ac48a75a04433662f3bf:flashrom/.signature
 f:6e88732c3fa18b7347973e4393da6ab1:pcmanfm/.footprint
 f:605f8bdfad5003a51f682def216b734d:pcmanfm/.md5sum
 f:3932b5ff11265186f8921d6d41413291:pcmanfm/Pkgfile
