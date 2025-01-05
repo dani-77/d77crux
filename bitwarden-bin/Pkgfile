@@ -4,9 +4,9 @@
 # Depends on: alsa-lib cups libnotify libsecret libxtst nss
 
 name=bitwarden-bin
-version=2024.12.0
+version=2024.12.1
 release=1
-source=(https://github.com/bitwarden/clients/releases/download/desktop-v2024.12.0/Bitwarden-2024.12.0-amd64.deb)
+source=(https://github.com/bitwarden/clients/releases/download/desktop-v2024.12.1/Bitwarden-2024.12.1-amd64.deb)
 
 build() {
 	sudo bsdtar -xf Bitwarden-$version-amd64.deb
