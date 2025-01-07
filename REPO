@@ -480,7 +480,6 @@ f:10be703098bf1f8903f0839990f55c41:sent/.md5sum
 f:2cbd839038dd55b0291edd3cd10531b4:sent/Pkgfile
 f:5faff3496820f68993d7a17dbef8c815:sent/.signature
 f:b473a0f18a0149ebbe0d934727a10c7d:spot/.footprint
-f:fafba5a726b251a0b54848fbe37a08d7:spot/spot#0.5.0-2.pkg.tar.xz
 f:b83f016aace03bf0d8d04af7fce5a57d:spot/.md5sum
 f:f2becf17555ed25c237bad4707b76591:spot/Pkgfile
 f:6243e1a2f114f5c4592edf7576260516:spot/.signature
