@@ -91,6 +91,7 @@ d:ttf-font-awesome
 d:gtrash
 d:rpm2targz
 d:sent
+d:spot
 f:c26976f32d4614a56b84248d8e9b2f1a:calcurse/.footprint
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:e3d7381e97ee2e8ed521ec21e77f63e0:calcurse/Pkgfile
@@ -181,10 +182,10 @@ f:2f101ee8161fdf7b2a631496943a5300:volumeicon/.footprint
 f:2322339afffd11aad9435014a3d9f869:volumeicon/.md5sum
 f:ce99e3efafd874874928201a9bf89728:volumeicon/Pkgfile
 f:c81b601aa01984a52b5a71218808c485:volumeicon/.signature
-f:0aff93af4c8522849a9dd422e1cebbfd:gh/.footprint
-f:2b58bbc65513f26d1080fd9c79c94b09:gh/.md5sum
-f:490e09128ce6f46c423c4d77f8a718b7:gh/Pkgfile
-f:bce2e5a2907216face73948a9299a99a:gh/.signature
+f:d938d1f78e438de7ff8abd5ecc9029b9:gh/.footprint
+f:2ffcb710b480df89008a8365ade51c98:gh/.md5sum
+f:4bb90d042bce270e697319ec878c4ff5:gh/Pkgfile
+f:c73c19582c808e0b1ed5a2c39f5cc19a:gh/.signature
 f:52274d587a0d99791da74308a5590689:bitwarden-rofi/.footprint
 f:711dd83d1938acceb27bcbd18220b907:bitwarden-rofi/.md5sum
 f:62a4398a0a25f7a08c86244924b7a238:bitwarden-rofi/Pkgfile
@@ -478,3 +479,8 @@ f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
 f:10be703098bf1f8903f0839990f55c41:sent/.md5sum
 f:2cbd839038dd55b0291edd3cd10531b4:sent/Pkgfile
 f:5faff3496820f68993d7a17dbef8c815:sent/.signature
+f:b473a0f18a0149ebbe0d934727a10c7d:spot/.footprint
+f:fafba5a726b251a0b54848fbe37a08d7:spot/spot#0.5.0-2.pkg.tar.xz
+f:b83f016aace03bf0d8d04af7fce5a57d:spot/.md5sum
+f:f2becf17555ed25c237bad4707b76591:spot/Pkgfile
+f:6243e1a2f114f5c4592edf7576260516:spot/.signature
