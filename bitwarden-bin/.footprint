@@ -80,10 +80,6 @@ drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/
 drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/
 drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/
 -rwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/desktop_napi.linux-x64-musl.node
-drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/argon2/
-drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/argon2/build/
-drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/argon2/build/Release/
--rwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/argon2/build/Release/argon2.node
 -rw-r--r--	root/root	opt/Bitwarden/resources/package-type
 -rw-r--r--	root/root	opt/Bitwarden/snapshot_blob.bin
 -rw-r--r--	root/root	opt/Bitwarden/v8_context_snapshot.bin
