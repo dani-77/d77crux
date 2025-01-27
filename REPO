@@ -172,9 +172,9 @@ f:ea30bc372c3fb247c3d0ae38fef4b561:gmrun/.md5sum
 f:b7b83e52cf6964dd0d6c62390bb8c26d:gmrun/Pkgfile
 f:c92b788c2202c98614881f6063e52fe6:gmrun/.signature
 f:ab1c746eef1b3fbe9231058cf0686ab3:bitwarden-bin/.footprint
-f:b42fe863df29b574714ed5de6357dade:bitwarden-bin/.md5sum
-f:176b64ad32897adda4e62a2c1477b20d:bitwarden-bin/Pkgfile
-f:01cd3b609f0950337c5857f9dc7eda56:bitwarden-bin/.signature
+f:563cc5284fefce2cd99cc1ef2f47beb4:bitwarden-bin/.md5sum
+f:b264a9b8a989592b049fa32f5f41a24f:bitwarden-bin/Pkgfile
+f:12554867787e4cf8c307c62822f3cf26:bitwarden-bin/.signature
 f:5781a25fd92c85e92e7eb5e967e3f45e:libgsf/.footprint
 f:bf135a1dff19d408921c7176268d5c2f:libgsf/Pkgfile
 f:a236385b3e90cb270f2a0a76764dfcae:libgsf/.signature
@@ -341,7 +341,7 @@ f:3453b6ad4c9109caff9c38d30b45a590:icewm/.signature
 f:001035a72ca3f8f611091c2fdaddf795:ventoy/.footprint
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
 f:38647084138a858c10353c4784adbf51:ventoy/.md5sum
-f:8f771a386c3400201c1e06887d93a95b:ventoy/Pkgfile
+f:3cce81771f6013e5c95c24ef36242404:ventoy/Pkgfile
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png
 f:a2901f843df06d22b96c64211df3a1dc:ventoy/.signature
 f:28dc48506c44f18fd7c4c249cd7da1c2:abook/.footprint
