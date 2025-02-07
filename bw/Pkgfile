@@ -4,9 +4,9 @@
 # Depends on: 
 
 name=bw
-version=2025.1.2
+version=2025.1.3
 release=1
-source=(https://github.com/bitwarden/clients/releases/download/cli-v2025.1.2/bw-linux-2025.1.2.zip)
+source=(https://github.com/bitwarden/clients/releases/download/cli-v2025.1.3/bw-linux-2025.1.3.zip)
 
 build() {
  mkdir -p $PKG/usr/bin

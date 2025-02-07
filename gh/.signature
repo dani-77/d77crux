@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkL/AEIrY3dtOtCZg1JuPk3jklpowXNxql4R5ocUc4p6cBgOQXrOb3d/+lxXUlM7IgXdUk2rVB9hAjxdIFzl8hgY=
-SHA256 (Pkgfile) = 9c3b22940ee48bf5edd2310e94b82e2f91f2dae434be661f8f03d6e09d5a5c46
-SHA256 (.footprint) = 31d688c90ae143e1d3e76ddfefa2c4f3d53695c04d08dea7c4c6d514cc160770
-SHA256 (gh-2.65.0.tar.gz) = af026f1b0368b1444a67a941f179ddce7e97333881ec0bbcb49fed29f4151241
+RWT0dvMs3lAWkIrG9rDWYPCQP3JIV0W9rb4DFs1jJWtqISM5fD7oSIEkEz3h9iQ/mfApBWcYyuSNGTmjGtsXFT7sOpkEmYb1mQo=
+SHA256 (Pkgfile) = 9e269ba058606bdc47697bda3046c1661a97d5d30839de3c896f1b1941041ce1
+SHA256 (.footprint) = b021824a597c4d61b8bb8a65e7372624e545643762f70b585a7dcdc377cb9ad3
+SHA256 (gh-2.66.1.tar.gz) = e0bb259c61f15f41c1ca04632045d0aaf8fe456e2bc64f15dbfae41cc28d4fea
