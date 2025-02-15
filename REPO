@@ -236,10 +236,10 @@ f:ee506d2a3c1e01635bf34255a29e01cf:notable/.md5sum
 f:7cd4c3e3f62fb24033d217727d3a4fc0:notable/Pkgfile
 f:a109e10b3973ddb9ef789309c1b57929:notable/.signature
 f:8b256bc10f1d80d7a65da01248094dc6:usbimager/.footprint
-f:23e793d8928d86e78f65bd8f800fb6be:usbimager/post-install
-f:c8be9bc4549230ea943a39c3b97193c9:usbimager/.md5sum
+f:389184179c5a87d37dd129a85374393f:usbimager/.md5sum
 f:ccd05d6cfa96224b75220a9b95f80424:usbimager/Pkgfile
-f:e7565801c2e766cb96b973abc3e0a12b:usbimager/.signature
+f:23e793d8928d86e78f65bd8f800fb6be:usbimager/pre-install
+f:2948097f2fad14ed9f067c177aea4635:usbimager/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:5be68ec050b4e42a4f5254294cd93c63:fluxbox/.md5sum
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
@@ -341,10 +341,10 @@ f:ba53a18dde70e78f2f926516cb1ca638:icewm/Pkgfile
 f:3453b6ad4c9109caff9c38d30b45a590:icewm/.signature
 f:001035a72ca3f8f611091c2fdaddf795:ventoy/.footprint
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
-f:9b607daa1c6eb197c8115838e63c2abd:ventoy/.md5sum
+f:8dd08796a7fd24ce1e57b1e604ba7b8b:ventoy/.md5sum
 f:0a943c80ebe2e33ad74550c186bca728:ventoy/Pkgfile
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png
-f:6e00ab8260693ba0066f2eb475d94d95:ventoy/.signature
+f:828194f26e79ed9e282d411fbf72b857:ventoy/.signature
 f:28dc48506c44f18fd7c4c249cd7da1c2:abook/.footprint
 f:53cd1c59e2545dbe12fbb127763d7193:abook/.md5sum
 f:764a915b802cd6d286400e4da6895239:abook/Pkgfile
