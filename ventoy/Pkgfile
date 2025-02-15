@@ -4,9 +4,9 @@
 # Depends on: 
 
 name=ventoy
-version=1.1.00
+version=1.1.02
 release=3
-source=(https://deac-riga.dl.sourceforge.net/project/ventoy/v1.1.00/ventoy-1.1.00-linux.tar.gz ventoy.png ventoy.desktop)
+source=(https://netix.dl.sourceforge.net/project/$name/v$version/$name-$version-linux.tar.gz ventoy.png ventoy.desktop)
 
 build() {
 	mkdir -p $PKG/opt
