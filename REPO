@@ -182,10 +182,10 @@ f:2f101ee8161fdf7b2a631496943a5300:volumeicon/.footprint
 f:2322339afffd11aad9435014a3d9f869:volumeicon/.md5sum
 f:ce99e3efafd874874928201a9bf89728:volumeicon/Pkgfile
 f:c81b601aa01984a52b5a71218808c485:volumeicon/.signature
-f:94a61513752cbc4a9f10833423ff4e25:gh/.footprint
-f:182ee14e2610a3f6fdd9e14eace0b5bd:gh/.md5sum
+f:49bb89045eb8cd0f9e4e7b50d98b45ee:gh/.footprint
+f:2a70cbd3c274bef132fbd1f1675c64e0:gh/.md5sum
 f:cba8628afc24e360baa95b420b3d8a69:gh/Pkgfile
-f:81704f8696222a24bd9bc2067d8648fb:gh/.signature
+f:b925d7c29f69e1378ae617e639debe7b:gh/.signature
 f:52274d587a0d99791da74308a5590689:bitwarden-rofi/.footprint
 f:711dd83d1938acceb27bcbd18220b907:bitwarden-rofi/.md5sum
 f:62a4398a0a25f7a08c86244924b7a238:bitwarden-rofi/Pkgfile
