@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkC2fKNTC4Mk725XNhvepxIKo3pTrbo64RG8sKm5RdovF8xbH4ZIrh8m4jgKfhBBHvH7UyrIsCG0ka0BB61sh+wQ=
-SHA256 (Pkgfile) = f69e5b609c8a1101d978cd86f3338d301a2c540ffa363c834f99286c1ee5fabb
+RWT0dvMs3lAWkDuA6Ipn+/CMynk5frvSZofon/BxUnBhCB9YCaImrsS8pEb6lGye+oWnX0gKm7ul9rdOus1Cna1OJlZ0D9a76wU=
+SHA256 (Pkgfile) = 540f5f3a60397da48b7ec805202d94080b0a1a42e4eecd85dc06820e2ce3294e
 SHA256 (.footprint) = 44c9e00352f6999b12a297df64fd49905a2ad7465c0fa8abe019f156ff141b75
-SHA256 (ventoy-1.1.00-linux.tar.gz) = 27a2abaffa531c673059190975455db7a61583f221528e06da1ee38d1ea5702f
+SHA256 (ventoy-1.1.02-linux.tar.gz) = 0b47aeba910dd9a9d5faad26988c45bef5238c4eb19e3bf510545698ac5caece
 SHA256 (ventoy.png) = c69265b0cfc33b58e5beff440331316aeff89b078a84b21d7cc0e17090769ef0
 SHA256 (ventoy.desktop) = 10c0db33eacb52cde81a3231bd0f45376bbc0e62ad623e2a9c308c9569a16e18
