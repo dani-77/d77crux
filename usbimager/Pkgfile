@@ -5,16 +5,11 @@
 
 name=usbimager
 version=1.0.10
-release=2
-source=(https://gitlab.com/bztsrc/usbimager/raw/binaries/usbimager_1.0.10_wo_uf-x86_64-linux-x11.zip)
+release=3
+source=(https://gitlab.com/bztsrc/$name/-/archive/$version/$name-$version.tar.gz)
 
 build() {
-	mkdir -p $PKG/usr/share
-	sed -i 's|Exec=/usr/bin/usbimager|Exec=qt-sudo usbimager|' share/applications/usbimager.desktop
-	install -Dm644 share/applications/usbimager.desktop $PKG/usr/share/applications/usbimager.desktop 
-	install -Dm644 share/man/man8/usbimager.8.gz $PKG/usr/share/man/man8//usbimager.8.gz 
-	mkdir -p $PKG/usr/share/icons/hicolor
-	cp -r share/icons/hicolor/* $PKG/usr/share/icons/hicolor/
-	mkdir -p $PKG/usr/bin
-	install -Dm755 bin/usbimager $PKG/usr/bin
+	cd $name-$version/src
+	make
+	make DESTDIR=$PKG install
 }
