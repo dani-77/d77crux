@@ -173,7 +173,7 @@ f:b7b83e52cf6964dd0d6c62390bb8c26d:gmrun/Pkgfile
 f:c92b788c2202c98614881f6063e52fe6:gmrun/.signature
 f:ab1c746eef1b3fbe9231058cf0686ab3:bitwarden-bin/.footprint
 f:e2e671c88d3277ef132931d1c0437259:bitwarden-bin/.md5sum
-f:a8ae370e1c42b6acc3ef1c401ee935db:bitwarden-bin/Pkgfile
+f:334e992f3b9c64de09f96510cd7fa0a6:bitwarden-bin/Pkgfile
 f:92f601abfdd4dc503c9b83e23f9571a7:bitwarden-bin/.signature
 f:5781a25fd92c85e92e7eb5e967e3f45e:libgsf/.footprint
 f:bf135a1dff19d408921c7176268d5c2f:libgsf/Pkgfile
@@ -184,7 +184,7 @@ f:ce99e3efafd874874928201a9bf89728:volumeicon/Pkgfile
 f:c81b601aa01984a52b5a71218808c485:volumeicon/.signature
 f:94a61513752cbc4a9f10833423ff4e25:gh/.footprint
 f:182ee14e2610a3f6fdd9e14eace0b5bd:gh/.md5sum
-f:d58d6ddab91dca6806201f215cdf7139:gh/Pkgfile
+f:cba8628afc24e360baa95b420b3d8a69:gh/Pkgfile
 f:81704f8696222a24bd9bc2067d8648fb:gh/.signature
 f:52274d587a0d99791da74308a5590689:bitwarden-rofi/.footprint
 f:711dd83d1938acceb27bcbd18220b907:bitwarden-rofi/.md5sum
@@ -236,8 +236,9 @@ f:ee506d2a3c1e01635bf34255a29e01cf:notable/.md5sum
 f:7cd4c3e3f62fb24033d217727d3a4fc0:notable/Pkgfile
 f:a109e10b3973ddb9ef789309c1b57929:notable/.signature
 f:8b256bc10f1d80d7a65da01248094dc6:usbimager/.footprint
+f:23e793d8928d86e78f65bd8f800fb6be:usbimager/post-install
 f:c8be9bc4549230ea943a39c3b97193c9:usbimager/.md5sum
-f:1d8f419d06e4ea3c786620e8fd431d35:usbimager/Pkgfile
+f:ccd05d6cfa96224b75220a9b95f80424:usbimager/Pkgfile
 f:e7565801c2e766cb96b973abc3e0a12b:usbimager/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:5be68ec050b4e42a4f5254294cd93c63:fluxbox/.md5sum
@@ -285,9 +286,9 @@ f:d736cebd4972320d0c68bc7fb7a2c161:ncspot/.md5sum
 f:6ec60bb50d092613202b49813566e8bd:ncspot/Pkgfile
 f:b5716ce16a028997be23138a007c037f:ncspot/.signature
 f:2fd6b7b62f11c766ef1556f3b4468ef3:vifm/.footprint
-f:12d1dd8604d6c5b04cbaab9e3efd1718:vifm/.md5sum
-f:dfca3c230cec7847db14eab575b45758:vifm/Pkgfile
-f:e69e1962dc8509ddfdb3a332778b10b7:vifm/.signature
+f:d684f5dd574f7b0733eb95c8fc13f63a:vifm/.md5sum
+f:ac67384ca6970dbe2770813ba1fd20a7:vifm/Pkgfile
+f:77bd3a79d15b56278a791e75bbb1e95f:vifm/.signature
 f:c940f973f624e74560644dd11b9bd005:ccid/.footprint
 f:a2482684ab00720cf3e97d28d06f449d:ccid/.md5sum
 f:ae5c463e327269ec35faf7ad28361b5a:ccid/pcscd.rc
@@ -341,7 +342,7 @@ f:3453b6ad4c9109caff9c38d30b45a590:icewm/.signature
 f:001035a72ca3f8f611091c2fdaddf795:ventoy/.footprint
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
 f:9b607daa1c6eb197c8115838e63c2abd:ventoy/.md5sum
-f:3cce81771f6013e5c95c24ef36242404:ventoy/Pkgfile
+f:0a943c80ebe2e33ad74550c186bca728:ventoy/Pkgfile
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png
 f:6e00ab8260693ba0066f2eb475d94d95:ventoy/.signature
 f:28dc48506c44f18fd7c4c249cd7da1c2:abook/.footprint
