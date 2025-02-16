@@ -235,11 +235,11 @@ f:529a02704be0e8b4a3358d1875742884:notable/.footprint
 f:ee506d2a3c1e01635bf34255a29e01cf:notable/.md5sum
 f:7cd4c3e3f62fb24033d217727d3a4fc0:notable/Pkgfile
 f:a109e10b3973ddb9ef789309c1b57929:notable/.signature
-f:8b256bc10f1d80d7a65da01248094dc6:usbimager/.footprint
+f:3f3381603555fb2782e3bab2b54b07d1:usbimager/.footprint
 f:389184179c5a87d37dd129a85374393f:usbimager/.md5sum
-f:ccd05d6cfa96224b75220a9b95f80424:usbimager/Pkgfile
+f:c510de0217629ec819741399bef595fe:usbimager/Pkgfile
 f:23e793d8928d86e78f65bd8f800fb6be:usbimager/pre-install
-f:2948097f2fad14ed9f067c177aea4635:usbimager/.signature
+f:6a4d0b4595c3a5f1b85a704dc3e0c297:usbimager/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:5be68ec050b4e42a4f5254294cd93c63:fluxbox/.md5sum
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
