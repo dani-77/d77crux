@@ -1,0 +1,12 @@
+README for udiskie
+
+REQUIREMENTS
+
+POST-INSTALL
+
+1. Create Group storage
+
+2. Add your user to storage Group
+
+3. Optional:
+   Add udiskie to your .xinitrc 
