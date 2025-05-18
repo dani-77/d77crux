@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkP7CNpkc3j1nQ6W8tSGrpCmbMLictbagUGw5kjwDejc4RnJK0bZDD28Ks9NJ4QHRJ49NV2viqpVJ/sso64pl6wg=
-SHA256 (Pkgfile) = 15038995bcbba23091c8d6fb21b61b25458df057a84666a9f8255993a3aea4bd
+RWT0dvMs3lAWkGXa/1h5WzHvUc/MaPqdkXZoYNowDIWvBZgSPxovno8AOd3HFZvqrrWzuJ1KvovX1ySfgNFUurtTynP08Tq0SQc=
+SHA256 (Pkgfile) = 6f988d17b64a161a8edee7485c58aeb2aa6b5731bb483430f237462cebbf1dba
 SHA256 (.footprint) = 6af02a1f123bb83c3de056fb2e73150105a701ec100d96060666f37ed299ce39
-SHA256 (vifm-0.14.tar.bz2) = 2714dd4cef4e53e7a8980ae8445e88279104f815d47f417fa0b8adfe2f3d1bed
+SHA256 (vifm-0.14.2.tar.bz2) = cd1b05d2543cdf6829d60b23bc225c6fde13d3ef7c1008f821b9209837f1e2b0
