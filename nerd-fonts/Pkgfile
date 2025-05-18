@@ -4,7 +4,7 @@
 # Depends on:
 
 name=nerd-fonts
-version=3.3.0
+version=3.4.0
 release=1
 source=(https://github.com/ryanoasis/$name/releases/download/v$version/NerdFontsSymbolsOnly.tar.xz)
 
