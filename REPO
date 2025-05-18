@@ -307,9 +307,9 @@ f:c4e7613d220a595ac671dcb473084054:inxi/.md5sum
 f:d0e57f9d8f201972b4156d56782e8828:inxi/Pkgfile
 f:fe37b89e9e1bfc990b6fb0fe36a7f907:inxi/.signature
 f:2357a52629cd526da3e4943539e882b2:lf/.footprint
-f:051067bb8c9b4ffd5a222b9b9eebfe96:lf/.md5sum
-f:08ab2918c729df6e9d0986998b365b8b:lf/Pkgfile
-f:3a9367a71a7a25e170174bf3d6242a9e:lf/.signature
+f:c10002bf90c392b1e1986800bc4848a6:lf/.md5sum
+f:6afac08901a0a1a3907b287391e3c9ff:lf/Pkgfile
+f:8a0c900933ad2876ea38985c1f09192b:lf/.signature
 f:87f60006be01ef14775a0c4276604cfe:discord/.footprint
 f:178cd08c16e76dbb9e19e57f3f034f68:discord/.md5sum
 f:224f8c02b3e5cbcc9fcc5f33009f5928:discord/Pkgfile
