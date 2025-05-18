@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkDeqtVyWdu4jRyJB9rOOR2NEDfcSXe7g9SIPorjTWRKw/i3nI63CsIecq9LwbHrJxycP7Z7hbCJ+YGUm6etlZAY=
-SHA256 (Pkgfile) = 754f334f7d8314a441efac2ba3f6901d5d26469df7ae33c93910b1821df6bb6e
+RWT0dvMs3lAWkBbUuIpTwnICHPSQrwj0UGuNilVUOmip1oFbe6Yrfdu+lClGy/0uDN6Guxh1kGmNwX6QFGvEhbB3boNkjQf4NQ4=
+SHA256 (Pkgfile) = 0a90d04ecfde52afac52ec2eb7b2e90066137ce0a54f986beb840a0fb36a1c1e
 SHA256 (.footprint) = a97106a0ad591c2e392d4ff113a7aacb8e748193eb65589bb29ecb0e26240317
-SHA256 (NerdFontsSymbolsOnly.tar.xz) = 8b5ecbe2612cb37d75e2645f7644876bc38960574909b1c01c002d0e8d33deb3
+SHA256 (NerdFontsSymbolsOnly.tar.xz) = 7f8c090da3b0eaa7108646bf34cbbb6ed13d5358a72460522108b06c7ecd716a
