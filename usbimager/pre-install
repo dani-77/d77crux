@@ -1,4 +1,0 @@
-#!/bin/bash
-
-  sudo chgrp disk usbimager
-  sudo chmod g+s usbimager
