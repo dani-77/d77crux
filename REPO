@@ -134,9 +134,9 @@ f:57909ebf4911193f99e256f1841d86b8:opensc/.md5sum
 f:5164d24dc4fa68a886274955019fffeb:opensc/Pkgfile
 f:9ad197af413363635bf2eab5470e330b:opensc/.signature
 f:937cf19b3766d2454a8631265add3e6d:scrot/.footprint
-f:6b9b833d7ff417476cd386bdaa6ed4b7:scrot/.md5sum
-f:d8b26e8a1511d4dce6c28161926ea001:scrot/Pkgfile
-f:27c1819954163276be72f65950a300cc:scrot/.signature
+f:8a7523754643c1ca76ca87aa3aaa4d0c:scrot/.md5sum
+f:a91554dfd0f05b19ea2c11113041c487:scrot/Pkgfile
+f:b90a7883f0ba1814052855e32266aefd:scrot/.signature
 f:70739e4244fbb556156d331e6b2d39e1:udiskie/README
 f:0631ae23e1c7e8b84477440474dc6ce0:udiskie/.footprint
 f:0f26cb6343fd142d7c399ee6c09de70f:udiskie/50-udiskie.rules
