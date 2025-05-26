@@ -108,6 +108,7 @@ drwxr-xr-x	root/root	opt/Ventoy/tool/aarch64/
 -rw-r--r--	root/root	opt/Ventoy/tool/aarch64/mount.exfat-fuse.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/aarch64/vlnk.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/aarch64/vtoycli.xz
+-rw-r--r--	root/root	opt/Ventoy/tool/aarch64/vtoygpt.xz
 -rwxr-xr-x	root/root	opt/Ventoy/tool/aarch64/xzcat
 -rw-r--r--	root/root	opt/Ventoy/tool/distro_gui_type.json
 drwxr-xr-x	root/root	opt/Ventoy/tool/i386/
@@ -122,6 +123,7 @@ drwxr-xr-x	root/root	opt/Ventoy/tool/i386/
 -rw-r--r--	root/root	opt/Ventoy/tool/i386/mount.exfat-fuse.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/i386/vlnk.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/i386/vtoycli.xz
+-rw-r--r--	root/root	opt/Ventoy/tool/i386/vtoygpt.xz
 -rwxr-xr-x	root/root	opt/Ventoy/tool/i386/xzcat
 -rwxr--r--	root/root	opt/Ventoy/tool/languages.json
 drwxr-xr-x	root/root	opt/Ventoy/tool/mips64el/
@@ -135,6 +137,7 @@ drwxr-xr-x	root/root	opt/Ventoy/tool/mips64el/
 -rw-r--r--	root/root	opt/Ventoy/tool/mips64el/mount.exfat-fuse.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/mips64el/vlnk.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/mips64el/vtoycli.xz
+-rw-r--r--	root/root	opt/Ventoy/tool/mips64el/vtoygpt.xz
 -rwxr-xr-x	root/root	opt/Ventoy/tool/mips64el/xzcat
 -rw-r--r--	root/root	opt/Ventoy/tool/plugson.tar.xz
 -rwxr-xr-x	root/root	opt/Ventoy/tool/ventoy_lib.sh
@@ -150,6 +153,7 @@ drwxr-xr-x	root/root	opt/Ventoy/tool/x86_64/
 -rw-r--r--	root/root	opt/Ventoy/tool/x86_64/mount.exfat-fuse.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/x86_64/vlnk.xz
 -rw-r--r--	root/root	opt/Ventoy/tool/x86_64/vtoycli.xz
+-rw-r--r--	root/root	opt/Ventoy/tool/x86_64/vtoygpt.xz
 -rwxr-xr-x	root/root	opt/Ventoy/tool/x86_64/xzcat
 -rw-r--r--	root/root	opt/Ventoy/ventoy.desktop
 -rw-r--r--	root/root	opt/Ventoy/ventoy.png
