@@ -339,12 +339,12 @@ f:8115b797da83b6b47f09a2837649b24b:icewm/.footprint
 f:5d413b622afc46093aa7280afdbe2c33:icewm/.md5sum
 f:5775fcbc13cd2b60720cf08598d08cb2:icewm/Pkgfile
 f:d6fa2ef9485f70ada352197b33534520:icewm/.signature
-f:001035a72ca3f8f611091c2fdaddf795:ventoy/.footprint
+f:b56ef782ca187e0a86388f5860fe1642:ventoy/.footprint
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
-f:8dd08796a7fd24ce1e57b1e604ba7b8b:ventoy/.md5sum
-f:0a943c80ebe2e33ad74550c186bca728:ventoy/Pkgfile
+f:0ac4de2fae93c7e93a45f7c0e37992ad:ventoy/.md5sum
+f:f36a446bc47f64aecc66d2004dafd683:ventoy/Pkgfile
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png
-f:828194f26e79ed9e282d411fbf72b857:ventoy/.signature
+f:57679e85a593b1b08661ae9fd691a435:ventoy/.signature
 f:28dc48506c44f18fd7c4c249cd7da1c2:abook/.footprint
 f:53cd1c59e2545dbe12fbb127763d7193:abook/.md5sum
 f:764a915b802cd6d286400e4da6895239:abook/Pkgfile
