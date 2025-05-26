@@ -4,7 +4,7 @@
 # Depends on: asciidoctor lzip xorg-libxcomposite xorg-libxdamage xorg-libxrandr xorg-libxinerama libsndfile glib-networking imlib2 librsvg xorg-libxpm
 
 name=icewm
-version=3.7.4
+version=3.7.5
 release=1
 source=(https://github.com/ice-wm/$name/archive/refs/tags/$version.tar.gz)
 
