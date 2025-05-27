@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkLBdydyM8GJ55eBMeoOW23u/OuQZMqvmd0qzqovG55EsZd3piPd6JaH+d9xDcj0gDo3Ba9np6x0LDhxScIwb0Q4=
-SHA256 (Pkgfile) = 2d7b60093c9651e0528f561b8f7a881e2057df6cfbb139413d972f696537314e
-SHA256 (.footprint) = 31895e6fa432910239e32702744293909d2fb1e5591c401e0977d11a96739ffc
-SHA256 (yubico-authenticator-7.1.1-linux.tar.gz) = f553503a810ded105254d4b537434d4870657c5240bf43c1a47afae798ace3f2
+RWT0dvMs3lAWkLlmV/yfxXLsMJKZRZ7JZqH8vLqrLmryTugwBzo269k2Bym2D0n+3EpPqBUWlGr0r/2+VuePLWFIycm8N4pBRgw=
+SHA256 (Pkgfile) = 1086ca4c85135ed28dd816a96fbb40999471bdeb1f9ba559780b03faa0b4f650
+SHA256 (.footprint) = 666201fea8e338f22e9e8fa6486a5fc79f9633d9144281d7aaf9c539d02742c9
+SHA256 (yubico-authenticator-7.2.0-linux.tar.gz) = 5dbe2ae34ae77598c79bd5d844e9f60aca37af9bba9149c464c9a683e9b3f38d
