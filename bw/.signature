@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkORo08QjvvZBk0w9S2HDAREztdj2JcDLivQPpvY/oPExMlcK3zdhMy9oUKhaQm6OEZcrf4VIokQVoqPIH/c73Qs=
-SHA256 (Pkgfile) = 9282a5a21cc65c7776943c0e5b8b1f0e7090cef03f50e8d57b8105217d103c82
+RWT0dvMs3lAWkHii57zqkJNCdI/AJKMzGbHji6b08bJzg3/Cp02k3MfMXZe/fcTa3oEMXMpcl16xBOaCiK7WjqYUIeLJt9R04gg=
+SHA256 (Pkgfile) = bdf770c88fa7039436f2e72a9f625627d638594f96ddaca5e8b390f83cbeb588
 SHA256 (.footprint) = 71c26294f371c02494fc65b749abcc1df24bed099a66715039f7f7414f3dfde7
-SHA256 (bw-linux-2025.4.0.zip) = 10a9c1389cc18af474e2d78cbbdacb497805e8bdf926767c07a8504be412c60e
+SHA256 (bw-linux-2025.5.0.zip) = b3b2896a54caedc799813e1eb076b4358f72b1201e5065a90dd34dddcebccebe
