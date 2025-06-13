@@ -19,6 +19,8 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphic
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/no-key.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/yubico-green.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/yubico-white.png
+drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/l10n/
+-rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/l10n/status.json
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/licenses/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/licenses/.gitignore
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/licenses/helper.json
@@ -84,14 +86,14 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/PIL/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_webp.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/_cffi_backend.cpython-313-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/base_library.zip
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/METADATA
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/RECORD
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/licenses/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/licenses/LICENSE.APACHE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-44.0.2.dist-info/licenses/LICENSE.BSD
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/METADATA
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/RECORD
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE.APACHE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE.BSD
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/hazmat/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/hazmat/bindings/
@@ -186,13 +188,6 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendo
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/text/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/text/Lorem ipsum.txt
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/LICENSE.txt
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/METADATA
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/RECORD
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/wheel-0.43.0.dist-info/entry_points.txt
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/scard/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/scard/_scard.cpython-313-x86_64-linux-gnu.so
