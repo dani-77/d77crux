@@ -4,9 +4,9 @@
 # Depends on: alsa-lib cups libnotify libsecret libxtst nss
 
 name=bitwarden-bin
-version=2025.5.0
+version=2025.5.1
 release=1
-source=(https://github.com/bitwarden/clients/releases/download/desktop-v2025.5.0/Bitwarden-2025.5.0-amd64.deb)
+source=(https://github.com/bitwarden/clients/releases/download/desktop-v2025.5.1/Bitwarden-2025.5.1-amd64.deb)
 
 build() {
 	sudo bsdtar -xf Bitwarden-$version-amd64.deb
