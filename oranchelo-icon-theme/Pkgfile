@@ -1,0 +1,14 @@
+# Description: Oranchelo is a flat-design icon theme.
+# URL: http://zayronxio.deviantart.com/
+# Maintainer: Daniel Azevedo, daiazevedo77 at posteo dot net
+# Depends on: libadwaita
+
+name=oranchelo-icon-theme
+version=0.9.0
+release=1
+source=(https://github.com/OrancheloTeam/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+  make DESTDIR=$PKG install
+}

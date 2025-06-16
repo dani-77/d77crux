@@ -45,6 +45,7 @@ d:dosbox
 d:librespot
 d:ncspot
 d:vifm
+d:oranchelo-icon-theme
 d:ccid
 d:farbfeld
 d:libglade
@@ -289,6 +290,10 @@ f:2fd6b7b62f11c766ef1556f3b4468ef3:vifm/.footprint
 f:5e843ac5bf9cc07b7c0ba3e0510abb8b:vifm/.md5sum
 f:52e6d8b82f0f148f320d4c91f237bae6:vifm/Pkgfile
 f:1799650500c48309bc1c07801171dcbb:vifm/.signature
+f:d446180353885b4782008553953fb257:oranchelo-icon-theme/.footprint
+f:1c0a9198464a6e8a7e0a4638c8f5808e:oranchelo-icon-theme/.md5sum
+f:5ffde712397eb78a9e4521ee94a299cf:oranchelo-icon-theme/Pkgfile
+f:cb2bc82e2ea6a246de55159ce0bc152b:oranchelo-icon-theme/.signature
 f:c940f973f624e74560644dd11b9bd005:ccid/.footprint
 f:a2482684ab00720cf3e97d28d06f449d:ccid/.md5sum
 f:ae5c463e327269ec35faf7ad28361b5a:ccid/pcscd.rc
