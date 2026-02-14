@@ -4,7 +4,7 @@
 # Depends on: git go
 
 name=lf
-version=r35
+version=r41
 release=1
 source=(https://github.com/gokcehan/$name/archive/refs/tags/$version.tar.gz)
 
