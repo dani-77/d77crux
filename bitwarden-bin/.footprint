@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	opt/Bitwarden/
 -rwxr-xr-x	root/root	opt/Bitwarden/libEGL.so
 -rwxr-xr-x	root/root	opt/Bitwarden/libGLESv2.so
 -rwxr-xr-x	root/root	opt/Bitwarden/libffmpeg.so
+-rwxr-xr-x	root/root	opt/Bitwarden/libprocess_isolation.so
 -rwxr-xr-x	root/root	opt/Bitwarden/libvk_swiftshader.so
 -rwxr-xr-x	root/root	opt/Bitwarden/libvulkan.so.1
 drwxr-xr-x	root/root	opt/Bitwarden/locales/
@@ -79,7 +80,9 @@ drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/
 drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/
 drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/
 drwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/
--rwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/desktop_napi.linux-x64-musl.node
+-rwxr-xr-x	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/desktop_napi.linux-x64-gnu.node
+-rw-r--r--	root/root	opt/Bitwarden/resources/app.asar.unpacked/node_modules/@bitwarden/desktop-napi/index.js
+-rw-r--r--	root/root	opt/Bitwarden/resources/apparmor-profile
 -rw-r--r--	root/root	opt/Bitwarden/resources/package-type
 -rw-r--r--	root/root	opt/Bitwarden/snapshot_blob.bin
 -rw-r--r--	root/root	opt/Bitwarden/v8_context_snapshot.bin
