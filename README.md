@@ -1,4 +1,4 @@
-# d77crux
+<h1 align="center">d77crux</h1>
 
 My own collection of Crux ports.
 Please check dependencies prior pkgmk any of these; all are working.
