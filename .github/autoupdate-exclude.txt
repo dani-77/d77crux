@@ -1,0 +1,20 @@
+# Packages excluded from the automated version-check workflow
+# (.github/workflows/check-updates.yml). Add one package/directory name per
+# line; lines starting with # are ignored.
+#
+# Abiword and Gnumeric-gtk2 need careful, hands-on upgrades (patches,
+# GTK2-only build, etc.) and yubico-authenticator-bin has historically
+# needed manual attention too -- keep all three, plus their in-repo
+# dependencies, out of the automated version bump.
+
+abiword
+gnumeric-gtk2
+yubico-authenticator-bin
+
+# In-repo dependencies of the packages above (also present as their own
+# Pkgfile in this repository, so they must stay out of scope too):
+wv              # abiword dependency
+goffice08       # gnumeric-gtk2 dependency
+gconf           # goffice08 dependency
+libgsf          # goffice08 / wv dependency
+libxml210       # libgsf dependency

@@ -1,0 +1,39 @@
+name: Check for package updates
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check upstream sources for newer versions
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 .github/scripts/check_updates.py \
+            --root . \
+            --exclude-file .github/autoupdate-exclude.txt \
+            --summary-file update-summary.md
+
+      - name: Create Pull Request
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Automated package version update"
+          title: "Automated package version updates"
+          body-path: update-summary.md
+          branch: auto/update-versions
+          delete-branch: true
+          labels: automated-update
