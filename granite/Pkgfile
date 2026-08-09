@@ -4,8 +4,8 @@
 # Depends on: gtk3 libgee
 
 name=granite
-version=6.2.0
-release=2
+version=7.8.1
+release=1
 source=(https://github.com/elementary/$name/archive/refs/tags/$version.tar.gz)
 
 build() {

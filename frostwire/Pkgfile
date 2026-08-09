@@ -5,12 +5,12 @@
 # Optional: mplayer
 
 name=frostwire
-version=6.13.3
-release=2
-source=(https://master.dl.sourceforge.net/project/frostwire/frostwire-desktop-6.13.3-build-322/frostwire-6.13.3.amd64.deb)
+version=7.0.4
+release=1
+source=(https://master.dl.sourceforge.net/project/frostwire/frostwire-desktop-7.0.4-build-322/frostwire-7.0.4.amd64.deb)
 
 build() {
-  bsdtar -xf frostwire-6.13.3.amd64.deb
+  bsdtar -xf frostwire-7.0.4.amd64.deb
   bsdtar -xf data.tar.zst
   find -type d -exec chmod 755 {} +
   sed -i 's|Exec=/usr/bin/frostwire %U|Exec=/opt/Frostwire/usr/bin/frostwire %U|' ./usr/share/applications/frostwire.desktop
