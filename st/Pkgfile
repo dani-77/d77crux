@@ -4,8 +4,8 @@
 # Depends on: 
 
 name=st
-version=0.9.2
-release=2
+version=0.9.3
+release=1
 source=(https://dl.suckless.org/st/$name-$version.tar.gz https://st.suckless.org/patches/alpha/$name-alpha-20220206-0.8.5.diff)
 
 build() {

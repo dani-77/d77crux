@@ -4,9 +4,9 @@
 # Depends on: pango atkmm
 
 name=xarchiver
-version=0.5.4.23
-release=2
-source=(https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz)
+version=0.5.4.27
+release=1
+source=(https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.27.tar.gz)
 
 build() {
   cd $name-$version

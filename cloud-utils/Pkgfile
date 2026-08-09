@@ -4,7 +4,7 @@
 # Depends on: 
 
 name=cloud-utils
-version=0.33
+version=0.34
 release=1
 source=(https://github.com/canonical/$name/archive/refs/tags/$version.tar.gz)
 

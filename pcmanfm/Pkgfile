@@ -4,8 +4,8 @@
 # Depends on: libfm
 
 name=pcmanfm
-version=1.3.2
-release=2
+version=1.4.0
+release=1
 source=(https://github.com/lxde/$name/archive/refs/tags/$version.tar.gz)
 
 build() {
