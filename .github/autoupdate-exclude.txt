@@ -20,3 +20,6 @@ gconf           # goffice08 dependency
 libgsf          # goffice08 / wv dependency
 libxml210       # libgsf dependency
 granite         # spice-up dependency
+
+# Pinned to a specific upstream line on purpose, not just "not yet updated":
+ttf-font-awesome-compat  # locked to Font Awesome 4.x for icon-name compat; must not track ttf-font-awesome's upstream releases

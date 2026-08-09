@@ -373,7 +373,10 @@ def main() -> int:
     excluded: set[str] = set()
     if args.exclude_file and os.path.isfile(args.exclude_file):
         with open(args.exclude_file) as f:
-            excluded = {ln.strip() for ln in f if ln.strip() and not ln.strip().startswith("#")}
+            for raw_ln in f:
+                ln = raw_ln.split("#", 1)[0].strip()
+                if ln:
+                    excluded.add(ln)
 
     updated: list[tuple[str, str, str, str]] = []  # name, old, new, strategy
     skipped: list[tuple[str, str]] = []  # name, reason
