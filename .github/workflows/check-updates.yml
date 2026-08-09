@@ -3,11 +3,13 @@ name: Check for package updates
 on:
   schedule:
     # Every Sunday at 23:00 Europe/Lisbon time. GitHub Actions cron always
-    # runs in UTC, so this is pinned to the current WEST (UTC+1, summer)
-    # offset -- shift to '0 23 * * 0' once Portugal switches back to WET
-    # (UTC+0) at the end of October, and back to '0 22 * * 0' at the end of
-    # March.
-    - cron: '0 22 * * 0'
+    # runs in UTC and has no DST/timezone awareness, so both possible UTC
+    # offsets are scheduled every week; the "Only run at 23:00 Lisbon time"
+    # gate job below checks the real Europe/Lisbon clock (tzdata-aware, so
+    # it tracks DST automatically) and skips the run that isn't actually
+    # 23:00 locally. No manual adjustment needed at DST changeovers.
+    - cron: '0 22 * * 0'  # 23:00 WEST (UTC+1, summer)
+    - cron: '0 23 * * 0'  # 23:00 WET  (UTC+0, winter)
   workflow_dispatch: {}
 
 permissions:
@@ -15,7 +17,29 @@ permissions:
   pull-requests: write
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - name: Only run at 23:00 Lisbon time
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            hour=$(TZ=Europe/Lisbon date +%H)
+            if [ "$hour" = "23" ]; then
+              echo "proceed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "It's $hour:00 in Europe/Lisbon, not 23:00 -- skipping (the other scheduled trigger this week handles the current DST offset)."
+              echo "proceed=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          fi
+
   check-updates:
+    needs: gate
+    if: needs.gate.outputs.proceed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
