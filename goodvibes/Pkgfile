@@ -4,8 +4,8 @@
 # Depends on: libsoup3 keybinder gst-plugins-good gst-plugins-bad flatpak
 
 name=goodvibes
-version=0.8.0
-release=2
+version=0.8.4
+release=1
 source=(https://gitlab.com/goodvibes/goodvibes/-/archive/v$version/$name-v$version.tar.gz)
 
 build() {
