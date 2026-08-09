@@ -4,7 +4,7 @@
 # Depends on: pcsclite
 
 name=opensc
-version=0.25.1
+version=0.27.1
 release=1
 source=(https://github.com/OpenSC/OpenSC/releases/download/$version/$name-$version.tar.gz)
 

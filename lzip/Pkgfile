@@ -4,8 +4,8 @@
 # Depends on: tar
 
 name=lzip
-version=1.24
-release=2
+version=1.26
+release=1
 source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
 
 build() {
