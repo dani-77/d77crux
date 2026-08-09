@@ -2,8 +2,12 @@ name: Check for package updates
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC
-    - cron: '0 6 * * 1'
+    # Every Sunday at 23:00 Europe/Lisbon time. GitHub Actions cron always
+    # runs in UTC, so this is pinned to the current WEST (UTC+1, summer)
+    # offset -- shift to '0 23 * * 0' once Portugal switches back to WET
+    # (UTC+0) at the end of October, and back to '0 22 * * 0' at the end of
+    # March.
+    - cron: '0 22 * * 0'
   workflow_dispatch: {}
 
 permissions:
