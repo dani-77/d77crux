@@ -1,4 +1,7 @@
-<h1 align="center">d77crux</h1>
+<h1 align="center">
+  <img src="logo.png" alt="d77 logo" width="160"><br>
+  d77crux
+</h1>
 
 My own collection of Crux ports.
 Please check dependencies prior pkgmk any of these; all are working.
