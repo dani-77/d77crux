@@ -1,9 +1,10 @@
 # Description: A window switcher, application launcher and dmenu replacement.
 # URL: https://github.com/davatorium/rofi
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: pango librsvg libxkbcommon startup-notification xorg-xcb-util xorg-xcb-util-wm xorg-xcb-util-xrm xorg-xcb-util-cursor
+# Depends on: pango gdk-pixbuf libxkbcommon startup-notification xorg-xcb-util xorg-xcb-util-wm xorg-xcb-util-cursor
 # Was contrib/rofi (Matt Housh) until it was dropped; revived here. rofi 2.0
-# is meson-only -- the old autotools build() no longer applies.
+# is meson-only -- the old autotools build() no longer applies. No librsvg:
+# SVG icons go through gdk-pixbuf's (optional) loader, not a build dep.
 
 name=rofi
 version=2.0.0
@@ -14,7 +15,8 @@ build() {
   meson setup build $name-$version \
     --prefix=/usr \
     --buildtype=plain \
-    -D check=disabled
+    -D check=disabled \
+    -D wayland=disabled
 
   ninja -C build
   DESTDIR=$PKG ninja -C build install
