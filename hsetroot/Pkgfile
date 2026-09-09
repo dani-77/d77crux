@@ -11,6 +11,11 @@ source=(https://github.com/himdel/hsetroot/archive/$version/$name-$version.tar.g
 build() {
   cd $name-$version
 
-  make PREFIX=/usr CC="${CC:-gcc}" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS"
-  make PREFIX=/usr DESTDIR=$PKG install
+  # The Makefile builds its include/link flags from pkg-config and honours
+  # CFLAGS/LDFLAGS only from the environment (CFLAGS?=). Its `install` target
+  # ignores DESTDIR, so install the two binaries by hand.
+  make
+
+  install -D -m 0755 hsetroot    "$PKG"/usr/bin/hsetroot
+  install -D -m 0755 hsr-outputs "$PKG"/usr/bin/hsr-outputs
 }
