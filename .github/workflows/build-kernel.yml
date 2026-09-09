@@ -56,7 +56,10 @@ jobs:
           echo "version=$ver"   >> "$GITHUB_OUTPUT"
           echo "release=$pkgrel" >> "$GITHUB_OUTPUT"
           echo "tag=$tag"        >> "$GITHUB_OUTPUT"
-          echo "pkgfile=d77crux-kernel#${ver}-${pkgrel}.pkg.tar.xz" >> "$GITHUB_OUTPUT"
+          # CRUX package name has a '#', which `gh release` reads as file#label.
+          # Upload with a dash; the consumer (d77crux-live remaster) does not
+          # care about the filename -- pkgadd reads the tarball directly.
+          echo "asset=d77crux-kernel-${ver}-${pkgrel}.pkg.tar.xz" >> "$GITHUB_OUTPUT"
 
       - name: Fetch kernel source
         run: |
@@ -103,12 +106,12 @@ jobs:
           make INSTALL_MOD_PATH="$pkg" modules_install
           rm -f "$pkg/lib/modules/$v/build" "$pkg/lib/modules/$v/source"
           cd "$pkg"
-          # CRUX package: a plain tar of the file tree, CRUX naming. pkgadd
-          # reads it directly; footprint/md5sum live in the ports repo.
+          # CRUX package: a plain tar of the file tree. pkgadd reads it
+          # directly regardless of filename.
           tar --numeric-owner --owner=0 --group=0 -cJf \
-            "$GITHUB_WORKSPACE/${{ steps.meta.outputs.pkgfile }}" .
+            "$GITHUB_WORKSPACE/${{ steps.meta.outputs.asset }}" .
           cd "$GITHUB_WORKSPACE"
-          sha256sum "${{ steps.meta.outputs.pkgfile }}" > "${{ steps.meta.outputs.pkgfile }}.sha256"
+          sha256sum "${{ steps.meta.outputs.asset }}" > "${{ steps.meta.outputs.asset }}.sha256"
 
       - name: Publish release
         env:
@@ -120,6 +123,6 @@ jobs:
           gh release create "$tag" \
             --title "$tag" \
             --notes "d77crux-kernel ${{ steps.meta.outputs.version }}-${{ steps.meta.outputs.release }} — see the run summary for the olddefconfig diff." \
-            "${{ steps.meta.outputs.pkgfile }}" \
-            "${{ steps.meta.outputs.pkgfile }}.sha256" \
+            "${{ steps.meta.outputs.asset }}" \
+            "${{ steps.meta.outputs.asset }}.sha256" \
             "config-${{ steps.meta.outputs.version }}"
