@@ -1,7 +1,8 @@
 # Description: Lightweight panel/taskbar.
 # URL: https://gitlab.com/nick87720z/tint2
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: imlib2 librsvg startup-notification xorg-libxcomposite xorg-libxdamage xorg-libxinerama xorg-libxrandr
+# Depends on: imlib2 startup-notification xorg-libxcomposite xorg-libxdamage xorg-libxinerama xorg-libxrandr
+# Optional: librsvg
 # Based on the contrib port by John McQuah, jmcquah at disroot dot org.
 
 name=tint2
@@ -24,12 +25,17 @@ build() {
   # gcc 14 promotes these to errors; tint2 17.1.3 predates the fixes.
   export CFLAGS="$CFLAGS -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types"
 
+  # librsvg is only used to draw SVG launcher icons; ENABLE_RSVG=ON without it
+  # is a hard CMake error, so gate it on the optional dep being installed.
+  prt-get isinst librsvg && _rsvg=ON || _rsvg=OFF
+
   cmake -S $name-$version -B build -G Ninja \
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
     -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
     -D ENABLE_TINT2CONF=OFF \
+    -D ENABLE_RSVG=$_rsvg \
     -Wno-dev
 
   ninja -C build -j ${JOBS:-1}
