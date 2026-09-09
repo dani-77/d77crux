@@ -1,20 +1,23 @@
 # Description: MenuMaker is a menu generation utility for X window managers on *NIX systems.
 # URL: https://menumaker.sourceforge.net/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: python
+# Depends on: python3
 
 name=menumaker
 version=0.99.14
 release=2
-source=(https://unlimited.dl.sourceforge.net/project/$name/$name-$version.tar.gz)
+source=(https://downloads.sourceforge.net/project/$name/$name-$version.tar.gz)
 
 build() {
-	cd $name-$version
-	mkdir -p $PKG/usr/bin
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+  cd $name-$version
 
-	rm -rf $PKG/usr/local/
-	rm -rf $PKG/usr/share/info/
+  # configure's python probe only knows python3.0-3.9 then bare python/python2,
+  # so on a modern host it falls through to "python" and bakes a
+  # "#!/usr/bin/env python" shebang that breaks wherever only python3 exists.
+  ./configure --prefix=/usr PYTHON_BIN=python3
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/local/ $PKG/usr/share/info/
 }

@@ -1,0 +1,16 @@
+# Description: Set the X11 root window wallpaper (maintained fork).
+# URL: https://github.com/himdel/hsetroot
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: imlib2 xorg-libx11 xorg-libxinerama
+
+name=hsetroot
+version=1.0.5
+release=1
+source=(https://github.com/himdel/hsetroot/archive/$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  make PREFIX=/usr CC="${CC:-gcc}" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS"
+  make PREFIX=/usr DESTDIR=$PKG install
+}

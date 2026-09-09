@@ -1,0 +1,42 @@
+# Description: Linux kernel for d77crux (6.12 LTS, d77crux-live graphics config).
+# URL: https://www.kernel.org/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: bc bison flex elfutils openssl kmod
+
+# d77crux-kernel.config is the Kwort 4.5 6.12.34 desktop/live config
+# forward-ported with `make olddefconfig`. It keeps the broad DRM/fs/net
+# coverage that the stock CRUX kernel config drops, and (unlike the borrowed
+# Kwort binary) ships a complete, self-consistent module tree from
+# `modules_install`. Bump `version` only alongside a reviewed config diff --
+# this port is in .github/autoupdate-exclude.txt on purpose.
+
+name=d77crux-kernel
+version=6.12.109
+release=1
+source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
+        d77crux-kernel.config)
+
+build() {
+  cd linux-$version
+
+  cp "$SRC"/d77crux-kernel.config .config
+
+  # KERNELRELEASE must be exactly $version -- the d77crux-live scripts key
+  # /boot/vmlinuz-$version and /lib/modules/$version off it with no suffix.
+  ./scripts/config --file .config \
+    --set-str LOCALVERSION "" \
+    --disable LOCALVERSION_AUTO
+  make olddefconfig
+
+  make -j${JOBS:-1} bzImage modules
+
+  install -Dm644 arch/x86/boot/bzImage "$PKG"/boot/vmlinuz-$version
+  install -Dm644 System.map            "$PKG"/boot/System.map-$version
+  install -Dm644 .config               "$PKG"/boot/config-$version
+
+  make INSTALL_MOD_PATH="$PKG" modules_install
+
+  # These point into the throwaway build tree; nothing on the target needs them
+  # and they would dangle.
+  rm -f "$PKG"/lib/modules/$version/{build,source}
+}
