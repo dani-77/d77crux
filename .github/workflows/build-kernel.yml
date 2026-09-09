@@ -1,0 +1,125 @@
+name: Build d77crux-kernel
+
+# Builds the d77crux-kernel package and publishes it as a GitHub Release asset.
+# d77crux-live pins that asset by SHA256 instead of compiling the kernel
+# locally. Also the harness for trying newer kernels: dispatch with a
+# `version` override, read the olddefconfig diff in the run summary, and (if
+# happy) copy the uploaded config-<version> back into
+# d77crux-kernel/d77crux-kernel.config.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Kernel version to build (default: version= in d77crux-kernel/Pkgfile)"
+        required: false
+        default: ""
+      release_tag:
+        description: "Release tag (default: d77crux-kernel-<version>-<release>)"
+        required: false
+        default: ""
+  push:
+    paths:
+      - "d77crux-kernel/**"
+      - ".github/workflows/build-kernel.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-kernel-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install kernel build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential bc bison flex libelf-dev libssl-dev \
+            libncurses-dev cpio kmod rsync xz-utils zstd
+
+      - name: Resolve version and release
+        id: meta
+        run: |
+          pkgver=$(sed -n 's/^version=//p' d77crux-kernel/Pkgfile)
+          pkgrel=$(sed -n 's/^release=//p' d77crux-kernel/Pkgfile)
+          ver="${{ inputs.version }}"
+          [ -n "$ver" ] || ver="$pkgver"
+          tag="${{ inputs.release_tag }}"
+          [ -n "$tag" ] || tag="d77crux-kernel-${ver}-${pkgrel}"
+          echo "version=$ver"   >> "$GITHUB_OUTPUT"
+          echo "release=$pkgrel" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag"        >> "$GITHUB_OUTPUT"
+          echo "pkgfile=d77crux-kernel#${ver}-${pkgrel}.pkg.tar.xz" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch kernel source
+        run: |
+          v="${{ steps.meta.outputs.version }}"
+          curl -fsSL -o "linux-${v}.tar.xz" \
+            "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${v}.tar.xz"
+          curl -fsSL -o "linux-${v}.tar.sign" \
+            "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${v}.tar.sign" || true
+          tar xf "linux-${v}.tar.xz"
+
+      - name: Configure (forward-port the shipped config)
+        working-directory: linux-${{ steps.meta.outputs.version }}
+        run: |
+          cp ../d77crux-kernel/d77crux-kernel.config .config
+          ./scripts/config --file .config \
+            --set-str LOCALVERSION "" --disable LOCALVERSION_AUTO
+          cp .config ../config.before
+          make olddefconfig
+          cp .config "../config-${{ steps.meta.outputs.version }}"
+
+      - name: Report olddefconfig diff
+        working-directory: linux-${{ steps.meta.outputs.version }}
+        run: |
+          {
+            echo "### olddefconfig changes for ${{ steps.meta.outputs.version }}"
+            echo
+            echo '```diff'
+            diff -u ../config.before .config || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build
+        working-directory: linux-${{ steps.meta.outputs.version }}
+        run: make -j"$(nproc)" bzImage modules
+
+      - name: Assemble CRUX package
+        working-directory: linux-${{ steps.meta.outputs.version }}
+        run: |
+          v="${{ steps.meta.outputs.version }}"
+          pkg="$GITHUB_WORKSPACE/pkgroot"
+          install -Dm644 arch/x86/boot/bzImage "$pkg/boot/vmlinuz-$v"
+          install -Dm644 System.map            "$pkg/boot/System.map-$v"
+          install -Dm644 .config               "$pkg/boot/config-$v"
+          make INSTALL_MOD_PATH="$pkg" modules_install
+          rm -f "$pkg/lib/modules/$v/build" "$pkg/lib/modules/$v/source"
+          cd "$pkg"
+          # CRUX package: a plain tar of the file tree, CRUX naming. pkgadd
+          # reads it directly; footprint/md5sum live in the ports repo.
+          tar --numeric-owner --owner=0 --group=0 -cJf \
+            "$GITHUB_WORKSPACE/${{ steps.meta.outputs.pkgfile }}" .
+          cd "$GITHUB_WORKSPACE"
+          sha256sum "${{ steps.meta.outputs.pkgfile }}" > "${{ steps.meta.outputs.pkgfile }}.sha256"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ steps.meta.outputs.tag }}"
+          gh release view "$tag" >/dev/null 2>&1 \
+            && gh release delete "$tag" --yes --cleanup-tag
+          gh release create "$tag" \
+            --title "$tag" \
+            --notes "d77crux-kernel ${{ steps.meta.outputs.version }}-${{ steps.meta.outputs.release }} — see the run summary for the olddefconfig diff." \
+            "${{ steps.meta.outputs.pkgfile }}" \
+            "${{ steps.meta.outputs.pkgfile }}.sha256" \
+            "config-${{ steps.meta.outputs.version }}"

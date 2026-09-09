@@ -24,4 +24,6 @@ granite         # spice-up dependency
 # Pinned to a specific upstream line on purpose, not just "not yet updated":
 ttf-font-awesome-compat  # locked to Font Awesome 4.x for icon-name compat; must not track ttf-font-awesome's upstream releases
 ttf-font-awesome  # locked to Font Awesome 6.x for icon-name compat; must not track ttf-font-awesome's upstream releases
+d77crux-kernel  # pinned to 6.12 LTS; a version bump needs a reviewed olddefconfig diff (build via .github/workflows/build-kernel.yml)
+tint2  # 17.1.3 carries a glib patch + config.c sed + gcc14 CFLAGS that must be re-verified before any bump
 
