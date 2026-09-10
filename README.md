@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" width="128" alt="d77crux logo">
+  <img src="logo.png?v=2" width="128" alt="d77crux logo">
 </p>
 
 <h1 align="center">d77crux</h1>
