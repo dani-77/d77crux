@@ -1,30 +1,30 @@
-<h1 align="center">
-  <img src="logo.png" alt="d77 logo" width="160"><br>
-  d77crux
-</h1>
+<p align="center">
+  <img src="logo.png" width="128" alt="d77crux logo">
+</p>
 
-My own collection of Crux ports.
-Please check dependencies prior pkgmk any of these; all are working.
+<h1 align="center">d77crux</h1>
 
-Download the d77crux.httpup and copy it to /etc/ports.
+<p align="center">My own collection of CRUX ports — all working; check deps before <code>pkgmk</code>.</p>
 
-```
-wget http://raw.githubusercontent.com/dani-77/d77crux/master/d77crux.httpup
+---
 
-sudo mv d77crux.httpup /etc/ports
-```
-
-Edit /etc/prt-get.conf adding the line prtdir /usr/ports/d77crux to your configuration.
+Download the httpup file and drop it in `/etc/ports/`:
 
 ```
-sudo echo prtdir /usr/ports/d77crux >> /etc/prt-get.conf
+wget https://raw.githubusercontent.com/dani-77/d77crux/master/d77crux.httpup
+sudo mv d77crux.httpup /etc/ports/
 ```
-Update the system.
+
+Add the collection to `prt-get`:
+
+```
+echo 'prtdir /usr/ports/d77crux' | sudo tee -a /etc/prt-get.conf
+```
+
+Fetch it, then use any of the ports:
 
 ```
 sudo ports -u d77crux
 ```
 
-Now you can use any of my ports. 
-
-Hope you enjoy it.
+## Not affiliated with the CRUX project.
