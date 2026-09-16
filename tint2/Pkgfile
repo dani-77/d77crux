@@ -1,7 +1,7 @@
 # Description: Lightweight panel/taskbar.
 # URL: https://gitlab.com/nick87720z/tint2
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: imlib2 startup-notification xorg-libxcomposite xorg-libxdamage xorg-libxinerama xorg-libxrandr
+# Depends on: imlib2 startup-notification xorg-libxcomposite xorg-libxdamage xorg-libxinerama xorg-libxrandr gtk3
 # Optional: librsvg
 # Based on the contrib port by John McQuah, jmcquah at disroot dot org.
 
@@ -34,7 +34,8 @@ build() {
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
     -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -D ENABLE_TINT2CONF=OFF \
+    -D CMAKE_EXE_LINKER_FLAGS="-lm" \
+    -D ENABLE_TINT2CONF=ON \
     -D ENABLE_RSVG=$_rsvg \
     -Wno-dev
 

@@ -19,6 +19,8 @@ secret.key
 *.bz2
 *.7z
 *.rar
+*.deb
+*.signature.tmp
 work/
 
 # per-port logs from sign-all-ports.py

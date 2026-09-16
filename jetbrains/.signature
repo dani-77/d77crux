@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkLi/lhJV6dtVAt5nurXbG+tNdvgRc7Syda1tMj7R9OnfXuxW3AbLuMV1DKK03Yg5HpEFRuqXN9I1UxQejKOKEg8=
-SHA256 (Pkgfile) = dd2eda143395a75cc2246bd880c8824ead804d7657f33f71c4cd8aadf5e4ff0f
+RWRGO1IdDlbga+pRoz/lpL+4dFVwEtLsnpQFSIH3/YUubkA9L/4tkazFn1NNrfZ6xCaASklQauZuahtgzd6sh8oZPdLTT+i1lwQ=
+SHA256 (Pkgfile) = c3198c1d5b772f3cedfa442e2003cfb7db2475a864b758365b6f62bf440ef86a
 SHA256 (.footprint) = 6e84a2fb566072d4714c2105816146470ca0d41603f399db453806b4bc76844b
-SHA256 (JetBrainsMono.tar.xz) = 6cf8822bc1ca18e34b06578c7499f380c019e6ffc883eed26df5f498dfcc4006
+SHA256 (JetBrainsMono.tar.xz) = 04d5e8f903693f9dd13e16f867e994834e681eb3c72c0d337a770dcda09010cf
