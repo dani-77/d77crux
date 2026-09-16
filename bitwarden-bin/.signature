@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWRGO1IdDlbga2+r3J67ofyrwGNhVVAH+mAPJvlOYUKv1cqc1K6gPWQzNPdbXl/JeVgrPeSUvk7vPDPh1bLKIT3qOYtZ/Q9lcAM=
-SHA256 (Pkgfile) = d6a9350417295aad0e27bdb8f7b5e587b55606aecd9b3c761b2a1ee5ad7a6049
+RWRGO1IdDlbga5frEz8tO89QBdfcjBXMXYvWk8Fz9Wx/a3Zz6agFoCldpo2NcLf/sJqn1OfOVoq1sW6LLfgpHi0j9iJHHdYbvwY=
+SHA256 (Pkgfile) = f7455ede147be7eccab735ad2ba292d4205e6439bb6814017f8d8bb5ab7fe091
 SHA256 (.footprint) = 8d1aa4ff1410d548e332cd193b79dcce23f8329595b672b360beedc23d180e49
-SHA256 (Bitwarden-2026.1.0-amd64.deb) = 6db36b2ed691901483a1c2355bdef5ca102a1f53a26cf4be2173b9e1a4b252e5
+SHA256 (Bitwarden-2026.8.0-amd64.deb) = 720ecc392eef1992780af2aaabd4733916807155c8ee217ed67f3f93287bb415

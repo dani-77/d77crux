@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/AssetManifest.bin
--rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/AssetManifest.json
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/FontManifest.json
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/NOTICES.Z
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/NativeAssetsManifest.json
@@ -17,6 +16,8 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/fonts/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/app-icon.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/no-key.png
+-rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/passkey-outline.svg
+-rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/passkey.svg
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/yubico-green.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/graphics/yubico-white.png
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/l10n/
@@ -30,7 +31,6 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/license
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/licenses/raw/python.txt
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/generic.png
--rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/generic_dark.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/neo.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/sky1.png
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/assets/product-images/sky2.png
@@ -58,9 +58,6 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/mater
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/material_symbols_icons/lib/fonts/MaterialSymbolsOutlined.ttf
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/material_symbols_icons/lib/fonts/MaterialSymbolsRounded.ttf
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/material_symbols_icons/lib/fonts/MaterialSymbolsSharp.ttf
-drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/test_res/
-drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/test_res/resources/
--rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/packages/test_res/resources/.gitignore
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/resources/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/resources/icons/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/resources/icons/com.yubico.yubioath-1000x1000.png
@@ -74,63 +71,45 @@ drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/resources/icon
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/resources/icons/yubico-msi-y-banner.png
 drwxr-xr-x	root/root	opt/Yubico-authenticator/data/flutter_assets/shaders/
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/shaders/ink_sparkle.frag
+-rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/shaders/stretch_effect.frag
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/flutter_assets/version.json
 -rw-r--r--	root/root	opt/Yubico-authenticator/data/icudtl.dat
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/PIL/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imaging.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingcms.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingmath.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingtk.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_webp.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/_cffi_backend.cpython-313-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_avif.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imaging.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingcms.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingmath.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_imagingtk.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/PIL/_webp.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/_cffi_backend.cpython-314-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/base_library.zip
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/METADATA
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/RECORD
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE.APACHE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-45.0.3.dist-info/licenses/LICENSE.BSD
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/licenses/LICENSE.APACHE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/licenses/LICENSE.BSD
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/sboms/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/sboms/cryptography-rust.cyclonedx.json
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography-49.0.0.dist-info/sboms/sbom.json
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/hazmat/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/hazmat/bindings/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/cryptography/hazmat/bindings/_rust.abi3.so
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/METADATA
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/RECORD
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/entry_points.txt
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.6.0.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_asyncio.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_bz2.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_cn.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_hk.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_iso2022.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_jp.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_kr.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_codecs_tw.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_contextvars.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_ctypes.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_curses.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_decimal.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_hashlib.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_json.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_lzma.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_multibytecodec.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_multiprocessing.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_posixshmem.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_queue.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_ssl.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/_uuid.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/mmap.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/readline.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/resource.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/lib-dynload/termios.cpython-313-x86_64-linux-gnu.so
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/WHEEL
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/keyring-25.7.0.dist-info/top_level.txt
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libX11.so.6
 lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libXau-154567c4.so.6.0.0 -> pillow.libs/libXau-154567c4.so.6.0.0
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libXau.so.6
@@ -139,59 +118,58 @@ lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libXau-154567c4.s
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libXfixes.so.3
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libXrandr.so.2
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libXrender.so.1
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libavif-8a7f9d56.so.16.4.2 -> pillow.libs/libavif-8a7f9d56.so.16.4.2
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libbsd.so.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libbz2.so.1.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libcrypto.so.1.1
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libexpat.so.1
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libffi.so.7
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libgcc_s.so.1
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libjpeg-77ae51ab.so.62.4.0 -> pillow.libs/libjpeg-77ae51ab.so.62.4.0
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/liblcms2-e69eef39.so.2.0.16 -> pillow.libs/liblcms2-e69eef39.so.2.0.16
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/liblzma-13fa198c.so.5.4.5 -> pillow.libs/liblzma-13fa198c.so.5.4.5
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/liblzma.so.5
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libncursesw.so.6
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libopenjp2-05423b53.so -> pillow.libs/libopenjp2-05423b53.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libpython3.13.so.1.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libreadline.so.8
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libsharpyuv-898c0cb5.so.0.1.0 -> pillow.libs/libsharpyuv-898c0cb5.so.0.1.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libssl.so.1.1
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libjpeg-31e2ca52.so.62.4.0 -> pillow.libs/libjpeg-31e2ca52.so.62.4.0
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/liblcms2-dade1fbf.so.2.0.19 -> pillow.libs/liblcms2-dade1fbf.so.2.0.19
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/liblzma-2be87c3e.so.5.8.3 -> pillow.libs/liblzma-2be87c3e.so.5.8.3
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libopenjp2-b07f72ad.so.2.5.4 -> pillow.libs/libopenjp2-b07f72ad.so.2.5.4
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libpython3.14.so.1.0
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libsharpyuv-0066295b.so.0.1.2 -> pillow.libs/libsharpyuv-0066295b.so.0.1.2
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libstdc++.so.6
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libtiff-0a86184d.so.6.0.2 -> pillow.libs/libtiff-0a86184d.so.6.0.2
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libtinfo.so.6
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libuuid.so.1
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebp-2fd3cdca.so.7.1.9 -> pillow.libs/libwebp-2fd3cdca.so.7.1.9
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebpdemux-f2642bcc.so.2.0.15 -> pillow.libs/libwebpdemux-f2642bcc.so.2.0.15
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebpmux-d524b4d5.so.3.1.0 -> pillow.libs/libwebpmux-d524b4d5.so.3.1.0
-lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-b8a56d01.so.1.1.0 -> pillow.libs/libxcb-b8a56d01.so.1.1.0
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libtiff-fc87e79d.so.6.2.0 -> pillow.libs/libtiff-fc87e79d.so.6.2.0
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebp-51b0b3f7.so.7.2.0 -> pillow.libs/libwebp-51b0b3f7.so.7.2.0
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebpdemux-9fe2abcc.so.2.0.17 -> pillow.libs/libwebpdemux-9fe2abcc.so.2.0.17
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libwebpmux-8fb1c9f6.so.3.1.2 -> pillow.libs/libwebpmux-8fb1c9f6.so.3.1.2
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-ad31f5a3.so.1.1.0 -> pillow.libs/libxcb-ad31f5a3.so.1.1.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-randr.so.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-render.so.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-shm.so.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libxcb-xfixes.so.0
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/libz.so.1
+lrwxrwxrwx	root/root	opt/Yubico-authenticator/helper/_internal/libzstd-44be1190.so.1.5.7 -> pillow.libs/libzstd-44be1190.so.1.5.7
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libXau-154567c4.so.6.0.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libjpeg-77ae51ab.so.62.4.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/liblcms2-e69eef39.so.2.0.16
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/liblzma-13fa198c.so.5.4.5
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libopenjp2-05423b53.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libsharpyuv-898c0cb5.so.0.1.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libtiff-0a86184d.so.6.0.2
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebp-2fd3cdca.so.7.1.9
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebpdemux-f2642bcc.so.2.0.15
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebpmux-d524b4d5.so.3.1.0
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libxcb-b8a56d01.so.1.1.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libavif-8a7f9d56.so.16.4.2
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libjpeg-31e2ca52.so.62.4.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/liblcms2-dade1fbf.so.2.0.19
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/liblzma-2be87c3e.so.5.8.3
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libopenjp2-b07f72ad.so.2.5.4
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libsharpyuv-0066295b.so.0.1.2
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libtiff-fc87e79d.so.6.2.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebp-51b0b3f7.so.7.2.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebpdemux-9fe2abcc.so.2.0.17
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libwebpmux-8fb1c9f6.so.3.1.2
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libxcb-ad31f5a3.so.1.1.0
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/pillow.libs/libzstd-44be1190.so.1.5.7
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/
-drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/METADATA
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/RECORD
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/METADATA
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/RECORD
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/text/
 -rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/setuptools/_vendor/jaraco/text/Lorem ipsum.txt
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/
 drwxr-xr-x	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/scard/
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/scard/_scard.cpython-313-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/zxingcpp.cpython-313-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/smartcard/scard/_scard.cpython-314-x86_64-linux-gnu.so
+-rw-r--r--	root/root	opt/Yubico-authenticator/helper/_internal/zxingcpp.cpython-314-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	opt/Yubico-authenticator/helper/authenticator-helper
 drwxr-xr-x	root/root	opt/Yubico-authenticator/lib/
 -rw-r--r--	root/root	opt/Yubico-authenticator/lib/libapp.so

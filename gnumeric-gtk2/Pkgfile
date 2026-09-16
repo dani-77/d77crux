@@ -7,7 +7,7 @@
 name=gnumeric-gtk2
 version=1.10.17
 release=3
-source=(https://download-fallback.gnome.org/sources/gnumeric/${version%.*}/gnumeric-$version.tar.bz2)
+source=(https://download.gnome.org/sources/gnumeric/${version%.*}/gnumeric-$version.tar.bz2)
 
 build() {
 	cd gnumeric-$version

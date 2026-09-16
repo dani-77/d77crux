@@ -9,6 +9,10 @@ drwxr-xr-x	root/root	share/fish/vendor_completions.d/
 -rw-r--r--	root/root	share/fish/vendor_completions.d/gh.fish
 drwxr-xr-x	root/root	share/man/
 drwxr-xr-x	root/root	share/man/man1/
+-rw-r--r--	root/root	share/man/man1/gh-agent-task-create.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-agent-task-list.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-agent-task-view.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-agent-task.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-alias-delete.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-alias-import.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-alias-list.1.gz
@@ -53,6 +57,13 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-config-list.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-config-set.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-config.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-copilot.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion-comment.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion-create.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion-edit.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion-list.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion-view.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-discussion.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-extension-browse.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-extension-create.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-extension-exec.1.gz
@@ -96,6 +107,7 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-label-edit.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-label-list.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-label.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-licenses.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-org-list.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-org.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-checkout.1.gz
@@ -110,6 +122,7 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-pr-merge.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-ready.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-reopen.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-pr-revert.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-review.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-status.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-pr-unlock.1.gz
@@ -145,6 +158,8 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-release-edit.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-release-list.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-release-upload.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-release-verify-asset.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-release-verify.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-release-view.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-release.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-archive.1.gz
@@ -169,6 +184,8 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-repo-license-view.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-license.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-list.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-repo-read-dir.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-repo-read-file.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-rename.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-set-default.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-repo-sync.1.gz
@@ -197,6 +214,13 @@ drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gh-secret-list.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-secret-set.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-secret.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-install.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-list.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-preview.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-publish.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-search.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill-update.1.gz
+-rw-r--r--	root/root	share/man/man1/gh-skill.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-ssh-key-add.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-ssh-key-delete.1.gz
 -rw-r--r--	root/root	share/man/man1/gh-ssh-key-list.1.gz

@@ -6,11 +6,11 @@
 name=cmatrix
 version=2.0
 release=1
-source=(https://github.com/abishekvashok/$name/archive/refs/tags/$version.tar.gz)
+source=(https://github.com/abishekvashok/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+	cmake -B build -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release
+	cmake --build build -j ${JOBS:-1}
+	DESTDIR=$PKG cmake --install build
 }

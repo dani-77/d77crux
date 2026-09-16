@@ -6,10 +6,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/purple-send
 -rwxr-xr-x	root/root	usr/bin/purple-send-async
 -rwxr-xr-x	root/root	usr/bin/purple-url-handler
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/gconf/
-drwxr-xr-x	root/root	usr/etc/gconf/schemas/
--rw-r--r--	root/root	usr/etc/gconf/schemas/purple.schemas
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/libpurple/
 -rw-r--r--	root/root	usr/include/libpurple/account.h
@@ -139,13 +135,13 @@ drwxr-xr-x	root/root	usr/include/pidgin/
 -rw-r--r--	root/root	usr/include/pidgin/pidgintooltip.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libpurple-client.la
-lrwxrwxrwx	root/root	usr/lib/libpurple-client.so -> libpurple-client.so.0.14.13
-lrwxrwxrwx	root/root	usr/lib/libpurple-client.so.0 -> libpurple-client.so.0.14.13
--rwxr-xr-x	root/root	usr/lib/libpurple-client.so.0.14.13
+lrwxrwxrwx	root/root	usr/lib/libpurple-client.so -> libpurple-client.so.0.14.14
+lrwxrwxrwx	root/root	usr/lib/libpurple-client.so.0 -> libpurple-client.so.0.14.14
+-rwxr-xr-x	root/root	usr/lib/libpurple-client.so.0.14.14
 -rwxr-xr-x	root/root	usr/lib/libpurple.la
-lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.14.13
-lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.14.13
--rwxr-xr-x	root/root	usr/lib/libpurple.so.0.14.13
+lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.14.14
+lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.14.14
+-rwxr-xr-x	root/root	usr/lib/libpurple.so.0.14.14
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/linux-thread-multi/
 -rw-r--r--	root/root	usr/lib/perl5/linux-thread-multi/perllocal.pod
@@ -230,8 +226,6 @@ lrwxrwxrwx	root/root	usr/lib/purple-2/libjabber.so.0 -> libjabber.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/log_reader.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/newline.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/newline.so
--rwxr-xr-x	root/root	usr/lib/purple-2/nss-prefs.la
--rwxr-xr-x	root/root	usr/lib/purple-2/nss-prefs.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/offlinemsg.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/offlinemsg.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/perl.la
@@ -247,8 +241,6 @@ drwxr-xr-x	root/root	usr/lib/purple-2/perl/auto/Purple/
 -rwxr-xr-x	root/root	usr/lib/purple-2/psychic.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl-gnutls.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl-gnutls.so
--rwxr-xr-x	root/root	usr/lib/purple-2/ssl-nss.la
--rwxr-xr-x	root/root	usr/lib/purple-2/ssl-nss.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/statenotify.la

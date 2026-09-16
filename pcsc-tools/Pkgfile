@@ -4,9 +4,9 @@
 # Depends on: pcsclite cpan qt-sudo
 
 name=pcsc-tools
-version=1.7.2
-release=3
-source=(https://pcsc-tools.apdu.fr/pcsc-tools-1.7.2.tar.bz2)
+version=1.7.5
+release=1
+source=(https://pcsc-tools.apdu.fr/pcsc-tools-$version.tar.bz2)
 
 build() {
   cd $name-$version

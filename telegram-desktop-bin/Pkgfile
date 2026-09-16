@@ -5,9 +5,9 @@
 
 
 name=telegram-desktop-bin
-version=5.14.3
+version=7.2.8
 release=1
-source=(https://td.telegram.org/tlinux/tsetup.$version.tar.xz telegram.desktop)
+source=(https://td.telegram.org/linux-x64/td-setup-linux-x64-$version.tar.xz telegram.desktop)
 
 build() {
   cd Telegram

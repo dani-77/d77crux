@@ -4,13 +4,20 @@
 # Depends on:
 
 name=xscreensaver
-version=6.08
+version=6.16
 release=1
 source=(https://www.jwz.org/xscreensaver/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
+	# The shipped configure has AM_GNU_GETTEXT left unexpanded (broken
+	# gettext macro in the pre-generated script) - regenerate it properly.
+	autoreconf -fi
 	./configure --prefix=/usr
+	# autoreconf regenerates po/Makefile via stock gettext, which only
+	# defines "all" - xscreensaver's own top-level build loop expects a
+	# "default" target in every subdir (including po/). Alias it.
+	echo 'default: all' >> po/Makefile
 	make
 	make DESTDIR=$PKG install
 }

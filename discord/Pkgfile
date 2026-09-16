@@ -4,18 +4,21 @@
 # Depends on: cups
 
 name=discord
-version=0.0.97
+version=1.0.158
 release=1
 source=(https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz)
 
 build() {
+  # As of 1.0.x, Discord's linux tar.gz is a thin bootstrap: `discord` is a
+  # launcher script that downloads the real app into ~/.config/discord on
+  # first run via `updater_bootstrap`, instead of shipping the full app
+  # statically like the old 0.0.x builds did.
   install -d $PKG/usr/share/$name
-  cp -a Discord/* $PKG/usr/share/$name
-  chmod 755 $PKG/usr/share/$name/Discord
-  rm $PKG/usr/share/$name/postinst.sh
+  cp -a Discord/discord Discord/discord.desktop Discord/discord.png Discord/updater_bootstrap $PKG/usr/share/$name
+  chmod 755 $PKG/usr/share/$name/discord $PKG/usr/share/$name/updater_bootstrap
 
   install -d $PKG/usr/bin
-  ln -s /usr/share/$name/Discord $PKG/usr/bin/$name
+  ln -s /usr/share/$name/discord $PKG/usr/bin/$name
 
   install -d $PKG/usr/share/pixmaps $PKG/usr/share/applications
   ln -s /usr/share/$name/$name.png $PKG/usr/share/pixmaps/$name.png

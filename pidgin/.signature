@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWRGO1IdDlbga05+uCjb8vJPGwI9DZB+tyc6gvrD32BYAmkVnsbEBKkapq9mtMxUsgOSTdOvhNak8cJNAyA9tCc3bXKW1cwy9go=
-SHA256 (Pkgfile) = 690c3fff06137e4def9be41e442ef2628cd58a359b974f673852758cb3b6fcb0
-SHA256 (.footprint) = c8a6368aaea39332fdc7e38323c440657f13901a8e57cb13dc7c5d0bcd938a7c
-SHA256 (pidgin-2.14.13.tar.gz) = e556b7db60dc48f7f07cfce8a12a8de01423980d487c43f5b39a79c74314ce93
+RWRGO1IdDlbga9TIgSMS7VeMC7B/sJsGkCl2ZrFGxYuVXS/9sCRTzvRYhfwuugHcnSIGI4O/a8j9AZ24PdE/SiBn907PTRHz1wM=
+SHA256 (Pkgfile) = e87b2e10bde2e1c2b07720d92d4a4cb1a337ce722ffebe36fc9d93c85d618144
+SHA256 (.footprint) = 8479eaa5c82987cf3d200df34184a37aed40b4658049f484527636cf2fe24e87
+SHA256 (pidgin-2.14.14.tar.gz) = a5f43d0bc0f9699cdc0e28f8b7eb83a26a5cc727aad82e61d000219242e804a0
