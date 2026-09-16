@@ -1,0 +1,16 @@
+# Description: ISO 9660 filesystem manipulation and CD/DVD/BD burning tool
+# URL: https://www.gnu.org/software/xorriso/
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: readline
+
+name=xorriso
+version=1.5.8
+release=1
+source=(https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
