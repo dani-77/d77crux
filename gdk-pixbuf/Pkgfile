@@ -1,0 +1,40 @@
+# Description: An image loading library for GTK+
+# URL: https://wiki.gnome.org/Projects/GdkPixbuf
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: glycin
+# Was CRUX System Team's opt/gdk-pixbuf. Forked with others=enabled so
+# external gdk-pixbuf loader modules (e.g. librsvg's SVG loader) actually
+# get used - the official build disables that path in favor of glycin,
+# which has no SVG backend, so SVG icon themes (Papirus, Oranchelo, ...)
+# silently fail to load in any app using gdk-pixbuf directly (rofi, etc).
+
+name=gdk-pixbuf
+version=2.44.8
+release=2
+source=(https://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build() {
+    meson setup build $name-$version \
+        --prefix=/usr \
+        --buildtype=plain \
+        --wrap-mode nodownload \
+        -D b_lto=true \
+        -D b_pie=true \
+        -D glycin=enabled \
+        -D builtin_loaders='all' \
+        -D tests=false \
+        -D installed_tests=false \
+        -D man=false \
+        -D png=disabled \
+        -D tiff=disabled \
+        -D jpeg=disabled \
+        -D gif=disabled \
+        -D others=disabled \
+        -D thumbnailer=disabled \
+        -D legacy_xpm=enabled
+
+    meson compile -C build -j ${JOBS:-1}
+    DESTDIR=$PKG meson install  -C build
+
+    rm -r $PKG/usr/share/locale
+}

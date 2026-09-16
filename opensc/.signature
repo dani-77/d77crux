@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWT0dvMs3lAWkCY9SyAxmvKQ/e4YIaC2zp+MgjLn3KGtZJw9u/8TACrXx/uOssjBQkQVGBqdrNm7Xl7qIyJXU3a+uPkK08sV1gk=
-SHA256 (Pkgfile) = 71f389bf85eba84fcc17855ff9c44faf516d2fcd90092e6db29f53ae57b07fab
-SHA256 (.footprint) = 30f58c47ac5328aaa2590fee3ef07694c627e28424944eea9c92876e702d7564
-SHA256 (opensc-0.25.1.tar.gz) = 23cbaae8bd7c8eb589b68c0a961dfb0d02007bea3165a3fc5efe2621d549b37b
+RWRGO1IdDlbgax12yHB0QknMDqjTll8JebQFfWspTiM3171+5hPEkTmKmEACu07s9iOze7R6i5P05nLxImdFcITyWyqBqOlV9AQ=
+SHA256 (Pkgfile) = f3c978cce8484a76d4e97a78ec8e53a40b0214075679f001d381ab639074904c
+SHA256 (.footprint) = d6e9716d9c3a12f732ab9efb670b56e9168c4f82f94c795af31b903c9ca3c1d2
+SHA256 (opensc-0.27.1.tar.gz) = 976f4a23eaf3397a1a2c3a7aac80bf971a8c3d829c9a79f06145bfaeeae5eca7

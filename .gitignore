@@ -19,6 +19,7 @@ secret.key
 *.bz2
 *.7z
 *.rar
+*.tgz
 *.deb
 *.signature.tmp
 work/
