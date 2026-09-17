@@ -2,7 +2,12 @@
 \.tar\.gz$
 \.tgz$
 \.tar\.bz2$
+\.tar\.xz$
 \.zip$
+\.deb$
+\.rpm$
+\.partial$
+\.part$
 ^CVS$
 ^.*/CVS$
 /CVS/.*
