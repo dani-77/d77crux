@@ -357,8 +357,8 @@ f:5cb45388dff78d9c59610346d5b41a65:rpm2targz/Pkgfile
 f:e9c5a0639ac78eaee604b5a5dd46cec5:rpm2targz/.signature
 f:c6d0968fa2f40e1a1de12b63633d9908:discord/.footprint
 f:52ba25c6ea551ff243deb0e281587720:discord/.md5sum
-f:0d0c6718e5fbd5d8cb6266b31a5516ff:discord/Pkgfile
-f:69c9ff5d434573c900c1017f20a838ee:discord/.signature
+f:748b5fa16e35b3e752c95121155f255c:discord/Pkgfile
+f:3e69b539254a1e3631863b101612f098:discord/.signature
 f:8f763f10123fb72fb8a922457db72b96:ventoy/ventoy.desktop
 f:b56ef782ca187e0a86388f5860fe1642:ventoy/.footprint
 f:1a7a18ea47b7d4801ad656e198deaa65:ventoy/ventoy.png

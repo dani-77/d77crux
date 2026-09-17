@@ -1,7 +1,8 @@
 # Description: All-in-one voice and text chat for gamers that's free and secure
 # URL: https://discord.com/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: cups nspr nss
+# Depends on: cups nspr nss wayland
+# Optional: pulseaudio
 
 name=discord
 version=1.0.158
