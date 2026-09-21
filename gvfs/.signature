@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbga5R6CsQSUp0zUGRu1mjMTsQGsrkcQvWDhh9VA2W1MazxgSENtB9s3xm1ZGu1Hb6Ub8YRsMuHCqGUXxIDXj9xfwM=
+SHA256 (Pkgfile) = 576e6e3afde15b580cea4643f3711165f9a2d2293d451646df14395d82380f75
+SHA256 (.footprint) = fa00d8626841cf5a0b826984c20fad040df7daa9986d6236ccf4d6fe30a16ba8
+SHA256 (gvfs-1.62.0.tar.xz) = dd8e6c255fd3bed5eeb190b59027c88b38e63c1be0932ddce9cfeb48f3c43d0f

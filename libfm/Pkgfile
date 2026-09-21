@@ -1,7 +1,7 @@
 # Description: Dependency for menu-cache
 # URL: https://github.com/lxde/libfm
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: menu-cache
+# Depends on: menu-cache vala
 
 name=libfm
 version=1.4.1
