@@ -74,7 +74,6 @@ d:spot
 d:wv
 d:netsurf
 d:gnumeric-gtk2
-d:libppd
 d:udiskie
 d:sndio
 d:xautolock
@@ -421,10 +420,6 @@ f:57f0191becf6ba9953fc4d49eee60c55:gnumeric-gtk2/.footprint
 f:b7c4ecf8daa92144a49a26fc956768a6:gnumeric-gtk2/Pkgfile
 f:0989d3302204f225f99318b612d8770b:gnumeric-gtk2/README
 f:bc9f8228603ab4e6842e8ada98263331:gnumeric-gtk2/.signature
-f:79ac3a52e109b15d0cbad5ebba2ee80a:libppd/.footprint
-f:294be6d8c903d33ff7e9511ad9945d11:libppd/.md5sum
-f:552b233adfe6fb2b6c44f4d61ff966aa:libppd/Pkgfile
-f:cf633b9feddcef57a6764fe76f4ef08a:libppd/.signature
 f:0631ae23e1c7e8b84477440474dc6ce0:udiskie/.footprint
 f:334435c3c6e2252ac31700e47ecdfca2:udiskie/.md5sum
 f:0be25e2fcca1d641cfed31aff07f80d0:udiskie/Pkgfile
