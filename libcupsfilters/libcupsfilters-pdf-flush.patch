@@ -1,0 +1,12 @@
+--- a/cupsfilters/pdf.c	2026-09-22 00:33:40.884633259 +0100
++++ b/cupsfilters/pdf.c	2026-09-22 00:33:40.899633258 +0100
+@@ -165,6 +165,9 @@
+     fwrite(buffer, 1, bytes_read, temp_fp);
+   }
+ 
++  // Flush buffered data to disk before pdfio opens the file by name
++  fflush(temp_fp);
++
+   // Open the temp file with pdfio
+   pdfio_file_t *pdf = pdfioFileOpen(temp_filename, NULL, NULL, NULL, NULL);
+ 

@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbgaxbN4bKltDA7YKM/mqxxJ+BMs03lrmE5sS/JjVahCiIOqlnaYFaeaLizhFsDU5MfGq+9AEQCkznm+9TBxxe7Vw0=
+SHA256 (Pkgfile) = 574feb1c483a3024f985c029b8caaa2b4c2d35b96044ab9f09d365b8d14437f0
+SHA256 (.footprint) = 06ee6a5b22ad7118145f97f5546a7d405c1f7fb48fa5511f6960b4dc8246bd37
+SHA256 (libcupsfilters-2.2.1.tar.xz) = 0a22b849d5068c4c86b20fbb4192d3faa3dabcc9ee844c8fd73710ed821d4860
+SHA256 (libcupsfilters-pdf-flush.patch) = cf9772d7dd56650b66e7531736d037beb29c98d29f1bb9b4ebe07ab36e5979d2

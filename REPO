@@ -84,6 +84,7 @@ d:freedownloadmanager
 d:scrot
 d:faba-icon-theme
 d:bw
+d:libcupsfilters
 d:redshift
 d:granite
 d:bitwarden-rofi
@@ -465,6 +466,11 @@ f:b8e989956ecb98ad4767c0a59722a733:bw/.footprint
 f:c73412ad235f16d2292cd0614688f1ad:bw/.md5sum
 f:de759076f59b228c273cda38790b289e:bw/Pkgfile
 f:a76cb7c50ace151a0450cbafd4df15e1:bw/.signature
+f:3d86d27f5cd7332510b053b6744db501:libcupsfilters/.footprint
+f:aa00438069e6c555306ffe839989f245:libcupsfilters/.md5sum
+f:352efab1f818421e2c678a5d7203fc8f:libcupsfilters/Pkgfile
+f:971e77cef7444ee6ab23a9a386fb80df:libcupsfilters/.signature
+f:4f88ed21d8de643002c505835a1611ee:libcupsfilters/libcupsfilters-pdf-flush.patch
 f:e8f6938ba4af9e244995204ce0263bdc:redshift/.footprint
 f:858bfd84eac64e676a1de96a686d9f74:redshift/.md5sum
 f:678a5379e36eb5dab8fc06b53c1757ba:redshift/Pkgfile

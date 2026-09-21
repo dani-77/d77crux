@@ -1,0 +1,34 @@
+# Description: Code of the filters of the former cups-filters package as library functions
+# URL: https://github.com/OpenPrinting/libcupsfilters
+# Maintainer: Juergen Daubert, jue at crux dot nu
+# Depends on: pdfio
+# Optional: dbus ghostscript libexif mupdf
+# Was opt/libcupsfilters (Juergen Daubert). 2.2.1 has a bug in cfPDFPagesFP():
+# it fwrite()s the PDF to a temp FILE* and opens it by name with pdfio without
+# fflush(), so pdfio sees a truncated file and the ghostscript filter fails
+# ("Missing Root object" / "Unexpected page count"). Patch adds the fflush().
+
+name=libcupsfilters
+version=2.2.1
+release=1
+source=(https://github.com/OpenPrinting/libcupsfilters/releases/download/$version/$name-$version.tar.xz
+    libcupsfilters-pdf-flush.patch)
+
+build() {
+    cd $name-$version
+
+    patch -Np1 -i $SRC/libcupsfilters-pdf-flush.patch
+
+    prt-get isinst ghostscript || PKGMK_LIBCUPSFILTERS+=' --disable-ghostscript'
+    prt-get isinst dbus || PKGMK_LIBCUPSFILTERS+=' --disable-dbus'
+    prt-get isinst libexif || PKGMK_LIBCUPSFILTERS+=' --disable-exif'
+    prt-get isinst mupdf || PKGMK_LIBCUPSFILTERS+=' --disable-mutool'
+    prt-get isinst libjxl|| PKGMK_LIBCUPSFILTERS+=' --without-jpegxl'
+
+    ./configure $PKGMK_LIBCUPSFILTERS --prefix=/usr
+
+    make
+    make DESTDIR=$PKG install
+
+    rm -r $PKG/usr/share/doc
+}
