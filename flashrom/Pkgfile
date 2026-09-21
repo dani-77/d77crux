@@ -1,16 +1,16 @@
 # Description: Bios reader, eraser and flasher.
 # URL: https://flashrom.org
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: libpci libjaylink libftdi
+# Depends on: pciutils libjaylink libftdi
 
 name=flashrom
-version=1.7.0
+version=1.8.0
 release=1
 source=(https://download.flashrom.org/releases/$name-v$version.tar.xz)
 
 build() {
 	cd $name-v$version
-	meson build --prefix=/usr
+	meson build --prefix=/usr --wrap-mode nodownload
 	cd build
 	ninja
 	DESTDIR=$PKG ninja install

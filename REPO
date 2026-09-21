@@ -324,9 +324,9 @@ f:813bb23b35f484298d83dcc6be7f0b28:libfm-cache/.md5sum
 f:5ed83c6c170920f266587da56e86c5e5:libfm-cache/Pkgfile
 f:0d4f7d8dba50b1d20b1d41acd733f452:libfm-cache/.signature
 f:2aa9cdc7496c3942e9c0c7b51172ebf2:flashrom/.footprint
-f:1da57c71282197e3a7e784c97d69a265:flashrom/.md5sum
-f:0ae4245a3af8a228ba89c6a6bfb89e23:flashrom/Pkgfile
-f:e6b8b87c686d4b7c03b3e9d99df38c0e:flashrom/.signature
+f:9d2a09606518b87171fdb0d0c3418e35:flashrom/.md5sum
+f:b72a6207f10a6357a2d4ed69e4b5d1e5:flashrom/Pkgfile
+f:9ff7f40aa08d49374a5715f669a1853b:flashrom/.signature
 f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
 f:8c3a18be5f7d14e28d85589e5119fdc8:sent/sent-slide-number-1.0.diff
 f:10be703098bf1f8903f0839990f55c41:sent/.md5sum
