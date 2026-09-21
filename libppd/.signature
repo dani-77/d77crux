@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbgaz40wOaxmu3POMMD48O6dr+DFk8unoOU8eckehU73PmSIoXEAE02NtYRTZLrjHARxVSTjv+uLos8/FkovQT75wQ=
+SHA256 (Pkgfile) = 96d9bcc40ae379f4fd927dc033e425469311684c7bfa9e873c9b8711c677a5e0
+SHA256 (.footprint) = 91b1a06dcad6d872a37868facb4fadc6cdb222c3b3177dd0c585cf272fbb5c87
+SHA256 (libppd-2.1.1.tar.xz) = 3fa341cc03964046d2bf6b161d80c1b4b2e20609f38d860bcaa11cb70c1285e4
