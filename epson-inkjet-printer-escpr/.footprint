@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-714A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-715A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-716A_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-717A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-774A-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-775A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-776A_Series-epson-escpr-en.ppd
@@ -84,6 +85,7 @@ drwxr-xr-x	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-814A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-815A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-816A_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-817A_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-901A-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-901F-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-EP-902A-epson-escpr-en.ppd
@@ -166,6 +168,7 @@ drwxr-xr-x	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L4150_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L4160_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L4260_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L4350_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L455_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L475_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-L485_Series-epson-escpr-en.ppd
@@ -475,7 +478,9 @@ drwxr-xr-x	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2870_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2910_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2930_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2940_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2950_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-2970_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-3010_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-3520_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-WF-3530_Series-epson-escpr-en.ppd
@@ -596,6 +601,7 @@ drwxr-xr-x	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-4200_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-420_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-422_423_425_Series-epson-escpr-en.ppd
+-rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-4250_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-430_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-432_435_Series-epson-escpr-en.ppd
 -rw-r--r--	root/root	usr/share/cups/model/epson-inkjet-printer-escpr/Epson-XP-440_Series-epson-escpr-en.ppd

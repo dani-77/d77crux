@@ -2,15 +2,25 @@
 # URL: https://download.ebz.epson.net/dsc/search/01/search/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
 # Depends on: cups cups-browsed cups-filters
+# Note: Epson only publishes a src.rpm now, and its CDN (Akamai) answers 403 to
+# curl/wget. Download it with a browser to $PKGMK_SOURCE_DIR (/usr/ports/distfiles)
+# before building; pkgmk unpacks the rpm and the real tarball is inside.
 
 name=epson-inkjet-printer-escpr
-version=1.8.5
-release=3
-source=(https://download3.ebz.epson.net/dsc/f/03/00/15/68/89/fbff579f15226ffcc4a16895bd6bce6842277802/epson-inkjet-printer-escpr-$version-1.tar.gz)
-
+version=1.8.9
+release=1
+source=(https://download-center.epson.com/f/module/8fbe3731-bcfd-4bab-bf48-533c05cc64d4/$name-$version-1.src.rpm)
 
 build() {
+  tar xzf $SRC/$name-$version-1.tar.gz
   cd $name-$version
+
+  # gcc 15 defaults to gnu23, which rejects the driver's old-style declarations
+  export CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
+
+  # shipped Makefile.in is older than Makefile.am and wants automake-1.16
+  autoreconf -vif
+
   ./configure --prefix=/usr
   make
   make DESTDIR=$PKG install
