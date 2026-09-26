@@ -4,7 +4,7 @@
 # Depends on: pcsclite
 
 name=ccid
-version=1.8.2
+version=1.8.4
 release=1
 source=(https://ccid.apdu.fr/files/$name-$version.tar.xz pcscd.rc)
 
