@@ -179,8 +179,8 @@ f:1f3a1ed8452571913ea9c5c7f0b6532e:dmenu/.signature
 f:25c3bd6c4cd4d9c13f7b16ddd1201617:ccid/.footprint
 f:ae5c463e327269ec35faf7ad28361b5a:ccid/pcscd.rc
 f:c06c0c32edacb8ec3271a2668256d259:ccid/.md5sum
-f:4bcf09f133ac3d5d17954de5f38705a9:ccid/Pkgfile
-f:320ffa1a1e61bad30d24f525cc955dea:ccid/.signature
+f:024a47797f71e6c9727d865063372f4b:ccid/Pkgfile
+f:d904ad7acdc440609bc282227bea16fe:ccid/.signature
 f:c26976f32d4614a56b84248d8e9b2f1a:calcurse/.footprint
 f:a84c0180f2c6a21f28a567f0d1c9ade5:calcurse/.md5sum
 f:e3d7381e97ee2e8ed521ec21e77f63e0:calcurse/Pkgfile
@@ -297,7 +297,7 @@ f:c940d614be03419c109b3a127d66f659:rofi/.footprint
 f:750db0f490054d67df89cd97b5476ac0:rofi/.md5sum
 f:5c64be01af1bbd247b09d6432decd973:rofi/Pkgfile
 f:6e76184579f473b8b66aeb153beedcbb:rofi/.signature
-f:f4079468fcbaccca84ee55fc5f9e8c14:update-summary.md
+f:564f56eb800ed563ceef7e3e151722fc:update-summary.md
 f:5fd80250eac24f61e3b305fceb5f6983:libfm/.footprint
 f:813bb23b35f484298d83dcc6be7f0b28:libfm/.md5sum
 f:9c8f8f4ecc27576980984b63a04f0d37:libfm/Pkgfile
