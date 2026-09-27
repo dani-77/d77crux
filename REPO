@@ -178,7 +178,7 @@ f:f0cd1e18043086fca13a89eba9195e45:dmenu/Pkgfile
 f:1f3a1ed8452571913ea9c5c7f0b6532e:dmenu/.signature
 f:25c3bd6c4cd4d9c13f7b16ddd1201617:ccid/.footprint
 f:ae5c463e327269ec35faf7ad28361b5a:ccid/pcscd.rc
-f:c06c0c32edacb8ec3271a2668256d259:ccid/.md5sum
+f:254eb752d03099115ab2f92fb18ef593:ccid/.md5sum
 f:024a47797f71e6c9727d865063372f4b:ccid/Pkgfile
 f:d904ad7acdc440609bc282227bea16fe:ccid/.signature
 f:c26976f32d4614a56b84248d8e9b2f1a:calcurse/.footprint
