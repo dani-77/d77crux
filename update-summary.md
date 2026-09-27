@@ -4,16 +4,13 @@
 
 | Package | Old version | New version | Source |
 |---|---|---|---|
-| `gh` | 2.97.0 | **2.98.0** | github |
-| `jetbrains` | 3.5.0 | **3.5.1** | github |
-| `ncspot` | 1.3.4 | **1.4.0** | github |
-| `nerd-fonts` | 3.5.0 | **3.5.1** | github |
+| `ccid` | 1.8.2 | **1.8.4** | directory-listing |
 
-## Excluded from checks (12)
+## Excluded from checks (14)
 
-`abiword`, `gconf`, `gnumeric-gtk2`, `goffice08`, `granite`, `libgsf`, `libxml210`, `spice-up`, `ttf-font-awesome`, `ttf-font-awesome-compat`, `wv`, `yubico-authenticator-bin`
+`abiword`, `d77crux-kernel`, `gconf`, `gnumeric-gtk2`, `goffice08`, `granite`, `libgsf`, `libxml210`, `spice-up`, `tint2`, `ttf-font-awesome`, `ttf-font-awesome-compat`, `wv`, `yubico-authenticator-bin`
 
-## Skipped / needs manual check (80)
+## Skipped / needs manual check (86)
 
 | Package | Reason |
 |---|---|
@@ -26,7 +23,6 @@
 | `calcurse` | no confident newer version found (strategy: directory-listing) |
 | `camorama` | no confident newer version found (strategy: github) |
 | `cbatticon` | no confident newer version found (strategy: github) |
-| `ccid` | no confident newer version found (strategy: directory-listing) |
 | `cloud-utils` | no confident newer version found (strategy: github) |
 | `cmatrix` | no confident newer version found (strategy: github) |
 | `cmus` | no confident newer version found (strategy: github) |
@@ -41,17 +37,22 @@
 | `flashrom` | no confident newer version found (strategy: directory-listing) |
 | `fluxbox` | no confident newer version found (strategy: sourceforge) |
 | `freedownloadmanager` | no confident newer version found (strategy: directory-listing) |
-| `frostwire` | no confident newer version found (strategy: sourceforge) |
+| `gdk-pixbuf` | no confident newer version found (strategy: directory-listing) |
+| `gh` | no confident newer version found (strategy: github) |
 | `gmrun` | no confident newer version found (strategy: github) |
 | `goodvibes` | no confident newer version found (strategy: gitlab) |
 | `gtrash` | no confident newer version found (strategy: github) |
+| `gvfs` | no confident newer version found (strategy: directory-listing) |
 | `hack-ttf` | no confident newer version found (strategy: github) |
+| `hsetroot` | no confident newer version found (strategy: github) |
 | `icewm` | no confident newer version found (strategy: github) |
 | `inxi` | no confident newer version found (strategy: github) |
+| `jetbrains` | no confident newer version found (strategy: github) |
 | `jgmenu` | no confident newer version found (strategy: github) |
 | `jwm` | no confident newer version found (strategy: github) |
 | `keybinder` | no confident newer version found (strategy: github) |
 | `lf` | no confident newer version found (strategy: github) |
+| `libcupsfilters` | no confident newer version found (strategy: github) |
 | `liberation-mono` | no confident newer version found (strategy: github) |
 | `libfm` | no confident newer version found (strategy: github) |
 | `libfm-cache` | no confident newer version found (strategy: github) |
@@ -62,13 +63,14 @@
 | `menumaker` | no confident newer version found (strategy: sourceforge) |
 | `moka-icon-theme` | no confident newer version found (strategy: github) |
 | `mutt-wizard` | no confident newer version found (strategy: github) |
+| `ncspot` | no confident newer version found (strategy: github) |
+| `nerd-fonts` | no confident newer version found (strategy: github) |
 | `netsurf` | no confident newer version found (strategy: directory-listing) |
 | `notable` | no confident newer version found (strategy: github) |
 | `obconf` | no confident newer version found (strategy: directory-listing) |
 | `onlykey` | no confident newer version found (strategy: github) |
 | `opensc` | no confident newer version found (strategy: github) |
 | `oranchelo-icon-theme` | no confident newer version found (strategy: github) |
-| `paper-gtk-theme` | no confident newer version found (strategy: github) |
 | `paper-icon-theme` | no confident newer version found (strategy: github) |
 | `pcmanfm` | no confident newer version found (strategy: github) |
 | `pcsc-tools` | no confident newer version found (strategy: directory-listing) |
@@ -76,6 +78,7 @@
 | `qt-sudo` | no confident newer version found (strategy: github) |
 | `ranger` | no confident newer version found (strategy: github) |
 | `redshift` | no confident newer version found (strategy: github) |
+| `rofi` | no confident newer version found (strategy: github) |
 | `rpm2targz` | no confident newer version found (strategy: directory-listing) |
 | `scrot` | no confident newer version found (strategy: github) |
 | `sent` | no confident newer version found (strategy: directory-listing) |
@@ -85,7 +88,6 @@
 | `st` | no confident newer version found (strategy: directory-listing) |
 | `sxhkd` | no confident newer version found (strategy: github) |
 | `telegram-desktop-bin` | no confident newer version found (strategy: directory-listing) |
-| `tint2` | no confident newer version found (strategy: gitlab) |
 | `transset-df` | no confident newer version found (strategy: directory-listing) |
 | `ttf-font-awesome` | no confident newer version found (strategy: github) |
 | `udiskie` | no confident newer version found (strategy: github) |
@@ -96,4 +98,5 @@
 | `xarchiver` | no confident newer version found (strategy: github) |
 | `xautolock` | no confident newer version found (strategy: directory-listing) |
 | `xcalc` | no confident newer version found (strategy: gitlab) |
+| `xorriso` | no confident newer version found (strategy: directory-listing) |
 | `xscreensaver` | no confident newer version found (strategy: directory-listing) |
