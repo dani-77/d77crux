@@ -2,11 +2,10 @@
 # URL: https://wiki.gnome.org/Projects/GdkPixbuf
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
 # Depends on: glycin
-# Was CRUX System Team's opt/gdk-pixbuf. Forked with others=enabled so
-# external gdk-pixbuf loader modules (e.g. librsvg's SVG loader) actually
-# get used - the official build disables that path in favor of glycin,
-# which has no SVG backend, so SVG icon themes (Papirus, Oranchelo, ...)
-# silently fail to load in any app using gdk-pixbuf directly (rofi, etc).
+# Was CRUX System Team's opt/gdk-pixbuf; build options are unchanged from it.
+# Note: SVG icons (Papirus, Oranchelo, ...) load fine through librsvg's
+# external loader module in loaders.cache - "others" only toggles the
+# weakly-maintained built-in loaders (bmp, xpm, tga, ...), not that path.
 
 name=gdk-pixbuf
 version=2.44.8

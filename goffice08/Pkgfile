@@ -14,6 +14,8 @@ source=(http://ftp.gnome.org/pub/GNOME/sources/goffice/${version%.*}/goffice-$ve
 build() {
 	cd goffice-$version
 	export PKG_CONFIG_PATH="/usr/lib/libxml210/pkgconfig:$PKG_CONFIG_PATH"
+	# old code: gcc >= 14 turns these warnings into errors
+	export CFLAGS="$CFLAGS -Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration -Wno-error=int-conversion"
 	# https://bugzilla.gnome.org/show_bug.cgi?id=670316
 	patch -p1 -i $SRC/disable-linking-pcre.patch
 	

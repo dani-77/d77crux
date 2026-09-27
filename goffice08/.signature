@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWRGO1IdDlbga7k8p9n+bAMBwouo7wvDvmus0Hdlzpf8Ka/1ZXKMmpRu+eOb1v8jT5NlsdCftKOqADvGjsQZmxooXaJxDfKDnQQ=
-SHA256 (Pkgfile) = 4f8886c376c4290c7f61da198b5f7bffc64aaa8642065b6eff6f772a101033fe
+RWRGO1IdDlbgaxxwkAALzwDLWNNGvrvNF/yysbqUtIwaDfHPGvTyZL57H+Wab2vF0BIb20oj+Kybz3t0xOte2mkHqAdkNV7tvws=
+SHA256 (Pkgfile) = 1a6dbebb057fc36031363bc47ef6e30e358deed548a9768ce3a637a9775d6472
 SHA256 (.footprint) = 14c6858dd582745e47bd156b3ee76897ef143cbc48cd3dccc737c68e1634d115
 SHA256 (goffice-0.8.17.tar.xz) = 165070beb67b84580afe80a8a100b674a81d553ab791acd72ac0c655f4fadb15
 SHA256 (disable-linking-pcre.patch) = 8ece0839168c8e83a94a9ce38a06aee7f8a201b42c033f5b502a5f53de496a0e

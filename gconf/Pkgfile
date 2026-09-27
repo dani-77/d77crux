@@ -12,6 +12,9 @@ source=(https://download.gnome.org/sources/GConf/${version%.*}/GConf-$version.ta
 build() {
 	cd GConf-$version
 
+	# examples fail with modern gcc (-Wincompatible-pointer-types is an error) and are not packaged
+	sed -i 's/^SUBDIRS = gconf backends po doc examples/SUBDIRS = gconf backends po doc/' Makefile.in
+
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib/$name \

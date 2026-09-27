@@ -1,24 +1,32 @@
 # Description: Gnumeric spreadsheet -- last GTK2 release
 # URL: http://www.gnumeric.org/
 # Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
-# Depends on: goffice08 python
+# Depends on: goffice08
 # originally found at Petar Petrov's Github repo crux-ports
 
 name=gnumeric-gtk2
 version=1.10.17
-release=3
-source=(https://download.gnome.org/sources/gnumeric/${version%.*}/gnumeric-$version.tar.bz2)
+release=4
+source=(https://download.gnome.org/sources/gnumeric/${version%.*}/gnumeric-$version.tar.bz2
+	xpm-normalize.py)
 
 build() {
 	cd gnumeric-$version
 
 	# use this version of libxml2
 	export PKG_CONFIG_PATH="/usr/lib/libxml210/pkgconfig:$PKG_CONFIG_PATH"
+	# old code: gcc >= 14 turns these warnings into errors
+	export CFLAGS="$CFLAGS -Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration -Wno-error=int-conversion"
 	touch doc/C/gnumeric-C.omf.out
+
+	# glycin-based gdk-pixbuf is much stricter about XPM syntax than the old
+	# loader (e.g. "static char const *", row count != header); normalize them
+	find . -name "*.xpm" -exec python3 $SRC/xpm-normalize.py {} +
 	
 	./configure --prefix=/usr \
 	--disable-schemas-install \
-	--disable-nls
+	--disable-nls \
+	--without-perl
 	make
 	make DESTDIR=$PKG install
 	
