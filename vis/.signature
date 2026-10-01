@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbgaxPqfGyiixfY3SiWvauhdQ5rUYqlqbHMM5AKXmKXCoiawVWrlU7cZWzh0Hy5Yknvc4vZhjoAL3vYsl4yDco6bwE=
+SHA256 (Pkgfile) = 40c1ebcbf2390f5b0a8eeb6920a7ed34d889ea507b8b59e0cb711cde1e89edf1
+SHA256 (.footprint) = 4c479bb70d1ead32c03b796299f3fcc91d46f2af2e3f3ac43c957e8da3bd4e92
+SHA256 (vis-0.9.tar.gz) = bd37ffba5535e665c1e883c25ba5f4e3307569b6d392c60f3c7d5dedd2efcfca
+SHA256 (lpeg-1.1.0.tar.gz) = 4b155d67d2246c1ffa7ad7bc466c1ea899bbc40fef0257cc9c03cecbaed4352a

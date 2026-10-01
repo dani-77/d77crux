@@ -1,0 +1,30 @@
+# Description: A vi-like editor based on Plan 9's structural regular expressions.
+# URL: https://github.com/martanne/vis
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: acl libtermkey lua ncurses
+
+name=vis
+version=0.9
+release=1
+_lpeg=1.1.0
+source=(https://github.com/martanne/$name/archive/v$version/$name-$version.tar.gz
+	https://www.inf.puc-rio.br/~roberto/lpeg/lpeg-$_lpeg.tar.gz)
+
+build() {
+	# lpeg in the ports tree is built for lua 5.1 only; link it statically
+	cd lpeg-$_lpeg
+	for f in lp*.c; do
+		${CC:-cc} $CFLAGS -fPIC -c $f
+	done
+	ar rcs liblpeg.a lp*.o
+
+	cd $SRC/$name-$version
+	./configure --prefix=/usr \
+		--enable-lua \
+		--enable-lpeg-static \
+		LDFLAGS="$LDFLAGS -L$SRC/lpeg-$_lpeg"
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/doc
+}

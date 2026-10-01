@@ -19,6 +19,7 @@ d:ccid
 d:calcurse
 d:onlykey
 d:dosbox
+d:vis
 d:ranger
 d:goodvibes
 d:tint2
@@ -179,6 +180,10 @@ f:6ac7cc406ab9046d49bf3826ff37509e:dosbox/.footprint
 f:9aa7f4ddb684aef444829b71eafa6688:dosbox/.md5sum
 f:114ead0950f435632f0859521bdaa693:dosbox/Pkgfile
 f:8eefe7013af811f54ca30c5f5936582e:dosbox/.signature
+f:ab7ee383c69faa233e02d6fe49990903:vis/.footprint
+f:f1bff64e89c419a50f8857744ef059e4:vis/.md5sum
+f:d4c3fbe4f2873132f6aaf6f354cc0c1b:vis/Pkgfile
+f:f161f03fd74dd671c51508971956de7d:vis/.signature
 f:e95ba4384e813fd59c95a17c336d93b3:ranger/.footprint
 f:a71d5cf7bf2560b906eb504a1872d493:ranger/.md5sum
 f:a35fcee1a4d45fd0e5549ebfc275dd29:ranger/Pkgfile
