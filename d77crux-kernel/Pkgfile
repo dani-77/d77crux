@@ -11,7 +11,7 @@
 # this port is in .github/autoupdate-exclude.txt on purpose.
 
 name=d77crux-kernel
-version=6.12.109
+version=6.12.112
 release=1
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
         d77crux-kernel.config)
