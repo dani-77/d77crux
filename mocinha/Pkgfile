@@ -8,7 +8,7 @@
 # (/etc/mocinha.toml, e.g. sysv-d77's overlay); see the project's STATUS.md.
 
 name=mocinha
-version=0.1.4
+version=0.1.5
 release=1
 source=(https://github.com/dani-77/mocinha/archive/refs/tags/$version.tar.gz)
 renames=($name-$version.tar.gz)
