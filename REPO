@@ -36,6 +36,7 @@ d:liberation-mono
 d:pcsc-tools
 d:icewm
 d:hsetroot
+d:mocinha
 d:jetbrains
 d:aria2
 d:inxi
@@ -252,6 +253,10 @@ f:05b52fafb0ff5410135b79037d695d07:hsetroot/.footprint
 f:e94fc0ecce10353b30f64cd178979782:hsetroot/.md5sum
 f:74582e1155fcdf785499cd05b59d1ff9:hsetroot/Pkgfile
 f:11d0f2493dfafac8c7e4198bc80d2d04:hsetroot/.signature
+f:5bd4d86a33fbc434fa12c67ea3f88565:mocinha/.footprint
+f:f880a6c6b176aa406f227f1b4579b365:mocinha/.md5sum
+f:4f91b08d855fe2539494532c38df5eb0:mocinha/Pkgfile
+f:ce3e39f7e2690acdcdecd3485b2195eb:mocinha/.signature
 f:60548db3dd785f8157843d690219010d:jetbrains/.footprint
 f:792af3086f2569913f3bec6cef5a3af1:jetbrains/.md5sum
 f:909e6624995d713ef95e053ce1512e22:jetbrains/Pkgfile
