@@ -469,9 +469,9 @@ f:010213b73610d8a104de1d2bcbb886fa:xscreensaver/.footprint
 f:4f9d6d4a44fbaa3bdbf56f36ab72ca62:xscreensaver/.md5sum
 f:579ec23fcb725f475844da7cdade2ff6:xscreensaver/Pkgfile
 f:56985df4002a0cdae3ed14e36329540d:xscreensaver/.signature
-f:3c465c277630edb156690c492364fb20:d77crux-kernel/Pkgfile
-f:4cb1e13e40344920b38b7722a66ecaa3:d77crux-kernel/d77crux-kernel.config
-f:a4419d21a517619bae6ae7ad707785e7:d77crux-kernel/.signature
+f:4ce852f68cfcb520c9d50b4c21770141:d77crux-kernel/Pkgfile
+f:3c2fc984de2f435f29e512e9cb117ed9:d77crux-kernel/d77crux-kernel.config
+f:668d787bad36cffd15af00dea708eee0:d77crux-kernel/.signature
 f:3e58f96277bfa2e25c11a314e738f482:fluxbox/.footprint
 f:5be68ec050b4e42a4f5254294cd93c63:fluxbox/.md5sum
 f:3e8fa89a49d188a6c2d9f6d80c6a2676:fluxbox/Pkgfile
