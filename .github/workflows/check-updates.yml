@@ -2,19 +2,24 @@ name: Check for package updates
 
 on:
   schedule:
-    # Every Sunday at 23:00 Europe/Lisbon time. GitHub Actions cron always
+    # Every Sunday around 23:00 Europe/Lisbon time. GitHub Actions cron always
     # runs in UTC and has no DST/timezone awareness, so both possible UTC
-    # offsets are scheduled every week; the "Only run at 23:00 Lisbon time"
-    # gate job below checks the real Europe/Lisbon clock (tzdata-aware, so
-    # it tracks DST automatically) and skips the run that isn't actually
-    # 23:00 locally. No manual adjustment needed at DST changeovers.
-    - cron: '0 22 * * 0'  # 23:00 WEST (UTC+1, summer)
-    - cron: '0 23 * * 0'  # 23:00 WET  (UTC+0, winter)
+    # offsets are scheduled every week; scheduled runs can also fire over an
+    # hour late under runner load, so matching "is it exactly this clock
+    # hour" was unreliable (both triggers kept missing their window and the
+    # real check silently never ran for weeks). The gate job below instead
+    # checks "did the real check-updates job already succeed this week?" via
+    # the Actions API, which is immune to both the DST offset and the
+    # scheduling delay: whichever of the two crons fires first each week does
+    # the work, the other is a no-op.
+    - cron: '0 22 * * 0'
+    - cron: '0 23 * * 0'
   workflow_dispatch: {}
 
 permissions:
   contents: write
   pull-requests: write
+  actions: read
 
 jobs:
   gate:
@@ -22,18 +27,42 @@ jobs:
     outputs:
       proceed: ${{ steps.check.outputs.proceed }}
     steps:
-      - name: Only run at 23:00 Lisbon time
+      - name: Skip if this week's check already ran
         id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            hour=$(TZ=Europe/Lisbon date +%H)
-            if [ "$hour" = "23" ]; then
-              echo "proceed=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "It's $hour:00 in Europe/Lisbon, not 23:00 -- skipping (the other scheduled trigger this week handles the current DST offset)."
-              echo "proceed=false" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Start of the current week (Monday 00:00) in Europe/Lisbon, as an
+          # epoch second.
+          week_start=$(TZ=Europe/Lisbon date -d 'last monday 00:00' +%s)
+
+          ran_this_week=false
+          for id in $(gh api "repos/${{ github.repository }}/actions/workflows/check-updates.yml/runs?per_page=20" \
+                        --jq '.workflow_runs[] | select(.status=="completed") | .id'); do
+            created=$(gh api "repos/${{ github.repository }}/actions/runs/$id" --jq '.created_at')
+            created_epoch=$(date -d "$created" +%s)
+            # Runs come back newest-first, so once we hit one older than the
+            # start of this week, every run after it is older still.
+            [ "$created_epoch" -lt "$week_start" ] && break
+
+            conclusion=$(gh api "repos/${{ github.repository }}/actions/runs/$id/jobs" \
+                           --jq '.jobs[] | select(.name=="check-updates") | .conclusion' | head -1)
+            if [ "$conclusion" = "success" ]; then
+              ran_this_week=true
+              break
             fi
+          done
+
+          if [ "$ran_this_week" = "true" ]; then
+            echo "The real check-updates job already succeeded this week -- skipping."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
           else
+            echo "No successful check-updates run yet this week -- proceeding."
             echo "proceed=true" >> "$GITHUB_OUTPUT"
           fi
 
