@@ -4,16 +4,13 @@
 
 | Package | Old version | New version | Source |
 |---|---|---|---|
-| `gh` | 2.101.0 | **2.102.0** | github |
-| `mocinha` | 0.1.5 | **0.1.6** | github |
-| `ncspot` | 1.4.0 | **1.5.0** | github |
-| `ventoy` | 1.1.17 | **1.1.18** | sourceforge |
+| `mocinha` | 0.1.6 | **0.1.8** | github |
 
 ## Excluded from checks (14)
 
 `abiword`, `d77crux-kernel`, `gconf`, `gnumeric-gtk2`, `goffice08`, `granite`, `libgsf`, `libxml210`, `spice-up`, `tint2`, `ttf-font-awesome`, `ttf-font-awesome-compat`, `wv`, `yubico-authenticator-bin`
 
-## Skipped / needs manual check (75)
+## Skipped / needs manual check (78)
 
 | Package | Reason |
 |---|---|
@@ -38,6 +35,7 @@
 | `flashrom` | no confident newer version found (strategy: directory-listing) |
 | `fluxbox` | no confident newer version found (strategy: sourceforge) |
 | `gdk-pixbuf` | no confident newer version found (strategy: directory-listing) |
+| `gh` | no confident newer version found (strategy: github) |
 | `gmrun` | no confident newer version found (strategy: github) |
 | `goodvibes` | no confident newer version found (strategy: gitlab) |
 | `gtrash` | no confident newer version found (strategy: github) |
@@ -61,6 +59,7 @@
 | `menumaker` | no confident newer version found (strategy: sourceforge) |
 | `moka-icon-theme` | no confident newer version found (strategy: github) |
 | `mutt-wizard` | no confident newer version found (strategy: github) |
+| `ncspot` | no confident newer version found (strategy: github) |
 | `nerd-fonts` | no confident newer version found (strategy: github) |
 | `obconf` | no confident newer version found (strategy: directory-listing) |
 | `onlykey` | no confident newer version found (strategy: github) |
@@ -84,6 +83,7 @@
 | `ttf-font-awesome` | no confident newer version found (strategy: github) |
 | `udiskie` | no confident newer version found (strategy: github) |
 | `usbimager` | no confident newer version found (strategy: gitlab) |
+| `ventoy` | no confident newer version found (strategy: sourceforge) |
 | `vifm` | no confident newer version found (strategy: github) |
 | `vis` | no confident newer version found (strategy: github) |
 | `volumeicon` | no confident newer version found (strategy: github) |
