@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWRGO1IdDlbga+YfiPD1Mi890bc5h4h54F7YUO5QgIFsXmMxrOlwCbDm0pY9+i1VqKwTlqSRT0JsekYVYOW6mRRKqYGWXbrWBgE=
-SHA256 (Pkgfile) = 3d39d5e6d55cd5a5c1fc2542a4da961f4a86fe4154384f0cf9128c5dfb752948
+RWRGO1IdDlbga1VUWRdzroMZ1bO0VFj3vbrR8hiju5zeRCS3uRQXri69T81Qda2rx4g+6SlEAwFRMhD6hAC8rwQyQvgr7fkKfgg=
+SHA256 (Pkgfile) = d9b680af9eb322439e5d17b889c817174fed9ed2a61edd8a163de0014f9ab81a
 SHA256 (.footprint) = 65a0f6e2ae41cf01317575ad3b9f94db4b28f8ab4baeafd81076edcf700816dc
-SHA256 (mocinha-0.1.6.tar.gz) = ca99f2a963cd2c12bb6b5047f1afcb888f752c3a764054806e7165c55224c378
+SHA256 (mocinha-0.1.8.tar.gz) = 5286be6668839a04491a39ac57981270279556aeb340fdc5a3f1f9ec6439a232
