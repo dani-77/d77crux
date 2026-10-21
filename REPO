@@ -22,6 +22,7 @@ d:dosbox
 d:vis
 d:ranger
 d:goodvibes
+d:octocrux
 d:tint2
 d:volumeicon
 d:opensc
@@ -193,6 +194,10 @@ f:dca431ffe54a910684ae28a6a5c480de:goodvibes/.footprint
 f:c2b9a27252c41588c948f6186f100d4c:goodvibes/.md5sum
 f:e52a8a18641bcad69850fe889c92584b:goodvibes/Pkgfile
 f:434ad4f3ec53d1d6d55bf94777a928ee:goodvibes/.signature
+f:6f0c18ff168ac5f58b3aeeeb8cf82740:octocrux/.footprint
+f:42866fa045b23e382cf83bc7497ad07e:octocrux/.md5sum
+f:c6f858ef4e2473fcecc8803d8a15ecb5:octocrux/Pkgfile
+f:76affc2f9e9f527c068ab175c20a5e11:octocrux/.signature
 f:1a0b78173064e14bbefec26668fdb0b3:tint2/.footprint
 f:e9488013a5344a4631a9999d634ae12e:tint2/tint2-glib.patch
 f:cf11df8abb58793256fb462903fe71cc:tint2/.md5sum

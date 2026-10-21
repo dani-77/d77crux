@@ -1,0 +1,21 @@
+# Description: Qt 6 package manager for CRUX ports, with a tray update notifier
+# URL: https://github.com/dani-77/octoCRUX
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: qt-sudo qt6-base
+# Optional: polkit consolekit
+
+name=octocrux
+version=0.1.1
+release=1
+source=(https://github.com/dani-77/octoCRUX/archive/refs/tags/v$version.tar.gz)
+renames=($name-$version.tar.gz)
+
+build() {
+	cmake -S octoCRUX-$version -B build \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_BUILD_TYPE=Release \
+		-D BUILD_TESTING=OFF \
+		-D OCTOCRUX_INSTALL_DOCS=OFF
+	cmake --build build -j ${JOBS:-1}
+	DESTDIR=$PKG cmake --install build
+}
