@@ -4,13 +4,15 @@
 
 | Package | Old version | New version | Source |
 |---|---|---|---|
-| `mocinha` | 0.1.6 | **0.1.8** | github |
+| `gh` | 2.102.0 | **2.103.0** | github |
+| `mocinha` | 0.1.8 | **0.1.9** | github |
+| `vifm` | 0.14.4 | **0.14.5** | github |
 
 ## Excluded from checks (14)
 
 `abiword`, `d77crux-kernel`, `gconf`, `gnumeric-gtk2`, `goffice08`, `granite`, `libgsf`, `libxml210`, `spice-up`, `tint2`, `ttf-font-awesome`, `ttf-font-awesome-compat`, `wv`, `yubico-authenticator-bin`
 
-## Skipped / needs manual check (78)
+## Skipped / needs manual check (77)
 
 | Package | Reason |
 |---|---|
@@ -35,7 +37,6 @@
 | `flashrom` | no confident newer version found (strategy: directory-listing) |
 | `fluxbox` | no confident newer version found (strategy: sourceforge) |
 | `gdk-pixbuf` | no confident newer version found (strategy: directory-listing) |
-| `gh` | no confident newer version found (strategy: github) |
 | `gmrun` | no confident newer version found (strategy: github) |
 | `goodvibes` | no confident newer version found (strategy: gitlab) |
 | `gtrash` | no confident newer version found (strategy: github) |
@@ -62,6 +63,7 @@
 | `ncspot` | no confident newer version found (strategy: github) |
 | `nerd-fonts` | no confident newer version found (strategy: github) |
 | `obconf` | no confident newer version found (strategy: directory-listing) |
+| `octocrux` | no confident newer version found (strategy: github) |
 | `onlykey` | no confident newer version found (strategy: github) |
 | `opensc` | no confident newer version found (strategy: github) |
 | `oranchelo-icon-theme` | no confident newer version found (strategy: github) |
@@ -84,7 +86,6 @@
 | `udiskie` | no confident newer version found (strategy: github) |
 | `usbimager` | no confident newer version found (strategy: gitlab) |
 | `ventoy` | no confident newer version found (strategy: sourceforge) |
-| `vifm` | no confident newer version found (strategy: github) |
 | `vis` | no confident newer version found (strategy: github) |
 | `volumeicon` | no confident newer version found (strategy: github) |
 | `xarchiver` | no confident newer version found (strategy: github) |
