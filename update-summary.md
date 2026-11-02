@@ -4,9 +4,9 @@
 
 | Package | Old version | New version | Source |
 |---|---|---|---|
-| `gh` | 2.102.0 | **2.103.0** | github |
-| `mocinha` | 0.1.8 | **0.1.9** | github |
-| `vifm` | 0.14.4 | **0.14.5** | github |
+| `btop` | 1.4.7 | **1.4.8** | github |
+| `cmus` | 2.12.0 | **2.13.0** | github |
+| `gh` | 2.103.0 | **2.103.3** | github |
 
 ## Excluded from checks (14)
 
@@ -19,14 +19,12 @@
 | `abook` | no confident newer version found (strategy: sourceforge) |
 | `aria2` | no confident newer version found (strategy: github) |
 | `bitwarden-bin` | no confident newer version found (strategy: github) |
-| `btop` | no confident newer version found (strategy: github) |
 | `calcurse` | no confident newer version found (strategy: directory-listing) |
 | `camorama` | no confident newer version found (strategy: github) |
 | `cbatticon` | no confident newer version found (strategy: github) |
 | `ccid` | no confident newer version found (strategy: directory-listing) |
 | `cloud-utils` | no confident newer version found (strategy: github) |
 | `cmatrix` | no confident newer version found (strategy: github) |
-| `cmus` | no confident newer version found (strategy: github) |
 | `discord` | no confident newer version found (strategy: directory-listing) |
 | `dmenu` | no confident newer version found (strategy: directory-listing) |
 | `dosbox` | no confident newer version found (strategy: sourceforge) |
@@ -58,6 +56,7 @@
 | `lzip` | no confident newer version found (strategy: directory-listing) |
 | `menu-cache` | no confident newer version found (strategy: github) |
 | `menumaker` | no confident newer version found (strategy: sourceforge) |
+| `mocinha` | no confident newer version found (strategy: github) |
 | `moka-icon-theme` | no confident newer version found (strategy: github) |
 | `mutt-wizard` | no confident newer version found (strategy: github) |
 | `ncspot` | no confident newer version found (strategy: github) |
@@ -86,6 +85,7 @@
 | `udiskie` | no confident newer version found (strategy: github) |
 | `usbimager` | no confident newer version found (strategy: gitlab) |
 | `ventoy` | no confident newer version found (strategy: sourceforge) |
+| `vifm` | no confident newer version found (strategy: github) |
 | `vis` | no confident newer version found (strategy: github) |
 | `volumeicon` | no confident newer version found (strategy: github) |
 | `xarchiver` | no confident newer version found (strategy: github) |
