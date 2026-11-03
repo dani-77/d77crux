@@ -1,0 +1,36 @@
+# Description: Simple terminal UI for git commands
+# URL: https://github.com/jesseduffield/lazygit
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: git go
+
+name=lazygit
+version=0.66.2
+release=1
+source=(https://github.com/jesseduffield/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+	export GOPATH="$SRC"
+	go mod download
+
+	export CGO_CPPFLAGS="${CPPFLAGS}"
+	export CGO_CFLAGS="${CFLAGS}"
+	export CGO_CXXFLAGS="${CXXFLAGS}"
+	export GOPATH="$SRC"
+
+	go build -v \
+	-buildmode=pie \
+	-mod=readonly \
+	-modcacherw \
+	-ldflags "-compressdwarf=false \
+	-linkmode external \
+	-extldflags '${LDFLAGS}' \
+	-X main.version=$version \
+	-X main.buildSource=package" \
+	-o build \
+	.
+
+	install -vDm755 -t $PKG/usr/bin build/$name
+	install -vDm644 -t $PKG/usr/share/licenses/$name LICENSE
+}
