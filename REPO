@@ -360,10 +360,10 @@ f:1ac2a45956ac549cbccd125879ba75a9:goffice08/Pkgfile
 f:9d5ba646510646af00bc7a831554cf8a:goffice08/README
 f:a4c14788c236bb2c8b11b04fa695f9ca:goffice08/disable-linking-pcre.patch
 f:1b5d944f31bdfc99cea04c232cc9c19f:goffice08/.signature
-f:e6ca768837abe47391caeb9ec2dad8e1:yubico-authenticator-bin/.footprint
-f:040588403289bcc902d66df40d10e268:yubico-authenticator-bin/.md5sum
-f:82c7b9fc7104be56f8f7d76aacf38fff:yubico-authenticator-bin/Pkgfile
-f:4d7d6fbaf9d0ed2836205ce2a1c1ba11:yubico-authenticator-bin/.signature
+f:93c18f97ae65a13f99bc2126be8b1f88:yubico-authenticator-bin/.footprint
+f:09bf43b702303d3f183d4152358ddc1c:yubico-authenticator-bin/.md5sum
+f:7c07a420d637d07a07e227b3bc723380:yubico-authenticator-bin/Pkgfile
+f:a41eb3e6d268bb69ba662b08a2873f37:yubico-authenticator-bin/.signature
 f:85145c30d8e6c6bd2f914da0d3b35b07:libxml210/.footprint
 f:6ea725796d43c64acd0de212d6063704:libxml210/Pkgfile
 f:748b6c6363d00251165d431bf187c7e3:libxml210/.signature
