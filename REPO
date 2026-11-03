@@ -87,6 +87,7 @@ d:ttf-font-awesome
 d:transset-df
 d:pcmanfm
 d:gh
+d:lazygit
 d:xscreensaver
 d:d77crux-kernel
 d:fluxbox
@@ -475,6 +476,10 @@ f:e8c55c1d07113075f1a72333f167fc01:gh/.footprint
 f:d81760b9fbb24b54f69a3d4da1ac9711:gh/.md5sum
 f:4c24a644e097ab0004b5301096768055:gh/Pkgfile
 f:9ec7de848ceb259ed0d4dc548a76d578:gh/.signature
+f:b5fada21846c516734787cb1ac0a974e:lazygit/.footprint
+f:b2d5a75ffa92cde95074f3551721ec75:lazygit/.md5sum
+f:185bd8fe03467a3d0fd8fbe8a1f4d6f0:lazygit/Pkgfile
+f:f689e2c780520d3b23f2dff42857d9b4:lazygit/.signature
 f:010213b73610d8a104de1d2bcbb886fa:xscreensaver/.footprint
 f:4f9d6d4a44fbaa3bdbf56f36ab72ca62:xscreensaver/.md5sum
 f:579ec23fcb725f475844da7cdade2ff6:xscreensaver/Pkgfile
