@@ -188,6 +188,41 @@ manifest (must stay untouched), a held package, a soname bump under a local
 build (must stop in the plan), and a rollback after a deliberately broken
 apply.
 
+## OctoCRUX integration
+
+OctoCRUX (`~/Projectos/octoCRUX`, port `octocrux`) derives *Outdated* from
+`prt-get` (installed vs ports tree), and its Upgrade All runs
+`prt-get update`. Jaeger's snapshots lag the crux.nu ports by days, so a
+channel package (say nano 9.3) would show as Outdated as soon as the tree has
+9.4. Upgrade All would then compile it, and the ownership registry would
+treat it as `local` from then on. That is a silent switch of supplier
+through the GUI. To prevent it:
+
+- **A supplier axis** in OctoCRUX's model: `channel` or `local`. For channel
+  packages, *Outdated* comes from `d77crux-update plan`, not `prt-get diff`.
+- **Upgrade All in two transactions:** channel binaries first, then
+  `prt-get update` for local packages (which may need the new libraries).
+  The notifier counts both, separately.
+- **Taking a package over** ("build it myself") is an explicit action that
+  moves it from `channel` to `local`, never a side effect of Upgrade All.
+- **A new backend** behind OctoCRUX's existing `ICruxBackend` abstraction.
+
+What the client must offer for that:
+
+- `plan --porcelain`: stable, tab-separated output (action, name, installed,
+  new, supplier, size).
+- `plan` without root: the cache goes under `$XDG_CACHE_HOME` when not root,
+  so the read-only notifier can use it.
+- Phase markers on stdout (`PREPARE`, `APPLY`) and distinct exit codes for
+  verification failures and `pkgadd` failures.
+- Cancellation: safe at any point of preparation (nothing installed). During
+  application, finish the current `pkgadd`, stop, and resume on the next
+  run. This matches OctoCRUX's cancel policy.
+- A lock file. OctoCRUX's "is a package tool running" check (`/proc/*/comm`)
+  adds `d77crux-update`.
+- OctoCRUX's existing `/var/lib/pkg/rejected` check after transactions
+  applies unchanged.
+
 ## Still to confirm
 
 - The T480s (real install, kept without updates on purpose) as the first
