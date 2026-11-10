@@ -21,6 +21,9 @@
 #                current snapshot, e.g. binpkg-channel-3.8-x86_64
 #   TAG          a fixed snapshot tag instead of following the channel
 #   PUBKEY       signify public key (channel.txt.sig and manifest.txt.sig)
+#   ACCEPT_GENERIC  yes: use the binaries even though your CFLAGS differ from
+#                CRUX's default (they are generic x86-64; ports that are not
+#                cached still build with your CFLAGS). Default: refuse.
 #
 # Following the channel, the manifest must have the SHA-256 that channel.txt
 # names, and a channel.txt older than the last one accepted (its "published"
@@ -28,10 +31,14 @@
 # cannot be replayed.
 #
 # Refuses to run when pkgmk would not find or would not accept the archives:
-# PKGMK_COMPRESSION_MODE must be xz (Jaeger ships .pkg.tar.xz), a global
-# PKGMK_PACKAGE_DIR must not be set (archives belong to official port
-# directories only), and CFLAGS must be CRUX's default (what the binaries
-# were built with).
+# PKGMK_COMPRESSION_MODE must be xz (Jaeger ships .pkg.tar.xz), CFLAGS must
+# be CRUX's default (what the binaries were built with) unless the
+# configuration sets ACCEPT_GENERIC=yes, and
+# PKGMK_PACKAGE_DIR must be either unset (archives go to each official port's
+# directory) or one fixed directory (archives go there; a value that depends
+# on the port directory, such as one built from $PWD, is refused).
+# In a shared package directory, an archive this tool did not place (one you
+# built, say) is never overwritten or removed: that package is skipped.
 set -euo pipefail
 export LC_ALL=C
 
@@ -56,16 +63,25 @@ state=${STATE_DIR:-/var/lib/d77crux-cache}
 
 # pkgmk.conf as pkgmk sees it from inside an official port directory.
 # pkgmk.conf is shell code written for pkgmk, which does not run with -u.
-read -r mode pkgdir cflags < <(set +eu
-    cd "$PORTS/core/pkgutils" 2>/dev/null || cd "$PORTS/core" 2>/dev/null
-    PKGMK_COMPRESSION_MODE=gz PKGMK_PACKAGE_DIR=; CFLAGS=
-    # shellcheck source=/dev/null
-    . "$PKGMK_CONF" >/dev/null 2>&1
-    printf '%s %s %s\n' "$PKGMK_COMPRESSION_MODE" "${PKGMK_PACKAGE_DIR:--}" "$CFLAGS") \
-    || die "cannot evaluate $PKGMK_CONF"
+pkgmk_view() {  # pkgmk_view DIR -> mode<TAB>package-dir<TAB>cflags
+    (set +eu
+     cd "$1" 2>/dev/null || cd "$PORTS" 2>/dev/null
+     PKGMK_COMPRESSION_MODE=gz PKGMK_PACKAGE_DIR=; CFLAGS=
+     # shellcheck source=/dev/null
+     . "$PKGMK_CONF" >/dev/null 2>&1
+     printf '%s\t%s\t%s\n' "$PKGMK_COMPRESSION_MODE" "${PKGMK_PACKAGE_DIR:--}" "$CFLAGS")
+}
+IFS=$'\t' read -r mode pkgdir cflags < <(pkgmk_view "$PORTS/core/pkgutils") || die "cannot evaluate $PKGMK_CONF"
+IFS=$'\t' read -r _ pkgdir2 _ < <(pkgmk_view "$PORTS/opt") || die "cannot evaluate $PKGMK_CONF"
 [[ $mode == xz ]] || die "set PKGMK_COMPRESSION_MODE=\"xz\" in $PKGMK_CONF (now: $mode)"
-[[ $pkgdir == - ]] || die "a global PKGMK_PACKAGE_DIR ($pkgdir) is set; archives must stay in official port directories"
-[[ $cflags == "$default_cflags" ]] || die "CFLAGS are \"$cflags\", not CRUX's default; binaries would not match your builds"
+[[ $pkgdir == "$pkgdir2" ]] || die "PKGMK_PACKAGE_DIR depends on the port directory ($pkgdir, $pkgdir2); only unset or one fixed directory is supported"
+if [[ $pkgdir != - ]]; then
+    [[ $pkgdir == /* && -d $pkgdir ]] || die "PKGMK_PACKAGE_DIR ($pkgdir) is not an existing absolute directory"
+fi
+if [[ $cflags != "$default_cflags" ]]; then
+    [[ ${ACCEPT_GENERIC:-no} == yes ]] || die "CFLAGS are \"$cflags\", not CRUX's default \"$default_cflags\" the binaries are built with. Set ACCEPT_GENERIC=yes in $conf to use them anyway (your own builds keep your CFLAGS)"
+    echo "d77crux-cache: ACCEPT_GENERIC=yes: placing generic x86-64 binaries although CFLAGS are \"$cflags\"" >&2
+fi
 
 tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
 mkdir -p "$state" 2>/dev/null || true
@@ -104,7 +120,7 @@ while IFS=$'\t' read -r kind n v r _coll _origin a c s h; do
     want[$n]=$v-$r asset[$n]=$a cfile[$n]=$c size[$n]=$s sha[$n]=$h
 done < "$tmp/manifest.txt"
 
-placed=$state/placed            # archives this tool put in port directories
+placed=$state/placed            # archives this tool put in place (only these are ever removed)
 touch "$placed" 2>/dev/null || true
 declare -A count keep          # keep: archives verified or placed in this run
 note() { count[$1]=$(( ${count[$1]:-0} + 1 )); printf '%-16s %-28s %s\n' "$1" "$2" "$3"; }
@@ -120,9 +136,12 @@ while IFS=$'\t' read -r n path v r inst; do
     if ! (cd "$dir" && signify -C -q -p "$PORTS_KEYS/$coll.pub" -x .signature Pkgfile) >/dev/null 2>&1; then
         note skip-modified "$n" "Pkgfile does not match the signed .signature"; continue
     fi
-    target=$dir/${cfile[$n]}
+    if [[ $pkgdir == - ]]; then target=$dir/${cfile[$n]}; else target=$pkgdir/${cfile[$n]}; fi
     if [[ -f $target ]] && printf '%s  %s\n' "${sha[$n]}" "$target" | sha256sum -c --status; then
         keep[$target]=1; note present "$n" "$tree"; continue
+    fi
+    if [[ -e $target ]] && ! grep -qxF "$target" "$placed" 2>/dev/null; then
+        note skip-foreign "$n" "$target exists and was not placed by d77crux-cache"; continue
     fi
     if [[ $dry == yes ]]; then note would-cache "$n" "$tree (${size[$n]} bytes)"; continue; fi
     if ! curl -fsSL --retry 2 -o "$target.part" "$url/${asset[$n]}"; then

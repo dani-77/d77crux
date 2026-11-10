@@ -73,16 +73,43 @@ check "altered archive refused"      '[[ ! -f $w/ports/core/foo/foo#2-1.pkg.tar.
 printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\n' > "$w/pkgmk.conf"
 out=$(run 2>&1) && rc=0 || rc=$?
 check "refuses gz compression"       '[[ $rc != 0 ]] && grep -q "PKGMK_COMPRESSION_MODE" <<<"$out"'
-printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\nPKGMK_PACKAGE_DIR=/srv/pkg\n' > "$w/pkgmk.conf"
+# --- global PKGMK_PACKAGE_DIR ----------------------------------------------
+mk foo 2 1   # untampered again
+mkdir -p "$w/pkgdir"
+printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\nPKGMK_PACKAGE_DIR=%s/pkgdir\n' "$w" > "$w/pkgmk.conf"
+printf 'foo diff\nbar diff\nbaz diff\nqux diff\n' > "$w/inst"
 out=$(run 2>&1) && rc=0 || rc=$?
-check "refuses global package dir"   '[[ $rc != 0 ]] && grep -q "PKGMK_PACKAGE_DIR" <<<"$out"'
+check "global dir: archive placed there"  '[[ $rc == 0 && -f $w/pkgdir/foo#2-1.pkg.tar.xz && ! -f $w/ports/core/foo/foo#2-1.pkg.tar.xz ]]'
+echo "my own build" > "$w/pkgdir/qux#1-1.pkg.tar.xz"; printf 'qux diff\n' >> "$w/inst"
+mkdir -p "$w/ports/core/quux"; port core quux 1 1; mk quux 1 1
+printf 'pkg\tquux\t1\t1\tcore\tcrux.ninja-iso\tquux-1-1.pkg.tar.xz\tquux#1-1.pkg.tar.xz\t%s\t%s\n' \
+    "$(stat -c %s "$w/rel/T/quux-1-1.pkg.tar.xz")" "$(sha256sum "$w/rel/T/quux-1-1.pkg.tar.xz" | cut -d' ' -f1)" >> "$w/rel/T/manifest.txt"
+rm -f "$w/rel/T/manifest.txt.sig"; signify -S -s "$w/keys/rel.sec" -m "$w/rel/T/manifest.txt" -x "$w/rel/T/manifest.txt.sig"
+echo "my own quux build" > "$w/pkgdir/quux#1-1.pkg.tar.xz"; printf 'quux diff\n' >> "$w/inst"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "global dir: foreign archive kept"  'grep -q "^skip-foreign .*quux" <<<"$out" && grep -qx "my own quux build" "$w/pkgdir/quux#1-1.pkg.tar.xz"'
+printf 'foo yes\n' > "$w/inst"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "global dir: only own archives removed" '[[ ! -f $w/pkgdir/foo#2-1.pkg.tar.xz ]] && [[ -f $w/pkgdir/quux#1-1.pkg.tar.xz && -f $w/pkgdir/qux#1-1.pkg.tar.xz ]]'
+printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\nPKGMK_PACKAGE_DIR="$PWD/out"\n' > "$w/pkgmk.conf"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "refuses a port-relative package dir" '[[ $rc != 0 ]] && grep -q "depends on the port directory" <<<"$out"'
+printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\nPKGMK_PACKAGE_DIR=/nonexistent/pkg\n' > "$w/pkgmk.conf"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "refuses a missing package dir"     '[[ $rc != 0 ]] && grep -q "not an existing absolute directory" <<<"$out"'
 printf 'export CFLAGS="-O2 -march=native -pipe"\nPKGMK_COMPRESSION_MODE="xz"\n' > "$w/pkgmk.conf"
 out=$(run 2>&1) && rc=0 || rc=$?
 check "refuses custom CFLAGS"        '[[ $rc != 0 ]] && grep -q "CFLAGS" <<<"$out"'
+echo 'ACCEPT_GENERIC=yes' >> "$w/conf"
+printf 'foo diff\n' > "$w/inst"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "ACCEPT_GENERIC=yes allows custom CFLAGS" '[[ $rc == 0 ]] && grep -q "ACCEPT_GENERIC=yes: placing generic" <<<"$out" && [[ -f $w/ports/core/foo/foo#2-1.pkg.tar.xz ]]'
+sed -i '/^ACCEPT_GENERIC=/d' "$w/conf"
 
 # --- channel pointer -----------------------------------------------------
 printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\n' > "$w/pkgmk.conf"
 mk foo 2 1   # restore the untampered archive the manifest describes
+printf 'foo diff\n' > "$w/inst"   # earlier cases marked foo installed
 chan() {  # chan PUBLISHED [MANIFEST_SHA]
     mkdir -p "$w/rel/C"
     printf 'format\td77crux-binpkg-channel 1\nseries\t3.8\narch\tx86_64\ntag\tT\nmanifest_sha256\t%s\npublished\t%s\n' \

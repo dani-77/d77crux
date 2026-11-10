@@ -81,9 +81,13 @@ Resulting design:
   manifest, and for each port where the tree's version-release equals the
   manifest's **and** the Pkgfile verifies against the collection's
   `.signature`, download the archive, check its SHA-256 and place it in the
-  port directory. Remove stale archives it placed earlier. It refuses to run
-  if a global `PKGMK_PACKAGE_DIR` is set, or if the CFLAGS differ from
-  CRUX's defaults (Jaeger builds with `-O2 -march=x86-64 -pipe`).
+  port directory, or in `PKGMK_PACKAGE_DIR` when that is one fixed
+  directory (0.1.1, for the T480s; a value that depends on the port
+  directory is refused). It never overwrites or removes an archive it did
+  not place: in a shared directory, such a package is skipped. It removes
+  stale archives it placed earlier. It refuses to run if the CFLAGS differ
+  from CRUX's defaults (Jaeger builds with `-O2 -march=x86-64 -pipe`)
+  unless `ACCEPT_GENERIC=yes` is set in `/etc/d77crux-cache.conf` (0.1.1).
 - **Failure mode:** if the filler does nothing, or does it wrong in a way its
   checks catch, `prt-get` compiles, as today.
 ### Full `prt-get sysup`, 2026-11-10

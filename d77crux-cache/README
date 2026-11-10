@@ -15,9 +15,14 @@ Then, whenever you update:
     d77crux-cache          # -n to only report what it would place
     prt-get sysup
 
-d77crux-cache refuses to run if pkgmk would not build xz packages, if a
-global PKGMK_PACKAGE_DIR is set, or if CFLAGS differ from CRUX's default
-(the binaries are built with "-O2 -march=x86-64 -pipe").
+d77crux-cache refuses to run if pkgmk would not build xz packages. It also
+refuses if CFLAGS differ from CRUX's default (the binaries are generic,
+built with "-O2 -march=x86-64 -pipe"), unless you set ACCEPT_GENERIC=yes in
+/etc/d77crux-cache.conf: then the cached ports are generic and everything
+else still builds with your CFLAGS. Do not change your CFLAGS for this tool. With a fixed PKGMK_PACKAGE_DIR (for example
+/usr/ports/packages) the archives go there instead of the port directories;
+an archive already there that d77crux-cache did not place, such as one you
+built, is left alone and that package is built as usual.
 
 The binaries come byte for byte from Jaeger's updated CRUX ISO
 (crux.ninja). Their manifest and the channel pointer are signed with the

@@ -33,8 +33,13 @@ Read `binpkg/README.md` first. The design, in short:
 - An archive is placed only if the ports tree has exactly its
   version-release, the port's Pkgfile verifies against the collection's
   `.signature`, and its SHA-256 matches the signed manifest. The tool
-  refuses to run unless pkgmk builds xz (`PKGMK_COMPRESSION_MODE="xz"`), no
-  global `PKGMK_PACKAGE_DIR` is set, and CFLAGS are CRUX's default.
+  refuses to run unless pkgmk builds xz (`PKGMK_COMPRESSION_MODE="xz"`), and
+  unless CFLAGS are CRUX's default or the user opted in with
+  `ACCEPT_GENERIC=yes` in `/etc/d77crux-cache.conf`. The tool adapts to the
+  user's pkgmk.conf; never ask users to change it for the tool beyond xz. Archives go to the port directory, or to
+  `PKGMK_PACKAGE_DIR` when it is one fixed directory. A value that depends on
+  the port directory is refused. In a shared directory, an archive the tool
+  did not place is never overwritten or removed.
 - Archives come byte for byte from Jaeger's updated ISO (crux.ninja). Its
   SHA-256 is the identity of an import. Imported files are never rebuilt or
   modified.
