@@ -1,10 +1,14 @@
 # binpkg — CRUX binary packages for sysvd77 installs
 
-Status: the cache approach (next section) is tested in a VM, with a full
-`prt-get sysup`. The import workflow, the signing key and the
-`d77crux-cache` port are in place but have not run against GitHub yet. The
-"parallel channel" sections further down are kept as history: they are
-superseded.
+Status: live since 2026-11-10. The first snapshot,
+`crux-3.8-x86_64-20261109-5e15a2d0` (336 packages), and the channel release
+`binpkg-channel-3.8-x86_64` are published. Downloaded anonymously, the
+channel, the manifest and the archives (nano, zlib, linux-firmware) verify
+against `d77crux-cache/pubkey.signify`. The daily import runs without an
+approval gate, and its environment is restricted to `main`. Still to do:
+the `d77crux-cache` port's footprint/md5sum/signature (Daniel, on CRUX),
+and a first real-hardware run (the T480s). The "parallel channel" sections
+further down are kept as history: they are superseded.
 
 ## Publishing (how it runs)
 
@@ -15,7 +19,8 @@ superseded.
     resumes the draft. If the release is published but the channel did not
     move, it only moves the channel.
   - `import` runs in the **`binpkg-release` environment**, which holds the
-    signing secrets and requires Daniel's approval before the job starts.
+    signing secrets and is restricted to workflows running from `main`
+    (the approval gate was removed on 2026-11-10 once the checks below ran).
     It downloads the ISO, checks the digest before and after the download,
     builds every core/opt/xorg archive with `make-binrepo.py`, signs the
     manifest, uploads to a draft release (`--latest=false`, so the kernel
