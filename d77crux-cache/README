@@ -1,0 +1,25 @@
+d77crux-cache places verified CRUX binary packages in the official port
+directories (core, opt, xorg). pkgmk then considers those ports up to date,
+so `prt-get update`/`sysup` (and OctoCRUX) install the binary instead of
+compiling. prt-get still decides everything. Ports whose version differs
+from the binary snapshot, ports with a locally edited Pkgfile, and ports in
+other collections are built as usual.
+
+Once, in /etc/pkgmk.conf (sysvd77 installs already have it):
+
+    PKGMK_COMPRESSION_MODE="xz"
+
+Then, whenever you update:
+
+    ports -u
+    d77crux-cache          # -n to only report what it would place
+    prt-get sysup
+
+d77crux-cache refuses to run if pkgmk would not build xz packages, if a
+global PKGMK_PACKAGE_DIR is set, or if CFLAGS differ from CRUX's default
+(the binaries are built with "-O2 -march=x86-64 -pipe").
+
+The binaries come byte for byte from Jaeger's updated CRUX ISO
+(crux.ninja). Their manifest and the channel pointer are signed with the
+key installed at /usr/share/d77crux-cache/d77crux-binpkg.pub. See binpkg/ in
+the d77crux repository.

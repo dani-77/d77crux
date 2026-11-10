@@ -4,7 +4,7 @@
 #   bash binpkg/tests/test-d77crux-cache.sh
 set -euo pipefail
 here=$(cd -- "$(dirname -- "$0")" && pwd)
-tool=$here/../d77crux-cache
+tool=$here/../../d77crux-cache/d77crux-cache
 w=$(mktemp -d); trap 'rm -rf "$w"' EXIT
 fail=0
 check() { if eval "$2"; then echo "ok   $1"; else echo "FAIL $1"; fail=1; fi; }
@@ -79,5 +79,29 @@ check "refuses global package dir"   '[[ $rc != 0 ]] && grep -q "PKGMK_PACKAGE_D
 printf 'export CFLAGS="-O2 -march=native -pipe"\nPKGMK_COMPRESSION_MODE="xz"\n' > "$w/pkgmk.conf"
 out=$(run 2>&1) && rc=0 || rc=$?
 check "refuses custom CFLAGS"        '[[ $rc != 0 ]] && grep -q "CFLAGS" <<<"$out"'
+
+# --- channel pointer -----------------------------------------------------
+printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\n' > "$w/pkgmk.conf"
+mk foo 2 1   # restore the untampered archive the manifest describes
+chan() {  # chan PUBLISHED [MANIFEST_SHA]
+    mkdir -p "$w/rel/C"
+    printf 'format\td77crux-binpkg-channel 1\nseries\t3.8\narch\tx86_64\ntag\tT\nmanifest_sha256\t%s\npublished\t%s\n' \
+        "${2:-$(sha256sum "$w/rel/T/manifest.txt" | cut -d' ' -f1)}" "$1" > "$w/rel/C/channel.txt"
+    rm -f "$w/rel/C/channel.txt.sig"; signify -S -s "$w/keys/rel.sec" -m "$w/rel/C/channel.txt" -x "$w/rel/C/channel.txt.sig"
+}
+printf 'BASE_URL=file://%s/rel\nCHANNEL_TAG=C\nPUBKEY=%s/keys/rel.pub\n' "$w" "$w" > "$w/conf"
+rm -f "$w/state/channel-published"
+chan 2026-11-10T08:00:00Z
+out=$(run 2>&1) && rc=0 || rc=$?
+check "channel: follows the named snapshot" '[[ $rc == 0 ]] && [[ -f $w/ports/core/foo/foo#2-1.pkg.tar.xz ]]'
+chan 2026-11-09T08:00:00Z
+out=$(run 2>&1) && rc=0 || rc=$?
+check "channel: older pointer refused"      '[[ $rc != 0 ]] && grep -q "older than" <<<"$out"'
+chan 2026-11-11T08:00:00Z 0000000000000000000000000000000000000000000000000000000000000000
+out=$(run 2>&1) && rc=0 || rc=$?
+check "channel: manifest mismatch refused"  '[[ $rc != 0 ]] && grep -q "does not match the channel" <<<"$out"'
+echo tamper >> "$w/rel/C/channel.txt"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "channel: bad signature refused"      '[[ $rc != 0 ]] && grep -q "channel signature" <<<"$out"'
 
 exit $fail

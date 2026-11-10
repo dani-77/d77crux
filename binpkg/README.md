@@ -1,8 +1,45 @@
 # binpkg — CRUX binary packages for sysvd77 installs
 
-Status: **prototype**. The client and the release generator work and passed a
-VM trial (below). The scheduled import workflow, the production signing key
-and the port for the client do not exist yet.
+Status: the cache approach (next section) is tested in a VM, with a full
+`prt-get sysup`. The import workflow, the signing key and the
+`d77crux-cache` port are in place but have not run against GitHub yet. The
+"parallel channel" sections further down are kept as history: they are
+superseded.
+
+## Publishing (how it runs)
+
+- **Workflow:** `.github/workflows/import-crux-iso.yml`, daily and on
+  demand. It runs in two jobs, serialised per series and architecture.
+  - `probe` reads crux.ninja's published SHA-256 and stops if that digest is
+    already published and the channel points to it. If a draft exists, it
+    resumes the draft. If the release is published but the channel did not
+    move, it only moves the channel.
+  - `import` runs in the **`binpkg-release` environment**, which holds the
+    signing secrets and requires Daniel's approval before the job starts.
+    It downloads the ISO, checks the digest before and after the download,
+    builds every core/opt/xorg archive with `make-binrepo.py`, signs the
+    manifest, uploads to a draft release (`--latest=false`, so the kernel
+    stays "Latest") and checks the draft with `check-release.py`. It then
+    publishes, verifies the public manifest and one archive, and finally
+    signs and uploads `channel.txt` to the `binpkg-channel-3.8-x86_64`
+    release. Dispatching with `publish=false` stops at the checked, signed
+    draft.
+- **Signing key:** signify, created 2026-11-10 with a random passphrase.
+  The secret key and the passphrase exist only as the environment secrets
+  `BINPKG_SIGNIFY_KEY` and `BINPKG_SIGNIFY_PASS`; no other copy was kept.
+  The public key is `d77crux-cache/pubkey.signify`. If the key is lost or
+  exposed, rotate: generate a new one, replace the secrets and the port's
+  public key, and bump the port (which Daniel's ports key signs).
+- **Channel pointer** (`channel.txt`, signed): format, series, arch, tag,
+  `manifest_sha256`, `published`. Clients refuse a pointer older than the
+  last one they accepted, and a manifest whose SHA-256 differs from the
+  pointer's.
+- **Client:** the `d77crux-cache` port (`/usr/bin/d77crux-cache`,
+  `/etc/d77crux-cache.conf`, public key under `/usr/share/d77crux-cache/`,
+  so a rotated key arrives with a port upgrade). Its `.footprint`, `.md5sum`
+  and `.signature` are made and signed by Daniel on CRUX, like every port.
+- **Tests:** `binpkg/tests/test-d77crux-cache.sh` (host, 14 cases including
+  the channel), the VM tests in sysv-d77, and `shellcheck`.
 
 ## Direction change (2026-11-10): a binary cache for prt-get
 

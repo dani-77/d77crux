@@ -74,7 +74,11 @@ def main() -> int:
     ap.add_argument("packages", nargs="+")
     a = ap.parse_args()
 
-    iso_sha = hashlib.sha256(a.iso.read_bytes()).hexdigest()
+    h = hashlib.sha256()
+    with open(a.iso, "rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    iso_sha = h.hexdigest()
     listing = iso_listing(a.iso)
     missing = [p for p in a.packages if p not in listing]
     if missing:

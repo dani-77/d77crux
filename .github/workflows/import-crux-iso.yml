@@ -1,0 +1,217 @@
+name: Import CRUX binaries (crux.ninja)
+
+# Imports the package archives of Jaeger's updated CRUX ISO (crux.ninja) as a
+# signed snapshot release, and points the binpkg channel at it. Installs use
+# them through binpkg/d77crux-cache: verified archives placed in official port
+# directories, which pkgmk then treats as up to date, so prt-get installs them
+# instead of compiling. See binpkg/README.md.
+#
+# The ISO's SHA-256 is the import identity (crux.ninja reuses the ISO's name
+# and URL). A digest that is already published is skipped. A draft left by an
+# interrupted run is resumed under the same tag. The signing key lives only
+# in the binpkg-release environment's secrets, and that environment can
+# require an approval before the import job runs.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish the release and move the channel (false: stop at a checked, signed draft)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: binpkg-import-3.8-x86_64
+  cancel-in-progress: false
+
+env:
+  SERIES: "3.8"
+  ARCH: x86_64
+  ISO_URL: https://crux.ninja/updated-iso/crux-3.8-updated.iso
+  SHA_URL: https://crux.ninja/updated-iso/crux-3.8-updated.sha256
+  CHANNEL_TAG: binpkg-channel-3.8-x86_64
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.probe.outputs.proceed }}
+      sha: ${{ steps.probe.outputs.sha }}
+      tag: ${{ steps.probe.outputs.tag }}
+      mode: ${{ steps.probe.outputs.mode }}
+    steps:
+      - name: Probe crux.ninja for a new digest
+        id: probe
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          sha=$(curl -fsSL --retry 3 "$SHA_URL" | awk '{print $1}')
+          [[ $sha =~ ^[0-9a-f]{64}$ ]] || { echo "No valid digest at $SHA_URL"; exit 1; }
+          short=${sha:0:8}
+          releases=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            -q ".[] | select(.tag_name | endswith(\"-$short\")) | \"\(.tag_name) \(.draft)\"")
+          published=$(awk '$2=="false"{print $1; exit}' <<<"$releases")
+          if [[ -n $published ]]; then
+            # Published, but did the channel move? (A run can stop in between.)
+            current=$(curl -fsSL "https://github.com/$GITHUB_REPOSITORY/releases/download/$CHANNEL_TAG/channel.txt" 2>/dev/null |
+                      awk -F'\t' '$1=="tag"{print $2}' || true)
+            if [[ $current == "$published" ]]; then
+              echo "Digest $sha already published as $published, and the channel points to it"
+              echo "proceed=false" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            echo "Published as $published but the channel points to '${current:-nothing}': moving the channel"
+            { echo "proceed=true"; echo "sha=$sha"; echo "tag=$published"; echo "mode=channel"; } >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          tag=$(awk '$2=="true"{print $1; exit}' <<<"$releases")
+          if [[ -n $tag ]]; then
+            echo "Resuming the draft $tag"
+          else
+            modified=$(curl -fsSI --retry 3 "$ISO_URL" | sed -n 's/^last-modified: *//Ip' | tr -d '\r')
+            tag="crux-$SERIES-$ARCH-$(date -u -d "$modified" +%Y%m%d)-$short"
+          fi
+          {
+            echo "proceed=true"; echo "sha=$sha"; echo "tag=$tag"; echo "mode=full"
+          } >> "$GITHUB_OUTPUT"
+          echo "New digest $sha -> $tag" >> "$GITHUB_STEP_SUMMARY"
+
+  import:
+    needs: probe
+    if: needs.probe.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    environment: binpkg-release
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SHA: ${{ needs.probe.outputs.sha }}
+      TAG: ${{ needs.probe.outputs.tag }}
+      MODE: ${{ needs.probe.outputs.mode }}
+      PUBLISH: ${{ github.event_name == 'schedule' || inputs.publish }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libarchive-tools signify-openbsd
+          sudo ln -sf "$(command -v signify-openbsd)" /usr/local/bin/signify
+
+      - name: Download and verify the ISO
+        if: env.MODE == 'full'
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/iso"
+          curl -fL --retry 3 -o "$RUNNER_TEMP/iso/crux.iso" "$ISO_URL"
+          printf '%s  %s\n' "$SHA" "$RUNNER_TEMP/iso/crux.iso" | sha256sum -c -
+          # crux.ninja may republish while we download: the digest must not have moved.
+          again=$(curl -fsSL --retry 3 "$SHA_URL" | awk '{print $1}')
+          [[ $again == "$SHA" ]] || { echo "Published digest changed during the import ($again)"; exit 1; }
+
+      - name: Build the snapshot directory
+        if: env.MODE == 'full'
+        run: |
+          set -euo pipefail
+          iso=$RUNNER_TEMP/iso/crux.iso
+          mapfile -t names < <(bsdtar -tf "$iso" | sed -nE 's#^crux/(core|opt|xorg)/([^/]+)\#[^/]+\.pkg\.tar\.[a-z0-9]+$#\2#p' | sort -u)
+          echo "${#names[@]} packages"
+          python3 -I binpkg/make-binrepo.py --iso "$iso" --iso-url "$ISO_URL" \
+            --series "$SERIES" --arch "$ARCH" --out "$RUNNER_TEMP/out" --tag "$TAG" "${names[@]}"
+          [[ $(grep -c '^pkg' "$RUNNER_TEMP/out/$TAG/manifest.txt") == "${#names[@]}" ]]
+          largest=$(ls -S "$RUNNER_TEMP/out/$TAG" | head -1)
+          size=$(stat -c %s "$RUNNER_TEMP/out/$TAG/$largest")
+          (( size < 2147483648 )) || { echo "$largest is over GitHub's 2 GiB asset limit"; exit 1; }
+          (( ${#names[@]} + 2 <= 1000 )) || { echo "Over GitHub's 1000 assets per release"; exit 1; }
+
+      - name: Sign the manifest
+        if: env.MODE == 'full'
+        env:
+          KEY: ${{ secrets.BINPKG_SIGNIFY_KEY }}
+          PASS: ${{ secrets.BINPKG_SIGNIFY_PASS }}
+        run: |
+          set -euo pipefail
+          umask 077
+          key=$RUNNER_TEMP/binpkg.sec
+          trap 'shred -u "$key" 2>/dev/null || rm -f "$key"' EXIT
+          printf '%s\n' "$KEY" > "$key"
+          m=$RUNNER_TEMP/out/$TAG/manifest.txt
+          printf '%s\n' "$PASS" | setsid signify -S -s "$key" -m "$m" -x "$m.sig"
+          signify -V -p d77crux-cache/pubkey.signify -m "$m" -x "$m.sig"
+
+      - name: Upload to a draft release
+        if: env.MODE == 'full'
+        run: |
+          set -euo pipefail
+          dir=$RUNNER_TEMP/out/$TAG
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            {
+              echo "CRUX $SERIES $ARCH binary packages, imported byte for byte from"
+              echo "$ISO_URL (SHA-256 \`$SHA\`)."
+              echo
+              echo "Signed manifest: \`manifest.txt\` / \`manifest.txt.sig\` (key \`d77crux-cache/pubkey.signify\`)."
+              echo "Used by \`d77crux-cache\`; see binpkg/README.md."
+            } > "$RUNNER_TEMP/notes.md"
+            gh release create "$TAG" --draft --latest=false --title "$TAG" --notes-file "$RUNNER_TEMP/notes.md"
+          fi
+          # --clobber: a resumed draft gets the files of this run.
+          find "$dir" -maxdepth 1 -type f -name '*.pkg.tar.*' -print0 |
+            xargs -0 -n 50 gh release upload "$TAG" --clobber
+          gh release upload "$TAG" --clobber "$dir/manifest.txt" "$dir/manifest.txt.sig"
+
+      - name: Check the draft against the manifest
+        if: env.MODE == 'full'
+        run: |
+          set -euo pipefail
+          id=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" -q ".[] | select(.tag_name==\"$TAG\") | .id")
+          gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$id/assets?per_page=100" > "$RUNNER_TEMP/assets.json"
+          python3 -I binpkg/check-release.py "$RUNNER_TEMP/out/$TAG/manifest.txt" "$RUNNER_TEMP/assets.json" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish the release
+        if: env.MODE == 'full' && env.PUBLISH == 'true'
+        run: gh release edit "$TAG" --draft=false --latest=false
+
+      - name: Check the public downloads
+        if: env.PUBLISH == 'true'
+        run: |
+          set -euo pipefail
+          base=https://github.com/$GITHUB_REPOSITORY/releases/download/$TAG
+          d=$RUNNER_TEMP/public; mkdir -p "$d"
+          curl -fsSL --retry 5 --retry-delay 10 -o "$d/manifest.txt" "$base/manifest.txt"
+          curl -fsSL --retry 5 --retry-delay 10 -o "$d/manifest.txt.sig" "$base/manifest.txt.sig"
+          signify -V -p d77crux-cache/pubkey.signify -m "$d/manifest.txt" -x "$d/manifest.txt.sig"
+          grep -qxF "$(printf 'iso_sha256\t%s' "$SHA")" "$d/manifest.txt"
+          [[ $MODE != full ]] || cmp "$d/manifest.txt" "$RUNNER_TEMP/out/$TAG/manifest.txt"
+          # One archive end to end: the smallest one, against the manifest.
+          read -r asset size sha < <(awk -F'\t' '$1=="pkg"{print $7, $9, $10}' "$d/manifest.txt" | sort -k2 -n | head -1)
+          curl -fsSL --retry 5 -o "$d/$asset" "$base/$asset"
+          printf '%s  %s\n' "$sha" "$d/$asset" | sha256sum -c -
+
+      - name: Move the channel to this snapshot
+        if: env.PUBLISH == 'true'
+        env:
+          KEY: ${{ secrets.BINPKG_SIGNIFY_KEY }}
+          PASS: ${{ secrets.BINPKG_SIGNIFY_PASS }}
+        run: |
+          set -euo pipefail
+          umask 077
+          key=$RUNNER_TEMP/binpkg.sec
+          trap 'shred -u "$key" 2>/dev/null || rm -f "$key"' EXIT
+          printf '%s\n' "$KEY" > "$key"
+          c=$RUNNER_TEMP/channel; mkdir -p "$c"
+          printf 'format\td77crux-binpkg-channel 1\nseries\t%s\narch\t%s\ntag\t%s\nmanifest_sha256\t%s\npublished\t%s\n' \
+            "$SERIES" "$ARCH" "$TAG" "$(sha256sum "$RUNNER_TEMP/public/manifest.txt" | cut -d' ' -f1)" \
+            "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "$c/channel.txt"
+          printf '%s\n' "$PASS" | setsid signify -S -s "$key" -m "$c/channel.txt" -x "$c/channel.txt.sig"
+          signify -V -p d77crux-cache/pubkey.signify -m "$c/channel.txt" -x "$c/channel.txt.sig"
+          if ! gh release view "$CHANNEL_TAG" >/dev/null 2>&1; then
+            gh release create "$CHANNEL_TAG" --latest=false --title "binpkg channel: CRUX $SERIES $ARCH" \
+              --notes "Signed pointer (channel.txt) to the current binpkg snapshot release. Read by d77crux-cache."
+          fi
+          gh release upload "$CHANNEL_TAG" --clobber "$c/channel.txt" "$c/channel.txt.sig"
+          cat "$c/channel.txt" >> "$GITHUB_STEP_SUMMARY"
