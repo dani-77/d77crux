@@ -1,0 +1,17 @@
+# Description: Verified CRUX binaries placed where pkgmk finds them, so prt-get installs instead of compiling
+# URL: https://github.com/dani-77/d77crux/tree/main/binpkg
+# Maintainer: Daniel Azevedo, daniazevedo77 at posteo dot net
+# Depends on: curl signify
+
+name=d77crux-cache
+version=0.1.0
+release=1
+source=(d77crux-cache d77crux-cache.conf pubkey.signify)
+
+build() {
+	install -Dm755 d77crux-cache $PKG/usr/bin/d77crux-cache
+	install -Dm644 d77crux-cache.conf $PKG/etc/d77crux-cache.conf
+	# Not under /etc: pkgadd.conf keeps /etc on upgrades, and a rotated key
+	# must reach installed systems with the next version of this port.
+	install -Dm644 pubkey.signify $PKG/usr/share/d77crux-cache/d77crux-binpkg.pub
+}

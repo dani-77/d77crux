@@ -1,0 +1,111 @@
+#!/bin/bash
+# d77crux-update: apply a signed d77crux binary release with pkgadd.
+#
+#   d77crux-update [-c CONF] plan     show what this machine would change
+#   d77crux-update [-c CONF] apply    download, verify everything, then pkgadd
+#
+# CONF (default /etc/d77crux-update.conf) sets:
+#   BASE_URL  release download base; the manifest is $BASE_URL/$TAG/manifest.txt
+#             (GitHub: https://github.com/dani-77/d77crux/releases/download)
+#   TAG       release tag, one per imported snapshot
+#   PUBKEY    signify public key that signs the manifest
+#   CACHE     download and state directory (default /var/cache/d77crux-update)
+#
+# Preparation (manifest signature, every planned archive's size and SHA-256)
+# completes before the first pkgadd; any failure there leaves the package
+# database untouched. Packages locked with prt-get, packages not installed and
+# installed versions newer than the release are left alone. pkgadd -u applies
+# /etc/pkgadd.conf (UPGRADE rules keep local configuration). Progress is
+# recorded in $CACHE/$TAG/applied, so an interrupted apply can be re-run.
+set -euo pipefail
+export LC_ALL=C
+
+conf=/etc/d77crux-update.conf
+if [[ ${1:-} == -c ]]; then conf=${2:?}; shift 2; fi
+cmd=${1:-plan}
+CACHE=/var/cache/d77crux-update
+# shellcheck source=/dev/null
+source "$conf"
+: "${BASE_URL:?}" "${TAG:?}" "${PUBKEY:?}"
+[[ $TAG =~ ^[A-Za-z0-9._-]+$ ]] || { echo "invalid TAG" >&2; exit 2; }
+
+dir=$CACHE/$TAG
+url=$BASE_URL/$TAG
+die() { echo "d77crux-update: $*" >&2; exit 1; }
+fetch() { curl -fsSL --retry 2 --connect-timeout 20 -o "$2" "$1"; }
+
+# Manifest: fetched fresh every run, used only after the signature verifies.
+get_manifest() {
+    mkdir -p "$dir"
+    local tmp; tmp=$(mktemp -d "$dir/.manifest.XXXXXX")
+    fetch "$url/manifest.txt" "$tmp/manifest.txt" || die "cannot download $url/manifest.txt"
+    fetch "$url/manifest.txt.sig" "$tmp/manifest.txt.sig" || die "cannot download $url/manifest.txt.sig"
+    signify -V -q -p "$PUBKEY" -m "$tmp/manifest.txt" -x "$tmp/manifest.txt.sig" \
+        || die "manifest signature does not verify against $PUBKEY"
+    grep -qx $'format\td77crux-binpkg 1' "$tmp/manifest.txt" || die "unknown manifest format"
+    grep -qx $'tag\t'"$TAG" "$tmp/manifest.txt" || die "manifest is for another tag"
+    mv -f "$tmp/manifest.txt" "$tmp/manifest.txt.sig" "$dir/"
+    rmdir "$tmp"
+}
+
+# One line per manifest package: action name have want asset crux_file size sha256
+make_plan() {
+    local locks=/var/lib/pkg/prt-get.locker
+    declare -A inst
+    while read -r n v; do inst[$n]=$v; done < <(pkginfo -i)
+    while IFS=$'\t' read -r kind name ver rel _coll _origin asset cfile size sha; do
+        [[ $kind == pkg ]] || continue
+        [[ $asset =~ ^[A-Za-z0-9._+-]+$ && $cfile =~ ^[A-Za-z0-9._+#-]+$ ]] || die "bad file name in manifest: $asset"
+        local want=$ver-$rel have=${inst[$name]:-} action
+        if [[ -z $have ]]; then action=not-installed
+        elif [[ $have == "$want" ]]; then action=current
+        elif [[ -f $locks ]] && grep -qx "$name" "$locks"; then action=locked
+        elif [[ $(printf '%s\n%s\n' "$have" "$want" | sort -V | tail -1) == "$have" ]]; then action=newer-installed
+        else action=upgrade
+        fi
+        printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$action" "$name" "${have:--}" "$want" "$asset" "$cfile" "$size" "$sha"
+    done < "$dir/manifest.txt"
+}
+
+show_plan() {
+    awk -F'\t' '{printf "%-16s %-24s %-18s -> %s\n", $1, $2, $3, $4} $1=="upgrade"{n++}
+        END{printf "%d package(s) to upgrade\n", n}' <<< "$1"
+}
+
+case $cmd in
+plan)
+    get_manifest
+    show_plan "$(make_plan)"
+    ;;
+apply)
+    get_manifest
+    plan=$(make_plan)
+    show_plan "$plan"
+    todo=$(awk -F'\t' '$1=="upgrade"' <<< "$plan")
+    [[ -n $todo ]] || { echo "Nothing to do."; exit 0; }
+
+    # Preparation: download and verify every archive before touching the system.
+    mkdir -p "$dir/pkgs"
+    while IFS=$'\t' read -r _a name _h _w asset cfile size sha; do
+        dest=$dir/pkgs/$cfile
+        if ! [[ -f $dest ]] || ! printf '%s  %s\n' "$sha" "$dest" | sha256sum -c --status; then
+            fetch "$url/$asset" "$dest.part" || { rm -f "$dest.part"; die "cannot download $asset; nothing installed"; }
+            [[ $(stat -c %s "$dest.part") == "$size" ]] || { rm -f "$dest.part"; die "$asset: size mismatch; nothing installed"; }
+            printf '%s  %s\n' "$sha" "$dest.part" | sha256sum -c --status \
+                || { rm -f "$dest.part"; die "$asset: SHA-256 mismatch; nothing installed"; }
+            mv -f "$dest.part" "$dest"
+        fi
+        echo "verified $cfile"
+    done <<< "$todo"
+    echo "Preparation complete: all archives verified."
+
+    # Application: manifest order puts dependencies first.
+    while IFS=$'\t' read -r _a name _h want _asset cfile _size _sha; do
+        echo "pkgadd -u $cfile"
+        pkgadd -u "$dir/pkgs/$cfile" || die "pkgadd failed on $name; done so far: $dir/applied (re-run apply to resume)"
+        printf '%s\t%s\t%s\n' "$(date -u +%FT%TZ)" "$name" "$want" >> "$dir/applied"
+    done <<< "$todo"
+    echo "Applied $(wc -l <<< "$todo") package(s)."
+    ;;
+*) sed -n '2,5p' "$0" >&2; exit 2 ;;
+esac

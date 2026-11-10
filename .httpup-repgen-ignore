@@ -27,3 +27,5 @@ README.md
 \.sec
 LICENSE
 .gitignore
+^binpkg
+AGENTS.md
