@@ -1,0 +1,123 @@
+#!/bin/bash
+# d77crux-cache: stock verified binary packages where pkgmk looks for them.
+#
+#   d77crux-cache [-c CONF] [-n]
+#
+# For every installed port that prt-get would update (prt-get printf %i ==
+# "diff"), if the release manifest has exactly the version-release of the
+# port in the local ports tree, the port is in an official collection
+# (core/opt/xorg) and its Pkgfile still matches the collection's signed
+# .signature, download the archive, check its SHA-256 and place it in the
+# port directory under its CRUX name. pkgmk's own up-to-date check then makes
+# `prt-get update`/`sysup` (and OctoCRUX) install it instead of compiling.
+# Anything that does not match is left alone, and prt-get builds it as usual.
+#
+# Run as root after `ports -u`. -n: report only, place nothing.
+#
+# CONF (default /etc/d77crux-cache.conf):
+#   BASE_URL  release download base (manifest at $BASE_URL/$TAG/manifest.txt)
+#   TAG       snapshot release tag
+#   PUBKEY    signify public key for manifest.txt.sig
+#
+# Refuses to run when pkgmk would not find or would not accept the archives:
+# PKGMK_COMPRESSION_MODE must be xz (Jaeger ships .pkg.tar.xz), a global
+# PKGMK_PACKAGE_DIR must not be set (archives belong to official port
+# directories only), and CFLAGS must be CRUX's default (what the binaries
+# were built with).
+set -euo pipefail
+export LC_ALL=C
+
+conf=/etc/d77crux-cache.conf dry=no
+while getopts c:n o; do
+    case $o in c) conf=$OPTARG ;; n) dry=yes ;; *) sed -n '2,4p' "$0" >&2; exit 2 ;; esac
+done
+# shellcheck source=/dev/null
+source "$conf"
+: "${BASE_URL:?}" "${TAG:?}" "${PUBKEY:?}"
+[[ $TAG =~ ^[A-Za-z0-9._-]+$ ]] || { echo "invalid TAG" >&2; exit 2; }
+die() { echo "d77crux-cache: $*" >&2; exit 1; }
+[[ $EUID == 0 || $dry == yes || -n ${D77CRUX_CACHE_TEST:-} ]] || die "run as root (or -n to report only)"
+
+# Overridable for tests only.
+PORTS=${PORTS:-/usr/ports} PKGMK_CONF=${PKGMK_CONF:-/etc/pkgmk.conf} PORTS_KEYS=${PORTS_KEYS:-/etc/ports}
+official="$PORTS/core $PORTS/opt $PORTS/xorg"
+default_cflags='-O2 -march=x86-64 -pipe'
+state=${STATE_DIR:-/var/lib/d77crux-cache}
+url=$BASE_URL/$TAG
+
+# pkgmk.conf as pkgmk sees it from inside an official port directory.
+# pkgmk.conf is shell code written for pkgmk, which does not run with -u.
+read -r mode pkgdir cflags < <(set +eu
+    cd "$PORTS/core/pkgutils" 2>/dev/null || cd "$PORTS/core" 2>/dev/null
+    PKGMK_COMPRESSION_MODE=gz PKGMK_PACKAGE_DIR=; CFLAGS=
+    # shellcheck source=/dev/null
+    . "$PKGMK_CONF" >/dev/null 2>&1
+    printf '%s %s %s\n' "$PKGMK_COMPRESSION_MODE" "${PKGMK_PACKAGE_DIR:--}" "$CFLAGS") \
+    || die "cannot evaluate $PKGMK_CONF"
+[[ $mode == xz ]] || die "set PKGMK_COMPRESSION_MODE=\"xz\" in $PKGMK_CONF (now: $mode)"
+[[ $pkgdir == - ]] || die "a global PKGMK_PACKAGE_DIR ($pkgdir) is set; archives must stay in official port directories"
+[[ $cflags == "$default_cflags" ]] || die "CFLAGS are \"$cflags\", not CRUX's default; binaries would not match your builds"
+
+tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
+curl -fsSL --retry 2 -o "$tmp/manifest.txt" "$url/manifest.txt" || die "cannot download the manifest"
+curl -fsSL --retry 2 -o "$tmp/manifest.txt.sig" "$url/manifest.txt.sig" || die "cannot download the signature"
+signify -V -q -p "$PUBKEY" -m "$tmp/manifest.txt" -x "$tmp/manifest.txt.sig" || die "manifest signature does not verify"
+grep -qx $'format\td77crux-binpkg 1' "$tmp/manifest.txt" || die "unknown manifest format"
+grep -qx $'tag\t'"$TAG" "$tmp/manifest.txt" || die "manifest is for another tag"
+
+declare -A want asset cfile size sha
+while IFS=$'\t' read -r kind n v r _coll _origin a c s h; do
+    [[ $kind == pkg ]] || continue
+    [[ $a =~ ^[A-Za-z0-9._+-]+$ && $c =~ ^[A-Za-z0-9._+#-]+$ && $c == "$n#$v-$r.pkg.tar.xz" ]] \
+        || die "bad entry in manifest: $n"
+    want[$n]=$v-$r asset[$n]=$a cfile[$n]=$c size[$n]=$s sha[$n]=$h
+done < "$tmp/manifest.txt"
+
+mkdir -p "$state" 2>/dev/null || true
+placed=$state/placed            # archives this tool put in port directories
+touch "$placed" 2>/dev/null || true
+declare -A count keep          # keep: archives verified or placed in this run
+note() { count[$1]=$(( ${count[$1]:-0} + 1 )); printf '%-16s %-28s %s\n' "$1" "$2" "$3"; }
+
+# Ports prt-get would update: installed with a different version (%i == diff).
+while IFS=$'\t' read -r n path v r inst; do
+    [[ $inst == diff ]] || continue
+    tree=$v-$r dir=$path/$n
+    if [[ " $official " != *" $path "* ]]; then note skip-collection "$n" "$path is not official"; continue; fi
+    if [[ -z ${want[$n]:-} ]]; then note skip-absent "$n" "$tree: not in the release"; continue; fi
+    if [[ ${want[$n]} != "$tree" ]]; then note skip-version "$n" "tree $tree, release ${want[$n]}"; continue; fi
+    coll=${path##*/}
+    if ! (cd "$dir" && signify -C -q -p "$PORTS_KEYS/$coll.pub" -x .signature Pkgfile) >/dev/null 2>&1; then
+        note skip-modified "$n" "Pkgfile does not match the signed .signature"; continue
+    fi
+    target=$dir/${cfile[$n]}
+    if [[ -f $target ]] && printf '%s  %s\n' "${sha[$n]}" "$target" | sha256sum -c --status; then
+        keep[$target]=1; note present "$n" "$tree"; continue
+    fi
+    if [[ $dry == yes ]]; then note would-cache "$n" "$tree (${size[$n]} bytes)"; continue; fi
+    if ! curl -fsSL --retry 2 -o "$target.part" "$url/${asset[$n]}"; then
+        rm -f "$target.part"; note failed "$n" "download"; continue
+    fi
+    if [[ $(stat -c %s "$target.part") != "${size[$n]}" ]] ||
+       ! printf '%s  %s\n' "${sha[$n]}" "$target.part" | sha256sum -c --status; then
+        rm -f "$target.part"; note failed "$n" "size or SHA-256 mismatch"; continue
+    fi
+    mv -f "$target.part" "$target"
+    keep[$target]=1
+    grep -qxF "$target" "$placed" || echo "$target" >> "$placed"
+    note cached "$n" "$tree"
+done < <(prt-get printf '%n\t%p\t%v\t%r\t%i\n' 2>/dev/null)
+
+# Remove archives this tool placed earlier that this run did not verify again
+# (installed meanwhile, or superseded by a newer port/release). Only paths
+# recorded in $placed are ever removed.
+if [[ $dry == no && -s $placed ]]; then
+    while read -r f; do
+        [[ -n ${keep[$f]:-} ]] && { echo "$f"; continue; }
+        if [[ -f $f ]]; then rm -f -- "$f"; note removed "$(basename "${f%/*}")" "${f##*/}" >&2; fi
+    done < <(sort -u "$placed") > "$placed.new"
+    mv -f "$placed.new" "$placed"
+fi
+
+printf '\n'
+for k in "${!count[@]}"; do printf '%s=%s ' "$k" "${count[$k]}"; done; printf '\n'

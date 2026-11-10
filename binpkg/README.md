@@ -44,9 +44,34 @@ Resulting design:
   CRUX's defaults (Jaeger builds with `-O2 -march=x86-64 -pipe`).
 - **Failure mode:** if the filler does nothing, or does it wrong in a way its
   checks catch, `prt-get` compiles, as today.
-- **Untested so far:** a full `prt-get sysup` with a complete cache, the
-  d77crux extras (they could be cached the same way, under Daniel's port
-  signature), and real hardware.
+### Full `prt-get sysup`, 2026-11-10
+
+`d77crux-cache` (this directory), then `prt-get sysup`. Setup: the
+2026-10-11 install, `PKGMK_COMPRESSION_MODE="xz"` added by hand (as on an
+existing install), ports tree synced from crux.nu, and a test release of all
+336 archives of the 2026-11-09 ISO. Results:
+
+- `prt-get diff`: 77 ports to update. `d77crux-cache` placed 71 verified
+  archives in 4 s. It skipped 3 where the tree is ahead of the snapshot
+  (automake, firefox-bin, groff) and 2 that are not on Jaeger's ISO
+  (python3-cairo, python3-gobject).
+- `prt-get sysup`: 4 min 47 s, no failures. 71 ports were "up to date" and
+  installed from the cache, and 5 were built (exactly the skipped ones).
+- After it: `prt-get diff` reports "No differences found", and `revdep`
+  finds nothing broken. The only rejected files are the expected ones from
+  `/etc` (filesystem's passwd/group/shadow/fstab, udev, lvm, grub.d), left
+  for `rejmerge` by pkgadd.conf, as in any CRUX upgrade.
+- A second `d77crux-cache` run removed the 71 archives it had placed, since
+  they were installed.
+- The updated disk passes Mocinha's boot proof and its
+  `expect/sysv-d77.json` equivalence check.
+- Host test: `binpkg/tests/test-d77crux-cache.sh` (fake ports tree, stub
+  prt-get, real signify) covers placement, skips, removal, an altered
+  archive, and the three refusals.
+
+Not covered yet: the d77crux extras (they could be cached the same way,
+under Daniel's port signature), a graphical session after the update (the
+boot proof logs in on a console), UEFI, and real hardware.
 
 The goal (see `AGENTS.md`): keep installed sysvd77 systems up to date from
 binary packages, reusing the archives in Jaeger's updated CRUX ISOs
