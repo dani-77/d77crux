@@ -1,0 +1,8 @@
+drwxr-xr-x	dani77/dani77	etc/
+-rw-r--r--	dani77/dani77	etc/d77crux-cache.conf
+drwxr-xr-x	dani77/dani77	usr/
+drwxr-xr-x	dani77/dani77	usr/bin/
+-rwxr-xr-x	dani77/dani77	usr/bin/d77crux-cache
+drwxr-xr-x	dani77/dani77	usr/share/
+drwxr-xr-x	dani77/dani77	usr/share/d77crux-cache/
+-rw-r--r--	dani77/dani77	usr/share/d77crux-cache/d77crux-binpkg.pub
