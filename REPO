@@ -383,6 +383,7 @@ f:74ee3adcca77c8075b33c03af268a17b:d77crux-cache/Pkgfile
 f:956c4c0d358bbab3573bc96591b4679f:d77crux-cache/README
 f:61091ca712f3e6d7860c4ebde818afb1:d77crux-cache/pubkey.signify
 f:dcb1648ce9b58d8c88481914de573739:d77crux-cache/d77crux-cache.conf
+f:d572460a8184b53be2fb6ee6442d9e92:d77crux-cache/.signature
 f:ae0a5fd2c45d567a04f1446d8a2c25e8:gtrash/.footprint
 f:c3ee27c2c451366c2849a2bd0cfb4d87:gtrash/.md5sum
 f:ac83137acacd18ed6426a43dd1ff79bb:gtrash/Pkgfile

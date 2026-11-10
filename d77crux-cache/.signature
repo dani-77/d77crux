@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbga89r72MEDciyf3I1h9V2tOKRCMZTehPFMnL/AyfxEDxhiEfIDtJGVfExPu6t3S0osNGYX4l73HpCkNUEFoEndAo=
+SHA256 (Pkgfile) = a023cce0aef95bc2c671b9a3e0171205b4bf22e9d10a3ec71ec2832f44c9b7cc
+SHA256 (.footprint) = 57dc75fdf8219408b599f8ee2fdbd74bea14c48a6d858417957c0b8575070875
+SHA256 (d77crux-cache) = 2faa0337cc98cc51b3948eb92b13f33a0b60b67b7a4bfadd015525d6dc2e2800
+SHA256 (d77crux-cache.conf) = f52e0efd437fa89fd81193224416cfef1bee458321002550f4c94df13bf1ccf0
+SHA256 (pubkey.signify) = 7e7532289e9e6dd48cb4dc69355a1113b6d56acfa0021fcda87396fa42ccfd19
