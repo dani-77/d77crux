@@ -4,6 +4,50 @@ Status: **prototype**. The client and the release generator work and passed a
 VM trial (below). The scheduled import workflow, the production signing key
 and the port for the client do not exist yet.
 
+## Direction change (2026-11-10): a binary cache for prt-get
+
+The parallel channel described further down, with its own client, planner,
+ownership registry and OctoCRUX backend, is **superseded**. It put a second
+package authority on top of `prt-get`, and every safeguard it needed (local
+builds, supplier switching, snapshot lag behind the ports tree) existed only
+to reconcile the two. Daniel's criterion is stability first: no patchwork.
+
+pkgmk already installs a binary when one is there. `build_needed()` skips
+the build if `name#version-release.pkg.tar.<mode>` exists in the package
+directory and is newer than the Pkgfile and any local source file. pkgmk
+then says "Package … is up to date" and `prt-get` installs it. So the
+channel becomes a **cache**: verified Jaeger archives placed in the official
+port directories (pkgmk's default package directory), and `prt-get`/OctoCRUX
+stay the only authority, unchanged.
+
+VM test (sysv-d77 `tests/vm-cache-guest.sh`, same 2026-10-11 base, ports tree
+synced from crux.nu on 2026-11-10):
+
+| Case | Result |
+|---|---|
+| Round 1: global `PKGMK_PACKAGE_DIR` | Never hits: installs build `.gz`, Jaeger ships `.xz` |
+| Round 1: `PKGMK_PACKAGE_DIR` inside a `case` in pkgmk.conf | pkgmk builds, then prt-get's `pkgadd` can't find the archive (prt-get does not evaluate the shell) |
+| Round 2: tree == archive (nano 9.3-1), `PKGMK_COMPRESSION_MODE="xz"`, archive in the port dir | `prt-get update nano`: "up to date", installed in 0.2 s without building; `/usr/bin/nano` identical to the archive's |
+| Round 2: `ports -u` after placing the archive | The archive survives |
+| Round 2: Pkgfile edited after the archive arrived (rsync) | Not up to date. The build stops on CRUX's own "Signature mismatch", exactly as without a cache |
+| Round 2: Pkgfile edited before the archive arrived (curl) | pkgmk would use the archive, but `signify -C -p /etc/ports/core.pub -x .signature Pkgfile` reports `Pkgfile: FAIL`, so the filler refuses to place it |
+
+Resulting design:
+
+- **On the system:** one native setting, `PKGMK_COMPRESSION_MODE="xz"`.
+- **Filler** (small script, root, run after `ports -u`): verify the signed
+  manifest, and for each port where the tree's version-release equals the
+  manifest's **and** the Pkgfile verifies against the collection's
+  `.signature`, download the archive, check its SHA-256 and place it in the
+  port directory. Remove stale archives it placed earlier. It refuses to run
+  if a global `PKGMK_PACKAGE_DIR` is set, or if the CFLAGS differ from
+  CRUX's defaults (Jaeger builds with `-O2 -march=x86-64 -pipe`).
+- **Failure mode:** if the filler does nothing, or does it wrong in a way its
+  checks catch, `prt-get` compiles, as today.
+- **Untested so far:** a full `prt-get sysup` with a complete cache, the
+  d77crux extras (they could be cached the same way, under Daniel's port
+  signature), and real hardware.
+
 The goal (see `AGENTS.md`): keep installed sysvd77 systems up to date from
 binary packages, reusing the archives in Jaeger's updated CRUX ISOs
 (crux.ninja) byte for byte, adding only what this project builds itself (the
