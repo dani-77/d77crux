@@ -4,7 +4,7 @@
 # Depends on: curl signify
 
 name=d77crux-cache
-version=0.1.1
+version=0.1.2
 release=1
 source=(d77crux-cache d77crux-cache.conf pubkey.signify)
 

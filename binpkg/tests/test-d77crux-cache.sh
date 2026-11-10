@@ -41,7 +41,8 @@ cat > "$w/bin/prt-get" <<EOF
 #!/bin/bash
 for d in $w/ports/*/*; do
     n=\${d##*/}; p=\${d%/*}; . \$d/Pkgfile
-    i=\$(awk -v n=\$n '\$1==n{print \$2}' $w/inst); printf '%s\t%s\t%s\t%s\t%s\n' \$n \$p \$version \$release \${i:-no}
+    i=\$(awk -v n=\$n '\$1==n{print \$2}' $w/inst); l=\$(awk -v n=\$n '\$1==n{print \$3}' $w/inst)
+    printf '%s\t%s\t%s\t%s\t%s\t%s\n' \$n \$p \$version \$release \${i:-no} \${l:-no}
 done
 EOF
 chmod +x "$w/bin/prt-get"
@@ -73,6 +74,16 @@ check "altered archive refused"      '[[ ! -f $w/ports/core/foo/foo#2-1.pkg.tar.
 printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\n' > "$w/pkgmk.conf"
 out=$(run 2>&1) && rc=0 || rc=$?
 check "refuses gz compression"       '[[ $rc != 0 ]] && grep -q "PKGMK_COMPRESSION_MODE" <<<"$out"'
+# --- prt-get locks ----------------------------------------------------------
+mk foo 2 1
+printf 'export CFLAGS="-O2 -march=x86-64 -pipe"\nPKGMK_COMPRESSION_MODE="xz"\n' > "$w/pkgmk.conf"
+printf 'foo diff yes\n' > "$w/inst"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "locked: no archive, binary reported" '[[ $rc == 0 && ! -f $w/ports/core/foo/foo#2-1.pkg.tar.xz ]] && grep -q "^locked .*foo .*binary available" <<<"$out" && grep -q "prt-get unlock foo" <<<"$out"'
+printf 'bar diff yes\n' > "$w/inst"
+out=$(run 2>&1) && rc=0 || rc=$?
+check "locked, no matching binary: no hint" 'grep -q "^skip-version .*bar" <<<"$out" && ! grep -q "Locked ports" <<<"$out"'
+
 # --- global PKGMK_PACKAGE_DIR ----------------------------------------------
 mk foo 2 1   # untampered again
 mkdir -p "$w/pkgdir"

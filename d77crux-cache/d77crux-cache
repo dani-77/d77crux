@@ -13,6 +13,9 @@
 # Anything that does not match is left alone, and prt-get builds it as usual.
 #
 # Run as root after `ports -u`. -n: report only, place nothing.
+# Ports locked with `prt-get lock` get no archive (sysup skips them anyway);
+# when a binary is available for one, the report says so and prints the
+# unlock/update/lock line that installs it from the cache.
 #
 # CONF (default /etc/d77crux-cache.conf):
 #   BASE_URL     release download base, e.g.
@@ -126,7 +129,8 @@ declare -A count keep          # keep: archives verified or placed in this run
 note() { count[$1]=$(( ${count[$1]:-0} + 1 )); printf '%-16s %-28s %s\n' "$1" "$2" "$3"; }
 
 # Ports prt-get would update: installed with a different version (%i == diff).
-while IFS=$'\t' read -r n path v r inst; do
+declare -a locked=()
+while IFS=$'\t' read -r n path v r inst lock; do
     [[ $inst == diff ]] || continue
     tree=$v-$r dir=$path/$n
     if [[ " $official " != *" $path "* ]]; then note skip-collection "$n" "$path is not official"; continue; fi
@@ -135,6 +139,11 @@ while IFS=$'\t' read -r n path v r inst; do
     coll=${path##*/}
     if ! (cd "$dir" && signify -C -q -p "$PORTS_KEYS/$coll.pub" -x .signature Pkgfile) >/dev/null 2>&1; then
         note skip-modified "$n" "Pkgfile does not match the signed .signature"; continue
+    fi
+    # prt-get lock: respected (sysup would not touch it), but say that a binary
+    # exists. Ports are often locked only because they take hours to build.
+    if [[ $lock == yes ]]; then
+        locked+=("$n"); note locked "$n" "$tree: binary available"; continue
     fi
     if [[ $pkgdir == - ]]; then target=$dir/${cfile[$n]}; else target=$pkgdir/${cfile[$n]}; fi
     if [[ -f $target ]] && printf '%s  %s\n' "${sha[$n]}" "$target" | sha256sum -c --status; then
@@ -155,7 +164,7 @@ while IFS=$'\t' read -r n path v r inst; do
     keep[$target]=1
     grep -qxF "$target" "$placed" || echo "$target" >> "$placed"
     note cached "$n" "$tree"
-done < <(prt-get printf '%n\t%p\t%v\t%r\t%i\n' 2>/dev/null)
+done < <(prt-get printf '%n\t%p\t%v\t%r\t%i\t%l\n' 2>/dev/null)
 
 # Remove archives this tool placed earlier that this run did not verify again
 # (installed meanwhile, or superseded by a newer port/release). Only paths
@@ -166,6 +175,12 @@ if [[ $dry == no && -s $placed ]]; then
         if [[ -f $f ]]; then rm -f -- "$f"; note removed "$(basename "${f%/*}")" "${f##*/}" >&2; fi
     done < <(sort -u "$placed") > "$placed.new"
     mv -f "$placed.new" "$placed"
+fi
+
+if (( ${#locked[@]} )); then
+    printf '\nLocked ports with binaries available. To update them from the cache and keep them locked:\n'
+    printf '  prt-get unlock %s && d77crux-cache && prt-get update %s; prt-get lock %s\n' \
+        "${locked[*]}" "${locked[*]}" "${locked[*]}"
 fi
 
 printf '\n'

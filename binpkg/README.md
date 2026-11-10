@@ -85,7 +85,10 @@ Resulting design:
   directory (0.1.1, for the T480s; a value that depends on the port
   directory is refused). It never overwrites or removes an archive it did
   not place: in a shared directory, such a package is skipped. It removes
-  stale archives it placed earlier. It refuses to run if the CFLAGS differ
+  stale archives it placed earlier. Ports locked with `prt-get lock` get no
+  archive, but the report names those with a binary available and prints
+  the unlock/update/lock line (0.1.2: the T480s locks the LLVM toolchain,
+  six hours to build, which the snapshot had as binaries). It refuses to run if the CFLAGS differ
   from CRUX's defaults (Jaeger builds with `-O2 -march=x86-64 -pipe`)
   unless `ACCEPT_GENERIC=yes` is set in `/etc/d77crux-cache.conf` (0.1.1).
 - **Failure mode:** if the filler does nothing, or does it wrong in a way its

@@ -19,7 +19,12 @@ d77crux-cache refuses to run if pkgmk would not build xz packages. It also
 refuses if CFLAGS differ from CRUX's default (the binaries are generic,
 built with "-O2 -march=x86-64 -pipe"), unless you set ACCEPT_GENERIC=yes in
 /etc/d77crux-cache.conf: then the cached ports are generic and everything
-else still builds with your CFLAGS. Do not change your CFLAGS for this tool. With a fixed PKGMK_PACKAGE_DIR (for example
+else still builds with your CFLAGS. Do not change your CFLAGS for this tool.
+
+Ports locked with `prt-get lock` are respected: no archive is placed for
+them. If a binary is available for a locked port (the usual reason to lock
+llvm, rust and the like is the hours they take to build), the report lists
+it and prints the line that unlocks, updates from the cache and locks again. With a fixed PKGMK_PACKAGE_DIR (for example
 /usr/ports/packages) the archives go there instead of the port directories;
 an archive already there that d77crux-cache did not place, such as one you
 built, is left alone and that package is built as usual.
