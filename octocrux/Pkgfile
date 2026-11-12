@@ -5,7 +5,7 @@
 # Optional: polkit consolekit
 
 name=octocrux
-version=0.1.1
+version=0.1.2
 release=1
 source=(https://github.com/dani-77/octoCRUX/archive/refs/tags/v$version.tar.gz)
 renames=($name-$version.tar.gz)
