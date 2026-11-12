@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/d77crux.pub
-RWRGO1IdDlbgaxOXLAl0slWOyC3EAPdLNQzDCIUCiaDYybdL1ZpfVE++0/H4WuGmGqQ7oZGwh8+NcxcGmMJ+8wPeU2tdgOinzAo=
-SHA256 (Pkgfile) = fcfcfad96ba3ce0e8483f8d68dd837d0828a6ffee7fef2000edfd4801435a2eb
+RWRGO1IdDlbga9j6yw7nOU9K8OXOa/aW2OMPOKf7L8kqLsOX7m+Fit5qpW6MqEBz7t3klZfnQ5pngRgeFqRFF8PyhZbs5gB1AgA=
+SHA256 (Pkgfile) = 90681ad70e0f4d8779daf77f6d96552a613ec7b7d1d6f2733d7afaf22faf8afe
 SHA256 (.footprint) = 3034f079f25543c582e92d5f97fff5e70488c76e01e1ee7307e10995793ead1c
-SHA256 (octocrux-0.1.2.tar.gz) = 9f5bd51c4b9ee9d5336a067732919cf69a49b29881b437cf10ccb96dac733437
+SHA256 (octocrux-0.1.3.tar.gz) = b7df867420d05b3a43f9e0477f4e6dbd46173fab423a82e9184010ded75f54d9
