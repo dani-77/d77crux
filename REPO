@@ -2,6 +2,7 @@ d:hack-ttf
 d:mutt-wizard
 d:nerd-fonts
 d:menu-cache
+d:polkit-gnome
 d:vifm
 d:obconf
 d:btop
@@ -112,6 +113,10 @@ f:0c4d498640047401128ffbdc8293d07f:menu-cache/.md5sum
 f:b7cd35e3c45c7ccdaec2a686346b6e62:menu-cache/Pkgfile
 f:e38a1fb3e7788980fa25652a616615cf:menu-cache/pre-install
 f:16c280427b84e889d42e278a289909ba:menu-cache/.signature
+f:18cd85bccd9be369658b1c00e16f56b0:polkit-gnome/.footprint
+f:ba0d8b17732e072761bb793eba3ef32a:polkit-gnome/.md5sum
+f:5fae90850f7a1dfdabb010e7276bc4d4:polkit-gnome/Pkgfile
+f:996474c71baea60410ce395d8d729177:polkit-gnome/.signature
 f:2fd6b7b62f11c766ef1556f3b4468ef3:vifm/.footprint
 f:4c1aaba3f8884e2915baa87808d14aad:vifm/.md5sum
 f:3a5eea62d2fb6f2e858d576818f1e465:vifm/Pkgfile

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/d77crux.pub
+RWRGO1IdDlbgawzr1p+Gk00MU8Rp1ATdCWTMKafoOh/Wud4m6pgwS3R6/7lHkT33ydtZp+cucOVTuzKrHix0MN/jaBQgtG7vpg8=
+SHA256 (Pkgfile) = 603d5f0429003635e35d25ac714dfc8cb873070a335e53c1b4c7c3b45b44487d
+SHA256 (.footprint) = c73b68c82017d7dbf022bc929af0b05b7147fcdb5025dabddcf35b2e5d216c4b
+SHA256 (polkit-gnome-0.105.tar.xz) = 1784494963b8bf9a00eedc6cd3a2868fb123b8a5e516e66c5eda48df17ab9369
