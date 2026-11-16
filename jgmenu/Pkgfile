@@ -4,7 +4,7 @@
 # Depends on: pango
 
 name=jgmenu
-version=4.7.0
+version=4.7.1
 release=1
 source=(https://github.com/jgmenu/jgmenu/archive/refs/tags/v$version.tar.gz)
 

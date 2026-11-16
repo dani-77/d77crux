@@ -4,27 +4,33 @@
 
 | Package | Old version | New version | Source |
 |---|---|---|---|
-| `btop` | 1.4.7 | **1.4.8** | github |
-| `cmus` | 2.12.0 | **2.13.0** | github |
-| `gh` | 2.103.0 | **2.103.3** | github |
+| `gh` | 2.103.3 | **2.104.0** | github |
+| `jgmenu` | 4.7.0 | **4.7.1** | github |
+| `lazygit` | 0.66.2 | **0.66.3** | github |
+| `ncspot` | 1.5.0 | **1.5.1** | github |
+| `rofi` | 2.0.0 | **2.1.1** | github |
+| `udiskie` | 2.7.0 | **2.8.1** | github |
 
 ## Excluded from checks (14)
 
 `abiword`, `d77crux-kernel`, `gconf`, `gnumeric-gtk2`, `goffice08`, `granite`, `libgsf`, `libxml210`, `spice-up`, `tint2`, `ttf-font-awesome`, `ttf-font-awesome-compat`, `wv`, `yubico-authenticator-bin`
 
-## Skipped / needs manual check (77)
+## Skipped / needs manual check (76)
 
 | Package | Reason |
 |---|---|
 | `abook` | no confident newer version found (strategy: sourceforge) |
 | `aria2` | no confident newer version found (strategy: github) |
 | `bitwarden-bin` | no confident newer version found (strategy: github) |
+| `btop` | no confident newer version found (strategy: github) |
 | `calcurse` | no confident newer version found (strategy: directory-listing) |
 | `camorama` | no confident newer version found (strategy: github) |
 | `cbatticon` | no confident newer version found (strategy: github) |
 | `ccid` | no confident newer version found (strategy: directory-listing) |
 | `cloud-utils` | no confident newer version found (strategy: github) |
 | `cmatrix` | no confident newer version found (strategy: github) |
+| `cmus` | no confident newer version found (strategy: github) |
+| `d77crux-cache` | no confident newer version found (strategy: unsupported) |
 | `discord` | no confident newer version found (strategy: directory-listing) |
 | `dmenu` | no confident newer version found (strategy: directory-listing) |
 | `dosbox` | no confident newer version found (strategy: sourceforge) |
@@ -44,7 +50,6 @@
 | `icewm` | no confident newer version found (strategy: github) |
 | `inxi` | no confident newer version found (strategy: github) |
 | `jetbrains` | no confident newer version found (strategy: github) |
-| `jgmenu` | no confident newer version found (strategy: github) |
 | `jwm` | no confident newer version found (strategy: github) |
 | `keybinder` | no confident newer version found (strategy: github) |
 | `lf` | no confident newer version found (strategy: github) |
@@ -59,7 +64,6 @@
 | `mocinha` | no confident newer version found (strategy: github) |
 | `moka-icon-theme` | no confident newer version found (strategy: github) |
 | `mutt-wizard` | no confident newer version found (strategy: github) |
-| `ncspot` | no confident newer version found (strategy: github) |
 | `nerd-fonts` | no confident newer version found (strategy: github) |
 | `obconf` | no confident newer version found (strategy: directory-listing) |
 | `octocrux` | no confident newer version found (strategy: github) |
@@ -73,7 +77,6 @@
 | `qt-sudo` | no confident newer version found (strategy: github) |
 | `ranger` | no confident newer version found (strategy: github) |
 | `redshift` | no confident newer version found (strategy: github) |
-| `rofi` | no confident newer version found (strategy: github) |
 | `scrot` | no confident newer version found (strategy: github) |
 | `sent` | no confident newer version found (strategy: directory-listing) |
 | `slock` | no confident newer version found (strategy: directory-listing) |
@@ -82,7 +85,6 @@
 | `telegram-desktop-bin` | no confident newer version found (strategy: directory-listing) |
 | `transset-df` | no confident newer version found (strategy: directory-listing) |
 | `ttf-font-awesome` | no confident newer version found (strategy: github) |
-| `udiskie` | no confident newer version found (strategy: github) |
 | `usbimager` | no confident newer version found (strategy: gitlab) |
 | `ventoy` | no confident newer version found (strategy: sourceforge) |
 | `vifm` | no confident newer version found (strategy: github) |
