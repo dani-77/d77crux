@@ -4,7 +4,7 @@
 # Depends on: udisks2 python3-gobject python3-docopt gtk libnotify
 
 name=udiskie
-version=2.7.0
+version=2.8.1
 release=1
 source=(https://github.com/coldfix/$name/archive/refs/tags/v$version.tar.gz 50-udiskie.rules README)
 
